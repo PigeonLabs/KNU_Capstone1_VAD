@@ -1,0 +1,3155 @@
+{
+  "root": "/home/jeong/Desktop/IPAD/IPAD_dataset",
+  "scenes": {
+    "R01": {
+      "videos": [
+        {
+          "split": "training",
+          "video": "01",
+          "frames": 207,
+          "first_id": 0,
+          "last_id": 206,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "02",
+          "frames": 214,
+          "first_id": 0,
+          "last_id": 213,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "03",
+          "frames": 203,
+          "first_id": 0,
+          "last_id": 202,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "04",
+          "frames": 232,
+          "first_id": 0,
+          "last_id": 231,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "05",
+          "frames": 233,
+          "first_id": 0,
+          "last_id": 232,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "06",
+          "frames": 231,
+          "first_id": 0,
+          "last_id": 230,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "07",
+          "frames": 233,
+          "first_id": 0,
+          "last_id": 232,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "08",
+          "frames": 232,
+          "first_id": 0,
+          "last_id": 231,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "09",
+          "frames": 235,
+          "first_id": 0,
+          "last_id": 234,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "10",
+          "frames": 236,
+          "first_id": 0,
+          "last_id": 235,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "11",
+          "frames": 235,
+          "first_id": 0,
+          "last_id": 234,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "12",
+          "frames": 231,
+          "first_id": 0,
+          "last_id": 230,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "13",
+          "frames": 232,
+          "first_id": 0,
+          "last_id": 231,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "14",
+          "frames": 232,
+          "first_id": 0,
+          "last_id": 231,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "15",
+          "frames": 236,
+          "first_id": 0,
+          "last_id": 235,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "16",
+          "frames": 230,
+          "first_id": 0,
+          "last_id": 229,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "17",
+          "frames": 234,
+          "first_id": 0,
+          "last_id": 233,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "18",
+          "frames": 228,
+          "first_id": 0,
+          "last_id": 227,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "19",
+          "frames": 233,
+          "first_id": 0,
+          "last_id": 232,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "20",
+          "frames": 229,
+          "first_id": 0,
+          "last_id": 228,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "21",
+          "frames": 229,
+          "first_id": 0,
+          "last_id": 228,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "22",
+          "frames": 234,
+          "first_id": 0,
+          "last_id": 233,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "23",
+          "frames": 233,
+          "first_id": 0,
+          "last_id": 232,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "24",
+          "frames": 231,
+          "first_id": 0,
+          "last_id": 230,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "25",
+          "frames": 225,
+          "first_id": 0,
+          "last_id": 224,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "26",
+          "frames": 238,
+          "first_id": 0,
+          "last_id": 237,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "27",
+          "frames": 231,
+          "first_id": 0,
+          "last_id": 230,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "28",
+          "frames": 228,
+          "first_id": 0,
+          "last_id": 227,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "29",
+          "frames": 233,
+          "first_id": 0,
+          "last_id": 232,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "30",
+          "frames": 229,
+          "first_id": 0,
+          "last_id": 228,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "31",
+          "frames": 233,
+          "first_id": 0,
+          "last_id": 232,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "32",
+          "frames": 230,
+          "first_id": 0,
+          "last_id": 229,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "33",
+          "frames": 229,
+          "first_id": 0,
+          "last_id": 228,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "34",
+          "frames": 229,
+          "first_id": 0,
+          "last_id": 228,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "testing",
+          "video": "01",
+          "frames": 230,
+          "first_id": 0,
+          "last_id": 229,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 230,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "63f69e6f102b0d207762fa451133b5292d5a2fabfaa5525782bb1255a3bf462f",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "02",
+          "frames": 256,
+          "first_id": 0,
+          "last_id": 255,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 256,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "5adf21c6be62787fa5d7afc1d6c81ffe233d3d28d48a6b5ec534eaf61308a1ab",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "03",
+          "frames": 409,
+          "first_id": 0,
+          "last_id": 408,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 409,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "47a48ebca3883edfc8fb528cf4f108a87a84a562373798c68e0c64fb057843c6",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "04",
+          "frames": 191,
+          "first_id": 0,
+          "last_id": 190,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 191,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "dc36c4335eed18857c08df8dbdc418352d1d00723201d508e2313c5f93413bf8",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "05",
+          "frames": 290,
+          "first_id": 0,
+          "last_id": 289,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 290,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "2ba78953c6a48c7a0f01fd839ca603c82e2c9e2e2e5511794570a5aac762bb61",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "06",
+          "frames": 233,
+          "first_id": 0,
+          "last_id": 232,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 233,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "75d4bf18b13faf2e4b1d186d39abd5cc1e91833910c4a868b03b5adb9f270aa3",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "07",
+          "frames": 231,
+          "first_id": 0,
+          "last_id": 230,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 231,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "9fb2febb72920b3802a50737aed9e3f0e786c23589bb2b05728a2326c676a7b6",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "08",
+          "frames": 235,
+          "first_id": 0,
+          "last_id": 234,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 235,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "80863b8ee2a21c929bdafc3042caa3effc8b44479fbcf63f698eda8d3e04ae4c",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "09",
+          "frames": 229,
+          "first_id": 0,
+          "last_id": 228,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 229,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "6904b9b28cfb9b752e996e40b8af441c2143bd5a3d8f51db7c104208893130c2",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "10",
+          "frames": 231,
+          "first_id": 0,
+          "last_id": 230,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 231,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "2af361f61a829a443e27b0ed778adb4f94d03272a09c33539523e596c0fbc12e",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "11",
+          "frames": 232,
+          "first_id": 0,
+          "last_id": 231,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 232,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "b70714762036e1f6bc2875ace377bcff9d43daf68888f920a66a93d1bc3c4e03",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "12",
+          "frames": 231,
+          "first_id": 0,
+          "last_id": 230,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 231,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "2af361f61a829a443e27b0ed778adb4f94d03272a09c33539523e596c0fbc12e",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "13",
+          "frames": 229,
+          "first_id": 0,
+          "last_id": 228,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 229,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "6904b9b28cfb9b752e996e40b8af441c2143bd5a3d8f51db7c104208893130c2",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "14",
+          "frames": 230,
+          "first_id": 0,
+          "last_id": 229,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 230,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "844ab1578775478063a48543c094bf6321a5c34791481f6097edca3a5c841b8a",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "15",
+          "frames": 228,
+          "first_id": 0,
+          "last_id": 227,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 228,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "1fc8485d29da42736781b7a0883cfb91aface074944d30d409df587b3682212e",
+          "strict_eligible": true
+        }
+      ],
+      "validation_videos": [
+        "03",
+        "05",
+        "12",
+        "20",
+        "24",
+        "26",
+        "34"
+      ]
+    },
+    "R02": {
+      "videos": [
+        {
+          "split": "training",
+          "video": "01",
+          "frames": 642,
+          "first_id": 0,
+          "last_id": 641,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "02",
+          "frames": 608,
+          "first_id": 0,
+          "last_id": 607,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "03",
+          "frames": 550,
+          "first_id": 0,
+          "last_id": 549,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "04",
+          "frames": 596,
+          "first_id": 0,
+          "last_id": 595,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "05",
+          "frames": 602,
+          "first_id": 0,
+          "last_id": 601,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "06",
+          "frames": 610,
+          "first_id": 0,
+          "last_id": 609,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "07",
+          "frames": 588,
+          "first_id": 0,
+          "last_id": 587,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "08",
+          "frames": 585,
+          "first_id": 0,
+          "last_id": 584,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "09",
+          "frames": 595,
+          "first_id": 0,
+          "last_id": 594,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "10",
+          "frames": 595,
+          "first_id": 0,
+          "last_id": 594,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "11",
+          "frames": 600,
+          "first_id": 0,
+          "last_id": 599,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "12",
+          "frames": 590,
+          "first_id": 0,
+          "last_id": 589,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "13",
+          "frames": 591,
+          "first_id": 0,
+          "last_id": 590,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "14",
+          "frames": 579,
+          "first_id": 0,
+          "last_id": 578,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "15",
+          "frames": 612,
+          "first_id": 0,
+          "last_id": 611,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "16",
+          "frames": 588,
+          "first_id": 0,
+          "last_id": 587,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "17",
+          "frames": 574,
+          "first_id": 0,
+          "last_id": 573,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "18",
+          "frames": 579,
+          "first_id": 0,
+          "last_id": 578,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "19",
+          "frames": 602,
+          "first_id": 0,
+          "last_id": 601,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "20",
+          "frames": 609,
+          "first_id": 0,
+          "last_id": 608,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "21",
+          "frames": 584,
+          "first_id": 0,
+          "last_id": 583,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "22",
+          "frames": 601,
+          "first_id": 0,
+          "last_id": 600,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "23",
+          "frames": 612,
+          "first_id": 0,
+          "last_id": 611,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "24",
+          "frames": 568,
+          "first_id": 0,
+          "last_id": 567,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "25",
+          "frames": 588,
+          "first_id": 0,
+          "last_id": 587,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "26",
+          "frames": 574,
+          "first_id": 0,
+          "last_id": 573,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "27",
+          "frames": 589,
+          "first_id": 0,
+          "last_id": 588,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "28",
+          "frames": 592,
+          "first_id": 0,
+          "last_id": 591,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "29",
+          "frames": 585,
+          "first_id": 0,
+          "last_id": 584,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "30",
+          "frames": 568,
+          "first_id": 0,
+          "last_id": 567,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "testing",
+          "video": "01",
+          "frames": 583,
+          "first_id": 0,
+          "last_id": 582,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 583,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "62a5c7c4a58a1c8074232919b91d87ec80732d906198080de3c5bb93a6fff884",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "02",
+          "frames": 595,
+          "first_id": 0,
+          "last_id": 594,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 595,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "4d07d365140125be836f23e92b31cefddf68a5339c101157aa70087e64da382d",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "03",
+          "frames": 573,
+          "first_id": 0,
+          "last_id": 572,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 573,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "b2cb20893345d80b5b1bb521b8085fc7ee6c838313acda188565e7791cbda976",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "04",
+          "frames": 578,
+          "first_id": 0,
+          "last_id": 577,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 578,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "a6538b208a71027fb8c3e412208536005f032fab443b2a6ef3a2b462cc85fbc5",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "05",
+          "frames": 583,
+          "first_id": 0,
+          "last_id": 582,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 583,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "31326c267c99c1357afd6ef6d9809720a1a62b4931dcf88d1dec2dc5c6755873",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "06",
+          "frames": 604,
+          "first_id": 0,
+          "last_id": 603,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 604,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "1ee06b6f9423e87f02071da9af92d6af10567b08b7b7cd2abfd8c1bf5e9e78f5",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "07",
+          "frames": 536,
+          "first_id": 0,
+          "last_id": 535,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 536,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "8de30eaeb48d4e73fa051a6d30990f733011a3a1baa19e2f7bf11dabd9834935",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "08",
+          "frames": 784,
+          "first_id": 0,
+          "last_id": 783,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 784,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "9e300427398dbe4d3f013d81acac50289e6d3358e792125a90f74b55f320500b",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "09",
+          "frames": 853,
+          "first_id": 0,
+          "last_id": 852,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 853,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "979afaaba7f197aa426802c620b4de5819da25ea5dc2805270eb8de7f9e4e9fa",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "10",
+          "frames": 612,
+          "first_id": 0,
+          "last_id": 611,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 612,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "b7418ac99cc05b0ecc53abb4ad8c82789873d57c26b7065068bb3aa484773c69",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "11",
+          "frames": 590,
+          "first_id": 0,
+          "last_id": 589,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 590,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "80efbbe75a00d20216773d5df9979d457b58cb0e14a22f41b16048499bfbc178",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "12",
+          "frames": 806,
+          "first_id": 0,
+          "last_id": 805,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 805,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "7a28529e301be23be7072835c18527afeb0633d735347f31b099ee76fad2c43a",
+          "strict_eligible": false
+        },
+        {
+          "split": "testing",
+          "video": "13",
+          "frames": 609,
+          "first_id": 0,
+          "last_id": 608,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 608,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "9918c0a71ed8277e78b5d1bb353767df4fbce7b2d45aa9045fd1a9e3d5719c18",
+          "strict_eligible": false
+        },
+        {
+          "split": "testing",
+          "video": "14",
+          "frames": 497,
+          "first_id": 0,
+          "last_id": 496,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 498,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "6587f368313ddfbe739d314e7a67889d9984387c30ca39beb13df295c815e59a",
+          "strict_eligible": false
+        },
+        {
+          "split": "testing",
+          "video": "15",
+          "frames": 815,
+          "first_id": 0,
+          "last_id": 814,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 815,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "fdc0cfdb464948e55d6b0efc576c69baf202731489ece71d3def0665bcc0bece",
+          "strict_eligible": true
+        }
+      ],
+      "validation_videos": [
+        "03",
+        "05",
+        "11",
+        "12",
+        "22",
+        "27"
+      ]
+    },
+    "R03": {
+      "videos": [
+        {
+          "split": "training",
+          "video": "01",
+          "frames": 668,
+          "first_id": 0,
+          "last_id": 667,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "02",
+          "frames": 692,
+          "first_id": 0,
+          "last_id": 691,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "03",
+          "frames": 723,
+          "first_id": 0,
+          "last_id": 722,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "04",
+          "frames": 688,
+          "first_id": 0,
+          "last_id": 687,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "05",
+          "frames": 705,
+          "first_id": 0,
+          "last_id": 704,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "06",
+          "frames": 706,
+          "first_id": 0,
+          "last_id": 705,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "07",
+          "frames": 689,
+          "first_id": 0,
+          "last_id": 688,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "08",
+          "frames": 708,
+          "first_id": 0,
+          "last_id": 707,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "09",
+          "frames": 742,
+          "first_id": 0,
+          "last_id": 741,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "10",
+          "frames": 697,
+          "first_id": 0,
+          "last_id": 696,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "11",
+          "frames": 696,
+          "first_id": 0,
+          "last_id": 695,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "12",
+          "frames": 745,
+          "first_id": 0,
+          "last_id": 744,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "13",
+          "frames": 720,
+          "first_id": 0,
+          "last_id": 719,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "14",
+          "frames": 630,
+          "first_id": 0,
+          "last_id": 629,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "15",
+          "frames": 706,
+          "first_id": 0,
+          "last_id": 705,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "16",
+          "frames": 656,
+          "first_id": 0,
+          "last_id": 655,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "17",
+          "frames": 685,
+          "first_id": 0,
+          "last_id": 684,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "18",
+          "frames": 690,
+          "first_id": 0,
+          "last_id": 689,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "19",
+          "frames": 694,
+          "first_id": 0,
+          "last_id": 693,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "20",
+          "frames": 690,
+          "first_id": 0,
+          "last_id": 689,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "21",
+          "frames": 713,
+          "first_id": 0,
+          "last_id": 712,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "22",
+          "frames": 703,
+          "first_id": 0,
+          "last_id": 702,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "testing",
+          "video": "01",
+          "frames": 720,
+          "first_id": 0,
+          "last_id": 719,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 720,
+          "label_values": [
+            1.0
+          ],
+          "label_sha256": "d2699b9be0397e72503d15087e822f10632ee95f4edd673a70eb31f335b1ed70",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "02",
+          "frames": 676,
+          "first_id": 0,
+          "last_id": 675,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 676,
+          "label_values": [
+            1.0
+          ],
+          "label_sha256": "7aea3bcd9445326a3851f59d5299ef04858a55ccfa2ca70814e73742574e5857",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "03",
+          "frames": 674,
+          "first_id": 0,
+          "last_id": 673,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 674,
+          "label_values": [
+            1.0
+          ],
+          "label_sha256": "3af62993a9bc191dabb653ff8aa57e99367d3dca6a538659da08ed52bd8bd50a",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "04",
+          "frames": 683,
+          "first_id": 0,
+          "last_id": 682,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 683,
+          "label_values": [
+            1.0
+          ],
+          "label_sha256": "b27d2462015ba0e260c7abc8755c9f90c8cb376c8f5fdd49c42c0dfb8a14ccda",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "05",
+          "frames": 574,
+          "first_id": 0,
+          "last_id": 573,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 574,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "ffb3316894add64ea870830d269f54c2c9926b944fb069f0f8014fde41c24ffd",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "06",
+          "frames": 582,
+          "first_id": 0,
+          "last_id": 581,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 582,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "a08cb96817e142f03eddef09502024c11f7130e2fe276dd62342b715d67f8354",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "07",
+          "frames": 686,
+          "first_id": 0,
+          "last_id": 685,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 686,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "7e9170b0e697f3ea238afc6f96f5326319ac9612551cb1b4eff55b6d2a5e7854",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "08",
+          "frames": 695,
+          "first_id": 0,
+          "last_id": 694,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 695,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "ce1850fa1c2092a742f5b44a693a20e6f271c781da0759c5574b1506e1d89424",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "09",
+          "frames": 712,
+          "first_id": 0,
+          "last_id": 711,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 712,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "864746f2710f73510f87547fee5f08b14af39a6d8bac3576033457541e83c609",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "10",
+          "frames": 647,
+          "first_id": 0,
+          "last_id": 646,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 647,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "79d4797c709fa72aef2aa2086777fae8186a6b019f0c9f6a4953677eb9474f0b",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "11",
+          "frames": 706,
+          "first_id": 0,
+          "last_id": 705,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 706,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "4caf20dd9b8d5098a75ed328515d9c340539b2eec39cd0fff2c9efa028bdd34c",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "12",
+          "frames": 841,
+          "first_id": 0,
+          "last_id": 840,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 841,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "8c2b4471a9394bd3f6c93124ce048a696bb4c2106db94de233a2ddbea0a6ddd4",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "13",
+          "frames": 766,
+          "first_id": 0,
+          "last_id": 765,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 766,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "0b791490f396acab9f5304fb80c2348027b4c7433ed175c226f6855d7edaeffb",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "14",
+          "frames": 908,
+          "first_id": 0,
+          "last_id": 907,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 908,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "79622696ea236ee54dde4779cebe05bb66e570dcc1e9ec869ca8ab900d5662f7",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "15",
+          "frames": 692,
+          "first_id": 0,
+          "last_id": 691,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 692,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "2b66d764cff778d19a536296fb6ef9108d47d9c0558d5242dbb53265d87a8562",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "16",
+          "frames": 730,
+          "first_id": 0,
+          "last_id": 729,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 730,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "d14c3f31d7daa6ebad04c50a6a56a1f2ba3b2f96d88b14c3b52a4d41d5bb08ee",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "17",
+          "frames": 713,
+          "first_id": 0,
+          "last_id": 712,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 713,
+          "label_values": [
+            0.0
+          ],
+          "label_sha256": "73eb3313fb63d943852fb6caf3206abdb882c4173474490bdf593612b195eac1",
+          "strict_eligible": true
+        }
+      ],
+      "validation_videos": [
+        "03",
+        "05",
+        "11",
+        "17",
+        "20"
+      ]
+    },
+    "R04": {
+      "videos": [
+        {
+          "split": "training",
+          "video": "01",
+          "frames": 309,
+          "first_id": 0,
+          "last_id": 308,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "02",
+          "frames": 409,
+          "first_id": 0,
+          "last_id": 408,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "03",
+          "frames": 461,
+          "first_id": 0,
+          "last_id": 460,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "04",
+          "frames": 408,
+          "first_id": 0,
+          "last_id": 407,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "05",
+          "frames": 437,
+          "first_id": 0,
+          "last_id": 436,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "06",
+          "frames": 448,
+          "first_id": 0,
+          "last_id": 447,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "07",
+          "frames": 385,
+          "first_id": 0,
+          "last_id": 384,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "08",
+          "frames": 413,
+          "first_id": 0,
+          "last_id": 412,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "09",
+          "frames": 417,
+          "first_id": 0,
+          "last_id": 416,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "10",
+          "frames": 376,
+          "first_id": 0,
+          "last_id": 375,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "11",
+          "frames": 340,
+          "first_id": 0,
+          "last_id": 339,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "12",
+          "frames": 382,
+          "first_id": 0,
+          "last_id": 381,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "13",
+          "frames": 382,
+          "first_id": 0,
+          "last_id": 381,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "14",
+          "frames": 323,
+          "first_id": 0,
+          "last_id": 322,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "15",
+          "frames": 340,
+          "first_id": 0,
+          "last_id": 339,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "16",
+          "frames": 373,
+          "first_id": 0,
+          "last_id": 372,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "17",
+          "frames": 372,
+          "first_id": 0,
+          "last_id": 371,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "18",
+          "frames": 412,
+          "first_id": 0,
+          "last_id": 411,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "19",
+          "frames": 396,
+          "first_id": 0,
+          "last_id": 395,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "20",
+          "frames": 404,
+          "first_id": 0,
+          "last_id": 403,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "21",
+          "frames": 417,
+          "first_id": 0,
+          "last_id": 416,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "22",
+          "frames": 380,
+          "first_id": 0,
+          "last_id": 379,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "23",
+          "frames": 377,
+          "first_id": 0,
+          "last_id": 376,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "24",
+          "frames": 368,
+          "first_id": 0,
+          "last_id": 367,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "training",
+          "video": "25",
+          "frames": 403,
+          "first_id": 0,
+          "last_id": 402,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ]
+        },
+        {
+          "split": "testing",
+          "video": "01",
+          "frames": 411,
+          "first_id": 0,
+          "last_id": 410,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 411,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "67ef929f073b0ccea32e888e2d78c5313592d0057c1548d91f93f1f113b2cbb6",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "02",
+          "frames": 398,
+          "first_id": 0,
+          "last_id": 397,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 398,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "69b9adaf97723f3622a9e3e6ea8ee1d194e5a7972d9f035b5ba200bf0decfde2",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "03",
+          "frames": 381,
+          "first_id": 0,
+          "last_id": 380,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 381,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "5f881cc578a1c37e311804b3609c2db1bbbb41d6e49d337d9a4b47c5ceac786b",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "04",
+          "frames": 379,
+          "first_id": 0,
+          "last_id": 378,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 379,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "2b149dd0f39ec4fac46611dae39361ea0db8483aa983714f9d7d286f68d56896",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "05",
+          "frames": 465,
+          "first_id": 0,
+          "last_id": 464,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 465,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "cc3b8f4facd224aa4bcf8a0c4630077539c0ec6123fbe92a06c2bd4e7f456510",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "06",
+          "frames": 505,
+          "first_id": 0,
+          "last_id": 504,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 505,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "6980aa99d074233ed663f7b0d1cac922c41a784f4effba94c41b73371b16b388",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "07",
+          "frames": 550,
+          "first_id": 0,
+          "last_id": 549,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 550,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "eb962d4dff0fa18bba9fd4bacc2043573e799bf926a402f22c1a2d09d783353f",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "08",
+          "frames": 653,
+          "first_id": 0,
+          "last_id": 652,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 653,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "bd4f6d515d01ef1a201605b963c30eac685b8ad939614fe5540f9080e7cb232a",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "09",
+          "frames": 334,
+          "first_id": 0,
+          "last_id": 333,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 334,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "bf8e6ebd3add41de648cc0b59f5836ad752b1b2be5bdac5ef69c2f0894622ddd",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "10",
+          "frames": 223,
+          "first_id": 0,
+          "last_id": 222,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 223,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "b016150962e0b5f24f5b313750cbcca25618487d1de2ec9a818430477d2709cd",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "11",
+          "frames": 424,
+          "first_id": 0,
+          "last_id": 423,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 424,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "a00eaa8eaba08c8e3e07f20d7a64dda57c5b153bb8d50597a990741294929b34",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "12",
+          "frames": 686,
+          "first_id": 0,
+          "last_id": 685,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 686,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "9ad40e6c4d9462c361d779e31b4f2e90b39ae4ee58a47be57198af4ad531b2f7",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "13",
+          "frames": 464,
+          "first_id": 0,
+          "last_id": 463,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 464,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "ecc341370b3085e64a7277634a295b40038f6df2053018bf2cbcb39a001b8270",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "14",
+          "frames": 385,
+          "first_id": 0,
+          "last_id": 384,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 385,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "728e152be907def10a848b2146aa573cc7810ee08b5e35fd60ffe107e9b5949e",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "15",
+          "frames": 376,
+          "first_id": 0,
+          "last_id": 375,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 376,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "a715667be6ab811d68fa240a01f45463bb4c275d470ea575acbf1a7412620b5e",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "16",
+          "frames": 418,
+          "first_id": 0,
+          "last_id": 417,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 418,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "f53619b73958cd3b5b4ce770507ce2f286861578b47a83b1e7c2d71b3b3d0c80",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "17",
+          "frames": 582,
+          "first_id": 0,
+          "last_id": 581,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 582,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "109525fe482d55dba098a24d75bbbf42f46ac47d8fda14ff2cdef9ab1f3c8b04",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "18",
+          "frames": 243,
+          "first_id": 0,
+          "last_id": 242,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 243,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "0b2d04963c6b7ed417331195979dc7e3afa4c35d92e87cd2980b75880ba345b6",
+          "strict_eligible": true
+        },
+        {
+          "split": "testing",
+          "video": "19",
+          "frames": 277,
+          "first_id": 0,
+          "last_id": 276,
+          "missing_ids": [],
+          "image_shapes": [
+            [
+              256,
+              256,
+              3
+            ]
+          ],
+          "labels": 277,
+          "label_values": [
+            0.0,
+            1.0
+          ],
+          "label_sha256": "af3c8a005105164ef1534a2ef8930ab01dc49543726798ee5ce690b3422fa97f",
+          "strict_eligible": true
+        }
+      ],
+      "validation_videos": [
+        "05",
+        "11",
+        "12",
+        "20",
+        "25"
+      ]
+    }
+  },
+  "fatal_errors": []
+}

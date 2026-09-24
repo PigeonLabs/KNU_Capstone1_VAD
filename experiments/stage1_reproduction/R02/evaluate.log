@@ -1,0 +1,29 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+{"scene": "R02", "evaluation_step": 0, "steps": 2349}
+{"scene": "R02", "evaluation_step": 100, "steps": 2349}
+{"scene": "R02", "evaluation_step": 200, "steps": 2349}
+{"scene": "R02", "evaluation_step": 300, "steps": 2349}
+{"scene": "R02", "evaluation_step": 400, "steps": 2349}
+{"scene": "R02", "evaluation_step": 500, "steps": 2349}
+{"scene": "R02", "evaluation_step": 600, "steps": 2349}
+{"scene": "R02", "evaluation_step": 700, "steps": 2349}
+{"scene": "R02", "evaluation_step": 800, "steps": 2349}
+{"scene": "R02", "evaluation_step": 900, "steps": 2349}
+{"scene": "R02", "evaluation_step": 1000, "steps": 2349}
+{"scene": "R02", "evaluation_step": 1100, "steps": 2349}
+{"scene": "R02", "evaluation_step": 1200, "steps": 2349}
+{"scene": "R02", "evaluation_step": 1300, "steps": 2349}
+{"scene": "R02", "evaluation_step": 1400, "steps": 2349}
+{"scene": "R02", "evaluation_step": 1500, "steps": 2349}
+{"scene": "R02", "evaluation_step": 1600, "steps": 2349}
+{"scene": "R02", "evaluation_step": 1700, "steps": 2349}
+{"scene": "R02", "evaluation_step": 1800, "steps": 2349}
+{"scene": "R02", "evaluation_step": 1900, "steps": 2349}
+{"scene": "R02", "evaluation_step": 2000, "steps": 2349}
+{"scene": "R02", "evaluation_step": 2100, "steps": 2349}
+{"scene": "R02", "evaluation_step": 2200, "steps": 2349}
+{"scene": "R02", "evaluation_step": 2300, "steps": 2349}
+{"metrics": {"negative_psnr": {"auroc": 79.5320617170247, "auprc": 65.86522526280037, "frames": 7478}, "phase_error": {"auroc": 67.436802934057, "auprc": 51.67864952127251, "frames": 7478}, "negative_psnr_with_phase": {"auroc": 80.25405953265313, "auprc": 68.54480373945395, "frames": 7478}}, "excluded_videos": ["12", "13", "14"], "missing_videos": [], "label_shift": 0, "policy": "strict", "frames": 7478, "paper_auc": 75.4, "paper_comparable_label_coverage": false, "scene": "R02", "checkpoint": "runs/paper/R02/seed0/model.pt", "checkpoint_epoch": 50, "complete_training_protocol": true, "seconds": 66.74257465801202, "inference_seconds": 64.42972967261449, "clips": 9393, "inference_clips_per_second": 145.78673615004232, "peak_gb": 2.087618048, "protocol": "offline scene-wide normalization; centered clip and window; no test-phase oracle"}

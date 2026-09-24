@@ -1,0 +1,43 @@
+paper_R01_s0
+paper_R01_s0 failed; see /home/jeong/Desktop/IPAD/runs/paper_R01_s0.log
+Traceback (most recent call last):
+  File "/home/jeong/Desktop/IPAD/scripts/run_suite.py", line 13, in <module>
+    from ipad.common import SCENES, write_json
+  File "/home/jeong/Desktop/IPAD/ipad/common.py", line 7, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+paper_R01_s0
+paper_R01_s0 failed; see /home/jeong/Desktop/IPAD/runs/paper_R01_s0.log
+paper_R01_s0
+eval_R01_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": false, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+paper_R02_s0
+eval_R02_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": false, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+paper_R03_s0
+eval_R03_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": false, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+paper_R04_s0
+eval_R04_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": true, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+dino_reconstruction_R01_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": true, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+dino_cache_R01
+prototype_R01_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": true, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+dino_reconstruction_R02_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": true, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+dino_cache_R02
+prototype_R02_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": true, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+dino_reconstruction_R03_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": true, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+dino_cache_R03
+prototype_R03_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": true, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+dino_reconstruction_R04_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": true, "all_extensions_complete": false, "all_memory_ablations_complete": false}
+dino_cache_R04
+prototype_R04_s0
+{"smoke_verified": true, "all_primary_evaluations_complete": true, "all_extensions_complete": true, "all_memory_ablations_complete": false}
+no_memory_R01_s0

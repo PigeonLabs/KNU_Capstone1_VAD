@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+.pytest_cache/
+IPAD_dataset/
+cache/
+runs/
+*.egg-info/
+# Local documents and generated live reports are not repository artifacts.
+reports/
+*.pdf
+*.docx
+*.hwp
+*.pt
+*.pth
+*.npy
+*.npz
+.env
+.env.*
+# Third-party sources are fetched at a pinned commit by bootstrap_vendor.py.
+ipad/vendor/VST_block.py
+ipad/vendor/reconstruction_model.py

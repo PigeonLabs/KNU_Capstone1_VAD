@@ -1,0 +1,35 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+{"scene": "R03", "evaluation_step": 0, "steps": 2938}
+{"scene": "R03", "evaluation_step": 100, "steps": 2938}
+{"scene": "R03", "evaluation_step": 200, "steps": 2938}
+{"scene": "R03", "evaluation_step": 300, "steps": 2938}
+{"scene": "R03", "evaluation_step": 400, "steps": 2938}
+{"scene": "R03", "evaluation_step": 500, "steps": 2938}
+{"scene": "R03", "evaluation_step": 600, "steps": 2938}
+{"scene": "R03", "evaluation_step": 700, "steps": 2938}
+{"scene": "R03", "evaluation_step": 800, "steps": 2938}
+{"scene": "R03", "evaluation_step": 900, "steps": 2938}
+{"scene": "R03", "evaluation_step": 1000, "steps": 2938}
+{"scene": "R03", "evaluation_step": 1100, "steps": 2938}
+{"scene": "R03", "evaluation_step": 1200, "steps": 2938}
+{"scene": "R03", "evaluation_step": 1300, "steps": 2938}
+{"scene": "R03", "evaluation_step": 1400, "steps": 2938}
+{"scene": "R03", "evaluation_step": 1500, "steps": 2938}
+{"scene": "R03", "evaluation_step": 1600, "steps": 2938}
+{"scene": "R03", "evaluation_step": 1700, "steps": 2938}
+{"scene": "R03", "evaluation_step": 1800, "steps": 2938}
+{"scene": "R03", "evaluation_step": 1900, "steps": 2938}
+{"scene": "R03", "evaluation_step": 2000, "steps": 2938}
+{"scene": "R03", "evaluation_step": 2100, "steps": 2938}
+{"scene": "R03", "evaluation_step": 2200, "steps": 2938}
+{"scene": "R03", "evaluation_step": 2300, "steps": 2938}
+{"scene": "R03", "evaluation_step": 2400, "steps": 2938}
+{"scene": "R03", "evaluation_step": 2500, "steps": 2938}
+{"scene": "R03", "evaluation_step": 2600, "steps": 2938}
+{"scene": "R03", "evaluation_step": 2700, "steps": 2938}
+{"scene": "R03", "evaluation_step": 2800, "steps": 2938}
+{"scene": "R03", "evaluation_step": 2900, "steps": 2938}
+{"metrics": {"negative_psnr": {"auroc": 43.18067464795974, "auprc": 37.4480782853253, "frames": 11682}, "phase_error": {"auroc": 51.2215124122752, "auprc": 44.28745776829056, "frames": 11682}, "negative_psnr_with_phase": {"auroc": 46.89301550375306, "auprc": 41.15820100539193, "frames": 11682}}, "excluded_videos": [], "missing_videos": [], "label_shift": 0, "policy": "strict", "frames": 11682, "paper_auc": 43.5, "paper_comparable_label_coverage": true, "scene": "R03", "checkpoint": "runs/paper/R03/seed0/model.pt", "checkpoint_epoch": 50, "complete_training_protocol": true, "seconds": 80.04707307787612, "inference_seconds": 77.30091245658696, "clips": 11750, "inference_clips_per_second": 152.00338038181542, "peak_gb": 2.087618048, "protocol": "offline scene-wide normalization; centered clip and window; no test-phase oracle"}

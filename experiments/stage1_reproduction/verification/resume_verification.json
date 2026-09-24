@@ -1,0 +1,27 @@
+{
+  "checkpoint_epoch": 5,
+  "resumed_epoch": 6,
+  "compared_step": 1,
+  "fix": "Separate sampling and worker RNG; migrate prior combined RNG state",
+  "matching_fields": {
+    "loss": true,
+    "reconstruction": true,
+    "period": true,
+    "entropy": true,
+    "gradient_norm": true
+  },
+  "before": {
+    "loss": 0.0351933091878891,
+    "reconstruction": 0.00204357854090631,
+    "period": 1.60263991355896,
+    "entropy": 5.484670162200928,
+    "gradient_norm": 0.5177183151245117
+  },
+  "after": {
+    "loss": 0.0351933091878891,
+    "reconstruction": 0.00204357854090631,
+    "period": 1.60263991355896,
+    "entropy": 5.484670162200928,
+    "gradient_norm": 0.5177183151245117
+  }
+}
