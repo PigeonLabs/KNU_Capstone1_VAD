@@ -1,0 +1,36 @@
+{
+  "metrics": {
+    "negative_psnr": {
+      "auroc": 43.632078701161305,
+      "auprc": 38.24918936441664,
+      "frames": 11682
+    },
+    "phase_error": {
+      "auroc": 52.03287971318849,
+      "auprc": 46.597829762864976,
+      "frames": 11682
+    },
+    "negative_psnr_with_phase": {
+      "auroc": 48.4538917211621,
+      "auprc": 44.2607809498461,
+      "frames": 11682
+    }
+  },
+  "excluded_videos": [],
+  "missing_videos": [],
+  "label_shift": 0,
+  "policy": "strict",
+  "frames": 11682,
+  "paper_auc": 43.5,
+  "paper_comparable_label_coverage": true,
+  "scene": "R03",
+  "checkpoint": "runs/no_memory/R03/seed0/model.pt",
+  "checkpoint_epoch": 50,
+  "complete_training_protocol": true,
+  "seconds": 82.4926228360273,
+  "inference_seconds": 79.59240001463331,
+  "clips": 11750,
+  "inference_clips_per_second": 147.62716035500532,
+  "peak_gb": 2.081243648,
+  "protocol": "offline scene-wide normalization; centered clip and window; no test-phase oracle"
+}
