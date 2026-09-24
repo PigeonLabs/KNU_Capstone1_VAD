@@ -1,0 +1,55 @@
+{
+  "root": "IPAD_dataset",
+  "scene": "R01",
+  "output": "runs/no_memory/R01/seed0",
+  "seed": 0,
+  "epochs": 50,
+  "batch_size": 8,
+  "workers": 4,
+  "subset": "all",
+  "axis": "tokens",
+  "shrink": 0.0,
+  "radius": 0,
+  "no_memory": true,
+  "precision": "fp32",
+  "checkpoint_activations": false,
+  "resume": false,
+  "smoke_steps": 0,
+  "steps_per_epoch": 0,
+  "median_train_period": 231.5,
+  "model_options": {
+    "memory": false,
+    "axis": "tokens",
+    "shrink": 0.0,
+    "radius": 0,
+    "checkpoint": false
+  },
+  "environment": {
+    "python": "3.13.13",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "capability": [
+      12,
+      0
+    ]
+  },
+  "parameters": 261942713,
+  "complete_protocol": true,
+  "data_clips": 7298,
+  "source_sha256": {
+    "ipad/evaluate.py": "ee2e899232e06965702f10691dc7c174a6ec70e20ac0ffba2e1e8c6e894147cd",
+    "ipad/report.py": "4040d5cae253eeb91c40658bf4a51c207793da6539cd17c44f78062f6b2821be",
+    "ipad/metrics.py": "3c2e1dc03598e72d59d44790bc6814a9963693e1b15e5ad32310db4f1b883c87",
+    "ipad/train.py": "3d40515deee4f4335810c8c2b11bcc283a185df4a051973fc6deb292c8d84693",
+    "ipad/data.py": "20c71dbdba055c7e74847623e4600a84325eeb9ec9e116cd76721331839bf96c",
+    "ipad/features.py": "709f05417b3abef1180e19659799188389f3f09b7e2604773505d1cd01c9fa02",
+    "ipad/model.py": "c08545718a89cd2d6eb01624694699b8d6a1b774bc68c56324bf72cbaec0e2ac",
+    "ipad/common.py": "0c81839fa5b6f5420b4bb60bcbacd32815481a789ea2706ba88dd898c08cda0e",
+    "ipad/prototype.py": "be4a09bf143bd62382c086cac7880b2bb7432adc0677836c88dff459e0b08fe5",
+    "ipad/__init__.py": "8ae9b9e2d92e308e0486dc3d05f30876c2d4b69ef5f2db1179a9adb7189697ba",
+    "ipad/vendor/VST_block.py": "6c940b3501fa2f191c4288222269233f097b46ff561fcbdb8b541bf05eab6fb9",
+    "ipad/vendor/reconstruction_model.py": "7b2c21c94e5d7852ed44a0cd4fda0476ada38067322ef286ba9f96fcb4d2dacf",
+    "ipad/vendor/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
