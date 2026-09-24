@@ -1,0 +1,70 @@
+{
+  "metrics": {
+    "phase_error": {
+      "auroc": 55.909172732996716,
+      "auprc": 64.20882529735246,
+      "frames": 7793
+    },
+    "conditional_nn": {
+      "auroc": 80.89379553452892,
+      "auprc": 83.88610751281209,
+      "frames": 7793
+    },
+    "conditional_soft": {
+      "auroc": 79.42757545000117,
+      "auprc": 83.03629140724765,
+      "frames": 7793
+    },
+    "unconditional_nn": {
+      "auroc": 79.33121279576937,
+      "auprc": 83.21481845099652,
+      "frames": 7793
+    },
+    "unconditional_soft": {
+      "auroc": 71.00689356607236,
+      "auprc": 77.76831852890416,
+      "frames": 7793
+    },
+    "conditional_nn_with_phase": {
+      "auroc": 81.12161049829129,
+      "auprc": 83.71143154530756,
+      "frames": 7793
+    },
+    "conditional_soft_with_phase": {
+      "auroc": 79.75032819286893,
+      "auprc": 82.95618358127655,
+      "frames": 7793
+    },
+    "unconditional_nn_with_phase": {
+      "auroc": 79.95557758104846,
+      "auprc": 83.29083821242821,
+      "frames": 7793
+    },
+    "unconditional_soft_with_phase": {
+      "auroc": 72.21590179504624,
+      "auprc": 78.31537892875758,
+      "frames": 7793
+    }
+  },
+  "excluded_videos": [],
+  "missing_videos": [],
+  "label_shift": 0,
+  "policy": "strict",
+  "frames": 7793,
+  "paper_auc": 76.7,
+  "paper_comparable_label_coverage": true,
+  "scene": "R04",
+  "diagnostic": false,
+  "median_train_period": 385.0,
+  "cache_matching_seconds": 0.9886662235949188,
+  "matching_wall_seconds": 2.5262346391100436,
+  "test_feature_extraction_seconds": 14.714059492805973,
+  "offline_extract_then_match_seconds": 15.702725716400892,
+  "efficiency_note": "Offline cache accounting; not measured streaming latency",
+  "parameters": 6394568,
+  "memory_prototypes_per_position": 200,
+  "conditional_bytes": 99532800,
+  "unconditional_bytes": 99532800,
+  "peak_gb": 0.71700992,
+  "seconds": 63.38681083288975
+}

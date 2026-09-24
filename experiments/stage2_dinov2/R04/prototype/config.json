@@ -1,0 +1,13 @@
+{
+  "scene": "R04",
+  "seed": 0,
+  "epochs": 50,
+  "bins": 20,
+  "k": 10,
+  "max_fit_frames": 512,
+  "kmeans_iterations": 20,
+  "temperature": 0.1,
+  "diagnostic": false,
+  "fallback": "nearest occupied circular phase bin",
+  "cache_dtype": "float16"
+}

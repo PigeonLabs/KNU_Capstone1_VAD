@@ -1,0 +1,35 @@
+{
+  "records": [
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "01",
+      "frames": 207,
+      "signature": "9a321dfdfe43594aa7f7ffd77033cfd262e114b3af97ff38b4aaba21d497e25f",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vitb14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "gpu_seconds": 1.2087416159920394,
+      "wall_seconds": 1.5859349719248712
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "01",
+      "frames": 230,
+      "signature": "212930383cc4d905245bb8049538ad6dedc9fda187688a033843d993a74a953b",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vitb14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "gpu_seconds": 1.0628267398569733,
+      "wall_seconds": 1.408425385132432
+    }
+  ],
+  "seconds_this_run": 3.002699390053749,
+  "peak_gb": 0.8546816,
+  "limited": true
+}

@@ -1,0 +1,20 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/torch/functional.py:505: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at /pytorch/aten/src/ATen/native/TensorShape.cpp:4381.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+{"scene": "R01", "evaluation_step": 0, "steps": 865}
+{"scene": "R01", "evaluation_step": 100, "steps": 865}
+{"scene": "R01", "evaluation_step": 200, "steps": 865}
+{"scene": "R01", "evaluation_step": 300, "steps": 865}
+{"scene": "R01", "evaluation_step": 400, "steps": 865}
+{"scene": "R01", "evaluation_step": 500, "steps": 865}
+{"scene": "R01", "evaluation_step": 600, "steps": 865}
+{"scene": "R01", "evaluation_step": 700, "steps": 865}
+{"scene": "R01", "evaluation_step": 800, "steps": 865}
+{"metrics": {"negative_psnr": {"auroc": 82.33805182923305, "auprc": 62.22703266466072, "frames": 3400}, "phase_error": {"auroc": 68.5626807292838, "auprc": 61.489332154424524, "frames": 3400}, "dino_patch6": {"auroc": 87.61226055526153, "auprc": 76.26729903349404, "frames": 3400}, "dino_patch12": {"auroc": 92.14031585688384, "auprc": 83.40311720386838, "frames": 3400}, "dino_cls": {"auroc": 91.855326313214, "auprc": 82.3142369657481, "frames": 3400}, "dino_multilevel": {"auroc": 92.48757343394684, "auprc": 84.3995940885874, "frames": 3400}, "negative_psnr_with_phase": {"auroc": 88.12614433129653, "auprc": 78.03341366320596, "frames": 3400}, "dino_patch6_with_phase": {"auroc": 89.39373425816002, "auprc": 79.47307791671825, "frames": 3400}, "dino_patch12_with_phase": {"auroc": 92.82252286424747, "auprc": 84.28945059792879, "frames": 3400}, "dino_cls_with_phase": {"auroc": 92.63584930501864, "auprc": 83.96347500596468, "frames": 3400}, "dino_multilevel_with_phase": {"auroc": 93.00956939762067, "auprc": 84.99293885619227, "frames": 3400}}, "excluded_videos": [], "missing_videos": [], "label_shift": 0, "policy": "strict", "frames": 3400, "paper_auc": 84.4, "paper_comparable_label_coverage": true, "scene": "R01", "checkpoint": "runs/paper/R01/seed0/model.pt", "checkpoint_epoch": 50, "complete_training_protocol": true, "seconds": 43.050086561823264, "inference_seconds": 41.9077681764029, "clips": 3460, "inference_clips_per_second": 82.56225875440988, "peak_gb": 2.434270208, "protocol": "offline scene-wide normalization; centered clip and window; no test-phase oracle"}

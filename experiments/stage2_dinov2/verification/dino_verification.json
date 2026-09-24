@@ -1,0 +1,40 @@
+{
+  "frozen": true,
+  "input_reconstruction_identity_max": 2.8882498170901272e-08,
+  "changed_image_distances": {
+    "dino_patch6": [
+      0.2761271595954895,
+      0.2761271595954895
+    ],
+    "dino_patch12": [
+      0.2984774112701416,
+      0.2984774112701416
+    ],
+    "dino_cls": [
+      0.2968252897262573,
+      0.2968252897262573
+    ],
+    "dino_multilevel": [
+      0.28730228543281555,
+      0.28730228543281555
+    ]
+  },
+  "shapes": {
+    "patch6": [
+      2,
+      324,
+      768
+    ],
+    "patch12": [
+      2,
+      324,
+      768
+    ],
+    "cls": [
+      2,
+      768
+    ]
+  },
+  "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73"
+}

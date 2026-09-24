@@ -208,6 +208,8 @@ def publish(stage,message,push=True):
             if head.returncode or git('merge-base','--is-ancestor',remote.stdout.strip(),'HEAD',check=False).returncode:
                 raise RuntimeError('Remote main changed; reconcile it before publishing. No force push attempted.')
         paths=['AGENTS.md','.gitignore','README.md','REPRODUCTION.md','requirements.txt','requirements.lock.txt','ipad','scripts','tests','docs','experiments']
+        estimated=sum(f.stat().st_size for name in paths for f in ([ROOT/name] if (ROOT/name).is_file() else (ROOT/name).rglob('*')) if f.is_file())
+        ensure_room(3*estimated)
         git('add','--',*paths)
         for path in git('diff','--cached','--name-only').stdout.splitlines():
             if Path(path).suffix in {'.pt','.pth','.npy','.jpg','.pdf','.docx','.hwp'}:

@@ -1,0 +1,14 @@
+{
+  "scene": "R01",
+  "split": "testing",
+  "video": "03",
+  "frames": 409,
+  "signature": "01f5240cb3629216f11570d77ddf3b7e7a778c3ba99918bfab32c7e74c7fbfc8",
+  "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "model": "dinov2_vitb14",
+  "input_size": 252,
+  "cache_dtype": "float16",
+  "compute_dtype": "float32",
+  "gpu_seconds": 0.7419923068955541,
+  "wall_seconds": 1.5533985130023211
+}

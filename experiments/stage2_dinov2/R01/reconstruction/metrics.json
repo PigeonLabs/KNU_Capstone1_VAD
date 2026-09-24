@@ -1,0 +1,76 @@
+{
+  "metrics": {
+    "negative_psnr": {
+      "auroc": 82.33805182923305,
+      "auprc": 62.22703266466072,
+      "frames": 3400
+    },
+    "phase_error": {
+      "auroc": 68.5626807292838,
+      "auprc": 61.489332154424524,
+      "frames": 3400
+    },
+    "dino_patch6": {
+      "auroc": 87.61226055526153,
+      "auprc": 76.26729903349404,
+      "frames": 3400
+    },
+    "dino_patch12": {
+      "auroc": 92.14031585688384,
+      "auprc": 83.40311720386838,
+      "frames": 3400
+    },
+    "dino_cls": {
+      "auroc": 91.855326313214,
+      "auprc": 82.3142369657481,
+      "frames": 3400
+    },
+    "dino_multilevel": {
+      "auroc": 92.48757343394684,
+      "auprc": 84.3995940885874,
+      "frames": 3400
+    },
+    "negative_psnr_with_phase": {
+      "auroc": 88.12614433129653,
+      "auprc": 78.03341366320596,
+      "frames": 3400
+    },
+    "dino_patch6_with_phase": {
+      "auroc": 89.39373425816002,
+      "auprc": 79.47307791671825,
+      "frames": 3400
+    },
+    "dino_patch12_with_phase": {
+      "auroc": 92.82252286424747,
+      "auprc": 84.28945059792879,
+      "frames": 3400
+    },
+    "dino_cls_with_phase": {
+      "auroc": 92.63584930501864,
+      "auprc": 83.96347500596468,
+      "frames": 3400
+    },
+    "dino_multilevel_with_phase": {
+      "auroc": 93.00956939762067,
+      "auprc": 84.99293885619227,
+      "frames": 3400
+    }
+  },
+  "excluded_videos": [],
+  "missing_videos": [],
+  "label_shift": 0,
+  "policy": "strict",
+  "frames": 3400,
+  "paper_auc": 84.4,
+  "paper_comparable_label_coverage": true,
+  "scene": "R01",
+  "checkpoint": "runs/paper/R01/seed0/model.pt",
+  "checkpoint_epoch": 50,
+  "complete_training_protocol": true,
+  "seconds": 43.050086561823264,
+  "inference_seconds": 41.9077681764029,
+  "clips": 3460,
+  "inference_clips_per_second": 82.56225875440988,
+  "peak_gb": 2.434270208,
+  "protocol": "offline scene-wide normalization; centered clip and window; no test-phase oracle"
+}

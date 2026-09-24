@@ -1,0 +1,76 @@
+{
+  "metrics": {
+    "negative_psnr": {
+      "auroc": 43.18067314654264,
+      "auprc": 37.448079523255856,
+      "frames": 11682
+    },
+    "phase_error": {
+      "auroc": 51.2215124122752,
+      "auprc": 44.28745776829056,
+      "frames": 11682
+    },
+    "dino_patch6": {
+      "auroc": 44.176358914597955,
+      "auprc": 36.94349294429312,
+      "frames": 11682
+    },
+    "dino_patch12": {
+      "auroc": 53.080504002898095,
+      "auprc": 42.66032541563089,
+      "frames": 11682
+    },
+    "dino_cls": {
+      "auroc": 57.60752578713893,
+      "auprc": 49.96240219194652,
+      "frames": 11682
+    },
+    "dino_multilevel": {
+      "auroc": 51.35902119856806,
+      "auprc": 41.56845349657499,
+      "frames": 11682
+    },
+    "negative_psnr_with_phase": {
+      "auroc": 46.89301099950177,
+      "auprc": 41.158200285563886,
+      "frames": 11682
+    },
+    "dino_patch6_with_phase": {
+      "auroc": 47.21339839394014,
+      "auprc": 39.17492765127697,
+      "frames": 11682
+    },
+    "dino_patch12_with_phase": {
+      "auroc": 54.02982150673091,
+      "auprc": 43.591354848597476,
+      "frames": 11682
+    },
+    "dino_cls_with_phase": {
+      "auroc": 57.93831950348016,
+      "auprc": 49.32257324973238,
+      "frames": 11682
+    },
+    "dino_multilevel_with_phase": {
+      "auroc": 52.697519526830206,
+      "auprc": 42.54591392039151,
+      "frames": 11682
+    }
+  },
+  "excluded_videos": [],
+  "missing_videos": [],
+  "label_shift": 0,
+  "policy": "strict",
+  "frames": 11682,
+  "paper_auc": 43.5,
+  "paper_comparable_label_coverage": true,
+  "scene": "R03",
+  "checkpoint": "runs/paper/R03/seed0/model.pt",
+  "checkpoint_epoch": 50,
+  "complete_training_protocol": true,
+  "seconds": 144.21309481211938,
+  "inference_seconds": 141.00001681852154,
+  "clips": 11750,
+  "inference_clips_per_second": 83.33332339330997,
+  "peak_gb": 2.434270208,
+  "protocol": "offline scene-wide normalization; centered clip and window; no test-phase oracle"
+}

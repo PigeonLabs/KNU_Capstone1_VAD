@@ -1,0 +1,14 @@
+{
+  "scene": "R02",
+  "split": "training",
+  "video": "17",
+  "frames": 574,
+  "signature": "a52d288c508c465467f8a6c007ff43bd0b903c2121c00906ff1653d30b80b3a6",
+  "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "model": "dinov2_vitb14",
+  "input_size": 252,
+  "cache_dtype": "float16",
+  "compute_dtype": "float32",
+  "gpu_seconds": 1.0311585739254951,
+  "wall_seconds": 2.389806924154982
+}

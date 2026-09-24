@@ -7,6 +7,11 @@ import time
 
 root=Path(__file__).resolve().parents[1]
 (root/'runs').mkdir(exist_ok=True)
+if (root/'runs/disk_pause.json').exists():
+    raise SystemExit('Disk-space pause is latched. Do not restart without explicit user direction.')
+with (root/'runs/disk_guard.log').open('a') as guard_log:
+    subprocess.Popen([sys.executable,str(root/'scripts/disk_guard.py')],cwd=root,
+          stdin=subprocess.DEVNULL,stdout=guard_log,stderr=subprocess.STDOUT,start_new_session=True)
 with (root/'runs/suite_console.log').open('a') as log:
     process=subprocess.Popen([sys.executable,str(root/'scripts/run_suite.py'),*sys.argv[1:]],
             cwd=root,stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,

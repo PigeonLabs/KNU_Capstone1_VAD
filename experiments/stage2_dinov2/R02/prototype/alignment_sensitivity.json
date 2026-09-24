@@ -1,0 +1,170 @@
+{
+  "-1": {
+    "metrics": {
+      "phase_error": {
+        "auroc": 55.49663477310467,
+        "auprc": 42.870230440041354,
+        "frames": 9333
+      },
+      "conditional_nn": {
+        "auroc": 85.21103850925181,
+        "auprc": 75.98295937016088,
+        "frames": 9333
+      },
+      "conditional_soft": {
+        "auroc": 81.87634301258171,
+        "auprc": 72.94074880616776,
+        "frames": 9333
+      },
+      "unconditional_nn": {
+        "auroc": 85.85736067878429,
+        "auprc": 74.17158025224535,
+        "frames": 9333
+      },
+      "unconditional_soft": {
+        "auroc": 73.64688056338218,
+        "auprc": 58.360079131959374,
+        "frames": 9333
+      },
+      "conditional_nn_with_phase": {
+        "auroc": 83.2161377403824,
+        "auprc": 73.82620666461935,
+        "frames": 9333
+      },
+      "conditional_soft_with_phase": {
+        "auroc": 80.57844627148503,
+        "auprc": 71.6639869384595,
+        "frames": 9333
+      },
+      "unconditional_nn_with_phase": {
+        "auroc": 83.97900367441497,
+        "auprc": 72.80624016918118,
+        "frames": 9333
+      },
+      "unconditional_soft_with_phase": {
+        "auroc": 74.17636643623915,
+        "auprc": 60.62748795874082,
+        "frames": 9333
+      }
+    },
+    "excluded_videos": [],
+    "missing_videos": [],
+    "label_shift": -1,
+    "policy": "common",
+    "frames": 9333,
+    "paper_auc": 75.4,
+    "paper_comparable_label_coverage": false
+  },
+  "0": {
+    "metrics": {
+      "phase_error": {
+        "auroc": 55.53180080545459,
+        "auprc": 42.8701716790023,
+        "frames": 9333
+      },
+      "conditional_nn": {
+        "auroc": 85.18776725081975,
+        "auprc": 75.98732512241935,
+        "frames": 9333
+      },
+      "conditional_soft": {
+        "auroc": 81.85698016718294,
+        "auprc": 72.95436517800451,
+        "frames": 9333
+      },
+      "unconditional_nn": {
+        "auroc": 85.89146494291096,
+        "auprc": 74.23499021349791,
+        "frames": 9333
+      },
+      "unconditional_soft": {
+        "auroc": 73.69217711990437,
+        "auprc": 58.43607700158599,
+        "frames": 9333
+      },
+      "conditional_nn_with_phase": {
+        "auroc": 83.15994945092704,
+        "auprc": 73.79856919129095,
+        "frames": 9333
+      },
+      "conditional_soft_with_phase": {
+        "auroc": 80.52744521654628,
+        "auprc": 71.64538307020655,
+        "frames": 9333
+      },
+      "unconditional_nn_with_phase": {
+        "auroc": 83.98554566333011,
+        "auprc": 72.82811845815762,
+        "frames": 9333
+      },
+      "unconditional_soft_with_phase": {
+        "auroc": 74.18933874097394,
+        "auprc": 60.67222138630019,
+        "frames": 9333
+      }
+    },
+    "excluded_videos": [],
+    "missing_videos": [],
+    "label_shift": 0,
+    "policy": "common",
+    "frames": 9333,
+    "paper_auc": 75.4,
+    "paper_comparable_label_coverage": false
+  },
+  "1": {
+    "metrics": {
+      "phase_error": {
+        "auroc": 55.48126227232628,
+        "auprc": 42.8148020073834,
+        "frames": 9333
+      },
+      "conditional_nn": {
+        "auroc": 85.08739635384771,
+        "auprc": 75.8194581783757,
+        "frames": 9333
+      },
+      "conditional_soft": {
+        "auroc": 81.76278825145108,
+        "auprc": 72.81748318411907,
+        "frames": 9333
+      },
+      "unconditional_nn": {
+        "auroc": 85.85762678637114,
+        "auprc": 74.0869805307635,
+        "frames": 9333
+      },
+      "unconditional_soft": {
+        "auroc": 73.69503078160292,
+        "auprc": 58.342670740915125,
+        "frames": 9333
+      },
+      "conditional_nn_with_phase": {
+        "auroc": 83.02246777707394,
+        "auprc": 73.60176535395675,
+        "frames": 9333
+      },
+      "conditional_soft_with_phase": {
+        "auroc": 80.41122240011131,
+        "auprc": 71.48682060064584,
+        "frames": 9333
+      },
+      "unconditional_nn_with_phase": {
+        "auroc": 83.89666319203272,
+        "auprc": 72.63851927688657,
+        "frames": 9333
+      },
+      "unconditional_soft_with_phase": {
+        "auroc": 74.14154056626346,
+        "auprc": 60.53717500137799,
+        "frames": 9333
+      }
+    },
+    "excluded_videos": [],
+    "missing_videos": [],
+    "label_shift": 1,
+    "policy": "common",
+    "frames": 9333,
+    "paper_auc": 75.4,
+    "paper_comparable_label_coverage": false
+  }
+}

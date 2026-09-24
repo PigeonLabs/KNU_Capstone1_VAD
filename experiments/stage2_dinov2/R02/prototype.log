@@ -1,0 +1,23 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"fit_phase": 0, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 1, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 2, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 3, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 4, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 5, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 6, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 7, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 8, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 9, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 10, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 11, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 12, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 13, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 14, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 15, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 16, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 17, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 18, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 19, "samples": 424, "prototypes_per_position": 10}
+{"metrics": {"phase_error": {"auroc": 55.60451125159817, "auprc": 46.20846035633366, "frames": 7478}, "conditional_nn": {"auroc": 84.92866523400191, "auprc": 75.58236194671095, "frames": 7478}, "conditional_soft": {"auroc": 81.4191221896272, "auprc": 72.21071539585144, "frames": 7478}, "unconditional_nn": {"auroc": 85.57257476640238, "auprc": 72.33802209188553, "frames": 7478}, "unconditional_soft": {"auroc": 73.45708622645705, "auprc": 54.837562209935, "frames": 7478}, "conditional_nn_with_phase": {"auroc": 83.79042950885118, "auprc": 74.59279645730072, "frames": 7478}, "conditional_soft_with_phase": {"auroc": 80.81093847121784, "auprc": 71.86419594982475, "frames": 7478}, "unconditional_nn_with_phase": {"auroc": 84.44768341646325, "auprc": 72.5922708637966, "frames": 7478}, "unconditional_soft_with_phase": {"auroc": 73.94138044955858, "auprc": 57.98661395435668, "frames": 7478}}, "excluded_videos": ["12", "13", "14"], "missing_videos": [], "label_shift": 0, "policy": "strict", "frames": 7478, "paper_auc": 75.4, "paper_comparable_label_coverage": false, "scene": "R02", "diagnostic": false, "median_train_period": 590.5, "cache_matching_seconds": 1.0982140430714935, "matching_wall_seconds": 2.7965807341970503, "test_feature_extraction_seconds": 17.278571280650795, "offline_extract_then_match_seconds": 18.376785323722288, "efficiency_note": "Offline cache accounting; not measured streaming latency", "parameters": 6394568, "memory_prototypes_per_position": 200, "conditional_bytes": 99532800, "unconditional_bytes": 99532800, "peak_gb": 0.772156416, "seconds": 92.38595490390435}

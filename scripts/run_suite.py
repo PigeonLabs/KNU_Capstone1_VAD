@@ -19,6 +19,8 @@ def main():
     p.add_argument('--seed',type=int,default=0)
     a=p.parse_args()
     os.chdir(ROOT)
+    if (ROOT/'runs/disk_pause.json').exists():
+        raise SystemExit('Disk-space pause is latched; explicit user-directed resume is required')
     lock=(ROOT/'runs/suite.lock').open('w')
     try: fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     except BlockingIOError: raise SystemExit('Another suite is already running')
@@ -28,6 +30,8 @@ def main():
     def execute(name,args,marker,force=False):
         if Path(marker).exists() and not force:
             completed.append(name+' (existing)'); return
+        if (ROOT/'runs/disk_pause.json').exists():
+            raise SystemExit('Disk-space pause is latched; refusing to start the next step')
         cmd=[sys.executable,*args]
         status={'state':'running','pid':os.getpid(),'step':name,'command':cmd,'started_at':started,
                 'updated_at':time.time(),'completed':completed,'stage':a.stage,'seed':a.seed}
