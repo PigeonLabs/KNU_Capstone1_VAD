@@ -109,6 +109,8 @@ def snapshot(stage):
         copy_analysis(ROOT/'runs/stage4'/stage,dest)
         copy_analysis(ROOT/'runs/stage4/status.json',dest/'runner_status.json')
         copy_analysis(ROOT/'runs/stage4/verification.txt',dest/'verification.txt')
+        copy_analysis(ROOT/'runs/stage4/research_findings.md',ROOT/'experiments/stage4_summary/research_findings.md')
+        copy_analysis(ROOT/'runs/stage4/final_verification.json',ROOT/'experiments/stage4_summary/final_verification.json')
     elif stage=='stage3':
         for scene in SCENES:
             for source in (ROOT/'runs/stage3'/scene).glob('seed*'):
@@ -212,6 +214,8 @@ def make_readme():
     for st in ['4-1','4-2','4-3']:
         path=ROOT/'experiments'/STAGES[st]/'results.md'
         if path.exists():text += ['', f'## {st} 추가 실험', '', f'[전체 기록](experiments/{STAGES[st]}/) · [고정 규약](docs/stage4_protocol.md)', '', path.read_text()]
+    if (ROOT/'experiments/stage4_summary/research_findings.md').exists():
+        text += ['', '## 4단계 통합 해석', '', '[세 실험의 통합 보고서와 최종 검산](experiments/stage4_summary/research_findings.md)']
     (ROOT/'README.md').write_text('\n'.join(text))
 
 

@@ -1,0 +1,140 @@
+{
+  "-1": {
+    "metrics": {
+      "phase_error": {
+        "auroc": 55.894976626942714,
+        "auprc": 43.478070907674635,
+        "frames": 9333
+      },
+      "unconditional": {
+        "auroc": 80.69485299388496,
+        "auprc": 64.95348193782678,
+        "frames": 9333
+      },
+      "legacy_hard": {
+        "auroc": 78.17611933879084,
+        "auprc": 62.12183072526166,
+        "frames": 9333
+      },
+      "top3_weighted": {
+        "auroc": 81.63177820769172,
+        "auprc": 65.43956304933394,
+        "frames": 9333
+      },
+      "unconditional_with_phase": {
+        "auroc": 81.11616784747764,
+        "auprc": 66.2168058017702,
+        "frames": 9333
+      },
+      "legacy_hard_with_phase": {
+        "auroc": 78.51398082422601,
+        "auprc": 63.022457469410675,
+        "frames": 9333
+      },
+      "top3_weighted_with_phase": {
+        "auroc": 81.41342533988549,
+        "auprc": 65.89675145829479,
+        "frames": 9333
+      }
+    },
+    "excluded_videos": [],
+    "missing_videos": [],
+    "label_shift": -1,
+    "policy": "common",
+    "frames": 9333,
+    "paper_auc": 75.4,
+    "paper_comparable_label_coverage": false
+  },
+  "0": {
+    "metrics": {
+      "phase_error": {
+        "auroc": 55.86250673232285,
+        "auprc": 43.447361854243894,
+        "frames": 9333
+      },
+      "unconditional": {
+        "auroc": 80.76467066688731,
+        "auprc": 65.06410770785286,
+        "frames": 9333
+      },
+      "legacy_hard": {
+        "auroc": 78.18518182805094,
+        "auprc": 62.22236893223996,
+        "frames": 9333
+      },
+      "top3_weighted": {
+        "auroc": 81.64808844190597,
+        "auprc": 65.5558084031808,
+        "frames": 9333
+      },
+      "unconditional_with_phase": {
+        "auroc": 81.18755013011432,
+        "auprc": 66.3170906747544,
+        "frames": 9333
+      },
+      "legacy_hard_with_phase": {
+        "auroc": 78.51713936092735,
+        "auprc": 63.11738935728213,
+        "frames": 9333
+      },
+      "top3_weighted_with_phase": {
+        "auroc": 81.42191664883678,
+        "auprc": 66.002342060008,
+        "frames": 9333
+      }
+    },
+    "excluded_videos": [],
+    "missing_videos": [],
+    "label_shift": 0,
+    "policy": "common",
+    "frames": 9333,
+    "paper_auc": 75.4,
+    "paper_comparable_label_coverage": false
+  },
+  "1": {
+    "metrics": {
+      "phase_error": {
+        "auroc": 55.857278971648874,
+        "auprc": 43.42993055095328,
+        "frames": 9333
+      },
+      "unconditional": {
+        "auroc": 80.75161180504246,
+        "auprc": 64.95181338839488,
+        "frames": 9333
+      },
+      "legacy_hard": {
+        "auroc": 78.13972349783565,
+        "auprc": 62.19162688776058,
+        "frames": 9333
+      },
+      "top3_weighted": {
+        "auroc": 81.58530524957816,
+        "auprc": 65.50217521165848,
+        "frames": 9333
+      },
+      "unconditional_with_phase": {
+        "auroc": 81.17598792555923,
+        "auprc": 66.19661582841255,
+        "frames": 9333
+      },
+      "legacy_hard_with_phase": {
+        "auroc": 78.47179696895279,
+        "auprc": 63.08247312392881,
+        "frames": 9333
+      },
+      "top3_weighted_with_phase": {
+        "auroc": 81.360991103321,
+        "auprc": 65.93969084152376,
+        "frames": 9333
+      }
+    },
+    "excluded_videos": [],
+    "missing_videos": [],
+    "label_shift": 1,
+    "policy": "common",
+    "frames": 9333,
+    "paper_auc": 75.4,
+    "paper_comparable_label_coverage": false
+  }
+}

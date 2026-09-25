@@ -1,0 +1,55 @@
+{
+  "metrics": {
+    "phase_error": {
+      "auroc": 45.58614938136643,
+      "auprc": 38.145180341621305,
+      "frames": 3400
+    },
+    "unconditional": {
+      "auroc": 85.81868384138008,
+      "auprc": 68.07192609916244,
+      "frames": 3400
+    },
+    "legacy_hard": {
+      "auroc": 84.33709999921676,
+      "auprc": 72.7272796789393,
+      "frames": 3400
+    },
+    "top3_weighted": {
+      "auroc": 87.29594118346932,
+      "auprc": 75.5422199176419,
+      "frames": 3400
+    },
+    "unconditional_with_phase": {
+      "auroc": 83.84346871921797,
+      "auprc": 65.6684724828548,
+      "frames": 3400
+    },
+    "legacy_hard_with_phase": {
+      "auroc": 83.52778340347112,
+      "auprc": 71.89690325869923,
+      "frames": 3400
+    },
+    "top3_weighted_with_phase": {
+      "auroc": 86.20521559583923,
+      "auprc": 74.45853038084488,
+      "frames": 3400
+    }
+  },
+  "excluded_videos": [],
+  "missing_videos": [],
+  "label_shift": 0,
+  "policy": "strict",
+  "frames": 3400,
+  "paper_auc": 84.4,
+  "paper_comparable_label_coverage": true,
+  "scene": "R01",
+  "seed": 0,
+  "k": 5,
+  "seconds": 13.425190210342407,
+  "all_arms_cache_seconds": 0.4202350911218673,
+  "prototypes_per_position": 95,
+  "single_bank_bytes": 47278080,
+  "combined_experiment_peak_gb": 1.78657792,
+  "peak_note": "Peak includes comparison banks and DINO benchmark; not per-method deployment peak"
+}
