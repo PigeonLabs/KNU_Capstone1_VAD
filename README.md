@@ -98,6 +98,7 @@ uv pip install --python .venv/bin/python -r requirements.lock.txt --extra-index-
 | R02/seed0 | 85.57 | 84.93 | 85.40 | 85.76 | 86.30 | 84.24 | 57.86 | 85.32 |
 | R02/seed1 | 85.37 | 85.46 | 85.40 | 85.75 | 86.60 | 84.20 | 56.42 | 85.36 |
 | R03/seed0 | 62.34 | 55.55 | 57.32 | 58.01 | 55.53 | 55.17 | 51.47 | 59.94 |
+| R03/seed1 | 61.31 | 57.27 | 58.17 | 58.21 | 56.41 | 55.83 | 51.49 | 59.79 |
 | R04/seed0 | 79.33 | 80.89 | 80.53 | 79.95 | 80.57 | 79.33 | 63.24 | 78.93 |
 
 | 정상 holdout | 20-bin 정확도 | ±1 정확도 | 원형 MAE(bin) | cutoff 활성 |
@@ -107,6 +108,7 @@ uv pip install --python .venv/bin/python -r requirements.lock.txt --extra-index-
 | R02/seed0 | 76.99% | 93.11% | 0.33 | True |
 | R02/seed1 | 76.84% | 93.23% | 0.33 | True |
 | R03/seed0 | 64.87% | 95.85% | 0.42 | True |
+| R03/seed1 | 63.52% | 96.17% | 0.43 | True |
 | R04/seed0 | 50.61% | 84.03% | 0.71 | False |
 
 원시 CSV에는 frame ID, 예측 확률, 모든 비교 점수와 정답이 포함됩니다. 세부 지표·AUPRC·R02 민감도는 장면/seed별 JSON에 있습니다.
