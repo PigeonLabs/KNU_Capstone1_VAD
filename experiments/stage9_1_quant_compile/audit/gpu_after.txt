@@ -1,0 +1,29 @@
+Sat Sep 26 00:31:08 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 610.43.02              KMD Version: 610.43.02     CUDA UMD Version: 13.3     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:0B:00.0  On |                  Off |
+| 30%   56C    P8             36W /  300W |    3392MiB /  97887MiB |     13%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2374      G   /usr/lib/xorg/Xorg                      843MiB |
+|    0   N/A  N/A            2555      G   /usr/bin/gnome-shell                    414MiB |
+|    0   N/A  N/A            3060      G   ...exec/xdg-desktop-portal-gnome         13MiB |
+|    0   N/A  N/A            3405      G   ...bin/snapd-desktop-integration         16MiB |
+|    0   N/A  N/A            4663      G   .../8803/usr/lib/firefox/firefox        451MiB |
+|    0   N/A  N/A           13826      G   ...rack-uuid=3190708988185955192        416MiB |
+|    0   N/A  N/A           84927      G   /opt/LM-Studio/lm-studio                 94MiB |
+|    0   N/A  N/A         4019965      G   ...rack-uuid=3190708988185955192        315MiB |
+|    0   N/A  N/A         4045097      G   /usr/bin/nautilus                        32MiB |
+|    0   N/A  N/A         4189740      C   .../cmm/ComfyUI/.venv/bin/python        550MiB |
++-----------------------------------------------------------------------------------------+

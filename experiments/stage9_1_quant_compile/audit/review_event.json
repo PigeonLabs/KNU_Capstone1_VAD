@@ -1,0 +1,9 @@
+{
+  "time": 1790350268.863485,
+  "reason": "User questioned anomalous stage9 timings/features",
+  "original_results_preserved": true,
+  "new_conditions": 4,
+  "scope": "diagnostic only; no accuracy evaluation",
+  "command_sources": "each audit/*/config.json command field and audit/results.md cache environment",
+  "verification": "2 existing kernel-classification tests passed; four diagnostic output audits passed"
+}

@@ -28,3 +28,9 @@ TorchAO0.17.0/torch2.11.0+cu128 고정. quantize_의 set_inductor_config=False�
 ## 정상 특징 진단 후 추가된 수치 보존 대조군
 
 초기12조건은 그대로 보존한다. BF16/default에서 평균patch cosine차이0.000303, 최대절대차이0.427로고정수치선(.05)을넘었다. 설치된Inductor config의설명상fusion이BF16 downcast/upcast를생략할수있다. 테스트라벨없이원인분리를위해4경로모두reduce-overhead-precise 조건을추가한다: fullgraph=True,dynamic=False,options={triton.cudagraphs:True,emulate_precision_casts:True}. 기존reduce-overhead 대비해당option만변경하며기존허용선은바꾸지않는다. 성공을가정하지않고수치·속도·메모리 모두공개한다. 원규약과실행코드는source_versions에원해시와함께보존한다. 기본12조건을완료한뒤추가4조건을순차실행한다.
+
+## 사용자 이상값 지적 후 원인 분리 감사 (9-1 추가 진단)
+
+기존16조건/허용선/결과는 변경하지 않는다. 정상384frame 중 균등16frame으로 W8A8 safe_int_mm의 텐서 repr 검사를 타입 검사로만 바꾼 A-B-A 대조 실험을 수행한다. 라이브러리 파일은 변경하지 않고 프로세스 내부 함수만 임시 교체하며 원복한다. W8A16은 동일16frame에서 원래 WOQ lowering과 해당 패턴 등록만 끈 별도 프로세스를 비교한다. FP32 kernel 이름은 내부 구현 자료형과 모델 활성값 자료형을 구분한다.
+
+특징 차이는 기존 BF16 precise 최대오차 상위8frame과 균등8frame을 대상으로 eager 반복, eager 전처리/백본 분리, 전처리만 compile, 동일 전처리 텐서에서 백본만 compile, 전체 compile을 비교한다. 이 표본은 원인 진단용 편향 표본이며 성능 대표 표본이 아니다. CPU feature를 즉시 보존해 출력 버퍼 재사용을 배제한다. 입력은 미리 GPU에 올린 model-only timing을 사용하며 기존JPEG포함시간과 직접 비교하지 않는다. 모든 조건 동일 seed0, batch1, CPU8thread, compiler2worker. 테스트 라벨/전체AUROC/모델선택 없음. 원본 결과는 보존하고 실패와 재시작도 기록한다.

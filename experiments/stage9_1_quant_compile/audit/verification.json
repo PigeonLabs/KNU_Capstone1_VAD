@@ -1,0 +1,17 @@
+{
+  "state": "passed",
+  "diagnoses": [
+    "repr",
+    "numeric",
+    "woq_original",
+    "woq_bypass"
+  ],
+  "repr_features_exact": true,
+  "woq_original_calls": 144,
+  "woq_bypass_calls": 0,
+  "original_results_preserved": true,
+  "test_labels_used": false,
+  "numeric_equivalence_resolved": false,
+  "diagnostic_source_sha256": "d03c47840827017b29b6f4b000f6912edf35871324f9c1ed32688bfb585110d6",
+  "report_source_sha256": "7b27fa02df1cfe61eb4d30dcef33bddd2af96a1a0981517165e07dfdfc36259e"
+}

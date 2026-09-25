@@ -98,6 +98,9 @@ def main():
         'numeric_failed_conditions':numeric_failures,'input_frames':len(samples),'same_input_hashes':True,'timed_calls_per_condition':1152,'test_labels_used':False,
         'protocol_sha256':digest(ROOT/'docs/stage9_protocol.md')}
     write_json(out/'verification.json',verification);print(json.dumps(verification),flush=True)
+    if (out/'audit/verification.json').exists():
+        from scripts.summarize_stage9_audit import main as audit_summary
+        audit_summary()
 
 
 if __name__=='__main__':main()
