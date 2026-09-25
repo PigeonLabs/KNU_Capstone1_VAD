@@ -20,7 +20,7 @@ R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론
 | 6-2 | 정상 영상 보정 일반화 | 완료 · seed 0·1·2 | [자료](experiments/stage6_2_calibration/) |
 | 7-1 | 오탐·미탐 원인 분해 | 완료 · seed 0·1·2 | [자료](experiments/stage7_1_diagnostics/) |
 | 7-2 | causal 경보 규칙 비교 | 완료 · seed 0·1·2 | [자료](experiments/stage7_2_alerts/) |
-| 7-3 | 전체 영상 batch1 검증 | 진행 전 또는 실행 중 | [자료](experiments/stage7_3_full_stream/) |
+| 7-3 | 전체 영상 batch1 검증 | 완료 · seed 0·1·2 | [자료](experiments/stage7_3_full_stream/) |
 
 ## 1단계 — 논문 방법론 재현
 
@@ -478,3 +478,28 @@ R01–R04, seed 0·1·2. 기존 테스트셋 사후 진단/추가 탐색이며 �
 | S_k5/ewma_hysteresis | 3/12 |
 
 정상 CV 제약은 평균 활성FPR≤1%, 영상최대≤5%, 평균 오경보≤정상1000frame당1회이다. 미충족 시q=.999 fallback이며 보장으로 표현하지 않는다. EWMA 점수의 AUROC도 표시하지만 경보 횟수 감소가 정확도·미탐 개선을 의미하지 않는다. 탐지 지연은 탐지된 구간에 한정되며 미탐·coldstart·선행경보는 별도 파일에 보존했다.
+
+
+## 7-3 실험
+
+[전체 기록](experiments/stage7_3_full_stream/) · [규약](docs/stage7_protocol.md)
+
+# 7-3 결과
+
+R01–R04, seed 0·1·2. 기존 테스트셋 사후 진단/추가 탐색이며 독립 일반화 검증이 아니다.
+
+| 정밀도 | batch1 AUROC ± seed SD | batch 추출 기준선 AUROC | 활성 FPR (%) | 구간 recall (%) |
+|---|---:|---:|---:|---:|
+| fp32 | 81.24 ± 0.12 | 81.24 | 16.85 | 59.70 |
+| bf16 | 81.08 ± 0.10 | 81.06 | 16.47 | 60.34 |
+| bf16_mixed | 81.07 ± 0.11 | 81.06 | 16.43 | 60.34 |
+
+| 정밀도 | 전체영상 capacity FPS 평균 | 가장 긴 영상 paced E2E p95 최댓값(ms) | 최대 기한 초과율(%) | peak allocated 최대 GiB | 실제 단일모델 seed0 AUROC |
+|---|---:|---:|---:|---:|---:|
+| fp32 | 129.1 | 9.03 | 0.00 | 0.553 | 81.29 |
+| bf16 | 238.0 | 6.44 | 0.00 | 0.288 | 81.06 |
+| bf16_mixed | 237.6 | 6.21 | 0.00 | 0.300 | 81.05 |
+
+FP32/BF16 모두 정상 보정·전체 테스트를 원본 JPEG에서 batch1로 다시 추출했다. bf16_mixed는 백본·bank BF16에 head만 FP32로 바꾼 대조이다. mixed의 batch 기준선 열은6단계 전체 BF16이며 동일한 mixed batch 실험이 아니다.
+정확도 패스의 공유 추출 시간은 속도 측정에서 제외했다. 별도 단일 모델 seed0로 전체 유효 테스트 capacity1회와 장면별 가장 긴 영상 전체30FPS 재생을 측정했다. 실제 카메라/네트워크 지연과 새 환경 일반화는 포함하지 않는다.
+normal_calibration_lovo.json에는 보정 영상 하나씩 제외한 모든 통계·임계값·heldout 정상 경보·테스트 민감도를 기록했다. 모델 재학습 분할 검증이 아닌 보정 집합 구성 민감도이다. R02 12·13·14 제외/±1 민감도 유지.

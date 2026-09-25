@@ -1,0 +1,80 @@
+[
+  {
+    "variant": "fp32",
+    "backbone_dtype": "torch.float32",
+    "head_dtype": "torch.float32",
+    "bank_dtype": "torch.float32",
+    "head_max_difference_from_original_fp32": 0.0,
+    "normal_video": "R01/training/01",
+    "valid_frames": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "finite": true
+  },
+  {
+    "variant": "bf16",
+    "backbone_dtype": "torch.bfloat16",
+    "head_dtype": "torch.bfloat16",
+    "bank_dtype": "torch.bfloat16",
+    "head_max_difference_from_original_fp32": 0.00048828125,
+    "normal_video": "R01/training/01",
+    "valid_frames": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "finite": true
+  },
+  {
+    "variant": "bf16_mixed",
+    "backbone_dtype": "torch.bfloat16",
+    "head_dtype": "torch.float32",
+    "bank_dtype": "torch.bfloat16",
+    "head_max_difference_from_original_fp32": 0.0,
+    "normal_video": "R01/training/01",
+    "valid_frames": [
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "finite": true
+  }
+]

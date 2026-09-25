@@ -1,0 +1,327 @@
+[
+  {
+    "heldout_video": "03",
+    "calibration": {
+      "appearance": {
+        "median": 0.016228796914219856,
+        "q995": 0.03888591909781095,
+        "scale": 0.022657122183591095
+      },
+      "temporal": {
+        "median": 2.2027737924438062,
+        "q995": 13.628619252579034,
+        "scale": 11.425845460135228
+      },
+      "threshold": 0.7153796100203422,
+      "quantile": 0.995,
+      "consecutive": 3,
+      "calibration_frames": 2636,
+      "calibration_videos": [
+        "05",
+        "11",
+        "17",
+        "20"
+      ]
+    },
+    "heldout_normal_frames": 688,
+    "heldout_active_fpr": 0.29069767441860467,
+    "heldout_false_alarms_per1000": 2.9069767441860463,
+    "test_metrics": {
+      "appearance_score": {
+        "auroc": 63.997930448182025,
+        "auprc": 49.5146646004983,
+        "frames": 11121
+      },
+      "temporal_score": {
+        "auroc": 56.78855010943957,
+        "auprc": 48.29334803844139,
+        "frames": 11121
+      },
+      "combined_score": {
+        "auroc": 63.067084646373715,
+        "auprc": 50.20560004958464,
+        "frames": 11121
+      }
+    },
+    "test_operation": {
+      "eligible_segments": 13,
+      "detected_segments": 7,
+      "missed_segments": 6,
+      "cold_start_segments": 4,
+      "preexisting_alarm_segments": 0,
+      "segment_recall": 0.5384615384615384,
+      "delay_median_frames_detected_only": 49.0,
+      "delay_p95_frames_detected_only": 151.49999999999991,
+      "normal_frames": 6482,
+      "raw_false_positive_frames": 785,
+      "alarm_false_positive_frames": 700,
+      "frame_fpr": 0.12110459734649799,
+      "active_alarm_fpr": 0.1079913606911447,
+      "false_alarm_episodes": 26,
+      "false_alarms_per_1000_normal_frames": 4.011107682813947,
+      "false_alarms_per_minute_assuming_30fps": 7.219993829065103,
+      "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+    },
+    "selection": "none; all normal-calibration leave-one-video-out fits reported"
+  },
+  {
+    "heldout_video": "05",
+    "calibration": {
+      "appearance": {
+        "median": 0.024669398553669453,
+        "q995": 0.06990995213389398,
+        "scale": 0.045240553580224524
+      },
+      "temporal": {
+        "median": 2.202773792443807,
+        "q995": 16.583059711689632,
+        "scale": 14.380285919245825
+      },
+      "threshold": 0.6982815044409341,
+      "quantile": 0.995,
+      "consecutive": 3,
+      "calibration_frames": 2654,
+      "calibration_videos": [
+        "03",
+        "11",
+        "17",
+        "20"
+      ]
+    },
+    "heldout_normal_frames": 670,
+    "heldout_active_fpr": 0.0,
+    "heldout_false_alarms_per1000": 0.0,
+    "test_metrics": {
+      "appearance_score": {
+        "auroc": 63.997932099701295,
+        "auprc": 49.51466460049829,
+        "frames": 11121
+      },
+      "temporal_score": {
+        "auroc": 56.79525858068302,
+        "auprc": 48.291246436645295,
+        "frames": 11121
+      },
+      "combined_score": {
+        "auroc": 62.58789302937979,
+        "auprc": 50.20985204254265,
+        "frames": 11121
+      }
+    },
+    "test_operation": {
+      "eligible_segments": 13,
+      "detected_segments": 6,
+      "missed_segments": 7,
+      "cold_start_segments": 4,
+      "preexisting_alarm_segments": 0,
+      "segment_recall": 0.46153846153846156,
+      "delay_median_frames_detected_only": 79.0,
+      "delay_p95_frames_detected_only": 189.25,
+      "normal_frames": 6482,
+      "raw_false_positive_frames": 260,
+      "alarm_false_positive_frames": 205,
+      "frame_fpr": 0.04011107682813946,
+      "active_alarm_fpr": 0.031626041345263804,
+      "false_alarm_episodes": 16,
+      "false_alarms_per_1000_normal_frames": 2.468373958654736,
+      "false_alarms_per_minute_assuming_30fps": 4.443073125578525,
+      "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+    },
+    "selection": "none; all normal-calibration leave-one-video-out fits reported"
+  },
+  {
+    "heldout_video": "11",
+    "calibration": {
+      "appearance": {
+        "median": 0.02455577254295349,
+        "q995": 0.06990753680467605,
+        "scale": 0.04535176426172256
+      },
+      "temporal": {
+        "median": 2.393249982919997,
+        "q995": 17.050459793673582,
+        "scale": 14.657209810753585
+      },
+      "threshold": 0.687713272826887,
+      "quantile": 0.995,
+      "consecutive": 3,
+      "calibration_frames": 2663,
+      "calibration_videos": [
+        "03",
+        "05",
+        "17",
+        "20"
+      ]
+    },
+    "heldout_normal_frames": 661,
+    "heldout_active_fpr": 0.0,
+    "heldout_false_alarms_per1000": 0.0,
+    "test_metrics": {
+      "appearance_score": {
+        "auroc": 63.997930448182025,
+        "auprc": 49.5146646004983,
+        "frames": 11121
+      },
+      "temporal_score": {
+        "auroc": 56.6357680624845,
+        "auprc": 48.04339773568203,
+        "frames": 11121
+      },
+      "combined_score": {
+        "auroc": 62.556030268252314,
+        "auprc": 50.17723810705947,
+        "frames": 11121
+      }
+    },
+    "test_operation": {
+      "eligible_segments": 13,
+      "detected_segments": 6,
+      "missed_segments": 7,
+      "cold_start_segments": 4,
+      "preexisting_alarm_segments": 0,
+      "segment_recall": 0.46153846153846156,
+      "delay_median_frames_detected_only": 79.0,
+      "delay_p95_frames_detected_only": 189.25,
+      "normal_frames": 6482,
+      "raw_false_positive_frames": 266,
+      "alarm_false_positive_frames": 208,
+      "frame_fpr": 0.04103671706263499,
+      "active_alarm_fpr": 0.032088861462511574,
+      "false_alarm_episodes": 19,
+      "false_alarms_per_1000_normal_frames": 2.931194075902499,
+      "false_alarms_per_minute_assuming_30fps": 5.276149336624498,
+      "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+    },
+    "selection": "none; all normal-calibration leave-one-video-out fits reported"
+  },
+  {
+    "heldout_video": "17",
+    "calibration": {
+      "appearance": {
+        "median": 0.024064309895038605,
+        "q995": 0.06990458473563194,
+        "scale": 0.04584027484059333
+      },
+      "temporal": {
+        "median": 2.2980118876819025,
+        "q995": 16.038789369406224,
+        "scale": 13.740777481724322
+      },
+      "threshold": 0.7063845896594406,
+      "quantile": 0.995,
+      "consecutive": 3,
+      "calibration_frames": 2674,
+      "calibration_videos": [
+        "03",
+        "05",
+        "11",
+        "20"
+      ]
+    },
+    "heldout_normal_frames": 650,
+    "heldout_active_fpr": 0.0,
+    "heldout_false_alarms_per1000": 0.0,
+    "test_metrics": {
+      "appearance_score": {
+        "auroc": 63.997930448182025,
+        "auprc": 49.5146646004983,
+        "frames": 11121
+      },
+      "temporal_score": {
+        "auroc": 56.73605987272599,
+        "auprc": 48.18860517130561,
+        "frames": 11121
+      },
+      "combined_score": {
+        "auroc": 62.49339144567192,
+        "auprc": 50.17699543674385,
+        "frames": 11121
+      }
+    },
+    "test_operation": {
+      "eligible_segments": 13,
+      "detected_segments": 6,
+      "missed_segments": 7,
+      "cold_start_segments": 4,
+      "preexisting_alarm_segments": 0,
+      "segment_recall": 0.46153846153846156,
+      "delay_median_frames_detected_only": 79.0,
+      "delay_p95_frames_detected_only": 189.25,
+      "normal_frames": 6482,
+      "raw_false_positive_frames": 261,
+      "alarm_false_positive_frames": 206,
+      "frame_fpr": 0.04026535020055538,
+      "active_alarm_fpr": 0.031780314717679725,
+      "false_alarm_episodes": 18,
+      "false_alarms_per_1000_normal_frames": 2.7769207034865784,
+      "false_alarms_per_minute_assuming_30fps": 4.998457266275841,
+      "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+    },
+    "selection": "none; all normal-calibration leave-one-video-out fits reported"
+  },
+  {
+    "heldout_video": "20",
+    "calibration": {
+      "appearance": {
+        "median": 0.016356458887457848,
+        "q995": 0.06990592658519744,
+        "scale": 0.05354946769773959
+      },
+      "temporal": {
+        "median": 2.16888706702193,
+        "q995": 16.82599439775909,
+        "scale": 14.657107330737158
+      },
+      "threshold": 0.6981191382124264,
+      "quantile": 0.995,
+      "consecutive": 3,
+      "calibration_frames": 2669,
+      "calibration_videos": [
+        "03",
+        "05",
+        "11",
+        "17"
+      ]
+    },
+    "heldout_normal_frames": 655,
+    "heldout_active_fpr": 0.0,
+    "heldout_false_alarms_per1000": 0.0,
+    "test_metrics": {
+      "appearance_score": {
+        "auroc": 63.997930448182025,
+        "auprc": 49.5146646004983,
+        "frames": 11121
+      },
+      "temporal_score": {
+        "auroc": 56.81405782444574,
+        "auprc": 48.33436330057299,
+        "frames": 11121
+      },
+      "combined_score": {
+        "auroc": 62.40532748404847,
+        "auprc": 50.17512094360808,
+        "frames": 11121
+      }
+    },
+    "test_operation": {
+      "eligible_segments": 13,
+      "detected_segments": 6,
+      "missed_segments": 7,
+      "cold_start_segments": 4,
+      "preexisting_alarm_segments": 0,
+      "segment_recall": 0.46153846153846156,
+      "delay_median_frames_detected_only": 79.0,
+      "delay_p95_frames_detected_only": 189.25,
+      "normal_frames": 6482,
+      "raw_false_positive_frames": 252,
+      "alarm_false_positive_frames": 202,
+      "frame_fpr": 0.038876889848812095,
+      "active_alarm_fpr": 0.031163221228016045,
+      "false_alarm_episodes": 18,
+      "false_alarms_per_1000_normal_frames": 2.7769207034865784,
+      "false_alarms_per_minute_assuming_30fps": 4.998457266275841,
+      "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+    },
+    "selection": "none; all normal-calibration leave-one-video-out fits reported"
+  }
+]

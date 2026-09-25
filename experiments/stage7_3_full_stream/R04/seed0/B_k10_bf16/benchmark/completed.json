@@ -1,0 +1,74 @@
+{
+  "scene": "R04",
+  "variant": "bf16",
+  "seed": 0,
+  "timings": {
+    "capacity": {
+      "frames": 8154,
+      "videos": 19,
+      "input_fps": 237.0092365900893,
+      "steady_p95_ms": 4.677706165239215,
+      "end_to_end_p95_ms": 4.667409462854266,
+      "deadline_miss_fraction": 0.0,
+      "max_queue_ms": 0.005570938810706139,
+      "last_queue_ms": 8.987262845039368e-05
+    },
+    "paced_30fps": {
+      "frames": 686,
+      "videos": 1,
+      "input_fps": 30.03810032057921,
+      "steady_p95_ms": 6.292937905527651,
+      "end_to_end_p95_ms": 6.438205251470208,
+      "deadline_miss_fraction": 0.0,
+      "max_queue_ms": 2.564112888649106,
+      "last_queue_ms": 0.06223376840353012
+    }
+  },
+  "backbone_dtype": "torch.bfloat16",
+  "head_dtype": "torch.bfloat16",
+  "bank_dtype": "torch.bfloat16",
+  "phase_agreement": 1.0,
+  "score_max_difference": 0.0,
+  "alarm_agreement": 1.0,
+  "peak_allocated_gib": 0.28775548934936523,
+  "peak_reserved_gib": 0.68359375,
+  "metrics": {
+    "appearance_score": {
+      "auroc": 76.28680285842664,
+      "auprc": 83.46791314432639,
+      "frames": 7166
+    },
+    "temporal_score": {
+      "auroc": 64.59717563156416,
+      "auprc": 72.03040223670654,
+      "frames": 7166
+    },
+    "combined_score": {
+      "auroc": 78.71788937650926,
+      "auprc": 83.602927964681,
+      "frames": 7166
+    }
+  },
+  "operation": {
+    "eligible_segments": 26,
+    "detected_segments": 20,
+    "missed_segments": 6,
+    "cold_start_segments": 0,
+    "preexisting_alarm_segments": 1,
+    "segment_recall": 0.7692307692307693,
+    "delay_median_frames_detected_only": 49.5,
+    "delay_p95_frames_detected_only": 197.7000000000001,
+    "normal_frames": 2911,
+    "raw_false_positive_frames": 149,
+    "alarm_false_positive_frames": 119,
+    "frame_fpr": 0.051185159738921335,
+    "active_alarm_fpr": 0.04087942287873583,
+    "false_alarm_episodes": 11,
+    "false_alarms_per_1000_normal_frames": 3.7787701820680177,
+    "false_alarms_per_minute_assuming_30fps": 6.801786327722432,
+    "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+  },
+  "longest_video": "12",
+  "seconds": 59.26782774925232,
+  "scope": "one model, full eligible test capacity; longest eligible whole video paced30; JPEG/OS-cache environment, not physical camera"
+}

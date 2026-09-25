@@ -1,0 +1,75 @@
+{
+  "scene": "R03",
+  "seed": 2,
+  "variant": "bf16",
+  "metrics": {
+    "appearance_score": {
+      "auroc": 62.68164977790038,
+      "auprc": 48.783329513280115,
+      "frames": 11121
+    },
+    "temporal_score": {
+      "auroc": 58.184661917822126,
+      "auprc": 49.40340745023196,
+      "frames": 11121
+    },
+    "combined_score": {
+      "auroc": 61.99720404394971,
+      "auprc": 50.32538744336969,
+      "frames": 11121
+    }
+  },
+  "operation": {
+    "eligible_segments": 13,
+    "detected_segments": 6,
+    "missed_segments": 7,
+    "cold_start_segments": 4,
+    "preexisting_alarm_segments": 0,
+    "segment_recall": 0.46153846153846156,
+    "delay_median_frames_detected_only": 77.0,
+    "delay_p95_frames_detected_only": 189.5,
+    "normal_frames": 6482,
+    "raw_false_positive_frames": 345,
+    "alarm_false_positive_frames": 273,
+    "frame_fpr": 0.05322431348349275,
+    "active_alarm_fpr": 0.042116630669546434,
+    "false_alarm_episodes": 23,
+    "false_alarms_per_1000_normal_frames": 3.5482875655661834,
+    "false_alarms_per_minute_assuming_30fps": 6.38691761801913,
+    "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+  },
+  "frames": 11121,
+  "online_frames": 11410,
+  "threshold": 0.6474977794348414,
+  "period": 697.0,
+  "source_model": "runs/stage5/5-1/R03/seed2/B_k10",
+  "head_sha256": "165aa18026008142bce67543373832a4876f3eee5ada883510744289b72db258",
+  "bank_sha256": "9fdadfdfefa4b99ea645ffc244f6404d83e4028d9f90a9fa352b6a5eb0afe0c7",
+  "training_history_sha256": "a10bb3b06332ef703043f74146725312bdbe73a030ba5bd8a5df8b35bad1a6fa",
+  "new_training": false,
+  "feature_hashes_path": "runs/stage7/7-3/streams/R03/bf16/feature_hashes.json",
+  "feature_hashes_sha256": "08273bf859440113ad92792d7c98908c36508b90f2019e0688fc8a8d39726d3b",
+  "batch_reference": "runs/stage6/6-1/R03/seed2/B_bf16_k10",
+  "batch_metrics": {
+    "appearance_score": {
+      "auroc": 62.697446559644256,
+      "auprc": 48.79322137152378,
+      "frames": 11121
+    },
+    "temporal_score": {
+      "auroc": 57.84849847502016,
+      "auprc": 49.15995577953004,
+      "frames": 11121
+    },
+    "combined_score": {
+      "auroc": 61.89977761962828,
+      "auprc": 50.2496372765411,
+      "frames": 11121
+    }
+  },
+  "batch_phase_agreement": 0.9790534618755478,
+  "batch_appearance_max_difference": 0.0015987679362297058,
+  "normal_calibration_folds": 5,
+  "seconds": 106.50490164756775,
+  "accuracy_pass_timing_is_not_single_model_benchmark": true
+}

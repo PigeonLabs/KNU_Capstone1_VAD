@@ -1,0 +1,10 @@
+{
+  "scene": "R02",
+  "precision": "fp32",
+  "units": 3,
+  "backbone_dtype": "torch.float32",
+  "head_dtypes": {
+    "fp32": "torch.float32"
+  },
+  "seconds": 124.50973010063171
+}

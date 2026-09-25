@@ -1,0 +1,2 @@
+{"time": 1790324593.1245, "event": "failure_fix", "cause": "zero missed events caused existing CSV writer to index empty rows", "fix": "stage7-only empty-table header support; no model or parameter changes", "preserved": "runs/stage7/7-1/failed_attempts/R01_seed0_B_k10_empty_miss_csv"}
+{"time": 1790324750.7914546, "event": "failure_fix", "cause": "numpy int64 span length was not JSON serializable", "fix": "event endpoints converted to Python integers; model and settings unchanged", "preserved": "runs/stage7/7-1/failed_attempts/R01_seed0_B_k10_numpy_int_json"}

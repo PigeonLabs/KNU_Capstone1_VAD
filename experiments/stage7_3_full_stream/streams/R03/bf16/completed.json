@@ -1,0 +1,11 @@
+{
+  "scene": "R03",
+  "precision": "bf16",
+  "units": 6,
+  "backbone_dtype": "torch.bfloat16",
+  "head_dtypes": {
+    "bf16": "torch.bfloat16",
+    "bf16_mixed": "torch.float32"
+  },
+  "seconds": 107.21083736419678
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "split": "training",
+    "video": "03",
+    "frames": 550,
+    "sha256": "eac809ffa373797af29eba70d71ca61fe055b9572ab58bfd9d1a432b1a460a22",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "training",
+    "video": "05",
+    "frames": 602,
+    "sha256": "e051ea65f5fe3ce4d42bb580b5b344fac5ee12b7517d74748bfc09ca3f567215",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "training",
+    "video": "11",
+    "frames": 600,
+    "sha256": "e6726550132d33b946eb3d36097a4a3871c7293e89b639b88f590081375627a9",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "training",
+    "video": "12",
+    "frames": 590,
+    "sha256": "775d3d2259b0bc85b1cdc43f004d2c0e4ac5f4e203695f021e75a181fe142a7d",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "training",
+    "video": "22",
+    "frames": 601,
+    "sha256": "0087645ec93db7f69f5861112372ac7819501e037f8d574f05820648ef446ee4",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "training",
+    "video": "27",
+    "frames": 589,
+    "sha256": "7d7e397af1d7259c3fea2c09d20cb604623675ab1c7d88cad6ae7691d2cea011",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "01",
+    "frames": 583,
+    "sha256": "836bfd1fe0fb552e797637aa2542cbf666442e36292ffe472ecaeeea4c412e12",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "02",
+    "frames": 595,
+    "sha256": "4bce5242ff8b0c4ed3204483e4b5c901850397420bb45d312e55dcf8da7179c6",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "03",
+    "frames": 573,
+    "sha256": "d06767da1f8f17825ae9ad7197e8b558a074443c63dacc5de0947e792aa2925e",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "04",
+    "frames": 578,
+    "sha256": "2241e9e489d294ed3e7c46a5d7d75664ac092ac333aab136c169b7aae9cdc360",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "05",
+    "frames": 583,
+    "sha256": "f2ec6deca8110abb9e9b927b9e8f378da8e5f2601ca9e36a367d9baf4dae12aa",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "06",
+    "frames": 604,
+    "sha256": "8a9d829c93f063d113ac0f268c82ed33539dca063ac2914c0f9262cf91070f20",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "07",
+    "frames": 536,
+    "sha256": "f4f1167d2ab12d4c969694a470f019197a09386b6f0b4529ee5bb4fcfcb2b3ee",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "08",
+    "frames": 784,
+    "sha256": "6e8716d19d4a6b79f9bece7043b132f9e11d0201058178c860dab385b3957681",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "09",
+    "frames": 853,
+    "sha256": "0a714b5bbe042577976f3a0a6f91218543c61693c1b2fa9f16baa634bbe2a3cd",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "10",
+    "frames": 612,
+    "sha256": "7044918c42ebc551c984882fcf614fc80d5387b75347abacd2f0dab3d53e8263",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "11",
+    "frames": 590,
+    "sha256": "f234d2dd320e00837493cd902dd27dcb6cf3dbc83fb92fb308a877ac4cd61d65",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "12",
+    "frames": 806,
+    "sha256": "c4ab2dc017851a8a646a0262498bd6e0e46dfaade178a26b99d9ea4a876b2a87",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "13",
+    "frames": 609,
+    "sha256": "0c09771819b993d1645063710670627f6870c1517cb3700f15bc0568fb110c05",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "14",
+    "frames": 497,
+    "sha256": "3335452316c6f3503b60a5856799dad670d446227f932be2b2eb1e58c2e64784",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  },
+  {
+    "split": "testing",
+    "video": "15",
+    "frames": 815,
+    "sha256": "90ac9ba8179c190d218ebd3b08cf651dece2c5976f9772387ab3c167d8a98326",
+    "order": "frame ascending; normalized float32 CLS then patch12; batch1"
+  }
+]

@@ -1,0 +1,40 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Traceback (most recent call last):
+  File "/home/jeong/Desktop/IPAD/scripts/run_stage7.py", line 49, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/jeong/Desktop/IPAD/scripts/run_stage7.py", line 34, in main
+    run(f'{a.stage}/{scene}/seed{seed}/{b}_k{k}',module,args)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeong/Desktop/IPAD/scripts/run_stage7.py", line 22, in run
+    with (dest/(name.replace('/','_')+'.log')).open('a') as f:subprocess.run(command,stdout=f,stderr=subprocess.STDOUT,check=True)
+                                                              ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeong/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/home/jeong/Desktop/IPAD/.venv/bin/python', '-m', 'ipad.stage7', '--action', 'diagnose', '--scene', 'R01', '--seed', '0', '--backbone', 'B', '--k', '10']' returned non-zero exit status 1.
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Traceback (most recent call last):
+  File "/home/jeong/Desktop/IPAD/scripts/run_stage7.py", line 49, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/jeong/Desktop/IPAD/scripts/run_stage7.py", line 34, in main
+    run(f'{a.stage}/{scene}/seed{seed}/{b}_k{k}',module,args)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeong/Desktop/IPAD/scripts/run_stage7.py", line 22, in run
+    with (dest/(name.replace('/','_')+'.log')).open('a') as f:subprocess.run(command,stdout=f,stderr=subprocess.STDOUT,check=True)
+                                                              ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeong/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/home/jeong/Desktop/IPAD/.venv/bin/python', '-m', 'ipad.stage7', '--action', 'diagnose', '--scene', 'R01', '--seed', '0', '--backbone', 'B', '--k', '10']' returned non-zero exit status 1.
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"state": "pushed", "stage": "7-1", "started_at": 1790324835.0219185, "repository": "https://github.com/PigeonLabs/KNU_Capstone1_VAD.git", "commit": "55b87342a7b8b439b1b7c9d21185243e42803137", "finished_at": 1790324843.9387548}
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"state": "pushed", "stage": "7-2", "started_at": 1790325053.5723107, "repository": "https://github.com/PigeonLabs/KNU_Capstone1_VAD.git", "commit": "9afcd056d6c7d58b06cc9d7d2b3f3e7d3fbfe375", "finished_at": 1790325076.8482192}
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)

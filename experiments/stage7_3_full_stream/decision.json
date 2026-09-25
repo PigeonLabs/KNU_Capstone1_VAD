@@ -1,0 +1,14 @@
+{
+  "time": 1790324954.238837,
+  "chosen": "fixed causal alert policies; no new temporal head training",
+  "primary": "ewma_hysteresis_cv",
+  "diagnostic_source_sha256": "3b7c7967d34ea5c67bb2eb95accc8ee9c596675ac9858bf82901b95258fdfa83",
+  "observations": {
+    "R01_B10_appearance_fpr_percent": 62.61,
+    "R01_B10_temporal_fpr_percent": 0.29,
+    "R01_B10_combined_fpr_percent": 59.83,
+    "R01_B10_long_false_alarm_frame_percent": 91.9
+  },
+  "interpretation": "Persistent normal appearance-score shift is the dominant observed R01 alarm issue; temporal-head changes are not supported as the first remedy. Alarm policies are a bounded operational comparison, not a promised shift correction.",
+  "selection_scope": "diagnosis-informed exploratory follow-up; numerical hyperparameters fixed, CV uses normal videos only"
+}
