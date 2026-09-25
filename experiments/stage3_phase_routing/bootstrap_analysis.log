@@ -196,6 +196,52 @@
       "random3_nn_with_phase": 64.02554996768121,
       "neighbor_random_nn_with_phase": 63.7953596501646,
       "conditional_all_with_phase": 76.6008619736313
+    },
+    "1": {
+      "phase_error": 52.264401290558524,
+      "unconditional": 77.95477983924789,
+      "legacy_hard": 77.1972139325157,
+      "posterior_hard": 76.93451446233018,
+      "neighbor_nn": 76.46289034776396,
+      "top3_nn": 76.81066853654723,
+      "top3_weighted": 77.41525262910538,
+      "confidence_fallback": 76.250706154298,
+      "random3_nn": 62.740618455123624,
+      "neighbor_random_nn": 62.50677765316954,
+      "conditional_all": 77.23499011525277,
+      "unconditional_with_phase": 77.34941801037567,
+      "legacy_hard_with_phase": 77.07494411363648,
+      "posterior_hard_with_phase": 76.81139373202606,
+      "neighbor_nn_with_phase": 76.48647612224883,
+      "top3_nn_with_phase": 76.74104485234011,
+      "top3_weighted_with_phase": 77.20338168085476,
+      "confidence_fallback_with_phase": 76.31046681907495,
+      "random3_nn_with_phase": 63.23854603655484,
+      "neighbor_random_nn_with_phase": 63.01980136309183,
+      "conditional_all_with_phase": 76.70375455644482
+    },
+    "2": {
+      "phase_error": 52.62258577817664,
+      "unconditional": 77.83356444458735,
+      "legacy_hard": 76.29147281988978,
+      "posterior_hard": 76.98914400806981,
+      "neighbor_nn": 76.64458603760498,
+      "top3_nn": 76.99254327599296,
+      "top3_weighted": 77.43965118124791,
+      "confidence_fallback": 76.00263702533306,
+      "random3_nn": 63.67373102900132,
+      "neighbor_random_nn": 63.481761236923205,
+      "conditional_all": 77.39108851402823,
+      "unconditional_with_phase": 77.53350829006547,
+      "legacy_hard_with_phase": 76.16420807771257,
+      "posterior_hard_with_phase": 76.83972233340393,
+      "neighbor_nn_with_phase": 76.66101340139481,
+      "top3_nn_with_phase": 76.96774423563947,
+      "top3_weighted_with_phase": 77.22681662012383,
+      "confidence_fallback_with_phase": 76.11585512561359,
+      "random3_nn_with_phase": 64.3192652973174,
+      "neighbor_random_nn_with_phase": 64.13120240940097,
+      "conditional_all_with_phase": 77.12365142825927
     }
   },
   "macro_delta_ci95": {
@@ -219,5 +265,12 @@
       -1.8846941985565033,
       -0.08992906705226404
     ]
+  },
+  "macro_valid_draws": {
+    "top3_weighted - unconditional": 2000,
+    "legacy_hard - unconditional": 2000,
+    "top3_nn - random3_nn": 2000,
+    "neighbor_nn - neighbor_random_nn": 2000,
+    "conditional_all - unconditional": 2000
   }
 }
