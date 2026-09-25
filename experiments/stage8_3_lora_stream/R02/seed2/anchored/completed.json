@@ -1,0 +1,50 @@
+{
+  "scene": "R02",
+  "seed": 2,
+  "method": "anchored",
+  "precision": "fp32_batch32",
+  "period": 589.5,
+  "metrics": {
+    "appearance_score": {
+      "auroc": 87.55433710895262,
+      "auprc": 78.28112052853623,
+      "frames": 7082
+    },
+    "temporal_score": {
+      "auroc": 87.66029343111977,
+      "auprc": 83.57253596219262,
+      "frames": 7082
+    },
+    "combined_score": {
+      "auroc": 94.31421467793353,
+      "auprc": 89.53233315765439,
+      "frames": 7082
+    }
+  },
+  "operation": {
+    "eligible_segments": 11,
+    "detected_segments": 4,
+    "missed_segments": 7,
+    "cold_start_segments": 4,
+    "preexisting_alarm_segments": 0,
+    "segment_recall": 0.36363636363636365,
+    "delay_median_frames_detected_only": 54.0,
+    "delay_p95_frames_detected_only": 80.24999999999999,
+    "normal_frames": 4771,
+    "raw_false_positive_frames": 20,
+    "alarm_false_positive_frames": 9,
+    "frame_fpr": 0.004191993292810731,
+    "active_alarm_fpr": 0.0018863969817648292,
+    "false_alarm_episodes": 4,
+    "false_alarms_per_1000_normal_frames": 0.8383986585621463,
+    "false_alarms_per_minute_assuming_30fps": 1.5091175854118632,
+    "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+  },
+  "common_frames": 7082,
+  "online_frames": 7286,
+  "seconds": 109.8214361667633,
+  "threshold": 0.7860419199532347,
+  "head_sha256": "9336b28b67cb510ce9e28ef3cec587c8868fde7cdf007b0cce7ebb547e3bab7e",
+  "memory_sha256": "6f4be67fccb9c34e73f9b8102dca1741cf248ab4a011dddc8b5b9b1fec354ced",
+  "adapter_sha256": "7f9faad144e338cc468074e73d45a8671e9de4c730539df5f91e19071940a508"
+}

@@ -1,0 +1,17 @@
+{
+  "scene": "R04",
+  "seed": 1,
+  "method": "anchored",
+  "samples": 1280,
+  "epochs": 10,
+  "trainable_parameters": 49152,
+  "restore_error": 0.0,
+  "merge_error": 1.3113021850585938e-06,
+  "adapter_sha256": "4b3f03be3489faa6e64cf1e1dd94d11cee8751bf4bd10b42139b81cfcb2eea26",
+  "first_loss": 0.0008054478574194945,
+  "last_loss": 0.0007688202953431755,
+  "seconds": 28.46709442138672,
+  "peak_allocated_gib": 2.5523853302001953,
+  "training_data_only": true,
+  "checkpoint_selection": "fixed final epoch; no test/calibration selection"
+}

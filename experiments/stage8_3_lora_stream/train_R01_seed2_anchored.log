@@ -1,0 +1,21 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+/home/jeong/Desktop/IPAD/ipad/stage8.py:142: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  opt.step();values=np.array([float(loss),float(cons),float(anchor)]);total+=values*len(indices)
+{"adapter": "runs/stage8/8-3/adapters/R01/seed2/anchored", "epoch": 1, "loss": 0.0012241306044247554, "consistency": 0.001195217173382709, "anchor": 2.8913424627753494e-05, "seconds": 4.1946306228637695}
+{"adapter": "runs/stage8/8-3/adapters/R01/seed2/anchored", "epoch": 2, "loss": 0.0012863583170757112, "consistency": 0.0012407354165420489, "anchor": 4.5622895211434094e-05, "seconds": 3.5751044750213623}
+{"adapter": "runs/stage8/8-3/adapters/R01/seed2/anchored", "epoch": 3, "loss": 0.0011972287320531905, "consistency": 0.001143677291650049, "anchor": 5.355144397375019e-05, "seconds": 3.598818302154541}
+{"adapter": "runs/stage8/8-3/adapters/R01/seed2/anchored", "epoch": 4, "loss": 0.0011783333493103445, "consistency": 0.0011144661402795464, "anchor": 6.386721010871784e-05, "seconds": 3.5737526416778564}
+{"adapter": "runs/stage8/8-3/adapters/R01/seed2/anchored", "epoch": 5, "loss": 0.001172878314887553, "consistency": 0.0011093021269146077, "anchor": 6.357618662554564e-05, "seconds": 3.5997836589813232}
+{"adapter": "runs/stage8/8-3/adapters/R01/seed2/anchored", "epoch": 6, "loss": 0.0011624280240438464, "consistency": 0.0010933499520265118, "anchor": 6.90780689183157e-05, "seconds": 3.6024746894836426}
+{"adapter": "runs/stage8/8-3/adapters/R01/seed2/anchored", "epoch": 7, "loss": 0.0011564111552649625, "consistency": 0.0010867030952660436, "anchor": 6.970805743885985e-05, "seconds": 3.594083309173584}
+{"adapter": "runs/stage8/8-3/adapters/R01/seed2/anchored", "epoch": 8, "loss": 0.001176916391597371, "consistency": 0.0011026675756848246, "anchor": 7.424881496936669e-05, "seconds": 3.5994484424591064}
+{"adapter": "runs/stage8/8-3/adapters/R01/seed2/anchored", "epoch": 9, "loss": 0.0011842545624218743, "consistency": 0.0011076166378592865, "anchor": 7.663792523628756e-05, "seconds": 3.595903158187866}
+{"adapter": "runs/stage8/8-3/adapters/R01/seed2/anchored", "epoch": 10, "loss": 0.0011367997460722647, "consistency": 0.0010596199814851086, "anchor": 7.717976809039505e-05, "seconds": 3.612889051437378}

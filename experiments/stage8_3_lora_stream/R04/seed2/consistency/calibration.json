@@ -1,0 +1,23 @@
+{
+  "appearance": {
+    "median": 9.010401117848232e-05,
+    "q995": 0.00018534892296884206,
+    "scale": 9.524491179035974e-05
+  },
+  "temporal": {
+    "median": 5.215123859191654,
+    "q995": 5.215123859191654,
+    "scale": 1e-08
+  },
+  "threshold": 0.5,
+  "quantile": 0.995,
+  "consecutive": 3,
+  "calibration_frames": 1791,
+  "calibration_videos": [
+    "05",
+    "11",
+    "12",
+    "20",
+    "25"
+  ]
+}
