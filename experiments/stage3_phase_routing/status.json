@@ -11,16 +11,17 @@
     "R02/seed1",
     "R03/seed1",
     "R04/seed1",
-    "R01/seed2"
+    "R01/seed2",
+    "R02/seed2"
   ],
   "publication": "local commits pending authentication",
-  "step": "R01/seed2",
+  "step": "R02/seed2",
   "command": [
     "/home/jeong/Desktop/IPAD/.venv/bin/python",
     "-m",
     "ipad.phase_routing",
     "--scene",
-    "R01",
+    "R02",
     "--seed",
     "2"
   ]

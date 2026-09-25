@@ -1,0 +1,43 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"fit_phase": 0, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 1, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 2, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 3, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 4, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 5, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 6, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 7, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 8, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 9, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 10, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 11, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 12, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 13, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 14, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 15, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 16, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 17, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 18, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 19, "samples": 339, "prototypes_per_position": 10}
+{"fit_phase": 0, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 1, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 2, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 3, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 4, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 5, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 6, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 7, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 8, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 9, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 10, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 11, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 12, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 13, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 14, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 15, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 16, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 17, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 18, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 19, "samples": 424, "prototypes_per_position": 10}
+{"scene": "R02", "seed": 2, "metrics": {"phase_error": {"auroc": 55.750561095445285, "auprc": 46.45269494469411, "frames": 7478}, "unconditional": {"auroc": 85.3655790290222, "auprc": 71.09023877271083, "frames": 7478}, "legacy_hard": {"auroc": 84.82292093054988, "auprc": 75.60883507287038, "frames": 7478}, "posterior_hard": {"auroc": 84.78303388239515, "auprc": 75.244913913544, "frames": 7478}, "neighbor_nn": {"auroc": 85.19192054143106, "auprc": 74.2281395595221, "frames": 7478}, "top3_nn": {"auroc": 85.20751529944462, "auprc": 73.61516000506658, "frames": 7478}, "top3_weighted": {"auroc": 86.73214569973166, "auprc": 78.34324475330511, "frames": 7478}, "confidence_fallback": {"auroc": 83.83315519776838, "auprc": 74.1555518553235, "frames": 7478}, "random3_nn": {"auroc": 58.71192273338286, "auprc": 38.569189674107854, "frames": 7478}, "neighbor_random_nn": {"auroc": 58.71192273338286, "auprc": 38.569189674107854, "frames": 7478}, "conditional_all": {"auroc": 85.62016838864379, "auprc": 71.838633819652, "frames": 7478}, "unconditional_with_phase": {"auroc": 85.34619415260532, "auprc": 72.12922950843192, "frames": 7478}, "legacy_hard_with_phase": {"auroc": 84.75476986401056, "auprc": 75.78874411216134, "frames": 7478}, "posterior_hard_with_phase": {"auroc": 84.74403909128122, "auprc": 75.56001849564198, "frames": 7478}, "neighbor_nn_with_phase": {"auroc": 85.15939658788274, "auprc": 74.73950539965782, "frames": 7478}, "top3_nn_with_phase": {"auroc": 85.22745290146199, "auprc": 74.38809111032202, "frames": 7478}, "top3_weighted_with_phase": {"auroc": 86.44927652956544, "auprc": 78.26640514765897, "frames": 7478}, "confidence_fallback_with_phase": {"auroc": 84.43361260189101, "auprc": 75.08056326852648, "frames": 7478}, "random3_nn_with_phase": {"auroc": 59.779152959071766, "auprc": 39.94215509039074, "frames": 7478}, "neighbor_random_nn_with_phase": {"auroc": 59.779152959071766, "auprc": 39.94215509039074, "frames": 7478}, "conditional_all_with_phase": {"auroc": 85.56848459695881, "auprc": 72.80084859781466, "frames": 7478}}, "diagnostics": 0.768158047646717}

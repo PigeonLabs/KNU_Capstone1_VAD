@@ -113,6 +113,7 @@ def snapshot(stage):
         copy_analysis(ROOT/'runs/stage3/repeat_decision.json',dest/'repeat_decision.json')
         copy_analysis(ROOT/'runs/stage3/results.md',dest/'results.md')
         copy_analysis(ROOT/'runs/stage3/verification.txt',dest/'verification.txt')
+        copy_analysis(ROOT/'runs/stage3/final_verification.json',dest/'final_verification.json')
         copy_analysis(ROOT/'runs/stage3/status.json',dest/'status.json')
         copy_analysis(ROOT/'runs/stage3/temporal_status.json',dest/'temporal_status.json')
         for log in (ROOT/'runs/stage3').glob('*.log'):copy_analysis(log,dest/log.name)
