@@ -108,6 +108,9 @@ def snapshot(stage):
             for source in (ROOT/'runs/stage3'/scene).glob('seed*'):
                 if (source/'completed.json').exists():copy_analysis(source,dest/scene/source.name)
         copy_analysis(ROOT/'runs/stage3/summary.json',dest/'summary.json')
+        copy_analysis(ROOT/'runs/stage3/bootstrap.json',dest/'bootstrap.json')
+        copy_analysis(ROOT/'runs/stage3/research_findings.md',dest/'research_findings.md')
+        copy_analysis(ROOT/'runs/stage3/repeat_decision.json',dest/'repeat_decision.json')
         copy_analysis(ROOT/'runs/stage3/results.md',dest/'results.md')
         copy_analysis(ROOT/'runs/stage3/verification.txt',dest/'verification.txt')
         copy_analysis(ROOT/'runs/stage3/status.json',dest/'status.json')

@@ -1,0 +1,223 @@
+{
+  "unit": "video",
+  "draws": 2000,
+  "seed": 1729,
+  "note": "Exploratory fixed-test-set uncertainty; not independent external validation",
+  "scenes": {
+    "R01": {
+      "top3_weighted - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -4.481263784234852,
+          3.2862951888572844
+        ],
+        "valid_draws": 2000,
+        "videos": 15
+      },
+      "legacy_hard - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -10.714453160607299,
+          1.5932423793587422
+        ],
+        "valid_draws": 2000,
+        "videos": 15
+      },
+      "top3_nn - random3_nn": {
+        "delta_auroc_pp_ci95": [
+          -6.928453727472039,
+          9.321809798981219
+        ],
+        "valid_draws": 2000,
+        "videos": 15
+      },
+      "neighbor_nn - neighbor_random_nn": {
+        "delta_auroc_pp_ci95": [
+          -8.924533056666858,
+          8.947170851758491
+        ],
+        "valid_draws": 2000,
+        "videos": 15
+      },
+      "conditional_all - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -3.094722196865479,
+          0.23125008792655505
+        ],
+        "valid_draws": 2000,
+        "videos": 15
+      }
+    },
+    "R02": {
+      "top3_weighted - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -1.6850865714442544,
+          4.038383002060913
+        ],
+        "valid_draws": 2000,
+        "videos": 12
+      },
+      "legacy_hard - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -3.36697279011596,
+          2.7356837826103506
+        ],
+        "valid_draws": 2000,
+        "videos": 12
+      },
+      "top3_nn - random3_nn": {
+        "delta_auroc_pp_ci95": [
+          22.229366183402977,
+          31.23980339425173
+        ],
+        "valid_draws": 2000,
+        "videos": 12
+      },
+      "neighbor_nn - neighbor_random_nn": {
+        "delta_auroc_pp_ci95": [
+          21.397688552526468,
+          31.14699472397734
+        ],
+        "valid_draws": 2000,
+        "videos": 12
+      },
+      "conditional_all - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -0.6527625583031724,
+          0.29642468401076577
+        ],
+        "valid_draws": 2000,
+        "videos": 12
+      }
+    },
+    "R03": {
+      "top3_weighted - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -14.065058375050615,
+          0.7173371954153289
+        ],
+        "valid_draws": 2000,
+        "videos": 17
+      },
+      "legacy_hard - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -13.870760291958609,
+          0.3096991460582305
+        ],
+        "valid_draws": 2000,
+        "videos": 17
+      },
+      "top3_nn - random3_nn": {
+        "delta_auroc_pp_ci95": [
+          -2.3244622610067376,
+          15.42131249970547
+        ],
+        "valid_draws": 2000,
+        "videos": 17
+      },
+      "neighbor_nn - neighbor_random_nn": {
+        "delta_auroc_pp_ci95": [
+          -2.8119613723981693,
+          14.473797779299964
+        ],
+        "valid_draws": 2000,
+        "videos": 17
+      },
+      "conditional_all - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -5.087747740363759,
+          0.3008636336080567
+        ],
+        "valid_draws": 2000,
+        "videos": 17
+      }
+    },
+    "R04": {
+      "top3_weighted - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -1.1120630783629575,
+          4.110085713164729
+        ],
+        "valid_draws": 2000,
+        "videos": 19
+      },
+      "legacy_hard - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -0.4317362596837331,
+          4.01355344220554
+        ],
+        "valid_draws": 2000,
+        "videos": 19
+      },
+      "top3_nn - random3_nn": {
+        "delta_auroc_pp_ci95": [
+          13.057992864849025,
+          22.259897103877208
+        ],
+        "valid_draws": 2000,
+        "videos": 19
+      },
+      "neighbor_nn - neighbor_random_nn": {
+        "delta_auroc_pp_ci95": [
+          13.596181038568657,
+          22.97383301128023
+        ],
+        "valid_draws": 2000,
+        "videos": 19
+      },
+      "conditional_all - unconditional": {
+        "delta_auroc_pp_ci95": [
+          -1.7910582570340483,
+          1.1010917134246865
+        ],
+        "valid_draws": 2000,
+        "videos": 19
+      }
+    }
+  },
+  "seed_summary": {
+    "0": {
+      "phase_error": 51.870183844128746,
+      "unconditional": 78.37070970021595,
+      "legacy_hard": 76.28585549873348,
+      "posterior_hard": 76.79236861851712,
+      "neighbor_nn": 76.18331277032914,
+      "top3_nn": 76.77457415145582,
+      "top3_weighted": 77.31322775109112,
+      "confidence_fallback": 76.39848930659966,
+      "random3_nn": 63.40068668609864,
+      "neighbor_random_nn": 63.16135850204634,
+      "conditional_all": 77.40525669988632,
+      "unconditional_with_phase": 77.48338035277277,
+      "legacy_hard_with_phase": 75.82832257295311,
+      "posterior_hard_with_phase": 76.43449304642851,
+      "neighbor_nn_with_phase": 75.73200856193465,
+      "top3_nn_with_phase": 76.30430097737428,
+      "top3_weighted_with_phase": 76.77951840300491,
+      "confidence_fallback_with_phase": 76.19610805404301,
+      "random3_nn_with_phase": 64.02554996768121,
+      "neighbor_random_nn_with_phase": 63.7953596501646,
+      "conditional_all_with_phase": 76.6008619736313
+    }
+  },
+  "macro_delta_ci95": {
+    "top3_weighted - unconditional": [
+      -3.5000241158547176,
+      1.2225830440715502
+    ],
+    "legacy_hard - unconditional": [
+      -4.934025848983215,
+      0.29934554524429546
+    ],
+    "top3_nn - random3_nn": [
+      9.813628890316734,
+      16.75917186607963
+    ],
+    "neighbor_nn - neighbor_random_nn": [
+      9.236833064461226,
+      16.609768377495143
+    ],
+    "conditional_all - unconditional": [
+      -1.8846941985565033,
+      -0.08992906705226404
+    ]
+  }
+}

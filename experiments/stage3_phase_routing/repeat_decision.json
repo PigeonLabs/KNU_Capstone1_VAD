@@ -1,0 +1,6 @@
+{
+  "time": 1790307963.7496471,
+  "decision": "Repeat the unchanged preregistered candidate and all baselines for seeds 1 and 2. No hyperparameter changes after seed 0.",
+  "observation": "Top3 weighted improves R01/R02 versus unconditional but loses on R03; no overall improvement established.",
+  "temporal_diagnostic": "Use unchanged seed0 development models and untouched normal holdouts to test time-order response; synthetic diagnostic only."
+}
