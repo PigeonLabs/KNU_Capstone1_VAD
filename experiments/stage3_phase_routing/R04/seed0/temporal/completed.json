@@ -1,0 +1,273 @@
+{
+  "config": {
+    "scene": "R04",
+    "seed": 0,
+    "period_from_dev": 383.5,
+    "windows": [
+      5,
+      21
+    ],
+    "types": [
+      "normal",
+      "pause",
+      "reverse",
+      "skip",
+      "speed_0.9",
+      "speed_1.1"
+    ],
+    "amplitude": 0.12,
+    "speed_control": "Assumed tolerated +/-10% nominal rate, not a factory specification",
+    "positive_support": "transformed event interval expanded by clip support plus 21-frame phase window: 18 frames each side",
+    "purpose": "Normal-only controlled diagnostic; no claim of real anomaly cause classification",
+    "source_sha256": "9267d45e819f1157d185ecdd143160e5ab80902c9a58213bebaaa79ffbbaa544",
+    "protocol_sha256": "30d091db249f036f08be46c4d60c1f9532a47165635e2fe2cda3f7b1672e1a06"
+  },
+  "thresholds": {
+    "unconditional": 0.047990282997488976,
+    "top3_weighted": 0.07394181936979294,
+    "time5": 1.8043024771838332,
+    "time21": 6.018687527162104,
+    "appearance_time_max": 1.0
+  },
+  "variants": {
+    "normal": {
+      "unconditional": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 1791,
+        "alert_fraction": 0.05025125628140704,
+        "positive_recall_at_normal_p95": null
+      },
+      "top3_weighted": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 1791,
+        "alert_fraction": 0.05025125628140704,
+        "positive_recall_at_normal_p95": null
+      },
+      "time5": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 1791,
+        "alert_fraction": 0.05025125628140704,
+        "positive_recall_at_normal_p95": null
+      },
+      "time21": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 1791,
+        "alert_fraction": 0.05025125628140704,
+        "positive_recall_at_normal_p95": null
+      },
+      "appearance_time_max": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 1791,
+        "alert_fraction": 0.09826912339475154,
+        "positive_recall_at_normal_p95": null
+      }
+    },
+    "pause": {
+      "unconditional": {
+        "auroc": 53.92857518603187,
+        "auprc": 22.56454816186844,
+        "frames": 2024,
+        "alert_fraction": 0.044466403162055336,
+        "positive_recall_at_normal_p95": 0.004842615012106538
+      },
+      "top3_weighted": {
+        "auroc": 56.43645458056973,
+        "auprc": 24.319897991471173,
+        "frames": 2024,
+        "alert_fraction": 0.044466403162055336,
+        "positive_recall_at_normal_p95": 0.004842615012106538
+      },
+      "time5": {
+        "auroc": 48.89959013621545,
+        "auprc": 23.41679667924465,
+        "frames": 2024,
+        "alert_fraction": 0.04397233201581028,
+        "positive_recall_at_normal_p95": 0.03389830508474576
+      },
+      "time21": {
+        "auroc": 70.92995642848877,
+        "auprc": 39.977475981806485,
+        "frames": 2024,
+        "alert_fraction": 0.04199604743083004,
+        "positive_recall_at_normal_p95": 0.07263922518159806
+      },
+      "appearance_time_max": {
+        "auroc": 60.935036515000526,
+        "auprc": 27.02462060300318,
+        "frames": 2024,
+        "alert_fraction": 0.08448616600790514,
+        "positive_recall_at_normal_p95": 0.0774818401937046
+      }
+    },
+    "reverse": {
+      "unconditional": {
+        "auroc": 56.61537055844698,
+        "auprc": 25.26658721896327,
+        "frames": 1791,
+        "alert_fraction": 0.05025125628140704,
+        "positive_recall_at_normal_p95": 0.03631961259079903
+      },
+      "top3_weighted": {
+        "auroc": 66.5104882325861,
+        "auprc": 36.25975503959944,
+        "frames": 1791,
+        "alert_fraction": 0.0664433277498604,
+        "positive_recall_at_normal_p95": 0.11380145278450363
+      },
+      "time5": {
+        "auroc": 69.99142526804822,
+        "auprc": 48.03009092300826,
+        "frames": 1791,
+        "alert_fraction": 0.10552763819095477,
+        "positive_recall_at_normal_p95": 0.3050847457627119
+      },
+      "time21": {
+        "auroc": 85.2447839975822,
+        "auprc": 67.90647946137952,
+        "frames": 1791,
+        "alert_fraction": 0.14126186487995535,
+        "positive_recall_at_normal_p95": 0.5205811138014528
+      },
+      "appearance_time_max": {
+        "auroc": 81.47190193880313,
+        "auprc": 63.64637483329607,
+        "frames": 1791,
+        "alert_fraction": 0.18648799553322165,
+        "positive_recall_at_normal_p95": 0.549636803874092
+      }
+    },
+    "skip": {
+      "unconditional": {
+        "auroc": 53.76626444361332,
+        "auprc": 12.27785516957551,
+        "frames": 1558,
+        "alert_fraction": 0.04942233632862644,
+        "positive_recall_at_normal_p95": 0.016216216216216217
+      },
+      "top3_weighted": {
+        "auroc": 54.887502214523344,
+        "auprc": 13.969590449736401,
+        "frames": 1558,
+        "alert_fraction": 0.051989730423620026,
+        "positive_recall_at_normal_p95": 0.05405405405405406
+      },
+      "time5": {
+        "auroc": 62.961949567921906,
+        "auprc": 25.48683614056295,
+        "frames": 1558,
+        "alert_fraction": 0.06803594351732992,
+        "positive_recall_at_normal_p95": 0.23243243243243245
+      },
+      "time21": {
+        "auroc": 83.18635459931892,
+        "auprc": 47.61127687171009,
+        "frames": 1558,
+        "alert_fraction": 0.0840821566110398,
+        "positive_recall_at_normal_p95": 0.5027027027027027
+      },
+      "appearance_time_max": {
+        "auroc": 75.72488730536801,
+        "auprc": 41.27717546679389,
+        "frames": 1558,
+        "alert_fraction": 0.12901155327342748,
+        "positive_recall_at_normal_p95": 0.5135135135135135
+      }
+    },
+    "speed_0.9": {
+      "unconditional": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 2011,
+        "alert_fraction": 0.05022376926902039,
+        "positive_recall_at_normal_p95": null
+      },
+      "top3_weighted": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 2011,
+        "alert_fraction": 0.04724017901541522,
+        "positive_recall_at_normal_p95": null
+      },
+      "time5": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 2011,
+        "alert_fraction": 0.05718547986076579,
+        "positive_recall_at_normal_p95": null
+      },
+      "time21": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 2011,
+        "alert_fraction": 0.08055693684733964,
+        "positive_recall_at_normal_p95": null
+      },
+      "appearance_time_max": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 2011,
+        "alert_fraction": 0.12232720039781203,
+        "positive_recall_at_normal_p95": null
+      }
+    },
+    "speed_1.1": {
+      "unconditional": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 1616,
+        "alert_fraction": 0.04888613861386139,
+        "positive_recall_at_normal_p95": null
+      },
+      "top3_weighted": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 1616,
+        "alert_fraction": 0.05198019801980198,
+        "positive_recall_at_normal_p95": null
+      },
+      "time5": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 1616,
+        "alert_fraction": 0.055693069306930694,
+        "positive_recall_at_normal_p95": null
+      },
+      "time21": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 1616,
+        "alert_fraction": 0.03589108910891089,
+        "positive_recall_at_normal_p95": null
+      },
+      "appearance_time_max": {
+        "auroc": null,
+        "auprc": null,
+        "reason": "single_class",
+        "frames": 1616,
+        "alert_fraction": 0.08725247524752475,
+        "positive_recall_at_normal_p95": null
+      }
+    }
+  },
+  "seconds": 8.371053695678711,
+  "threshold_note": "95th percentile of untransformed holdout; diagnostic calibration, not unbiased normal FPR estimation"
+}
