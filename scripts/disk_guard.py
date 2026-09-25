@@ -26,8 +26,8 @@ def experiment_roots():
         try:
             if Path(p.cwd())!=ROOT:continue
             args=p.cmdline()
-            modules={'ipad.train','ipad.features','ipad.prototype','ipad.evaluate','ipad.phase_routing','ipad.phase_temporal','ipad.stage4'}
-            scripts={'scripts/run_suite.py','scripts/publish_stage.py','scripts/run_stage3.py','scripts/run_stage4.py'}
+            modules={'ipad.train','ipad.features','ipad.prototype','ipad.evaluate','ipad.phase_routing','ipad.phase_temporal','ipad.stage4','ipad.stage5'}
+            scripts={'scripts/run_suite.py','scripts/publish_stage.py','scripts/run_stage3.py','scripts/run_stage4.py','scripts/run_stage5.py'}
             if any(a in modules for a in args) or any(a in scripts or a.endswith('/'+a2) for a in args for a2 in scripts):
                 matches.append(p)
         except (psutil.NoSuchProcess,psutil.AccessDenied):pass

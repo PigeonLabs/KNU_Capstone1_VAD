@@ -15,7 +15,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SCENES=('R01','R02','R03','R04')
 REMOTE='https://github.com/PigeonLabs/KNU_Capstone1_VAD.git'
 RESERVE=10*1024**3
-STAGES={'stage1':'stage1_reproduction','stage2':'stage2_dinov2','ablation':'stage1_memory_ablation','stage3':'stage3_phase_routing','4-1':'stage4_1_appearance_temporal','4-2':'stage4_2_memory_budget','4-3':'stage4_3_process_prior'}
+STAGES={'stage1':'stage1_reproduction','stage2':'stage2_dinov2','ablation':'stage1_memory_ablation','stage3':'stage3_phase_routing','4-1':'stage4_1_appearance_temporal','4-2':'stage4_2_memory_budget','4-3':'stage4_3_process_prior','5-1':'stage5_1_causal','5-2':'stage5_2_lightweight','5-3':'stage5_3_streaming'}
 
 
 def load(path):return json.loads(path.read_text()) if path.exists() else None
@@ -53,6 +53,11 @@ def binary_inventory(stage):
         yield from (ROOT/'cache/torch_hub/checkpoints').glob('*.pth')
     elif stage in {'4-1','4-2','4-3'}:
         yield from (ROOT/'runs/stage4'/stage).rglob('*.pt')
+    elif stage in {'5-1','5-2','5-3'}:
+        yield from (ROOT/'runs/stage5'/stage).rglob('*.pt')
+        if stage=='5-2':
+            yield from (ROOT/'cache/dino_small').rglob('*.npy')
+            yield from (ROOT/'cache/torch_hub/checkpoints').glob('*vits14*.pth')
     elif stage=='stage3':
         yield from (ROOT/'runs/stage3').rglob('*.pt')
     else:
@@ -111,6 +116,13 @@ def snapshot(stage):
         copy_analysis(ROOT/'runs/stage4/verification.txt',dest/'verification.txt')
         copy_analysis(ROOT/'runs/stage4/research_findings.md',ROOT/'experiments/stage4_summary/research_findings.md')
         copy_analysis(ROOT/'runs/stage4/final_verification.json',ROOT/'experiments/stage4_summary/final_verification.json')
+    elif stage in {'5-1','5-2','5-3'}:
+        copy_analysis(ROOT/'runs/stage5'/stage,dest)
+        for name in ['status.json','verification.txt','gpu_before_benchmark.txt']:
+            copy_analysis(ROOT/'runs/stage5'/name,dest/name)
+        if stage=='5-2':copy_analysis(ROOT/'cache/dino_small',dest/'feature_metadata')
+        for name in ['research_findings.md','final_verification.json']:
+            copy_analysis(ROOT/'runs/stage5'/name,ROOT/'experiments/stage5_summary'/name)
     elif stage=='stage3':
         for scene in SCENES:
             for source in (ROOT/'runs/stage3'/scene).glob('seed*'):
@@ -216,13 +228,18 @@ def make_readme():
         if path.exists():text += ['', f'## {st} 추가 실험', '', f'[전체 기록](experiments/{STAGES[st]}/) · [고정 규약](docs/stage4_protocol.md)', '', path.read_text()]
     if (ROOT/'experiments/stage4_summary/research_findings.md').exists():
         text += ['', '## 4단계 통합 해석', '', '[세 실험의 통합 보고서와 최종 검산](experiments/stage4_summary/research_findings.md)']
+    for st in ['5-1','5-2','5-3']:
+        path=ROOT/'experiments'/STAGES[st]/'results.md'
+        if path.exists():text += ['', f'## {st} 온라인·경량화 실험', '', f'[전체 기록](experiments/{STAGES[st]}/) · [고정 규약](docs/stage5_protocol.md)', '', path.read_text()]
+    if (ROOT/'experiments/stage5_summary/research_findings.md').exists():
+        text += ['', '## 5단계 통합 해석', '', '[온라인·경량화·실시간 평가 통합 결과](experiments/stage5_summary/research_findings.md)']
     (ROOT/'README.md').write_text('\n'.join(text))
 
 
 def publish(stage,message,push=False,approved_push=False):
     os.chdir(ROOT);ensure_room()
     if push and not approved_push:
-        raise RuntimeError("Publication requires explicit authorization; approved stage 4 experiments have standing user authorization")
+        raise RuntimeError("Publication requires explicit authorization; approved stage 4/5 experiments have standing user authorization")
     lock=(ROOT/'runs/publication.lock').open('w')
     fcntl.flock(lock,fcntl.LOCK_EX)
     status={'state':'preparing','stage':stage,'started_at':time.time(),'repository':REMOTE}
