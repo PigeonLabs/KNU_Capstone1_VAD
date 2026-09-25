@@ -1,0 +1,22 @@
+{
+  "state": "running",
+  "pid": 4029381,
+  "seeds": [
+    0
+  ],
+  "started_at": 1790307641.8724294,
+  "completed": [
+    "R01/seed0"
+  ],
+  "publication": "local commits pending authentication",
+  "step": "R01/seed0",
+  "command": [
+    "/home/jeong/Desktop/IPAD/.venv/bin/python",
+    "-m",
+    "ipad.phase_routing",
+    "--scene",
+    "R01",
+    "--seed",
+    "0"
+  ]
+}

@@ -33,9 +33,9 @@ def report():
     (root/'results.md').write_text('\n'.join(lines)+'\n')
 
 
-def main(seeds):
+def main(seeds,no_push=False):
     os.chdir(ROOT);reserve();root=ROOT/'runs/stage3';root.mkdir(exist_ok=True)
-    status={'state':'running','pid':os.getpid(),'seeds':seeds,'started_at':time.time(),'completed':[]}
+    status={'state':'running','pid':os.getpid(),'seeds':seeds,'started_at':time.time(),'completed':[],'publication':'local commits pending authentication' if no_push else 'push enabled'}
     def update(**kw):status.update(kw);write_json(root/'status.json',status)
     try:
         for seed in seeds:
@@ -46,13 +46,13 @@ def main(seeds):
                     subprocess.run(cmd,stdout=log,stderr=subprocess.STDOUT,check=True)
                 status['completed'].append(f'{scene}/seed{seed}');report();update()
                 subprocess.run([sys.executable,'scripts/publish_stage.py','--stage','stage3','--message',
-                    f'실험 3단계: {scene} seed {seed} 정상 위상 진단과 routing 비교'],check=True)
+                    f'실험 3단계: {scene} seed {seed} 정상 위상 진단과 routing 비교',*(['--no-push'] if no_push else [])],check=True)
         update(state='completed',finished_at=time.time());report()
         subprocess.run([sys.executable,'scripts/publish_stage.py','--stage','stage3','--message',
-                       '실험 3단계: 승인된 routing 비교 완료 현황 정리'],check=True)
+                       '실험 3단계: 승인된 routing 비교 완료 현황 정리',*(['--no-push'] if no_push else [])],check=True)
     except Exception as e:
         update(state='failed',error=str(e),finished_at=time.time());raise
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--seeds',type=int,nargs='+',default=[0]);main(p.parse_args().seeds)
+    p=argparse.ArgumentParser();p.add_argument('--seeds',type=int,nargs='+',default=[0]);p.add_argument('--no-push',action='store_true');a=p.parse_args();main(a.seeds,a.no_push)
