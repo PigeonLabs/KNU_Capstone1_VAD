@@ -1,0 +1,82 @@
+{
+  "scene": "R01",
+  "seed": 0,
+  "backbone": "B",
+  "k": 10,
+  "period": 232.0,
+  "common_frames": 2905,
+  "online_frames": 3160,
+  "metrics": {
+    "appearance_score": {
+      "auroc": 87.88115209473112,
+      "auprc": 75.73976504010902,
+      "frames": 2905
+    },
+    "temporal_score": {
+      "auroc": 69.66837319665346,
+      "auprc": 61.390404928949806,
+      "frames": 2905
+    },
+    "combined_score": {
+      "auroc": 89.3648933123511,
+      "auprc": 81.53848738582393,
+      "frames": 2905
+    }
+  },
+  "online_metrics": {
+    "appearance_score": {
+      "auroc": 87.21240570434404,
+      "auprc": 73.27328388285494,
+      "frames": 3160
+    },
+    "temporal_score": {
+      "auroc": 66.71768046744403,
+      "auprc": 54.66801754566786,
+      "frames": 3160
+    },
+    "combined_score": {
+      "auroc": 88.30218402967704,
+      "auprc": 78.51618081048389,
+      "frames": 3160
+    }
+  },
+  "threshold": 0.6650343089837885,
+  "head_path": "runs/stage5/5-1/R01/seed0/B_k10/causal_head.pt",
+  "head_sha256": "42ea7f2dc2989d1ef7b24de887d8300a54f3f9c82f3deb9e0a5dc8efc4064dc9",
+  "head_parameters": 6394568,
+  "seconds": 17.27059531211853,
+  "centered_fixed": {
+    "appearance_score": {
+      "auroc": 87.88115209473112,
+      "auprc": 75.73976504010902,
+      "frames": 2905
+    },
+    "temporal_score": {
+      "auroc": 64.08152961774319,
+      "auprc": 55.77584489912224,
+      "frames": 2905
+    },
+    "combined_score": {
+      "auroc": 88.73761560166007,
+      "auprc": 80.32008577493669,
+      "frames": 2905
+    }
+  },
+  "centered_testnorm": {
+    "appearance_score": {
+      "auroc": 87.88115209473112,
+      "auprc": 75.73976504010902,
+      "frames": 2905
+    },
+    "temporal_score": {
+      "auroc": 64.86280345281996,
+      "auprc": 56.775497664563936,
+      "frames": 2905
+    },
+    "combined_score": {
+      "auroc": 87.85278374013504,
+      "auprc": 79.69756957028234,
+      "frames": 2905
+    }
+  }
+}

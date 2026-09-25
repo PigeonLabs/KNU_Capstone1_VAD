@@ -1,0 +1,37 @@
+{
+  "state": "running",
+  "pid": 12009,
+  "started_at": 1790312089.2039201,
+  "completed": [
+    "5-1/R01/seed0/B_k10",
+    "5-1/R02/seed0/B_k10",
+    "5-1/R03/seed0/B_k10",
+    "5-1/R04/seed0/B_k10",
+    "5-1/R01/seed1/B_k10",
+    "5-1/R02/seed1/B_k10",
+    "5-1/R03/seed1/B_k10",
+    "5-1/R04/seed1/B_k10",
+    "5-1/R01/seed2/B_k10",
+    "5-1/R02/seed2/B_k10",
+    "5-1/R03/seed2/B_k10",
+    "5-1/R04/seed2/B_k10"
+  ],
+  "automatic_publication_authorized": true,
+  "step": "5-1/R04/seed2/B_k10",
+  "command": [
+    "/home/jeong/Desktop/IPAD/.venv/bin/python",
+    "-m",
+    "ipad.stage5",
+    "--action",
+    "unit",
+    "--scene",
+    "R04",
+    "--seed",
+    "2",
+    "--backbone",
+    "B",
+    "--k",
+    "10"
+  ],
+  "last_completed_experiment": "5-1"
+}

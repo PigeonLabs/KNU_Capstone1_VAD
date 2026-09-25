@@ -81,7 +81,7 @@ def cache_small(scene):
                     f=model(x);cls[a:a+len(x)]=f['cls'].cpu().numpy().astype(np.float16);patch[a:a+len(x)]=f['patch12'].cpu().numpy().astype(np.float16)
                 cls.flush();patch.flush();del cls,patch,inputs
                 (dest/'cls.tmp.npy').replace(dest/'cls.npy');(dest/'patch12.tmp.npy').replace(dest/'patch12.npy')
-                meta={**{k:v for k,v in rec.items() if k!='path'},'model':'dinov2_vits14','seconds':time.time()-tick,
+                meta={**{k:v for k,v in rec.items() if k not in {'path','gpu_seconds','wall_seconds'}},'model':'dinov2_vits14','seconds':time.time()-tick,
                       'channels':384,'compute_dtype':'float32','cache_dtype':'float16','source_commit':DINO_COMMIT,
                       'sha256':{key:digest(dest/key) for key in ['cls.npy','patch12.npy']}}
                 write_json(dest/'meta.json',meta);rows.append(meta);print(json.dumps({'cache':str(dest),'seconds':meta['seconds']}),flush=True)

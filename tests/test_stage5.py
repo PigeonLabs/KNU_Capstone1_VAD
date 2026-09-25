@@ -46,3 +46,16 @@ def test_head_channel_variants_batch_independence():
         with torch.no_grad():a=model(x);b=model(x[:1])
         assert a.shape==(2,200)
         torch.testing.assert_close(a[:1],b)
+
+
+def test_operational_misses_false_alarm_and_cold_start(monkeypatch):
+    from ipad.stage5 import operation_metrics
+    labels=np.zeros(60,dtype=int);labels[:6]=1;labels[38:43]=1;labels[50:53]=1
+    monkeypatch.setattr('ipad.stage5.np.load',lambda *a,**k:labels)
+    rows=[{'video':'00','frame':t,'label':int(labels[t]),'combined_score':2. if 38<=t<=42 or 45<=t<=49 else 0.} for t in range(35,60)]
+    summary,events,alarms=operation_metrics(rows,'R01',1.)
+    assert summary['eligible_segments']==2 and summary['cold_start_segments']==1
+    assert summary['detected_segments']==1 and summary['missed_segments']==1
+    assert summary['delay_median_frames_detected_only']==2
+    assert summary['false_alarm_episodes']==1
+    assert len(events)==3 and len(alarms)==25
