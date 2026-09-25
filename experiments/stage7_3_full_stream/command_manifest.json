@@ -1,0 +1,1217 @@
+{
+  "origin": "Reconstructed from fixed runner dispatch and saved per-unit configurations, not an independent syscall trace. Failed attempts remain in7-1/failed_attempts and runner.log.",
+  "commands": [
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R01",
+        "--seed",
+        "0",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R01/seed0/B_k10/config.json",
+      "started_at_from_config": 1790324756.1270273
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R01",
+        "--seed",
+        "0",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R01/seed0/S_k5/config.json",
+      "started_at_from_config": 1790324764.3599124
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R01",
+        "--seed",
+        "1",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R01/seed1/B_k10/config.json",
+      "started_at_from_config": 1790324786.4927406
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R01",
+        "--seed",
+        "1",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R01/seed1/S_k5/config.json",
+      "started_at_from_config": 1790324789.516232
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R01",
+        "--seed",
+        "2",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R01/seed2/B_k10/config.json",
+      "started_at_from_config": 1790324811.5458815
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R01",
+        "--seed",
+        "2",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R01/seed2/S_k5/config.json",
+      "started_at_from_config": 1790324814.577076
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R02",
+        "--seed",
+        "0",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R02/seed0/B_k10/config.json",
+      "started_at_from_config": 1790324767.348267
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R02",
+        "--seed",
+        "0",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R02/seed0/S_k5/config.json",
+      "started_at_from_config": 1790324770.4802945
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R02",
+        "--seed",
+        "1",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R02/seed1/B_k10/config.json",
+      "started_at_from_config": 1790324792.558863
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R02",
+        "--seed",
+        "1",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R02/seed1/S_k5/config.json",
+      "started_at_from_config": 1790324795.688885
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R02",
+        "--seed",
+        "2",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R02/seed2/B_k10/config.json",
+      "started_at_from_config": 1790324817.8029723
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R02",
+        "--seed",
+        "2",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R02/seed2/S_k5/config.json",
+      "started_at_from_config": 1790324820.9391568
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R03",
+        "--seed",
+        "0",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R03/seed0/B_k10/config.json",
+      "started_at_from_config": 1790324773.661165
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R03",
+        "--seed",
+        "0",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R03/seed0/S_k5/config.json",
+      "started_at_from_config": 1790324776.944071
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R03",
+        "--seed",
+        "1",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R03/seed1/B_k10/config.json",
+      "started_at_from_config": 1790324798.8114924
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R03",
+        "--seed",
+        "1",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R03/seed1/S_k5/config.json",
+      "started_at_from_config": 1790324802.0355446
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R03",
+        "--seed",
+        "2",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R03/seed2/B_k10/config.json",
+      "started_at_from_config": 1790324824.0723014
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R03",
+        "--seed",
+        "2",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R03/seed2/S_k5/config.json",
+      "started_at_from_config": 1790324827.2928717
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R04",
+        "--seed",
+        "0",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R04/seed0/B_k10/config.json",
+      "started_at_from_config": 1790324780.2287743
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R04",
+        "--seed",
+        "0",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R04/seed0/S_k5/config.json",
+      "started_at_from_config": 1790324783.2974684
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R04",
+        "--seed",
+        "1",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R04/seed1/B_k10/config.json",
+      "started_at_from_config": 1790324805.3200467
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R04",
+        "--seed",
+        "1",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R04/seed1/S_k5/config.json",
+      "started_at_from_config": 1790324808.399864
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R04",
+        "--seed",
+        "2",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-1/R04/seed2/B_k10/config.json",
+      "started_at_from_config": 1790324830.5888026
+    },
+    {
+      "stage": "7-1",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7",
+        "--action",
+        "diagnose",
+        "--scene",
+        "R04",
+        "--seed",
+        "2",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-1/R04/seed2/S_k5/config.json",
+      "started_at_from_config": 1790324833.994493
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R01",
+        "--seed",
+        "0",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R01/seed0/B_k10/config.json",
+      "started_at_from_config": 1790324962.5403914
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R01",
+        "--seed",
+        "0",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R01/seed0/S_k5/config.json",
+      "started_at_from_config": 1790324965.7810826
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R01",
+        "--seed",
+        "1",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R01/seed1/B_k10/config.json",
+      "started_at_from_config": 1790324993.316894
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R01",
+        "--seed",
+        "1",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R01/seed1/S_k5/config.json",
+      "started_at_from_config": 1790324996.7280436
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R01",
+        "--seed",
+        "2",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R01/seed2/B_k10/config.json",
+      "started_at_from_config": 1790325024.8749795
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R01",
+        "--seed",
+        "2",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R01/seed2/S_k5/config.json",
+      "started_at_from_config": 1790325028.1153507
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R02",
+        "--seed",
+        "0",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R02/seed0/B_k10/config.json",
+      "started_at_from_config": 1790324969.144868
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R02",
+        "--seed",
+        "0",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R02/seed0/S_k5/config.json",
+      "started_at_from_config": 1790324973.33745
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R02",
+        "--seed",
+        "1",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R02/seed1/B_k10/config.json",
+      "started_at_from_config": 1790324999.9772608
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R02",
+        "--seed",
+        "1",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R02/seed1/S_k5/config.json",
+      "started_at_from_config": 1790325004.5497525
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R02",
+        "--seed",
+        "2",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R02/seed2/B_k10/config.json",
+      "started_at_from_config": 1790325031.3933396
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R02",
+        "--seed",
+        "2",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R02/seed2/S_k5/config.json",
+      "started_at_from_config": 1790325035.6798275
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R03",
+        "--seed",
+        "0",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R03/seed0/B_k10/config.json",
+      "started_at_from_config": 1790324977.5722916
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R03",
+        "--seed",
+        "0",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R03/seed0/S_k5/config.json",
+      "started_at_from_config": 1790324981.726642
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R03",
+        "--seed",
+        "1",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R03/seed1/B_k10/config.json",
+      "started_at_from_config": 1790325009.4254851
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R03",
+        "--seed",
+        "1",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R03/seed1/S_k5/config.json",
+      "started_at_from_config": 1790325013.7272632
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R03",
+        "--seed",
+        "2",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R03/seed2/B_k10/config.json",
+      "started_at_from_config": 1790325039.9985623
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R03",
+        "--seed",
+        "2",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R03/seed2/S_k5/config.json",
+      "started_at_from_config": 1790325044.158158
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R04",
+        "--seed",
+        "0",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R04/seed0/B_k10/config.json",
+      "started_at_from_config": 1790324985.9086783
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R04",
+        "--seed",
+        "0",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R04/seed0/S_k5/config.json",
+      "started_at_from_config": 1790324989.6126738
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R04",
+        "--seed",
+        "1",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R04/seed1/B_k10/config.json",
+      "started_at_from_config": 1790325017.684511
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R04",
+        "--seed",
+        "1",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R04/seed1/S_k5/config.json",
+      "started_at_from_config": 1790325021.255885
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R04",
+        "--seed",
+        "2",
+        "--backbone",
+        "B",
+        "--k",
+        "10"
+      ],
+      "config": "runs/stage7/7-2/R04/seed2/B_k10/config.json",
+      "started_at_from_config": 1790325048.2623188
+    },
+    {
+      "stage": "7-2",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_alerts",
+        "--scene",
+        "R04",
+        "--seed",
+        "2",
+        "--backbone",
+        "S",
+        "--k",
+        "5"
+      ],
+      "config": "runs/stage7/7-2/R04/seed2/S_k5/config.json",
+      "started_at_from_config": 1790325051.9682753
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "accuracy",
+        "--scene",
+        "R01",
+        "--precision",
+        "fp32"
+      ],
+      "config": "runs/stage7/7-3/streams/R01/fp32/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "accuracy",
+        "--scene",
+        "R01",
+        "--precision",
+        "bf16"
+      ],
+      "config": "runs/stage7/7-3/streams/R01/bf16/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R01",
+        "--variant",
+        "fp32"
+      ],
+      "config": "runs/stage7/7-3/R01/seed0/B_k10_fp32/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R01",
+        "--variant",
+        "bf16"
+      ],
+      "config": "runs/stage7/7-3/R01/seed0/B_k10_bf16/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R01",
+        "--variant",
+        "bf16_mixed"
+      ],
+      "config": "runs/stage7/7-3/R01/seed0/B_k10_bf16_mixed/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "accuracy",
+        "--scene",
+        "R02",
+        "--precision",
+        "fp32"
+      ],
+      "config": "runs/stage7/7-3/streams/R02/fp32/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "accuracy",
+        "--scene",
+        "R02",
+        "--precision",
+        "bf16"
+      ],
+      "config": "runs/stage7/7-3/streams/R02/bf16/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R02",
+        "--variant",
+        "fp32"
+      ],
+      "config": "runs/stage7/7-3/R02/seed0/B_k10_fp32/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R02",
+        "--variant",
+        "bf16"
+      ],
+      "config": "runs/stage7/7-3/R02/seed0/B_k10_bf16/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R02",
+        "--variant",
+        "bf16_mixed"
+      ],
+      "config": "runs/stage7/7-3/R02/seed0/B_k10_bf16_mixed/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "accuracy",
+        "--scene",
+        "R03",
+        "--precision",
+        "fp32"
+      ],
+      "config": "runs/stage7/7-3/streams/R03/fp32/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "accuracy",
+        "--scene",
+        "R03",
+        "--precision",
+        "bf16"
+      ],
+      "config": "runs/stage7/7-3/streams/R03/bf16/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R03",
+        "--variant",
+        "fp32"
+      ],
+      "config": "runs/stage7/7-3/R03/seed0/B_k10_fp32/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R03",
+        "--variant",
+        "bf16"
+      ],
+      "config": "runs/stage7/7-3/R03/seed0/B_k10_bf16/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R03",
+        "--variant",
+        "bf16_mixed"
+      ],
+      "config": "runs/stage7/7-3/R03/seed0/B_k10_bf16_mixed/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "accuracy",
+        "--scene",
+        "R04",
+        "--precision",
+        "fp32"
+      ],
+      "config": "runs/stage7/7-3/streams/R04/fp32/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "accuracy",
+        "--scene",
+        "R04",
+        "--precision",
+        "bf16"
+      ],
+      "config": "runs/stage7/7-3/streams/R04/bf16/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R04",
+        "--variant",
+        "fp32"
+      ],
+      "config": "runs/stage7/7-3/R04/seed0/B_k10_fp32/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R04",
+        "--variant",
+        "bf16"
+      ],
+      "config": "runs/stage7/7-3/R04/seed0/B_k10_bf16/benchmark/config.json"
+    },
+    {
+      "stage": "7-3",
+      "command": [
+        "/home/jeong/Desktop/IPAD/.venv/bin/python",
+        "-m",
+        "ipad.stage7_stream",
+        "--action",
+        "benchmark",
+        "--scene",
+        "R04",
+        "--variant",
+        "bf16_mixed"
+      ],
+      "config": "runs/stage7/7-3/R04/seed0/B_k10_bf16_mixed/benchmark/config.json"
+    }
+  ]
+}

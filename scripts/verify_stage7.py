@@ -43,8 +43,9 @@ def command_manifest(root):
 
 
 def main():
-    os.chdir(ROOT);root=Path('runs/stage7');assert load(root/'status.json')['state']=='completed';audit={'passed':True,'diagnostic_units':0,'alert_units':0,'stream_units':0,'benchmark_units':0,'normal_calibration_folds':0}
+    os.chdir(ROOT);s6.reserve();root=Path('runs/stage7');assert load(root/'status.json')['state']=='completed';audit={'passed':True,'diagnostic_units':0,'alert_units':0,'stream_units':0,'benchmark_units':0,'normal_calibration_folds':0}
     for scene in SCENES:
+        s6.reserve()
         for seed in range(3):
             for b,k in [('B',10),('S',5)]:
                 source=s5.unit_path(b,scene,seed,k);diag=load(root/'7-1'/scene/f'seed{seed}'/f'{b}_k{k}'/'completed.json');old=s6.load(s6.folder(scene,seed,b,'fp32',k)/'completed.json')

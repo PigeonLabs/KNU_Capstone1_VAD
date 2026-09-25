@@ -1,5 +1,5 @@
 {
-  "state": "running",
+  "state": "completed",
   "stage": "7-3",
   "pid": 504198,
   "started_at": 1790324367.3153968,
@@ -87,5 +87,6 @@
     "--variant",
     "bf16_mixed"
   ],
-  "last_completed_experiment": "7-3"
+  "last_completed_experiment": "7-3",
+  "finished_at": 1790326737.0569851
 }

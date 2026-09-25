@@ -503,3 +503,8 @@ R01–R04, seed 0·1·2. 기존 테스트셋 사후 진단/추가 탐색이며 �
 FP32/BF16 모두 정상 보정·전체 테스트를 원본 JPEG에서 batch1로 다시 추출했다. bf16_mixed는 백본·bank BF16에 head만 FP32로 바꾼 대조이다. mixed의 batch 기준선 열은6단계 전체 BF16이며 동일한 mixed batch 실험이 아니다.
 정확도 패스의 공유 추출 시간은 속도 측정에서 제외했다. 별도 단일 모델 seed0로 전체 유효 테스트 capacity1회와 장면별 가장 긴 영상 전체30FPS 재생을 측정했다. 실제 카메라/네트워크 지연과 새 환경 일반화는 포함하지 않는다.
 normal_calibration_lovo.json에는 보정 영상 하나씩 제외한 모든 통계·임계값·heldout 정상 경보·테스트 민감도를 기록했다. 모델 재학습 분할 검증이 아닌 보정 집합 구성 민감도이다. R02 12·13·14 제외/±1 민감도 유지.
+
+
+## 7단계 통합 결과
+
+[원인 분석·경보·전체 스트림 검증](experiments/stage7_summary/research_findings.md)
