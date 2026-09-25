@@ -22,7 +22,7 @@ R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론
 | 7-2 | causal 경보 규칙 비교 | 완료 · seed 0·1·2 | [자료](experiments/stage7_2_alerts/) |
 | 7-3 | 전체 영상 batch1 검증 | 완료 · seed 0·1·2 | [자료](experiments/stage7_3_full_stream/) |
 | 8-1 | LoRA 구현·학습 검증 | 완료 · seed 0 | [자료](experiments/stage8_1_lora_validation/) |
-| 8-2 | 정상 영상 LoRA 비교 | 진행 전 또는 실행 중 | [자료](experiments/stage8_2_lora_comparison/) |
+| 8-2 | 정상 영상 LoRA 비교 | 완료 · seed 0 | [자료](experiments/stage8_2_lora_comparison/) |
 | 8-3 | 반복·병합 BF16 실시간 | 진행 전 또는 실행 중 | [자료](experiments/stage8_3_lora_stream/) |
 
 ## 1단계 — 논문 방법론 재현
@@ -529,6 +529,23 @@ R01 정상 영상의 구현·학습 진단 완료. 테스트 성능 결과가 �
 
 손실 정의가 다르므로 두 방법의 총 loss 크기로 우열을 비교하지 않습니다. 고정10epoch를 사용하며 테스트를 확인한 checkpoint 선택이 없습니다.
 R01 두 실행 평균 36.9초. 다른 장면의 표본 수·특징 재추출·head/메모리 학습·전체 스트림 시간을 포함하지 않는 측정입니다.
+
+
+## 8-2 LoRA 실험
+
+[전체 기록](experiments/stage8_2_lora_comparison/) · [규약](docs/stage8_protocol.md)
+
+R01–R04, seed 0, fp32_batch32. 장면별 단순 평균 후 seed 평균±표준편차. 주 후보는 사전 고정 anchored이며 테스트 최상 모델을 고르지 않습니다.
+
+| 방법 | AUROC (%) | AUPRC (%) | 외형 AUROC (%) | 활성 FPR (%) | 구간 recall (%) | 오경보/정상1000frame |
+|---|---:|---:|---:|---:|---:|---:|
+| frozen | 81.30 | 76.07 | 78.73 | 16.85 | 58.39 | 3.69 |
+| consistency | 73.25 | 63.58 | 75.04 | 17.55 | 40.12 | 4.24 |
+| anchored | 81.03 | 75.56 | 78.62 | 16.79 | 60.66 | 3.85 |
+
+anchored − frozen: AUROC -0.27pp, 활성 FPR -0.06pp, 구간 recall +2.27pp.
+
+정상 오탐시간·발생횟수·미탐을 함께 해석합니다. 구간 recall은 시작 전부터 켜진 경보를 포함하고 지연은 탐지된 구간만 계산하므로 이 수치만으로 운영 신뢰성 향상을 주장하지 않습니다. R02 12/13/14 제외 및 동일 유효 프레임 유지. 이미 관찰한 테스트의 후속 탐색이며 새 환경 검증이 아닙니다.
 
 
 ## 8단계 통합 결과

@@ -1,0 +1,143 @@
+[
+  {
+    "method": "frozen",
+    "metrics": {
+      "auroc": {
+        "mean": 81.29936179449842,
+        "seed_sd": null,
+        "per_seed_macro": [
+          81.29936179449842
+        ]
+      },
+      "auprc": {
+        "mean": 76.06621984808297,
+        "seed_sd": null,
+        "per_seed_macro": [
+          76.06621984808297
+        ]
+      },
+      "appearance_auroc": {
+        "mean": 78.72934641787262,
+        "seed_sd": null,
+        "per_seed_macro": [
+          78.72934641787262
+        ]
+      },
+      "active_fpr_pct": {
+        "mean": 16.852969553173157,
+        "seed_sd": null,
+        "per_seed_macro": [
+          16.852969553173157
+        ]
+      },
+      "recall_pct": {
+        "mean": 58.39160839160839,
+        "seed_sd": null,
+        "per_seed_macro": [
+          58.39160839160839
+        ]
+      },
+      "false_alarms_per1000": {
+        "mean": 3.692091995620463,
+        "seed_sd": null,
+        "per_seed_macro": [
+          3.692091995620463
+        ]
+      }
+    }
+  },
+  {
+    "method": "consistency",
+    "metrics": {
+      "auroc": {
+        "mean": 73.25017558949995,
+        "seed_sd": null,
+        "per_seed_macro": [
+          73.25017558949995
+        ]
+      },
+      "auprc": {
+        "mean": 63.583783565627705,
+        "seed_sd": null,
+        "per_seed_macro": [
+          63.583783565627705
+        ]
+      },
+      "appearance_auroc": {
+        "mean": 75.03787588124406,
+        "seed_sd": null,
+        "per_seed_macro": [
+          75.03787588124406
+        ]
+      },
+      "active_fpr_pct": {
+        "mean": 17.54805956270798,
+        "seed_sd": null,
+        "per_seed_macro": [
+          17.54805956270798
+        ]
+      },
+      "recall_pct": {
+        "mean": 40.12237762237763,
+        "seed_sd": null,
+        "per_seed_macro": [
+          40.12237762237763
+        ]
+      },
+      "false_alarms_per1000": {
+        "mean": 4.236169389916677,
+        "seed_sd": null,
+        "per_seed_macro": [
+          4.236169389916677
+        ]
+      }
+    }
+  },
+  {
+    "method": "anchored",
+    "metrics": {
+      "auroc": {
+        "mean": 81.02528079865567,
+        "seed_sd": null,
+        "per_seed_macro": [
+          81.02528079865567
+        ]
+      },
+      "auprc": {
+        "mean": 75.55934944982306,
+        "seed_sd": null,
+        "per_seed_macro": [
+          75.55934944982306
+        ]
+      },
+      "appearance_auroc": {
+        "mean": 78.6229919420938,
+        "seed_sd": null,
+        "per_seed_macro": [
+          78.6229919420938
+        ]
+      },
+      "active_fpr_pct": {
+        "mean": 16.793727200251432,
+        "seed_sd": null,
+        "per_seed_macro": [
+          16.793727200251432
+        ]
+      },
+      "recall_pct": {
+        "mean": 60.66433566433567,
+        "seed_sd": null,
+        "per_seed_macro": [
+          60.66433566433567
+        ]
+      },
+      "false_alarms_per1000": {
+        "mean": 3.846365368036384,
+        "seed_sd": null,
+        "per_seed_macro": [
+          3.846365368036384
+        ]
+      }
+    }
+  }
+]

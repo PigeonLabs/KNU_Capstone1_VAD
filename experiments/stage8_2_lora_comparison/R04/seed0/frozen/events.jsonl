@@ -1,0 +1,106 @@
+{"time": 1790330214.7459955, "event": "train_features", "video": "01"}
+{"time": 1790330216.2242777, "event": "train_features", "video": "02"}
+{"time": 1790330217.833397, "event": "train_features", "video": "03"}
+{"time": 1790330219.211068, "event": "train_features", "video": "04"}
+{"time": 1790330220.7437463, "event": "train_features", "video": "06"}
+{"time": 1790330222.0479167, "event": "train_features", "video": "07"}
+{"time": 1790330223.437634, "event": "train_features", "video": "08"}
+{"time": 1790330224.910235, "event": "train_features", "video": "09"}
+{"time": 1790330226.1903036, "event": "train_features", "video": "10"}
+{"time": 1790330227.4460576, "event": "train_features", "video": "13"}
+{"time": 1790330228.5216248, "event": "train_features", "video": "14"}
+{"time": 1790330229.6450276, "event": "train_features", "video": "15"}
+{"time": 1790330230.894395, "event": "train_features", "video": "16"}
+{"time": 1790330232.107493, "event": "train_features", "video": "17"}
+{"time": 1790330233.463016, "event": "train_features", "video": "18"}
+{"time": 1790330234.7991524, "event": "train_features", "video": "19"}
+{"time": 1790330236.1898577, "event": "train_features", "video": "21"}
+{"time": 1790330237.448778, "event": "train_features", "video": "22"}
+{"time": 1790330238.693723, "event": "train_features", "video": "23"}
+{"time": 1790330239.9138887, "event": "train_features", "video": "24"}
+{"time": 1790330241.456437, "event": "epoch", "mode": "causal", "epoch": 1, "train_ce": 5.256142586201161, "seconds": 0.24997258186340332}
+{"time": 1790330241.5156264, "event": "epoch", "mode": "causal", "epoch": 2, "train_ce": 5.092893429802247, "seconds": 0.30916619300842285}
+{"time": 1790330241.574514, "event": "epoch", "mode": "causal", "epoch": 3, "train_ce": 4.836225433360023, "seconds": 0.3680572509765625}
+{"time": 1790330241.634043, "event": "epoch", "mode": "causal", "epoch": 4, "train_ce": 4.563559992079718, "seconds": 0.4275844097137451}
+{"time": 1790330241.6915462, "event": "epoch", "mode": "causal", "epoch": 5, "train_ce": 4.341564564570813, "seconds": 0.4850893020629883}
+{"time": 1790330241.749685, "event": "epoch", "mode": "causal", "epoch": 6, "train_ce": 4.162498158963365, "seconds": 0.5432319641113281}
+{"time": 1790330241.8066325, "event": "epoch", "mode": "causal", "epoch": 7, "train_ce": 4.016827545822106, "seconds": 0.6001701354980469}
+{"time": 1790330241.8652442, "event": "epoch", "mode": "causal", "epoch": 8, "train_ce": 3.8916350365856647, "seconds": 0.6587862968444824}
+{"time": 1790330241.9223833, "event": "epoch", "mode": "causal", "epoch": 9, "train_ce": 3.7854689708863845, "seconds": 0.7159233093261719}
+{"time": 1790330241.981645, "event": "epoch", "mode": "causal", "epoch": 10, "train_ce": 3.697105273437604, "seconds": 0.7751884460449219}
+{"time": 1790330242.0429275, "event": "epoch", "mode": "causal", "epoch": 11, "train_ce": 3.622227592739029, "seconds": 0.8364682197570801}
+{"time": 1790330242.10337, "event": "epoch", "mode": "causal", "epoch": 12, "train_ce": 3.5551657348000676, "seconds": 0.8969180583953857}
+{"time": 1790330242.1651783, "event": "epoch", "mode": "causal", "epoch": 13, "train_ce": 3.4957104933382284, "seconds": 0.9587259292602539}
+{"time": 1790330242.2294772, "event": "epoch", "mode": "causal", "epoch": 14, "train_ce": 3.4442687789631643, "seconds": 1.023029088973999}
+{"time": 1790330242.2883463, "event": "epoch", "mode": "causal", "epoch": 15, "train_ce": 3.396210073415874, "seconds": 1.081892967224121}
+{"time": 1790330242.347833, "event": "epoch", "mode": "causal", "epoch": 16, "train_ce": 3.355527006600224, "seconds": 1.1413843631744385}
+{"time": 1790330242.4064407, "event": "epoch", "mode": "causal", "epoch": 17, "train_ce": 3.3178061510154273, "seconds": 1.1999971866607666}
+{"time": 1790330242.46592, "event": "epoch", "mode": "causal", "epoch": 18, "train_ce": 3.280155252049993, "seconds": 1.2594659328460693}
+{"time": 1790330242.5272272, "event": "epoch", "mode": "causal", "epoch": 19, "train_ce": 3.2490197583817406, "seconds": 1.3207552433013916}
+{"time": 1790330242.5940266, "event": "epoch", "mode": "causal", "epoch": 20, "train_ce": 3.2177829227582895, "seconds": 1.3875675201416016}
+{"time": 1790330242.6530929, "event": "epoch", "mode": "causal", "epoch": 21, "train_ce": 3.1883166017279807, "seconds": 1.446638822555542}
+{"time": 1790330242.712648, "event": "epoch", "mode": "causal", "epoch": 22, "train_ce": 3.1635032902315867, "seconds": 1.5062003135681152}
+{"time": 1790330242.7715476, "event": "epoch", "mode": "causal", "epoch": 23, "train_ce": 3.1368441031729626, "seconds": 1.5650966167449951}
+{"time": 1790330242.83111, "event": "epoch", "mode": "causal", "epoch": 24, "train_ce": 3.1148184124902074, "seconds": 1.6246628761291504}
+{"time": 1790330242.8905008, "event": "epoch", "mode": "causal", "epoch": 25, "train_ce": 3.0918517013146776, "seconds": 1.6840529441833496}
+{"time": 1790330242.9495857, "event": "epoch", "mode": "causal", "epoch": 26, "train_ce": 3.071345337615975, "seconds": 1.743133306503296}
+{"time": 1790330243.0081882, "event": "epoch", "mode": "causal", "epoch": 27, "train_ce": 3.052821155587669, "seconds": 1.801738977432251}
+{"time": 1790330243.0676043, "event": "epoch", "mode": "causal", "epoch": 28, "train_ce": 3.0320313016541043, "seconds": 1.861158847808838}
+{"time": 1790330243.12614, "event": "epoch", "mode": "causal", "epoch": 29, "train_ce": 3.0142827277426965, "seconds": 1.9196982383728027}
+{"time": 1790330243.1849575, "event": "epoch", "mode": "causal", "epoch": 30, "train_ce": 2.995808188133542, "seconds": 1.9785151481628418}
+{"time": 1790330243.2435586, "event": "epoch", "mode": "causal", "epoch": 31, "train_ce": 2.9792220973265553, "seconds": 2.0371103286743164}
+{"time": 1790330243.3026273, "event": "epoch", "mode": "causal", "epoch": 32, "train_ce": 2.9631221012570577, "seconds": 2.09618878364563}
+{"time": 1790330243.361613, "event": "epoch", "mode": "causal", "epoch": 33, "train_ce": 2.9484629238559807, "seconds": 2.1551742553710938}
+{"time": 1790330243.4202225, "event": "epoch", "mode": "causal", "epoch": 34, "train_ce": 2.932415719114299, "seconds": 2.2137813568115234}
+{"time": 1790330243.4792507, "event": "epoch", "mode": "causal", "epoch": 35, "train_ce": 2.9187815102794086, "seconds": 2.2728111743927}
+{"time": 1790330243.5384717, "event": "epoch", "mode": "causal", "epoch": 36, "train_ce": 2.9045784505312473, "seconds": 2.332028388977051}
+{"time": 1790330243.597237, "event": "epoch", "mode": "causal", "epoch": 37, "train_ce": 2.8882388389081277, "seconds": 2.3907971382141113}
+{"time": 1790330243.6561806, "event": "epoch", "mode": "causal", "epoch": 38, "train_ce": 2.8758479665609906, "seconds": 2.449737548828125}
+{"time": 1790330243.7153447, "event": "epoch", "mode": "causal", "epoch": 39, "train_ce": 2.862259248225311, "seconds": 2.508904218673706}
+{"time": 1790330243.7724493, "event": "epoch", "mode": "causal", "epoch": 40, "train_ce": 2.8508282967222995, "seconds": 2.566009283065796}
+{"time": 1790330243.8316445, "event": "epoch", "mode": "causal", "epoch": 41, "train_ce": 2.83905668509908, "seconds": 2.625190496444702}
+{"time": 1790330243.890604, "event": "epoch", "mode": "causal", "epoch": 42, "train_ce": 2.8271716044569417, "seconds": 2.684161424636841}
+{"time": 1790330243.9498556, "event": "epoch", "mode": "causal", "epoch": 43, "train_ce": 2.815620049992904, "seconds": 2.743410587310791}
+{"time": 1790330244.0072095, "event": "epoch", "mode": "causal", "epoch": 44, "train_ce": 2.8046761482685536, "seconds": 2.8007524013519287}
+{"time": 1790330244.0710495, "event": "epoch", "mode": "causal", "epoch": 45, "train_ce": 2.795848445361213, "seconds": 2.8645877838134766}
+{"time": 1790330244.1352236, "event": "epoch", "mode": "causal", "epoch": 46, "train_ce": 2.7809090389113202, "seconds": 2.928767204284668}
+{"time": 1790330244.1988716, "event": "epoch", "mode": "causal", "epoch": 47, "train_ce": 2.7699454786866666, "seconds": 2.9924185276031494}
+{"time": 1790330244.2575355, "event": "epoch", "mode": "causal", "epoch": 48, "train_ce": 2.763256809667847, "seconds": 3.0510871410369873}
+{"time": 1790330244.3172424, "event": "epoch", "mode": "causal", "epoch": 49, "train_ce": 2.751206568086079, "seconds": 3.1107847690582275}
+{"time": 1790330244.3758163, "event": "epoch", "mode": "causal", "epoch": 50, "train_ce": 2.7422767465895004, "seconds": 3.16936993598938}
+{"time": 1790330244.5408237, "event": "memory_fit", "position": 0}
+{"time": 1790330244.6046886, "event": "memory_fit", "position": 9}
+{"time": 1790330244.663936, "event": "memory_fit", "position": 18}
+{"time": 1790330244.7250218, "event": "memory_fit", "position": 27}
+{"time": 1790330244.7858233, "event": "memory_fit", "position": 36}
+{"time": 1790330244.9225123, "event": "memory_fit", "position": 45}
+{"time": 1790330244.9825158, "event": "memory_fit", "position": 54}
+{"time": 1790330245.0438187, "event": "memory_fit", "position": 63}
+{"time": 1790330245.1058414, "event": "memory_fit", "position": 72}
+{"time": 1790330245.1678529, "event": "memory_fit", "position": 81}
+{"time": 1790330245.2278461, "event": "memory_fit", "position": 90}
+{"time": 1790330245.3277133, "event": "memory_fit", "position": 99}
+{"time": 1790330245.3878348, "event": "memory_fit", "position": 108}
+{"time": 1790330245.4484437, "event": "memory_fit", "position": 117}
+{"time": 1790330245.5080853, "event": "memory_fit", "position": 126}
+{"time": 1790330245.5689797, "event": "memory_fit", "position": 135}
+{"time": 1790330245.6299748, "event": "memory_fit", "position": 144}
+{"time": 1790330245.732422, "event": "memory_fit", "position": 153}
+{"time": 1790330245.7914834, "event": "memory_fit", "position": 162}
+{"time": 1790330245.8557312, "event": "memory_fit", "position": 171}
+{"time": 1790330245.9178488, "event": "memory_fit", "position": 180}
+{"time": 1790330245.9793386, "event": "memory_fit", "position": 189}
+{"time": 1790330246.038871, "event": "memory_fit", "position": 198}
+{"time": 1790330246.139699, "event": "memory_fit", "position": 207}
+{"time": 1790330246.1991043, "event": "memory_fit", "position": 216}
+{"time": 1790330246.2607045, "event": "memory_fit", "position": 225}
+{"time": 1790330246.3203342, "event": "memory_fit", "position": 234}
+{"time": 1790330246.3815284, "event": "memory_fit", "position": 243}
+{"time": 1790330246.4401855, "event": "memory_fit", "position": 252}
+{"time": 1790330246.5447216, "event": "memory_fit", "position": 261}
+{"time": 1790330246.603815, "event": "memory_fit", "position": 270}
+{"time": 1790330246.6657035, "event": "memory_fit", "position": 279}
+{"time": 1790330246.725822, "event": "memory_fit", "position": 288}
+{"time": 1790330246.787358, "event": "memory_fit", "position": 297}
+{"time": 1790330246.8467848, "event": "memory_fit", "position": 306}
+{"time": 1790330246.929035, "event": "memory_fit", "position": 315}

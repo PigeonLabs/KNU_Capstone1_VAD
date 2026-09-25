@@ -1,0 +1,23 @@
+{
+  "time": 1790329220.6754975,
+  "protocol_sha256": "25a68e416025484bc32e36ca02f5948f457292659c1bb7c7b4a4f245c9c64d2d",
+  "settings_frozen_before_test": true,
+  "methods": [
+    "frozen",
+    "consistency",
+    "anchored"
+  ],
+  "primary": "anchored",
+  "rank": 4,
+  "alpha": 8,
+  "epochs": 10,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "anchor_weight": 1.0,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "test_used_for_selection": false
+}
