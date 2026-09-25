@@ -15,7 +15,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SCENES=('R01','R02','R03','R04')
 REMOTE='https://github.com/PigeonLabs/KNU_Capstone1_VAD.git'
 RESERVE=10*1024**3
-STAGES={'stage1':'stage1_reproduction','stage2':'stage2_dinov2','ablation':'stage1_memory_ablation','stage3':'stage3_phase_routing'}
+STAGES={'stage1':'stage1_reproduction','stage2':'stage2_dinov2','ablation':'stage1_memory_ablation','stage3':'stage3_phase_routing','4-1':'stage4_1_appearance_temporal','4-2':'stage4_2_memory_budget','4-3':'stage4_3_process_prior'}
 
 
 def load(path):return json.loads(path.read_text()) if path.exists() else None
@@ -51,6 +51,8 @@ def binary_inventory(stage):
         yield from (ROOT/'cache/dino').rglob('*.npy')
         for scene in SCENES:yield from (ROOT/'runs/prototype'/scene/'seed0').glob('*.pt')
         yield from (ROOT/'cache/torch_hub/checkpoints').glob('*.pth')
+    elif stage in {'4-1','4-2','4-3'}:
+        yield from (ROOT/'runs/stage4'/stage).rglob('*.pt')
     elif stage=='stage3':
         yield from (ROOT/'runs/stage3').rglob('*.pt')
     else:
@@ -103,6 +105,10 @@ def snapshot(stage):
                 suffix='' if name=='dino_cache' else '_s0'
                 copy_analysis(ROOT/f'runs/{name}_{scene}{suffix}.log',dest/scene/f'{name}.log')
         copy_analysis(ROOT/'reports/dino_verification.json',dest/'verification/dino_verification.json')
+    elif stage in {'4-1','4-2','4-3'}:
+        copy_analysis(ROOT/'runs/stage4'/stage,dest)
+        copy_analysis(ROOT/'runs/stage4/status.json',dest/'runner_status.json')
+        copy_analysis(ROOT/'runs/stage4/verification.txt',dest/'verification.txt')
     elif stage=='stage3':
         for scene in SCENES:
             for source in (ROOT/'runs/stage3'/scene).glob('seed*'):
@@ -192,7 +198,7 @@ def make_readme():
            '- `experiments/`: 단계별 설정·epoch 이력·실행 로그·프레임별 정답/점수·평가지표·정렬 민감도.',
            '- `artifacts.jsonl`: 로컬 원본/모델/특징 파일의 경로·크기·SHA256. **바이너리는 GitHub에 업로드하지 않았습니다.**',
            '- 과거 원 모델 stdout은 25배치 간격입니다. 이번 기록 정책 이후의 학습은 매 배치 JSONL을 추가합니다. 기록하지 않은 과거 값을 복원하지 않습니다.',
-           '- 실험 완료 후 결과를 보고하고 사용자 승인 뒤 전체 묶음을 main에 게시합니다. 승인 전에는 로컬 기록만 보존합니다. 원격 변경을 강제로 덮어쓰지 않습니다.',
+           '- 최신 사용자 지시에 따라 승인된 실험 전체 완료 시 결과·로그·해시를 main에 자동 게시합니다. 바이너리를 제외하고 원격 변경을 강제로 덮어쓰지 않습니다.',
            '- 디스크 여유가 **10 GiB 이하**가 되면 이 프로젝트의 실험을 일시중지하고 보고합니다. 자동 재개하지 않습니다.',
            '- 메모리 제거 실험은 1단계 추가 검증입니다. 3단계는 2026-09-25 승인받아 정상 위상 진단과 routing 비교부터 진행합니다.',
            '- 테스트 전체 정규화와 미래 프레임을 포함하는 centered window를 사용하므로 온라인/인과적 실시간 성능 주장이 아닙니다.',
@@ -203,13 +209,16 @@ def make_readme():
            '- upstream 코드의 재배포 대신 출처·SHA256을 보존하고 bootstrap에서 원본을 내려받습니다.','']
     if (ROOT/'experiments/stage3_phase_routing/results.md').exists():
         text += ['## 3단계 — 위상 진단과 선택 방식 비교', '', '[연구 해석·3-seed 요약·시간 진단](experiments/stage3_phase_routing/research_findings.md) · [사전 고정 규약](docs/stage3_protocol.md)', '', (ROOT/'experiments/stage3_phase_routing/results.md').read_text()]
+    for st in ['4-1','4-2','4-3']:
+        path=ROOT/'experiments'/STAGES[st]/'results.md'
+        if path.exists():text += ['', f'## {st} 추가 실험', '', f'[전체 기록](experiments/{STAGES[st]}/) · [고정 규약](docs/stage4_protocol.md)', '', path.read_text()]
     (ROOT/'README.md').write_text('\n'.join(text))
 
 
 def publish(stage,message,push=False,approved_push=False):
     os.chdir(ROOT);ensure_room()
     if push and not approved_push:
-        raise RuntimeError("Publication requires explicit user approval after the experiment report; use --no-push for local archive")
+        raise RuntimeError("Publication requires explicit authorization; approved stage 4 experiments have standing user authorization")
     lock=(ROOT/'runs/publication.lock').open('w')
     fcntl.flock(lock,fcntl.LOCK_EX)
     status={'state':'preparing','stage':stage,'started_at':time.time(),'repository':REMOTE}

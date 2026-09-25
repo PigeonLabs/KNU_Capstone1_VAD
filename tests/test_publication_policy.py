@@ -10,6 +10,6 @@ def test_push_without_explicit_batch_approval_never_calls_git(monkeypatch,tmp_pa
     monkeypatch.setattr(pub,'ensure_room',lambda:None)
     monkeypatch.chdir(tmp_path)
     calls=[];monkeypatch.setattr(pub,'git',lambda *a,**kw:calls.append(a))
-    with pytest.raises(RuntimeError,match='explicit user approval'):
+    with pytest.raises(RuntimeError,match='explicit authorization'):
         pub.publish('stage3','must not push',push=True)
     assert calls==[]
