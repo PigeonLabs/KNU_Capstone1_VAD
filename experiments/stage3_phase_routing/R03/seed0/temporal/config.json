@@ -1,0 +1,23 @@
+{
+  "scene": "R03",
+  "seed": 0,
+  "period_from_dev": 697.0,
+  "windows": [
+    5,
+    21
+  ],
+  "types": [
+    "normal",
+    "pause",
+    "reverse",
+    "skip",
+    "speed_0.9",
+    "speed_1.1"
+  ],
+  "amplitude": 0.12,
+  "speed_control": "Assumed tolerated +/-10% nominal rate, not a factory specification",
+  "positive_support": "transformed event interval expanded by clip support plus 21-frame phase window: 18 frames each side",
+  "purpose": "Normal-only controlled diagnostic; no claim of real anomaly cause classification",
+  "source_sha256": "9267d45e819f1157d185ecdd143160e5ab80902c9a58213bebaaa79ffbbaa544",
+  "protocol_sha256": "30d091db249f036f08be46c4d60c1f9532a47165635e2fe2cda3f7b1672e1a06"
+}
