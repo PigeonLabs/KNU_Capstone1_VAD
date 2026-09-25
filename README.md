@@ -9,7 +9,7 @@ R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론
 | 1단계 | Swin-T + 주기 메모리 + 재구성 + 주기 검사 | 4개 장면 50 epochs 완료 · seed 0 | [전체 자료](experiments/stage1_reproduction/) |
 | 2단계 | DINOv2 입력–복원 특징 비교 / 비재구성 prototype | 4개 장면 완료 · seed 0 | [전체 자료](experiments/stage2_dinov2/) |
 | 1단계 추가 검증 | 메모리 제거 ablation | 4개 장면 완료 · seed 0 | [자료](experiments/stage1_memory_ablation/) |
-| 3단계 | 위상 진단 및 불확실성을 고려한 메모리 선택 | 승인 · 완료 단위별 기록 | [규약](docs/stage3_protocol.md) · [결과](experiments/stage3_phase_routing/) |
+| 3단계 | 위상 진단 및 불확실성을 고려한 메모리 선택 | R01–R04 × seed 0·1·2 및 시간 진단 완료 | [규약](docs/stage3_protocol.md) · [결과](experiments/stage3_phase_routing/) |
 
 ## 1단계 — 논문 방법론 재현
 

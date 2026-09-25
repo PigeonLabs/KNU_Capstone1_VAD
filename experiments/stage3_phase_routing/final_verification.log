@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "scene": "R01",
+      "seed": 0,
+      "frames": 3400,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R01",
+      "seed": 1,
+      "frames": 3400,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R01",
+      "seed": 2,
+      "frames": 3400,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R02",
+      "seed": 0,
+      "frames": 7478,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R02",
+      "seed": 1,
+      "frames": 7478,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R02",
+      "seed": 2,
+      "frames": 7478,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R03",
+      "seed": 0,
+      "frames": 11682,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R03",
+      "seed": 1,
+      "frames": 11682,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R03",
+      "seed": 2,
+      "frames": 11682,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R04",
+      "seed": 0,
+      "frames": 7793,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R04",
+      "seed": 1,
+      "frames": 7793,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    },
+    {
+      "scene": "R04",
+      "seed": 2,
+      "frames": 7793,
+      "identity_match": true,
+      "normal_split_disjoint": true
+    }
+  ],
+  "routing_source_hash": "15e791c3fee8e7090e32032a32d2be7f5492f1f5db52dd0e1eb9443599731bae",
+  "input_inventory_references": {
+    "experiments/stage1_reproduction/artifacts.jsonl": "fc64de92f11a8ed4f4efbfe02ae5c26bb4e391d1f63402f1d33b9cdc79aa8794",
+    "experiments/stage2_dinov2/artifacts.jsonl": "c838752ca25e7f7fc9294814c9de8726e5fb47112dd557fb77a6d89acda8a057"
+  },
+  "checked_at": 1790308909.9686172,
+  "note": "Prior-stage binary inventories are referenced, not republished; diagnostic transformed indices reference original cached normal features."
+}

@@ -28,6 +28,23 @@ def main():
             assert all(abs(float(r['confidence'])-max(float(r[f'p{j:02}']) for j in range(20)))<1e-7 for r in rows)
             checks.append({'scene':scene,'seed':seed,'frames':len(rows),'identity_match':True,'normal_split_disjoint':True})
         temporal=root/scene/'seed0/temporal';assert (temporal/'completed.json').exists()
+        with (temporal/'scores.csv').open() as f:diagnostic_rows=list(csv.DictReader(f))
+        original={(r['video'],r['frame']):r for r in diagnostic_rows if r['variant']=='normal'}
+        paired={}
+        for kind in ['pause','reverse','skip','speed_0.9','speed_1.1']:
+            pairs=[(r,original[(r['video'],r['source_frame'])]) for r in diagnostic_rows
+                   if r['variant']==kind and (r['video'],r['source_frame']) in original]
+            assert pairs
+            delta={k:np.array([float(r[k])-float(o[k]) for r,o in pairs])
+                   for k in ['unconditional','top3_weighted','time5','time21']}
+            positive=np.array([int(r['label']) for r,o in pairs],dtype=bool)
+            maximum=float(np.max(np.abs(delta['unconditional'])))
+            assert maximum<2e-6,'Image-only score changed under frame reorder'
+            paired[kind]={'matched_frames':len(pairs),'unconditional_max_abs_change':maximum,
+                'positive_mean_change':{k:float(v[positive].mean()) if positive.any() else None for k,v in delta.items()},
+                'negative_mean_change':{k:float(v[~positive].mean()) if (~positive).any() else None for k,v in delta.items()}}
+        write_json(temporal/'paired_source_frame_audit.json',{'variants':paired,
+            'interpretation':'Image-only scores are invariant for the same source frame. Their diagnostic AUROC can arise from which phases were selected/repeated, not detection of temporal disorder.'})
         manifest=json.loads((temporal/'manifest.json').read_text())
         for item in manifest:
             assert 0<=min(item['output_to_source_frame'])<=max(item['output_to_source_frame'])<item['original_length']

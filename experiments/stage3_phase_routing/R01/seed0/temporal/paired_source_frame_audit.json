@@ -1,0 +1,85 @@
+{
+  "variants": {
+    "pause": {
+      "matched_frames": 1536,
+      "unconditional_max_abs_change": 0.0,
+      "positive_mean_change": {
+        "unconditional": 0.0,
+        "top3_weighted": 0.0007737680234371394,
+        "time5": -0.5576309794988626,
+        "time21": -0.32404591716507536
+      },
+      "negative_mean_change": {
+        "unconditional": 0.0,
+        "top3_weighted": 1.188561170885752e-11,
+        "time5": 0.0,
+        "time21": 0.0
+      }
+    },
+    "reverse": {
+      "matched_frames": 1349,
+      "unconditional_max_abs_change": 0.0,
+      "positive_mean_change": {
+        "unconditional": 0.0,
+        "top3_weighted": 0.0018212476062136522,
+        "time5": 0.4093943916424473,
+        "time21": 2.0533156786396907
+      },
+      "negative_mean_change": {
+        "unconditional": 0.0,
+        "top3_weighted": 0.0,
+        "time5": 0.0,
+        "time21": 0.0
+      }
+    },
+    "skip": {
+      "matched_frames": 1162,
+      "unconditional_max_abs_change": 0.0,
+      "positive_mean_change": {
+        "unconditional": 0.0,
+        "top3_weighted": 0.0009956184745870502,
+        "time5": 0.8444681134336309,
+        "time21": 3.1219164273351465
+      },
+      "negative_mean_change": {
+        "unconditional": 0.0,
+        "top3_weighted": 8.250919819406232e-12,
+        "time5": 0.0,
+        "time21": 0.0
+      }
+    },
+    "speed_0.9": {
+      "matched_frames": 1501,
+      "unconditional_max_abs_change": 0.0,
+      "positive_mean_change": {
+        "unconditional": null,
+        "top3_weighted": null,
+        "time5": null,
+        "time21": null
+      },
+      "negative_mean_change": {
+        "unconditional": 0.0,
+        "top3_weighted": 7.08695788986281e-05,
+        "time5": -0.06256518642743933,
+        "time21": -0.06240940631806489
+      }
+    },
+    "speed_1.1": {
+      "matched_frames": 1207,
+      "unconditional_max_abs_change": 0.0,
+      "positive_mean_change": {
+        "unconditional": null,
+        "top3_weighted": null,
+        "time5": null,
+        "time21": null
+      },
+      "negative_mean_change": {
+        "unconditional": 0.0,
+        "top3_weighted": 3.6641231613803125e-05,
+        "time5": 0.057395080421678346,
+        "time21": 0.10434751851201862
+      }
+    }
+  },
+  "interpretation": "Image-only scores are invariant for the same source frame. Their diagnostic AUROC can arise from which phases were selected/repeated, not detection of temporal disorder."
+}

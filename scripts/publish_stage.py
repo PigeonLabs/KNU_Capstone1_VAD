@@ -146,7 +146,7 @@ def make_readme():
           '| 1단계 | Swin-T + 주기 메모리 + 재구성 + 주기 검사 | 4개 장면 50 epochs 완료 · seed 0 | [전체 자료](experiments/stage1_reproduction/) |',
           f'| 2단계 | DINOv2 입력–복원 특징 비교 / 비재구성 prototype | {"4개 장면 완료 · seed 0" if (dino/"R04/prototype/completed.json").exists() else "게시 준비 중"} | [전체 자료](experiments/stage2_dinov2/) |',
           '| 1단계 추가 검증 | 메모리 제거 ablation | 4개 장면 완료 · seed 0 | [자료](experiments/stage1_memory_ablation/) |',
-          '| 3단계 | 위상 진단 및 불확실성을 고려한 메모리 선택 | 승인 · 완료 단위별 기록 | [규약](docs/stage3_protocol.md) · [결과](experiments/stage3_phase_routing/) |','',
+          '| 3단계 | 위상 진단 및 불확실성을 고려한 메모리 선택 | R01–R04 × seed 0·1·2 및 시간 진단 완료 | [규약](docs/stage3_protocol.md) · [결과](experiments/stage3_phase_routing/) |','',
           '## 1단계 — 논문 방법론 재현','',
           '장면마다 독립 학습: 16프레임, 256×256, Video Swin-T, 200개 위상, 메모리 2,000개, window 5, Adam 1e-4, batch 8, 50 epochs, FP32, seed 0. 재구성·주기 점수를 장면별 정규화 후 같은 가중치로 결합합니다.','',
           '| 장면 | 논문 AUROC (%) | 구현 AUROC (%) | 차이 (pp) | 평가 프레임 |','|---|---:|---:|---:|---:|',*rows]

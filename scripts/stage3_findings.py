@@ -55,7 +55,8 @@ def main():
         for kind in ['pause','reverse','skip']:
             vals=[d['variants'][kind][k]['auroc'] for k in tkeys]
             lines.append('| '+scene+'/'+kind+' | '+' | '.join(f'{v:.2f}' if v is not None else 'N/A' for v in vals)+' |')
-    lines+=['','- ±10% 속도 변형은 허용 가능한 변동이라는 가정 아래 별도 알림 비율을 기록했다. 실제 공정 정상 범위는 기업 멘토 검토가 필요하다.',
+    lines+=['','- 동일 원본 프레임 대조에서 무조건부 외형 점수는 시간 순서를 바꿔도 수치 오차 내 동일하다. 변형 구간에서 외형 AUROC가 높더라도 중앙 구간 선택·반복에 따른 분포 효과일 수 있으므로 시간 이상 탐지 증거로 해석하지 않는다. paired_source_frame_audit.json에 점수 변화 검증을 보존한다.',
+            '- ±10% 속도 변형은 허용 가능한 변동이라는 가정 아래 별도 알림 비율을 기록했다. 실제 공정 정상 범위는 기업 멘토 검토가 필요하다.',
             '- 임계치는 변형 전 정상 holdout의 p95이다. 같은 정상 holdout을 이용한 임계치 보정/오탐 비율이므로 독립 일반화 오탐률로 주장하지 않는다.',
             '- 미래 프레임을 쓰는 clip/window 및 테스트 전체 정규화를 사용했다. 실제 온라인 지연, 원인 분류 정확도, 공정 현장 실시간성을 입증한 결과가 아니다.',
             '- 원시 index manifest와 진단 프레임 점수, AUROC/AUPRC, p95 양성 재현율 및 알림 비율은 각 temporal/ 폴더에 보존한다.','',

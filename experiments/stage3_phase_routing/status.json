@@ -16,7 +16,7 @@
     "R03/seed2",
     "R04/seed2"
   ],
-  "publication": "local commits pending authentication",
+  "publication": "awaiting user approval after final report",
   "step": "R04/seed2",
   "command": [
     "/home/jeong/Desktop/IPAD/.venv/bin/python",
@@ -27,5 +27,19 @@
     "--seed",
     "2"
   ],
-  "finished_at": 1790308769.9797843
+  "finished_at": 1790308769.9797843,
+  "completed_all_seeds": [
+    "R01/seed0",
+    "R02/seed0",
+    "R03/seed0",
+    "R04/seed0",
+    "R01/seed1",
+    "R02/seed1",
+    "R03/seed1",
+    "R04/seed1",
+    "R01/seed2",
+    "R02/seed2",
+    "R03/seed2",
+    "R04/seed2"
+  ]
 }
