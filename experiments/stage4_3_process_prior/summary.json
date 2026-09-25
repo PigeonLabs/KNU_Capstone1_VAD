@@ -1,0 +1,1403 @@
+{
+  "stage": "4-3",
+  "units": 12,
+  "complete": true,
+  "macro": {
+    "None/unconditional": {
+      "seeds": [
+        78.58039332199579,
+        78.14518945804954,
+        78.05051285440999
+      ],
+      "mean": 78.25869854481844,
+      "std": 0.28258903387528583
+    },
+    "None/transition_kl": {
+      "seeds": [
+        46.26281276053959,
+        46.261533700355216,
+        45.56920063245847
+      ],
+      "mean": 46.03118236445109,
+      "std": 0.4000884271256998
+    },
+    "None/duration": {
+      "seeds": [
+        58.67258123830357,
+        58.00792303176343,
+        58.889071827643534
+      ],
+      "mean": 58.52319203257017,
+      "std": 0.45917714578632757
+    },
+    "None/process": {
+      "seeds": [
+        55.6414883402479,
+        54.838128651766475,
+        55.04905590033311
+      ],
+      "mean": 55.17622429744916,
+      "std": 0.41650395939059726
+    },
+    "None/phase_entropy": {
+      "seeds": [
+        64.90492724689194,
+        64.93477073994188,
+        65.12351383657361
+      ],
+      "mean": 64.98773727446914,
+      "std": 0.11852896115311125
+    },
+    "None/appearance_transition": {
+      "seeds": [
+        60.4906513120868,
+        59.98575882892396,
+        59.76261797481635
+      ],
+      "mean": 60.079676038609044,
+      "std": 0.3729925827017991
+    },
+    "None/appearance_duration": {
+      "seeds": [
+        75.58830810440332,
+        75.2074589525777,
+        75.55660678191106
+      ],
+      "mean": 75.45079127963069,
+      "std": 0.21132725688777024
+    },
+    "None/appearance_process": {
+      "seeds": [
+        71.8436532161611,
+        70.93571800244376,
+        71.03057439430025
+      ],
+      "mean": 71.26998187096837,
+      "std": 0.4990726830737541
+    },
+    "None/appearance_time21": {
+      "seeds": [
+        81.74644223788727,
+        80.63151789509982,
+        80.53912158608773
+      ],
+      "mean": 80.97236057302494,
+      "std": 0.6719643497885794
+    }
+  },
+  "scene_results": [
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 86.56317390231065,
+          "auprc": 71.20248808572761,
+          "frames": 3160
+        },
+        "time5": {
+          "auroc": 45.24008229626742,
+          "auprc": 39.86567207453674,
+          "frames": 3160
+        },
+        "time21": {
+          "auroc": 71.34532972069826,
+          "auprc": 62.19541200250629,
+          "frames": 3160
+        },
+        "transition_overlap": {
+          "auroc": 63.25655425240429,
+          "auprc": 51.86652631352604,
+          "frames": 3160
+        },
+        "transition_kl": {
+          "auroc": 47.97212698759502,
+          "auprc": 34.66811006288219,
+          "frames": 3160
+        },
+        "duration": {
+          "auroc": 61.49179556685809,
+          "auprc": 58.57322324924805,
+          "frames": 3160
+        },
+        "phase_entropy": {
+          "auroc": 63.257824517902485,
+          "auprc": 49.16635112919093,
+          "frames": 3160
+        },
+        "process": {
+          "auroc": 60.78906352216678,
+          "auprc": 57.488915084818274,
+          "frames": 3160
+        },
+        "appearance_transition": {
+          "auroc": 70.00953969389143,
+          "auprc": 55.00609935032934,
+          "frames": 3160
+        },
+        "appearance_duration": {
+          "auroc": 82.12480273835368,
+          "auprc": 72.65768501617941,
+          "frames": 3160
+        },
+        "appearance_process": {
+          "auroc": 83.07705726907315,
+          "auprc": 75.37602789181015,
+          "frames": 3160
+        },
+        "appearance_time21": {
+          "auroc": 89.86946328318749,
+          "auprc": 81.47687243395328,
+          "frames": 3160
+        },
+        "appearance_entropy": {
+          "auroc": 76.90428676497675,
+          "auprc": 60.78725892307699,
+          "frames": 3160
+        }
+      },
+      "frames": 3160,
+      "excluded_videos": [],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R01",
+      "seed": 0,
+      "seconds": 1.3793268203735352,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 86.60996201482737,
+          "auprc": 71.05785486478726,
+          "frames": 3160
+        },
+        "time5": {
+          "auroc": 47.90262229375228,
+          "auprc": 40.2525017797948,
+          "frames": 3160
+        },
+        "time21": {
+          "auroc": 69.2585375602688,
+          "auprc": 59.49421972332309,
+          "frames": 3160
+        },
+        "transition_overlap": {
+          "auroc": 62.24076527568361,
+          "auprc": 51.316590177748935,
+          "frames": 3160
+        },
+        "transition_kl": {
+          "auroc": 50.15969354421435,
+          "auprc": 35.6683003413951,
+          "frames": 3160
+        },
+        "duration": {
+          "auroc": 60.51464383237407,
+          "auprc": 56.2683871665912,
+          "frames": 3160
+        },
+        "phase_entropy": {
+          "auroc": 62.36487021485695,
+          "auprc": 47.99906201074721,
+          "frames": 3160
+        },
+        "process": {
+          "auroc": 59.075941129122064,
+          "auprc": 55.94264758880346,
+          "frames": 3160
+        },
+        "appearance_transition": {
+          "auroc": 73.79327953335527,
+          "auprc": 58.23361416889381,
+          "frames": 3160
+        },
+        "appearance_duration": {
+          "auroc": 81.76999641361708,
+          "auprc": 70.78058200636687,
+          "frames": 3160
+        },
+        "appearance_process": {
+          "auroc": 83.16212271526872,
+          "auprc": 74.5780273849521,
+          "frames": 3160
+        },
+        "appearance_time21": {
+          "auroc": 89.00949354091166,
+          "auprc": 80.01565603884255,
+          "frames": 3160
+        },
+        "appearance_entropy": {
+          "auroc": 76.53366563478765,
+          "auprc": 59.88944002890626,
+          "frames": 3160
+        }
+      },
+      "frames": 3160,
+      "excluded_videos": [],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R01",
+      "seed": 1,
+      "seconds": 1.4053308963775635,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 86.2698272565949,
+          "auprc": 70.4648182258981,
+          "frames": 3160
+        },
+        "time5": {
+          "auroc": 48.33038420026837,
+          "auprc": 38.55764767488752,
+          "frames": 3160
+        },
+        "time21": {
+          "auroc": 64.4676042072887,
+          "auprc": 51.35142668307666,
+          "frames": 3160
+        },
+        "transition_overlap": {
+          "auroc": 59.92236137275052,
+          "auprc": 49.03845469296933,
+          "frames": 3160
+        },
+        "transition_kl": {
+          "auroc": 48.84928765627971,
+          "auprc": 34.8336514008663,
+          "frames": 3160
+        },
+        "duration": {
+          "auroc": 62.982769695360695,
+          "auprc": 60.315982464920914,
+          "frames": 3160
+        },
+        "phase_entropy": {
+          "auroc": 60.63853706063105,
+          "auprc": 46.67376046147611,
+          "frames": 3160
+        },
+        "process": {
+          "auroc": 61.74908784351685,
+          "auprc": 58.934214090318584,
+          "frames": 3160
+        },
+        "appearance_transition": {
+          "auroc": 73.99567516940049,
+          "auprc": 57.83949252386057,
+          "frames": 3160
+        },
+        "appearance_duration": {
+          "auroc": 82.34885640114307,
+          "auprc": 73.34987546318864,
+          "frames": 3160
+        },
+        "appearance_process": {
+          "auroc": 84.1974314384783,
+          "auprc": 76.60335874924466,
+          "frames": 3160
+        },
+        "appearance_time21": {
+          "auroc": 86.72119493028572,
+          "auprc": 74.66264294183131,
+          "frames": 3160
+        },
+        "appearance_entropy": {
+          "auroc": 74.8316368937605,
+          "auprc": 58.162504698884234,
+          "frames": 3160
+        }
+      },
+      "frames": 3160,
+      "excluded_videos": [],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R01",
+      "seed": 2,
+      "seconds": 1.3870902061462402,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 86.24113253153538,
+          "auprc": 75.11144147119752,
+          "frames": 7286
+        },
+        "time5": {
+          "auroc": 55.22821311126079,
+          "auprc": 46.48042291794885,
+          "frames": 7286
+        },
+        "time21": {
+          "auroc": 88.68999362546859,
+          "auprc": 83.75440813541643,
+          "frames": 7286
+        },
+        "transition_overlap": {
+          "auroc": 70.19185625245298,
+          "auprc": 64.65358927090881,
+          "frames": 7286
+        },
+        "transition_kl": {
+          "auroc": 34.70912897995157,
+          "auprc": 27.910476595601164,
+          "frames": 7286
+        },
+        "duration": {
+          "auroc": 64.85643473625198,
+          "auprc": 55.13092791320715,
+          "frames": 7286
+        },
+        "phase_entropy": {
+          "auroc": 71.97751182584486,
+          "auprc": 67.11165364763671,
+          "frames": 7286
+        },
+        "process": {
+          "auroc": 54.80384340268296,
+          "auprc": 56.0231002317923,
+          "frames": 7286
+        },
+        "appearance_transition": {
+          "auroc": 54.1053696710611,
+          "auprc": 40.479854935287285,
+          "frames": 7286
+        },
+        "appearance_duration": {
+          "auroc": 86.81250488110881,
+          "auprc": 77.33740121328348,
+          "frames": 7286
+        },
+        "appearance_process": {
+          "auroc": 76.36613281104742,
+          "auprc": 70.06303367008748,
+          "frames": 7286
+        },
+        "appearance_time21": {
+          "auroc": 93.87627578623017,
+          "auprc": 88.22937462057193,
+          "frames": 7286
+        },
+        "appearance_entropy": {
+          "auroc": 81.36907576251097,
+          "auprc": 76.16774696743092,
+          "frames": 7286
+        }
+      },
+      "frames": 7286,
+      "excluded_videos": [
+        "12",
+        "13",
+        "14"
+      ],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R02",
+      "seed": 0,
+      "seconds": 2.678199291229248,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 86.06636088460972,
+          "auprc": 74.68884661137778,
+          "frames": 7286
+        },
+        "time5": {
+          "auroc": 55.02798309146637,
+          "auprc": 45.76228056984405,
+          "frames": 7286
+        },
+        "time21": {
+          "auroc": 87.83067415908071,
+          "auprc": 82.54220852019328,
+          "frames": 7286
+        },
+        "transition_overlap": {
+          "auroc": 70.11674825520289,
+          "auprc": 63.28964930494523,
+          "frames": 7286
+        },
+        "transition_kl": {
+          "auroc": 32.98110672366891,
+          "auprc": 27.71378335334512,
+          "frames": 7286
+        },
+        "duration": {
+          "auroc": 63.54610702637014,
+          "auprc": 53.3208586654417,
+          "frames": 7286
+        },
+        "phase_entropy": {
+          "auroc": 72.82490958509395,
+          "auprc": 67.10939319098313,
+          "frames": 7286
+        },
+        "process": {
+          "auroc": 53.862612408364555,
+          "auprc": 51.209811507802605,
+          "frames": 7286
+        },
+        "appearance_transition": {
+          "auroc": 48.69077791561518,
+          "auprc": 36.442802648875215,
+          "frames": 7286
+        },
+        "appearance_duration": {
+          "auroc": 85.83827904049595,
+          "auprc": 75.71219435538845,
+          "frames": 7286
+        },
+        "appearance_process": {
+          "auroc": 73.15157015798353,
+          "auprc": 64.90754778088188,
+          "frames": 7286
+        },
+        "appearance_time21": {
+          "auroc": 90.973938460802,
+          "auprc": 82.20828552331477,
+          "frames": 7286
+        },
+        "appearance_entropy": {
+          "auroc": 83.02638767801503,
+          "auprc": 77.4314580835835,
+          "frames": 7286
+        }
+      },
+      "frames": 7286,
+      "excluded_videos": [
+        "12",
+        "13",
+        "14"
+      ],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R02",
+      "seed": 1,
+      "seconds": 2.7442567348480225,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 86.05269585037631,
+          "auprc": 73.94514713787763,
+          "frames": 7286
+        },
+        "time5": {
+          "auroc": 55.336560269053756,
+          "auprc": 46.71128887644922,
+          "frames": 7286
+        },
+        "time21": {
+          "auroc": 89.12125382403559,
+          "auprc": 84.98750061074726,
+          "frames": 7286
+        },
+        "transition_overlap": {
+          "auroc": 71.73383527902715,
+          "auprc": 65.23372366747006,
+          "frames": 7286
+        },
+        "transition_kl": {
+          "auroc": 33.49781065446984,
+          "auprc": 27.19139644171409,
+          "frames": 7286
+        },
+        "duration": {
+          "auroc": 64.38092881320503,
+          "auprc": 54.47788971944647,
+          "frames": 7286
+        },
+        "phase_entropy": {
+          "auroc": 73.80837795795195,
+          "auprc": 68.30641723960625,
+          "frames": 7286
+        },
+        "process": {
+          "auroc": 53.67757956300545,
+          "auprc": 54.31989871703039,
+          "frames": 7286
+        },
+        "appearance_transition": {
+          "auroc": 49.27551715322056,
+          "auprc": 36.36926439960221,
+          "frames": 7286
+        },
+        "appearance_duration": {
+          "auroc": 86.79709237886132,
+          "auprc": 77.28142418837548,
+          "frames": 7286
+        },
+        "appearance_process": {
+          "auroc": 73.21077702448932,
+          "auprc": 66.63750775924099,
+          "frames": 7286
+        },
+        "appearance_time21": {
+          "auroc": 91.88654741978067,
+          "auprc": 83.39638625676761,
+          "frames": 7286
+        },
+        "appearance_entropy": {
+          "auroc": 83.22162374893504,
+          "auprc": 77.66795145560982,
+          "frames": 7286
+        }
+      },
+      "frames": 7286,
+      "excluded_videos": [
+        "12",
+        "13",
+        "14"
+      ],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R02",
+      "seed": 2,
+      "seconds": 2.6164896488189697,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 62.31376664926063,
+          "auprc": 47.58065510805959,
+          "frames": 11410
+        },
+        "time5": {
+          "auroc": 50.20351456695432,
+          "auprc": 43.93864964481447,
+          "frames": 11410
+        },
+        "time21": {
+          "auroc": 55.05158180249852,
+          "auprc": 48.49679449920629,
+          "frames": 11410
+        },
+        "transition_overlap": {
+          "auroc": 49.14195346792562,
+          "auprc": 44.72115211307519,
+          "frames": 11410
+        },
+        "transition_kl": {
+          "auroc": 50.21038960188812,
+          "auprc": 45.942756515988805,
+          "frames": 11410
+        },
+        "duration": {
+          "auroc": 53.9302665946254,
+          "auprc": 49.57039354599934,
+          "frames": 11410
+        },
+        "phase_entropy": {
+          "auroc": 50.03475441097458,
+          "auprc": 44.71893025706568,
+          "frames": 11410
+        },
+        "process": {
+          "auroc": 52.54811863543915,
+          "auprc": 51.62147916361399,
+          "frames": 11410
+        },
+        "appearance_transition": {
+          "auroc": 50.46956063727309,
+          "auprc": 43.35866001251421,
+          "frames": 11410
+        },
+        "appearance_duration": {
+          "auroc": 60.086873753398336,
+          "auprc": 49.92193534819233,
+          "frames": 11410
+        },
+        "appearance_process": {
+          "auroc": 54.169242116542684,
+          "auprc": 46.47165898642167,
+          "frames": 11410
+        },
+        "appearance_time21": {
+          "auroc": 62.14360914125039,
+          "auprc": 48.88697028643737,
+          "frames": 11410
+        },
+        "appearance_entropy": {
+          "auroc": 50.48914244883551,
+          "auprc": 42.64069416944256,
+          "frames": 11410
+        }
+      },
+      "frames": 11410,
+      "excluded_videos": [],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R03",
+      "seed": 0,
+      "seconds": 2.842611789703369,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 61.24305981824857,
+          "auprc": 46.805614435655166,
+          "frames": 11410
+        },
+        "time5": {
+          "auroc": 48.93729489767606,
+          "auprc": 43.70072143132078,
+          "frames": 11410
+        },
+        "time21": {
+          "auroc": 56.55345828262163,
+          "auprc": 50.47012173831534,
+          "frames": 11410
+        },
+        "transition_overlap": {
+          "auroc": 49.81308528278629,
+          "auprc": 45.544957875124624,
+          "frames": 11410
+        },
+        "transition_kl": {
+          "auroc": 49.76781925969045,
+          "auprc": 45.65191928383231,
+          "frames": 11410
+        },
+        "duration": {
+          "auroc": 54.486401687598416,
+          "auprc": 50.87138677056936,
+          "frames": 11410
+        },
+        "phase_entropy": {
+          "auroc": 50.59901397301676,
+          "auprc": 45.70298880275605,
+          "frames": 11410
+        },
+        "process": {
+          "auroc": 52.684341575276484,
+          "auprc": 51.68606665774185,
+          "frames": 11410
+        },
+        "appearance_transition": {
+          "auroc": 49.975030200428115,
+          "auprc": 43.156804856201724,
+          "frames": 11410
+        },
+        "appearance_duration": {
+          "auroc": 60.57632777397038,
+          "auprc": 49.83602347788852,
+          "frames": 11410
+        },
+        "appearance_process": {
+          "auroc": 54.12481324578944,
+          "auprc": 46.14646272454799,
+          "frames": 11410
+        },
+        "appearance_time21": {
+          "auroc": 61.72284252623119,
+          "auprc": 48.307567410752426,
+          "frames": 11410
+        },
+        "appearance_entropy": {
+          "auroc": 50.78089318741789,
+          "auprc": 43.2252017167886,
+          "frames": 11410
+        }
+      },
+      "frames": 11410,
+      "excluded_videos": [],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R03",
+      "seed": 1,
+      "seconds": 2.8483545780181885,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 60.749583689804965,
+          "auprc": 46.681082159016746,
+          "frames": 11410
+        },
+        "time5": {
+          "auroc": 49.432662486863634,
+          "auprc": 43.43513557515373,
+          "frames": 11410
+        },
+        "time21": {
+          "auroc": 56.16639491736488,
+          "auprc": 49.79302680476355,
+          "frames": 11410
+        },
+        "transition_overlap": {
+          "auroc": 50.06001375195819,
+          "auprc": 45.91921835147634,
+          "frames": 11410
+        },
+        "transition_kl": {
+          "auroc": 49.399465934571694,
+          "auprc": 44.91167346574148,
+          "frames": 11410
+        },
+        "duration": {
+          "auroc": 54.80520566504138,
+          "auprc": 49.60622187827567,
+          "frames": 11410
+        },
+        "phase_entropy": {
+          "auroc": 50.92838621198761,
+          "auprc": 46.12983339736122,
+          "frames": 11410
+        },
+        "process": {
+          "auroc": 51.95217002475956,
+          "auprc": 50.64703034287519,
+          "frames": 11410
+        },
+        "appearance_transition": {
+          "auroc": 49.63167499958457,
+          "auprc": 42.479079004814515,
+          "frames": 11410
+        },
+        "appearance_duration": {
+          "auroc": 60.291957194197686,
+          "auprc": 48.52301043109461,
+          "frames": 11410
+        },
+        "appearance_process": {
+          "auroc": 53.81737376875662,
+          "auprc": 45.50890667645262,
+          "frames": 11410
+        },
+        "appearance_time21": {
+          "auroc": 61.3915158827312,
+          "auprc": 47.83376976786406,
+          "frames": 11410
+        },
+        "appearance_entropy": {
+          "auroc": 51.12605172770619,
+          "auprc": 43.43347848181287,
+          "frames": 11410
+        }
+      },
+      "frames": 11410,
+      "excluded_videos": [],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R03",
+      "seed": 2,
+      "seconds": 2.8811962604522705,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 79.20350020487648,
+          "auprc": 83.99220338055807,
+          "frames": 7489
+        },
+        "time5": {
+          "auroc": 55.762535287346815,
+          "auprc": 65.21541595810265,
+          "frames": 7489
+        },
+        "time21": {
+          "auroc": 63.23851283929406,
+          "auprc": 71.30724970420843,
+          "frames": 7489
+        },
+        "transition_overlap": {
+          "auroc": 74.0513968724395,
+          "auprc": 79.13336669512748,
+          "frames": 7489
+        },
+        "transition_kl": {
+          "auroc": 52.15960547272365,
+          "auprc": 58.83640208655366,
+          "frames": 7489
+        },
+        "duration": {
+          "auroc": 54.411828055478814,
+          "auprc": 61.8072181444049,
+          "frames": 7489
+        },
+        "phase_entropy": {
+          "auroc": 74.34961823284584,
+          "auprc": 79.85041053848066,
+          "frames": 7489
+        },
+        "process": {
+          "auroc": 54.42492780070274,
+          "auprc": 61.17407505728271,
+          "frames": 7489
+        },
+        "appearance_transition": {
+          "auroc": 67.37813524612157,
+          "auprc": 73.7417093729507,
+          "frames": 7489
+        },
+        "appearance_duration": {
+          "auroc": 73.32905104475248,
+          "auprc": 75.76938937046798,
+          "frames": 7489
+        },
+        "appearance_process": {
+          "auroc": 73.76218066798116,
+          "auprc": 78.4171672253636,
+          "frames": 7489
+        },
+        "appearance_time21": {
+          "auroc": 81.09642074088102,
+          "auprc": 83.73908481710501,
+          "frames": 7489
+        },
+        "appearance_entropy": {
+          "auroc": 82.75322241235557,
+          "auprc": 86.20745524043636,
+          "frames": 7489
+        }
+      },
+      "frames": 7489,
+      "excluded_videos": [],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R04",
+      "seed": 0,
+      "seconds": 2.04850172996521,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 78.6613751145125,
+          "auprc": 83.6704815511733,
+          "frames": 7489
+        },
+        "time5": {
+          "auroc": 56.514568725071335,
+          "auprc": 64.9559451108153,
+          "frames": 7489
+        },
+        "time21": {
+          "auroc": 64.6046391034893,
+          "auprc": 71.82304077650019,
+          "frames": 7489
+        },
+        "transition_overlap": {
+          "auroc": 73.51035975193699,
+          "auprc": 78.05892014378284,
+          "frames": 7489
+        },
+        "transition_kl": {
+          "auroc": 52.13751527384716,
+          "auprc": 58.80755153484056,
+          "frames": 7489
+        },
+        "duration": {
+          "auroc": 53.48453958071112,
+          "auprc": 61.63343159391207,
+          "frames": 7489
+        },
+        "phase_entropy": {
+          "auroc": 73.95028918679986,
+          "auprc": 78.94329106044898,
+          "frames": 7489
+        },
+        "process": {
+          "auroc": 53.729619494302796,
+          "auprc": 60.62625286118366,
+          "frames": 7489
+        },
+        "appearance_transition": {
+          "auroc": 67.4839476662973,
+          "auprc": 73.88100410008977,
+          "frames": 7489
+        },
+        "appearance_duration": {
+          "auroc": 72.64523258222737,
+          "auprc": 74.84957562514198,
+          "frames": 7489
+        },
+        "appearance_process": {
+          "auroc": 73.30436589073341,
+          "auprc": 77.66688893434318,
+          "frames": 7489
+        },
+        "appearance_time21": {
+          "auroc": 80.81979705245442,
+          "auprc": 83.12719763301637,
+          "frames": 7489
+        },
+        "appearance_entropy": {
+          "auroc": 82.00175868857878,
+          "auprc": 85.22216414920368,
+          "frames": 7489
+        }
+      },
+      "frames": 7489,
+      "excluded_videos": [],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R04",
+      "seed": 1,
+      "seconds": 2.023007869720459,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    },
+    {
+      "metrics": {
+        "unconditional": {
+          "auroc": 79.12994462086382,
+          "auprc": 84.05297178533216,
+          "frames": 7489
+        },
+        "time5": {
+          "auroc": 56.960526101058576,
+          "auprc": 66.08267185492095,
+          "frames": 7489
+        },
+        "time21": {
+          "auroc": 66.45012635887804,
+          "auprc": 74.14805761172187,
+          "frames": 7489
+        },
+        "transition_overlap": {
+          "auroc": 74.75376228064358,
+          "auprc": 79.56501146899377,
+          "frames": 7489
+        },
+        "transition_kl": {
+          "auroc": 50.53023828451265,
+          "auprc": 57.904490259807474,
+          "frames": 7489
+        },
+        "duration": {
+          "auroc": 53.387383136967024,
+          "auprc": 61.286107532145294,
+          "frames": 7489
+        },
+        "phase_entropy": {
+          "auroc": 75.11875411572382,
+          "auprc": 80.27175985826234,
+          "frames": 7489
+        },
+        "process": {
+          "auroc": 52.817386170050575,
+          "auprc": 59.84782724761983,
+          "frames": 7489
+        },
+        "appearance_transition": {
+          "auroc": 66.1476045770598,
+          "auprc": 73.16706991825185,
+          "frames": 7489
+        },
+        "appearance_duration": {
+          "auroc": 72.78852115344213,
+          "auprc": 74.7556672296472,
+          "frames": 7489
+        },
+        "appearance_process": {
+          "auroc": 72.89671534547675,
+          "auprc": 77.38048724735111,
+          "frames": 7489
+        },
+        "appearance_time21": {
+          "auroc": 82.15722811155337,
+          "auprc": 84.27383177311376,
+          "frames": 7489
+        },
+        "appearance_entropy": {
+          "auroc": 83.25986351271065,
+          "auprc": 86.42362679452269,
+          "frames": 7489
+        }
+      },
+      "frames": 7489,
+      "excluded_videos": [],
+      "shift": 0,
+      "policy": "strict",
+      "normalization": "offline scene-wide min-max",
+      "combinations": {
+        "process": [
+          "transition_kl",
+          "duration"
+        ],
+        "appearance_transition": [
+          "unconditional",
+          "transition_kl"
+        ],
+        "appearance_duration": [
+          "unconditional",
+          "duration"
+        ],
+        "appearance_process": [
+          "unconditional",
+          "process"
+        ],
+        "appearance_time21": [
+          "unconditional",
+          "time21"
+        ],
+        "appearance_entropy": [
+          "unconditional",
+          "phase_entropy"
+        ]
+      },
+      "scene": "R04",
+      "seed": 2,
+      "seconds": 2.015970468521118,
+      "primary": "appearance_process",
+      "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+    }
+  ],
+  "bootstrap": {
+    "primary": "appearance_process",
+    "draws": 2000,
+    "unit": "video",
+    "seed0_only": true,
+    "scenes": {
+      "R01": {
+        "ci95_pp": [
+          -12.823484856427436,
+          6.738389379408936
+        ],
+        "valid_draws": 2000
+      },
+      "R02": {
+        "ci95_pp": [
+          -15.470517896828108,
+          -2.664419255763941
+        ],
+        "valid_draws": 2000
+      },
+      "R03": {
+        "ci95_pp": [
+          -19.10004197898991,
+          3.64506761239149
+        ],
+        "valid_draws": 2000
+      },
+      "R04": {
+        "ci95_pp": [
+          -9.339064967198045,
+          -1.2824413046891905
+        ],
+        "valid_draws": 2000
+      }
+    },
+    "macro_ci95_pp": [
+      -10.74357713913781,
+      -2.3471743712279673
+    ],
+    "valid_draws": 2000
+  }
+}

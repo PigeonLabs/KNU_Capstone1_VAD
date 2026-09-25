@@ -1,0 +1,105 @@
+{
+  "metrics": {
+    "unconditional": {
+      "auroc": 62.31376664926063,
+      "auprc": 47.58065510805959,
+      "frames": 11410
+    },
+    "time5": {
+      "auroc": 50.20351456695432,
+      "auprc": 43.93864964481447,
+      "frames": 11410
+    },
+    "time21": {
+      "auroc": 55.05158180249852,
+      "auprc": 48.49679449920629,
+      "frames": 11410
+    },
+    "transition_overlap": {
+      "auroc": 49.14195346792562,
+      "auprc": 44.72115211307519,
+      "frames": 11410
+    },
+    "transition_kl": {
+      "auroc": 50.21038960188812,
+      "auprc": 45.942756515988805,
+      "frames": 11410
+    },
+    "duration": {
+      "auroc": 53.9302665946254,
+      "auprc": 49.57039354599934,
+      "frames": 11410
+    },
+    "phase_entropy": {
+      "auroc": 50.03475441097458,
+      "auprc": 44.71893025706568,
+      "frames": 11410
+    },
+    "process": {
+      "auroc": 52.54811863543915,
+      "auprc": 51.62147916361399,
+      "frames": 11410
+    },
+    "appearance_transition": {
+      "auroc": 50.46956063727309,
+      "auprc": 43.35866001251421,
+      "frames": 11410
+    },
+    "appearance_duration": {
+      "auroc": 60.086873753398336,
+      "auprc": 49.92193534819233,
+      "frames": 11410
+    },
+    "appearance_process": {
+      "auroc": 54.169242116542684,
+      "auprc": 46.47165898642167,
+      "frames": 11410
+    },
+    "appearance_time21": {
+      "auroc": 62.14360914125039,
+      "auprc": 48.88697028643737,
+      "frames": 11410
+    },
+    "appearance_entropy": {
+      "auroc": 50.48914244883551,
+      "auprc": 42.64069416944256,
+      "frames": 11410
+    }
+  },
+  "frames": 11410,
+  "excluded_videos": [],
+  "shift": 0,
+  "policy": "strict",
+  "normalization": "offline scene-wide min-max",
+  "combinations": {
+    "process": [
+      "transition_kl",
+      "duration"
+    ],
+    "appearance_transition": [
+      "unconditional",
+      "transition_kl"
+    ],
+    "appearance_duration": [
+      "unconditional",
+      "duration"
+    ],
+    "appearance_process": [
+      "unconditional",
+      "process"
+    ],
+    "appearance_time21": [
+      "unconditional",
+      "time21"
+    ],
+    "appearance_entropy": [
+      "unconditional",
+      "phase_entropy"
+    ]
+  },
+  "scene": "R03",
+  "seed": 0,
+  "seconds": 2.842611789703369,
+  "primary": "appearance_process",
+  "warning": "Prior learned from full-normal in-sample head predictions; no independent normal FPR or online claim"
+}

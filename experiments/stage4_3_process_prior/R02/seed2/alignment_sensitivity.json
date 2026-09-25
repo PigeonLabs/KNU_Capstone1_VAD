@@ -1,0 +1,302 @@
+{
+  "-1": {
+    "metrics": {
+      "unconditional": {
+        "auroc": 86.2066295868886,
+        "auprc": 75.58632926911326,
+        "frames": 9093
+      },
+      "time5": {
+        "auroc": 55.48998617377311,
+        "auprc": 43.73858717478565,
+        "frames": 9093
+      },
+      "time21": {
+        "auroc": 88.95381770739975,
+        "auprc": 83.36937173981123,
+        "frames": 9093
+      },
+      "transition_overlap": {
+        "auroc": 69.38833165406358,
+        "auprc": 59.86881217373779,
+        "frames": 9093
+      },
+      "transition_kl": {
+        "auroc": 34.88806874701738,
+        "auprc": 25.763070566602327,
+        "frames": 9093
+      },
+      "duration": {
+        "auroc": 66.18567267592326,
+        "auprc": 55.0645754474657,
+        "frames": 9093
+      },
+      "phase_entropy": {
+        "auroc": 71.26385121438096,
+        "auprc": 62.78385220884898,
+        "frames": 9093
+      },
+      "process": {
+        "auroc": 56.92697390952664,
+        "auprc": 56.293467077152215,
+        "frames": 9093
+      },
+      "appearance_transition": {
+        "auroc": 49.70471137599507,
+        "auprc": 38.94959175938267,
+        "frames": 9093
+      },
+      "appearance_duration": {
+        "auroc": 86.57933249110306,
+        "auprc": 76.78906237409875,
+        "frames": 9093
+      },
+      "appearance_process": {
+        "auroc": 71.33888547071075,
+        "auprc": 66.3653717834444,
+        "frames": 9093
+      },
+      "appearance_time21": {
+        "auroc": 92.66518608197376,
+        "auprc": 85.233136074607,
+        "frames": 9093
+      },
+      "appearance_entropy": {
+        "auroc": 82.10459492600997,
+        "auprc": 76.0592674766572,
+        "frames": 9093
+      }
+    },
+    "frames": 9093,
+    "excluded_videos": [],
+    "shift": -1,
+    "policy": "common",
+    "normalization": "offline scene-wide min-max",
+    "combinations": {
+      "process": [
+        "transition_kl",
+        "duration"
+      ],
+      "appearance_transition": [
+        "unconditional",
+        "transition_kl"
+      ],
+      "appearance_duration": [
+        "unconditional",
+        "duration"
+      ],
+      "appearance_process": [
+        "unconditional",
+        "process"
+      ],
+      "appearance_time21": [
+        "unconditional",
+        "time21"
+      ],
+      "appearance_entropy": [
+        "unconditional",
+        "phase_entropy"
+      ]
+    }
+  },
+  "0": {
+    "metrics": {
+      "unconditional": {
+        "auroc": 86.17976513098465,
+        "auprc": 75.43397290243831,
+        "frames": 9093
+      },
+      "time5": {
+        "auroc": 55.4889734218443,
+        "auprc": 43.69564982471413,
+        "frames": 9093
+      },
+      "time21": {
+        "auroc": 89.02608919055551,
+        "auprc": 83.37441043348113,
+        "frames": 9093
+      },
+      "transition_overlap": {
+        "auroc": 69.41706515943855,
+        "auprc": 59.836545951571686,
+        "frames": 9093
+      },
+      "transition_kl": {
+        "auroc": 34.804433283884315,
+        "auprc": 25.608363264943314,
+        "frames": 9093
+      },
+      "duration": {
+        "auroc": 66.1633281674305,
+        "auprc": 55.01519422073374,
+        "frames": 9093
+      },
+      "phase_entropy": {
+        "auroc": 71.32353193052828,
+        "auprc": 62.76505064764333,
+        "frames": 9093
+      },
+      "process": {
+        "auroc": 56.8165607242209,
+        "auprc": 56.12040911957092,
+        "frames": 9093
+      },
+      "appearance_transition": {
+        "auroc": 49.63934263195843,
+        "auprc": 38.689911258971556,
+        "frames": 9093
+      },
+      "appearance_duration": {
+        "auroc": 86.49444320131275,
+        "auprc": 76.67289625856296,
+        "frames": 9093
+      },
+      "appearance_process": {
+        "auroc": 71.24252946912752,
+        "auprc": 66.1603387417907,
+        "frames": 9093
+      },
+      "appearance_time21": {
+        "auroc": 92.63974319661646,
+        "auprc": 85.08920706532402,
+        "frames": 9093
+      },
+      "appearance_entropy": {
+        "auroc": 82.10297550478053,
+        "auprc": 76.03868750435575,
+        "frames": 9093
+      }
+    },
+    "frames": 9093,
+    "excluded_videos": [],
+    "shift": 0,
+    "policy": "common",
+    "normalization": "offline scene-wide min-max",
+    "combinations": {
+      "process": [
+        "transition_kl",
+        "duration"
+      ],
+      "appearance_transition": [
+        "unconditional",
+        "transition_kl"
+      ],
+      "appearance_duration": [
+        "unconditional",
+        "duration"
+      ],
+      "appearance_process": [
+        "unconditional",
+        "process"
+      ],
+      "appearance_time21": [
+        "unconditional",
+        "time21"
+      ],
+      "appearance_entropy": [
+        "unconditional",
+        "phase_entropy"
+      ]
+    }
+  },
+  "1": {
+    "metrics": {
+      "unconditional": {
+        "auroc": 86.11642625520874,
+        "auprc": 75.18786004603278,
+        "frames": 9093
+      },
+      "time5": {
+        "auroc": 55.5334187957647,
+        "auprc": 43.67522844178179,
+        "frames": 9093
+      },
+      "time21": {
+        "auroc": 89.08866146816277,
+        "auprc": 83.35967621251223,
+        "frames": 9093
+      },
+      "transition_overlap": {
+        "auroc": 69.43343825422255,
+        "auprc": 59.782751885193456,
+        "frames": 9093
+      },
+      "transition_kl": {
+        "auroc": 34.746907376635036,
+        "auprc": 25.463379443014684,
+        "frames": 9093
+      },
+      "duration": {
+        "auroc": 66.14020758636626,
+        "auprc": 54.965065577132336,
+        "frames": 9093
+      },
+      "phase_entropy": {
+        "auroc": 71.36443590925725,
+        "auprc": 62.72839542622292,
+        "frames": 9093
+      },
+      "process": {
+        "auroc": 56.72521340731971,
+        "auprc": 55.96302785622584,
+        "frames": 9093
+      },
+      "appearance_transition": {
+        "auroc": 49.596015880755026,
+        "auprc": 38.396282926659225,
+        "frames": 9093
+      },
+      "appearance_duration": {
+        "auroc": 86.38076829951873,
+        "auprc": 76.52359229467795,
+        "frames": 9093
+      },
+      "appearance_process": {
+        "auroc": 71.15775060227244,
+        "auprc": 65.94219620362995,
+        "frames": 9093
+      },
+      "appearance_time21": {
+        "auroc": 92.56250200388948,
+        "auprc": 84.83328261948401,
+        "frames": 9093
+      },
+      "appearance_entropy": {
+        "auroc": 82.05653234802779,
+        "auprc": 75.96196442337553,
+        "frames": 9093
+      }
+    },
+    "frames": 9093,
+    "excluded_videos": [],
+    "shift": 1,
+    "policy": "common",
+    "normalization": "offline scene-wide min-max",
+    "combinations": {
+      "process": [
+        "transition_kl",
+        "duration"
+      ],
+      "appearance_transition": [
+        "unconditional",
+        "transition_kl"
+      ],
+      "appearance_duration": [
+        "unconditional",
+        "duration"
+      ],
+      "appearance_process": [
+        "unconditional",
+        "process"
+      ],
+      "appearance_time21": [
+        "unconditional",
+        "time21"
+      ],
+      "appearance_entropy": [
+        "unconditional",
+        "phase_entropy"
+      ]
+    }
+  }
+}
