@@ -1,0 +1,22 @@
+{
+  "variant": "int4",
+  "state": "diagnostic_complete",
+  "samples": 96,
+  "repeats": 3,
+  "batch_size": 1,
+  "quantized_linear_layers": 48,
+  "total_linear_layers": 48,
+  "backbone_tensor_payload_bytes": 58440192,
+  "backbone_serialized_bytes": 58522497,
+  "state_sha256": "8144839d626d3b04e2fcd48363c1e0e0fa700a748f8cdf76707e901221642b60",
+  "peak_allocated_mib": 82.1533203125,
+  "peak_reserved_mib": 170.0,
+  "mean_ms": 6.023459532621524,
+  "p50_ms": 5.818814504891634,
+  "p95_ms": 6.7175377975218,
+  "patch_cosine_distance_mean": 0.1269716990645975,
+  "cls_cosine_distance_mean": 0.16384608733157316,
+  "seconds": 5.125284910202026,
+  "scope": "normal-only backbone probe; not VAD accuracy/full streaming; CPU JPEG + preprocess + backbone + GPU sync; no torch.compile",
+  "free_gib": 19.166259765625
+}

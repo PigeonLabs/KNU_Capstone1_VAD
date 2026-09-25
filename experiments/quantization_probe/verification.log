@@ -1,0 +1,39 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+# 8비트·4비트 DINOv2 양자화 예비 검증
+
+**정상 영상 기반 구현 진단 완료. 전체 VAD 성능 실험은 아직 수행하지 않았습니다.** 고정 ViT-B/14, R01 정상 학습 영상 3개의 96프레임, batch 1·3회 반복. 동일 입력/전처리, JPEG 읽기·백본·GPU 동기화 포함. 위상 예측기·프로토타입·시간 검사는 제외합니다.
+
+| 방식 | 백본 직렬화 크기 MiB | BF16 대비 감소 | GPU peak allocated MiB | 평균 처리 ms | p95 ms | 평균 patch cosine 차이 |
+|---|---:|---:|---:|---:|---:|---:|
+| bf16 | 165.20 | 0.0% | 189.20 | 3.909 | 4.294 | 0.000000 |
+| int8 | 84.47 | 48.9% | 112.48 | 5.697 | 6.225 | 0.000950 |
+| int4 | 55.81 | 66.2% | 82.15 | 6.023 | 6.718 | 0.126972 |
+
+## 확인된 사항
+
+- INT8·INT4 모두 48개 Linear 가중치의 실제 변환과 유한한 출력을 확인. 정규화/attention/patch embedding은 낮은 비트로 바꾸지 않았습니다.
+- INT8은 저비트 가중치 저장 후 BF16 행렬곱을 사용하는 경로입니다. 전체 8비트 정수 연산 가속으로 해석하지 않습니다. INT4는 profiler에서 aten::_weight_int4pack_mm/tinygemm packed weight kernel을 확인했습니다.
+- 현재 eager 실행은 압축과 GPU allocated 메모리 절감에 성공했으나 BF16보다 느립니다. torch.compile 미적용이며 컴파일·활성값 양자화 최적화 결과를 미리 주장하지 않습니다.
+- INT4 group128에서 특징 변화가 커졌지만 정상 96프레임의 특징 차이만으로 AUROC 손실을 추정할 수 없습니다. INT8도 이상탐지 성능 유지가 검증된 것은 아닙니다.
+- 짧은 정상 프레임 진단으로 end-to-end VAD FPS/30FPS 마감시간 보장/다른 장비 실시간을 주장하지 않습니다. 다른 프로세스와 GPU 클럭의 영향이 가능합니다.
+- 사전학습 가중치·원본·기존 결과를 보존합니다. 새로운 전체 patch 캐시는 없습니다. TorchAO 0.17.0은 별도 cache 경로에 설치했고 기존 PyTorch는 변경하지 않았습니다. 원본·패키지·가중치는 GitHub에 게시하지 않습니다.
+
+## 권장 본 실험 범위 (아직 미실행)
+
+1. 고정 DINOv2 BF16 ↔ INT8 weight-only ↔ INT8 weight/activation. 양자화된 백본의 특징으로 프로토타입·위상 예측기를 재구축하고 정상 보정을 다시 수행. 기존 위상 예측기·메모리를 그대로 사용하는 직접 변환 결과도 구분해 기록.
+2. INT4 group128/32 및 정상 특징 오차로 사전 선정한 민감층 BF16 혼합. 테스트 AUROC로 비트 수·층을 선택하지 않으며, 메모리 압축 효과와 특징 손실을 분리.
+3. R01–R04 동일 분할·유효 프레임·3개 seed의 AUROC/AUPRC, 활성 FPR, 구간 recall 및 실제 batch 1·30 FPS 측정. compile 최적화는 BF16 대조군에도 동일하게 적용하고 초기 compile 시간을 별도로 보고. 전체 가중치의 중복 저장을 피하고 10 GiB 안전마진 유지.
+
+## 재현
+
+```bash
+uv pip install --python .venv/bin/python --target cache/quantization/torchao017 --no-deps --no-cache torchao==0.17.0
+.venv/bin/python scripts/probe_quantization.py --variant bf16
+.venv/bin/python scripts/probe_quantization.py --variant int8
+.venv/bin/python scripts/probe_quantization.py --variant int4
+.venv/bin/python scripts/summarize_quantization_probe.py
+```
+
+[TorchAO 공식 추론 문서](https://docs.pytorch.org/ao/stable/workflows/inference.html) · [예비 실행 규약](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/docs/quantization_probe.md)
+

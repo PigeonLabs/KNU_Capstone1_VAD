@@ -1,0 +1,11 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/torch/profiler/profiler.py:224: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+{"variant": "int4", "state": "diagnostic_complete", "samples": 96, "repeats": 3, "batch_size": 1, "quantized_linear_layers": 48, "total_linear_layers": 48, "backbone_tensor_payload_bytes": 58440192, "backbone_serialized_bytes": 58522497, "state_sha256": "8144839d626d3b04e2fcd48363c1e0e0fa700a748f8cdf76707e901221642b60", "peak_allocated_mib": 82.1533203125, "peak_reserved_mib": 170.0, "mean_ms": 6.023459532621524, "p50_ms": 5.818814504891634, "p95_ms": 6.7175377975218, "patch_cosine_distance_mean": 0.1269716990645975, "cls_cosine_distance_mean": 0.16384608733157316, "seconds": 5.125284910202026, "scope": "normal-only backbone probe; not VAD accuracy/full streaming; CPU JPEG + preprocess + backbone + GPU sync; no torch.compile", "free_gib": 19.166259765625}

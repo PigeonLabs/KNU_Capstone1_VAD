@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "variants": [
+    "bf16",
+    "int8",
+    "int4"
+  ],
+  "normal_frames": 96,
+  "timed_calls_per_variant": 288,
+  "test_evaluation": false,
+  "same_input_hashes": true,
+  "packed_int4_op_verified": true,
+  "source_hashes": {
+    "scripts/probe_quantization.py": "843e061478bbd2d46a2bc42509d9ac2740519b279bde00b3e81a24f2127954ea",
+    "scripts/summarize_quantization_probe.py": "89849c9dd34d1900b1f65ff613f2d897e6f21fa2603480076f9a543c7ed6e847",
+    "docs/quantization_probe.md": "95e5d24bce84f9e01a4c508d50387600b71358b0257a20dce3f9e0923fcbbcb1"
+  }
+}
