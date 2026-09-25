@@ -1,0 +1,164 @@
+{
+  "-1": {
+    "metrics": {
+      "unconditional": {
+        "auroc": 86.2066295868886,
+        "auprc": 75.58632926911326,
+        "frames": 9093
+      },
+      "legacy_hard": {
+        "auroc": 85.55969657622245,
+        "auprc": 77.45851787578192,
+        "frames": 9093
+      },
+      "top3_weighted": {
+        "auroc": 87.57376003240809,
+        "auprc": 80.3949903283706,
+        "frames": 9093
+      },
+      "time5": {
+        "auroc": 55.48998617377311,
+        "auprc": 43.73858717478565,
+        "frames": 9093
+      },
+      "time21": {
+        "auroc": 88.95381770739975,
+        "auprc": 83.36937173981123,
+        "frames": 9093
+      },
+      "appearance_time5": {
+        "auroc": 86.05709395660583,
+        "auprc": 76.0157059092129,
+        "frames": 9093
+      },
+      "appearance_time21": {
+        "auroc": 92.66518608197376,
+        "auprc": 85.233136074607,
+        "frames": 9093
+      }
+    },
+    "frames": 9093,
+    "excluded_videos": [],
+    "shift": -1,
+    "policy": "common",
+    "normalization": "offline scene-wide min-max",
+    "combinations": {
+      "appearance_time5": [
+        "unconditional",
+        "time5"
+      ],
+      "appearance_time21": [
+        "unconditional",
+        "time21"
+      ]
+    }
+  },
+  "0": {
+    "metrics": {
+      "unconditional": {
+        "auroc": 86.17976513098465,
+        "auprc": 75.43397290243831,
+        "frames": 9093
+      },
+      "legacy_hard": {
+        "auroc": 85.49786595725284,
+        "auprc": 77.31367690992398,
+        "frames": 9093
+      },
+      "top3_weighted": {
+        "auroc": 87.51391064369359,
+        "auprc": 80.26558055094178,
+        "frames": 9093
+      },
+      "time5": {
+        "auroc": 55.4889734218443,
+        "auprc": 43.69564982471413,
+        "frames": 9093
+      },
+      "time21": {
+        "auroc": 89.02608919055551,
+        "auprc": 83.37441043348113,
+        "frames": 9093
+      },
+      "appearance_time5": {
+        "auroc": 86.02594277726674,
+        "auprc": 75.86461845211872,
+        "frames": 9093
+      },
+      "appearance_time21": {
+        "auroc": 92.63974319661646,
+        "auprc": 85.08920706532402,
+        "frames": 9093
+      }
+    },
+    "frames": 9093,
+    "excluded_videos": [],
+    "shift": 0,
+    "policy": "common",
+    "normalization": "offline scene-wide min-max",
+    "combinations": {
+      "appearance_time5": [
+        "unconditional",
+        "time5"
+      ],
+      "appearance_time21": [
+        "unconditional",
+        "time21"
+      ]
+    }
+  },
+  "1": {
+    "metrics": {
+      "unconditional": {
+        "auroc": 86.11642625520874,
+        "auprc": 75.18786004603278,
+        "frames": 9093
+      },
+      "legacy_hard": {
+        "auroc": 85.38977446983994,
+        "auprc": 77.07729729389101,
+        "frames": 9093
+      },
+      "top3_weighted": {
+        "auroc": 87.40176242770795,
+        "auprc": 80.01864932563547,
+        "frames": 9093
+      },
+      "time5": {
+        "auroc": 55.5334187957647,
+        "auprc": 43.67522844178179,
+        "frames": 9093
+      },
+      "time21": {
+        "auroc": 89.08866146816277,
+        "auprc": 83.35967621251223,
+        "frames": 9093
+      },
+      "appearance_time5": {
+        "auroc": 85.96922191597262,
+        "auprc": 75.62167613403813,
+        "frames": 9093
+      },
+      "appearance_time21": {
+        "auroc": 92.56250200388948,
+        "auprc": 84.83328261948401,
+        "frames": 9093
+      }
+    },
+    "frames": 9093,
+    "excluded_videos": [],
+    "shift": 1,
+    "policy": "common",
+    "normalization": "offline scene-wide min-max",
+    "combinations": {
+      "appearance_time5": [
+        "unconditional",
+        "time5"
+      ],
+      "appearance_time21": [
+        "unconditional",
+        "time21"
+      ]
+    }
+  }
+}

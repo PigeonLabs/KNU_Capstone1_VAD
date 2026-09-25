@@ -1,0 +1,59 @@
+{
+  "metrics": {
+    "unconditional": {
+      "auroc": 79.20350020487648,
+      "auprc": 83.99220338055807,
+      "frames": 7489
+    },
+    "legacy_hard": {
+      "auroc": 80.87143518956184,
+      "auprc": 85.01870366431255,
+      "frames": 7489
+    },
+    "top3_weighted": {
+      "auroc": 80.55736843026091,
+      "auprc": 84.77767301467554,
+      "frames": 7489
+    },
+    "time5": {
+      "auroc": 55.762535287346815,
+      "auprc": 65.21541595810265,
+      "frames": 7489
+    },
+    "time21": {
+      "auroc": 63.23851283929406,
+      "auprc": 71.30724970420843,
+      "frames": 7489
+    },
+    "appearance_time5": {
+      "auroc": 79.8199159940244,
+      "auprc": 83.98312525286649,
+      "frames": 7489
+    },
+    "appearance_time21": {
+      "auroc": 81.09642074088102,
+      "auprc": 83.73908481710501,
+      "frames": 7489
+    }
+  },
+  "frames": 7489,
+  "excluded_videos": [],
+  "shift": 0,
+  "policy": "strict",
+  "normalization": "offline scene-wide min-max",
+  "combinations": {
+    "appearance_time5": [
+      "unconditional",
+      "time5"
+    ],
+    "appearance_time21": [
+      "unconditional",
+      "time21"
+    ]
+  },
+  "scene": "R04",
+  "seed": 0,
+  "seconds": 0.7207551002502441,
+  "primary": "appearance_time21",
+  "support": "central window21; all baselines rescored on same frames"
+}
