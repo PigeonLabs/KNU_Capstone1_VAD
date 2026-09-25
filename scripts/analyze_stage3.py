@@ -48,8 +48,13 @@ def main():
             result['scenes'][scene][name]={'delta_auroc_pp_ci95':np.quantile(valid,[.025,.975]).tolist(),
                                          'valid_draws':len(valid),'videos':n}
             samples.setdefault(name,[]).append(diff)
-    result['macro_delta_ci95']={name:np.nanquantile(np.nanmean(np.stack(d),axis=0),[.025,.975]).tolist()
-                                 for name,d in samples.items() if len(d)==4}
+    result['macro_delta_ci95']={}
+    result['macro_valid_draws']={}
+    for name,d in samples.items():
+        if len(d)!=4:continue
+        matrix=np.stack(d);valid=np.isfinite(matrix).all(axis=0)
+        result['macro_delta_ci95'][name]=np.quantile(matrix[:,valid].mean(axis=0),[.025,.975]).tolist()
+        result['macro_valid_draws'][name]=int(valid.sum())
     for path in sorted((ROOT/'runs/stage3').glob('R*/seed*/metrics.json')):
         d=json.loads(path.read_text());seed=str(d['seed'])
         for k,m in d['metrics'].items():result['seed_summary'].setdefault(seed,{}).setdefault(k,[]).append(m['auroc'])
