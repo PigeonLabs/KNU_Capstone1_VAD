@@ -1,0 +1,19 @@
+{
+  "scene": "R04",
+  "split": "testing",
+  "video": "04",
+  "frames": 379,
+  "signature": "e53bd22a516c2ad2e675e36b72fa1e4f90d6d2d8a6c7498c62dfd6e77c8b7bd1",
+  "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "model": "dinov2_vits14",
+  "input_size": 252,
+  "cache_dtype": "float16",
+  "compute_dtype": "float32",
+  "seconds": 0.5389657020568848,
+  "channels": 384,
+  "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "sha256": {
+    "cls.npy": "801fbbd55f51b14d915ebe2e7137ab2b9841fd2c8178990c3ca9e5fc7170c65d",
+    "patch12.npy": "944640d8129e608c6af3c0185ef10baaffa7a79ae769f819488a8efa9da962bf"
+  }
+}

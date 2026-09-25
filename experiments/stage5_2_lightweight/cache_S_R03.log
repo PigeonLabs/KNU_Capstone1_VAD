@@ -1,0 +1,47 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+{"cache": "cache/dino_small/R03/training/01", "seconds": 1.2510950565338135}
+{"cache": "cache/dino_small/R03/training/02", "seconds": 0.9974007606506348}
+{"cache": "cache/dino_small/R03/training/03", "seconds": 1.0787248611450195}
+{"cache": "cache/dino_small/R03/training/04", "seconds": 0.9811151027679443}
+{"cache": "cache/dino_small/R03/training/05", "seconds": 1.3920526504516602}
+{"cache": "cache/dino_small/R03/training/06", "seconds": 1.0831620693206787}
+{"cache": "cache/dino_small/R03/training/07", "seconds": 1.0223712921142578}
+{"cache": "cache/dino_small/R03/training/08", "seconds": 1.0202522277832031}
+{"cache": "cache/dino_small/R03/training/09", "seconds": 1.0712120532989502}
+{"cache": "cache/dino_small/R03/training/10", "seconds": 1.0748844146728516}
+{"cache": "cache/dino_small/R03/training/11", "seconds": 0.9968404769897461}
+{"cache": "cache/dino_small/R03/training/12", "seconds": 1.0527875423431396}
+{"cache": "cache/dino_small/R03/training/13", "seconds": 1.0385682582855225}
+{"cache": "cache/dino_small/R03/training/14", "seconds": 0.9261500835418701}
+{"cache": "cache/dino_small/R03/training/15", "seconds": 1.127027988433838}
+{"cache": "cache/dino_small/R03/training/16", "seconds": 1.0494682788848877}
+{"cache": "cache/dino_small/R03/training/17", "seconds": 1.1299476623535156}
+{"cache": "cache/dino_small/R03/training/18", "seconds": 1.5097846984863281}
+{"cache": "cache/dino_small/R03/training/19", "seconds": 1.5215473175048828}
+{"cache": "cache/dino_small/R03/training/20", "seconds": 1.2510032653808594}
+{"cache": "cache/dino_small/R03/training/21", "seconds": 1.0189733505249023}
+{"cache": "cache/dino_small/R03/training/22", "seconds": 1.0104572772979736}
+{"cache": "cache/dino_small/R03/testing/01", "seconds": 1.0278005599975586}
+{"cache": "cache/dino_small/R03/testing/02", "seconds": 0.9858496189117432}
+{"cache": "cache/dino_small/R03/testing/03", "seconds": 0.9612951278686523}
+{"cache": "cache/dino_small/R03/testing/04", "seconds": 1.5400190353393555}
+{"cache": "cache/dino_small/R03/testing/05", "seconds": 0.8981294631958008}
+{"cache": "cache/dino_small/R03/testing/06", "seconds": 0.8493359088897705}
+{"cache": "cache/dino_small/R03/testing/07", "seconds": 0.9873504638671875}
+{"cache": "cache/dino_small/R03/testing/08", "seconds": 0.9893224239349365}
+{"cache": "cache/dino_small/R03/testing/09", "seconds": 1.0264880657196045}
+{"cache": "cache/dino_small/R03/testing/10", "seconds": 0.9624752998352051}
+{"cache": "cache/dino_small/R03/testing/11", "seconds": 1.0175998210906982}
+{"cache": "cache/dino_small/R03/testing/12", "seconds": 1.1823785305023193}
+{"cache": "cache/dino_small/R03/testing/13", "seconds": 1.1150059700012207}
+{"cache": "cache/dino_small/R03/testing/14", "seconds": 1.3716347217559814}
+{"cache": "cache/dino_small/R03/testing/15", "seconds": 1.0265982151031494}
+{"cache": "cache/dino_small/R03/testing/16", "seconds": 1.0761082172393799}
+{"cache": "cache/dino_small/R03/testing/17", "seconds": 1.1152873039245605}

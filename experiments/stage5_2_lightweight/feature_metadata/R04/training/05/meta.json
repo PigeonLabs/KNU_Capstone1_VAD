@@ -1,0 +1,19 @@
+{
+  "scene": "R04",
+  "split": "training",
+  "video": "05",
+  "frames": 437,
+  "signature": "8aeda02001046bd4a799eff22e568a7507cbb6ee4d0545c52459b5ee7169b0fd",
+  "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "model": "dinov2_vits14",
+  "input_size": 252,
+  "cache_dtype": "float16",
+  "compute_dtype": "float32",
+  "seconds": 0.6291916370391846,
+  "channels": 384,
+  "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "sha256": {
+    "cls.npy": "f0756a86201bed666e24c094459797ead3db376412173774c2833fa167a26c87",
+    "patch12.npy": "4ab61a391906883b8f7efb0acccfec884deb2ca2cdab9416f15b953265e0c9a2"
+  }
+}

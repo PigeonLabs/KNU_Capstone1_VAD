@@ -1,0 +1,59 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Downloading: "https://dl.fbaipublicfiles.com/dinov2/dinov2_vits14/dinov2_vits14_pretrain.pth" to /home/jeong/Desktop/IPAD/cache/torch_hub/checkpoints/dinov2_vits14_pretrain.pth
+  0%|          | 0.00/84.2M [00:00<?, ?B/s]  7%|▋         | 5.88M/84.2M [00:00<00:01, 48.5MB/s] 23%|██▎       | 19.1M/84.2M [00:00<00:00, 91.3MB/s] 38%|███▊      | 31.6M/84.2M [00:00<00:00, 108MB/s]  50%|█████     | 42.4M/84.2M [00:00<00:00, 109MB/s] 63%|██████▎   | 53.0M/84.2M [00:01<00:01, 22.1MB/s] 71%|███████▏  | 60.1M/84.2M [00:01<00:01, 24.4MB/s] 78%|███████▊  | 66.0M/84.2M [00:02<00:00, 26.0MB/s] 84%|████████▍ | 71.0M/84.2M [00:02<00:00, 25.4MB/s] 92%|█████████▏| 77.2M/84.2M [00:02<00:00, 30.7MB/s]100%|██████████| 84.2M/84.2M [00:02<00:00, 35.8MB/s]
+{"cache": "cache/dino_small/R01/training/01", "seconds": 0.7209222316741943}
+{"cache": "cache/dino_small/R01/training/02", "seconds": 0.30935001373291016}
+{"cache": "cache/dino_small/R01/training/03", "seconds": 0.2970092296600342}
+{"cache": "cache/dino_small/R01/training/04", "seconds": 0.34348535537719727}
+{"cache": "cache/dino_small/R01/training/05", "seconds": 0.35359644889831543}
+{"cache": "cache/dino_small/R01/training/06", "seconds": 0.3556332588195801}
+{"cache": "cache/dino_small/R01/training/07", "seconds": 0.34548497200012207}
+{"cache": "cache/dino_small/R01/training/08", "seconds": 0.324420690536499}
+{"cache": "cache/dino_small/R01/training/09", "seconds": 0.333559513092041}
+{"cache": "cache/dino_small/R01/training/10", "seconds": 0.32967281341552734}
+{"cache": "cache/dino_small/R01/training/11", "seconds": 0.4056224822998047}
+{"cache": "cache/dino_small/R01/training/12", "seconds": 0.3310263156890869}
+{"cache": "cache/dino_small/R01/training/13", "seconds": 0.33440160751342773}
+{"cache": "cache/dino_small/R01/training/14", "seconds": 0.3306148052215576}
+{"cache": "cache/dino_small/R01/training/15", "seconds": 0.33724236488342285}
+{"cache": "cache/dino_small/R01/training/16", "seconds": 0.3455841541290283}
+{"cache": "cache/dino_small/R01/training/17", "seconds": 0.3536722660064697}
+{"cache": "cache/dino_small/R01/training/18", "seconds": 0.3231050968170166}
+{"cache": "cache/dino_small/R01/training/19", "seconds": 0.3410675525665283}
+{"cache": "cache/dino_small/R01/training/20", "seconds": 0.3267173767089844}
+{"cache": "cache/dino_small/R01/training/21", "seconds": 0.33492088317871094}
+{"cache": "cache/dino_small/R01/training/22", "seconds": 0.3314399719238281}
+{"cache": "cache/dino_small/R01/training/23", "seconds": 0.3423500061035156}
+{"cache": "cache/dino_small/R01/training/24", "seconds": 0.3460109233856201}
+{"cache": "cache/dino_small/R01/training/25", "seconds": 0.37219762802124023}
+{"cache": "cache/dino_small/R01/training/26", "seconds": 0.5123176574707031}
+{"cache": "cache/dino_small/R01/training/27", "seconds": 0.4241657257080078}
+{"cache": "cache/dino_small/R01/training/28", "seconds": 0.5459275245666504}
+{"cache": "cache/dino_small/R01/training/29", "seconds": 0.5543022155761719}
+{"cache": "cache/dino_small/R01/training/30", "seconds": 0.5424237251281738}
+{"cache": "cache/dino_small/R01/training/31", "seconds": 0.6537573337554932}
+{"cache": "cache/dino_small/R01/training/32", "seconds": 0.5302786827087402}
+{"cache": "cache/dino_small/R01/training/33", "seconds": 0.5357415676116943}
+{"cache": "cache/dino_small/R01/training/34", "seconds": 0.5537934303283691}
+{"cache": "cache/dino_small/R01/testing/01", "seconds": 0.5407686233520508}
+{"cache": "cache/dino_small/R01/testing/02", "seconds": 0.6162097454071045}
+{"cache": "cache/dino_small/R01/testing/03", "seconds": 0.9512660503387451}
+{"cache": "cache/dino_small/R01/testing/04", "seconds": 0.3097043037414551}
+{"cache": "cache/dino_small/R01/testing/05", "seconds": 0.4359874725341797}
+{"cache": "cache/dino_small/R01/testing/06", "seconds": 0.3884696960449219}
+{"cache": "cache/dino_small/R01/testing/07", "seconds": 0.5523278713226318}
+{"cache": "cache/dino_small/R01/testing/08", "seconds": 0.3528141975402832}
+{"cache": "cache/dino_small/R01/testing/09", "seconds": 0.3546280860900879}
+{"cache": "cache/dino_small/R01/testing/10", "seconds": 0.3529682159423828}
+{"cache": "cache/dino_small/R01/testing/11", "seconds": 0.35367560386657715}
+{"cache": "cache/dino_small/R01/testing/12", "seconds": 0.36797332763671875}
+{"cache": "cache/dino_small/R01/testing/13", "seconds": 0.34450316429138184}
+{"cache": "cache/dino_small/R01/testing/14", "seconds": 0.32745862007141113}
+{"cache": "cache/dino_small/R01/testing/15", "seconds": 0.3250908851623535}

@@ -1,0 +1,2756 @@
+{
+  "stage": "5-2",
+  "macro": {
+    "B_k10/causal_combined": {
+      "seeds": [
+        81.2928017243268,
+        81.10524601676188,
+        81.32665360998796
+      ],
+      "mean": 81.24156711702555,
+      "std": 0.11926470275620413
+    },
+    "B_k5/causal_combined": {
+      "seeds": [
+        80.95076523763142,
+        80.60891106843678,
+        80.75093579867702
+      ],
+      "mean": 80.77020403491507,
+      "std": 0.17173967784042296
+    },
+    "S_k10/causal_combined": {
+      "seeds": [
+        80.27135788688724,
+        80.00899882841424,
+        79.92395740605524
+      ],
+      "mean": 80.0681047071189,
+      "std": 0.18108534505493787
+    },
+    "S_k5/causal_combined": {
+      "seeds": [
+        80.10457803996393,
+        79.5135336161207,
+        79.32586816556883
+      ],
+      "mean": 79.6479932738845,
+      "std": 0.40639490252040683
+    }
+  },
+  "units": [
+    {
+      "scene": "R01",
+      "seed": 0,
+      "backbone": "B",
+      "k": 10,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 87.88115209473112,
+          "auprc": 75.73976504010902,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 69.66837319665346,
+          "auprc": 61.390404928949806,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 89.3648933123511,
+          "auprc": 81.53848738582393,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 87.21240570434404,
+          "auprc": 73.27328388285494,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 66.71768046744403,
+          "auprc": 54.66801754566786,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 88.30218402967704,
+          "auprc": 78.51618081048389,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.6650343089837885,
+      "head_path": "runs/stage5/5-1/R01/seed0/B_k10/causal_head.pt",
+      "head_sha256": "42ea7f2dc2989d1ef7b24de887d8300a54f3f9c82f3deb9e0a5dc8efc4064dc9",
+      "head_parameters": 6394568,
+      "seconds": 17.27059531211853,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 87.88115209473112,
+          "auprc": 75.73976504010902,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 64.08152961774319,
+          "auprc": 55.77584489912224,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 88.73761560166007,
+          "auprc": 80.32008577493669,
+          "frames": 2905
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 87.88115209473112,
+          "auprc": 75.73976504010902,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 64.86280345281996,
+          "auprc": 56.775497664563936,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 87.85278374013504,
+          "auprc": 79.69756957028234,
+          "frames": 2905
+        }
+      }
+    },
+    {
+      "scene": "R02",
+      "seed": 0,
+      "backbone": "B",
+      "k": 10,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 87.16099342615264,
+          "auprc": 77.27267011142354,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 88.9883435781139,
+          "auprc": 84.22377058557574,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.75823088771774,
+          "auprc": 88.0813363635406,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 87.09367771572201,
+          "auprc": 76.96203809731536,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 88.98009553244357,
+          "auprc": 83.95708226803357,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 93.83650309419941,
+          "auprc": 87.98349103740559,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.7260090813433532,
+      "head_path": "runs/stage5/5-1/R02/seed0/B_k10/causal_head.pt",
+      "head_sha256": "f0fd9c79496085e56f945702ac728293fc5e133d46d3d1028a89e803677d7d03",
+      "head_parameters": 6394568,
+      "seconds": 40.847872734069824,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 87.16099342615264,
+          "auprc": 77.27267011142354,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 88.61148247655886,
+          "auprc": 83.67740843782146,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 94.33275155909976,
+          "auprc": 90.44470837078245,
+          "frames": 7082
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 87.16099342615264,
+          "auprc": 77.27267011142355,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 88.83245331329668,
+          "auprc": 83.89257955978042,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 91.56982766920356,
+          "auprc": 83.30651290633668,
+          "frames": 7082
+        }
+      }
+    },
+    {
+      "scene": "R03",
+      "seed": 0,
+      "backbone": "B",
+      "k": 10,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 63.663733964821446,
+          "auprc": 49.22037883767957,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 58.14886028325405,
+          "auprc": 49.54535367713825,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 63.246315774314475,
+          "auprc": 50.82755721411027,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 63.552322528019644,
+          "auprc": 49.60086351015206,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 58.13023333597135,
+          "auprc": 50.13053787534898,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 63.261970524269,
+          "auprc": 51.547559500883054,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.5994022338457755,
+      "head_path": "runs/stage5/5-1/R03/seed0/B_k10/causal_head.pt",
+      "head_sha256": "c51594fc6bb24866f54d3206e21215374ea85d3ae60a5bbe7c5240d6095f86bb",
+      "head_parameters": 6394568,
+      "seconds": 31.713745832443237,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 63.663733964821446,
+          "auprc": 49.22037883767957,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 50.55405333363458,
+          "auprc": 46.13371909048521,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 60.29424160815168,
+          "auprc": 49.29313081719958,
+          "frames": 11121
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 63.663733964821446,
+          "auprc": 49.22037883767957,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 52.792362344383115,
+          "auprc": 47.123636344049544,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 62.56418051581175,
+          "auprc": 49.71008331227708,
+          "frames": 11121
+        }
+      }
+    },
+    {
+      "scene": "R04",
+      "seed": 0,
+      "backbone": "B",
+      "k": 10,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 76.2121456459876,
+          "auprc": 83.43605169020243,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.16746580331186,
+          "auprc": 72.41853062831399,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.80176692292385,
+          "auprc": 83.81275431811936,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.80109642714946,
+          "auprc": 81.93229667548638,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 64.19184158430107,
+          "auprc": 71.07995788211286,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 77.23252320666747,
+          "auprc": 81.74077157659207,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.6375314598613825,
+      "head_path": "runs/stage5/5-1/R04/seed0/B_k10/causal_head.pt",
+      "head_sha256": "a5ba91193cebd1b659d4a86b483e5d175d1cd986e64ff61e401b74b72d1844f5",
+      "head_parameters": 6394568,
+      "seconds": 19.508713722229004,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 76.62343327157718,
+          "auprc": 83.71239465046303,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 63.76337348507697,
+          "auprc": 71.56461227318496,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.1631715979245,
+          "auprc": 83.39861564739664,
+          "frames": 7166
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 77.31833541580751,
+          "auprc": 84.19177694411641,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 63.937123641519,
+          "auprc": 72.38503257388209,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.84243159123596,
+          "auprc": 81.85244502853047,
+          "frames": 7166
+        }
+      }
+    },
+    {
+      "scene": "R01",
+      "seed": 1,
+      "backbone": "B",
+      "k": 10,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 87.35627602482835,
+          "auprc": 75.05110318751717,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 69.18490557495987,
+          "auprc": 60.65941395324679,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 88.55677656759148,
+          "auprc": 80.13919832352803,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 86.6638635701396,
+          "auprc": 72.5542181273803,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 65.70831011619643,
+          "auprc": 53.36623765933113,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 87.23830665705606,
+          "auprc": 76.71910213501701,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.651377005060911,
+      "head_path": "runs/stage5/5-1/R01/seed1/B_k10/causal_head.pt",
+      "head_sha256": "51a2bfe052ac805836cdf36459f991077259693abf0f3be048f5135767521225",
+      "head_parameters": 6394568,
+      "seconds": 15.881237983703613,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 87.35627602482835,
+          "auprc": 75.05110318751717,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 64.67699442080826,
+          "auprc": 55.63263864052177,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 88.29575325977737,
+          "auprc": 79.65068926262356,
+          "frames": 2905
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 87.35627602482835,
+          "auprc": 75.05110318751717,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 65.81015395183728,
+          "auprc": 57.00866739407125,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 87.78369584793577,
+          "auprc": 79.69351522392832,
+          "frames": 2905
+        }
+      }
+    },
+    {
+      "scene": "R02",
+      "seed": 1,
+      "backbone": "B",
+      "k": 10,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 87.23868888884799,
+          "auprc": 77.9423312597005,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 88.45469427680801,
+          "auprc": 83.81664034396829,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 94.28514786710667,
+          "auprc": 89.4394198754846,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 87.16269976035635,
+          "auprc": 77.62749944982794,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 88.57118450479267,
+          "auprc": 83.74653066789018,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 94.39527996556399,
+          "auprc": 89.39730158878973,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.7809653107050492,
+      "head_path": "runs/stage5/5-1/R02/seed1/B_k10/causal_head.pt",
+      "head_sha256": "49fac28431b92d9d10794875f11ad273f4b63e8303aa9b51ab3616ed8a55cd3f",
+      "head_parameters": 6394568,
+      "seconds": 37.841944456100464,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 87.23868888884799,
+          "auprc": 77.94233125970051,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 86.65787829276024,
+          "auprc": 81.00954474513608,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.97391047860282,
+          "auprc": 89.85441554040204,
+          "frames": 7082
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 87.23868888884799,
+          "auprc": 77.94233125970051,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 86.82457443797375,
+          "auprc": 81.23969540467061,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 92.14148370913881,
+          "auprc": 85.14109973206172,
+          "frames": 7082
+        }
+      }
+    },
+    {
+      "scene": "R03",
+      "seed": 1,
+      "backbone": "B",
+      "k": 10,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 64.14222533764816,
+          "auprc": 49.60916878084907,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 57.36428128491106,
+          "auprc": 49.03136177101481,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 63.17577773510252,
+          "auprc": 50.91143692371413,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 64.0089785975749,
+          "auprc": 49.941892390439406,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 57.46459601413706,
+          "auprc": 49.655325430901264,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 63.21643201753506,
+          "auprc": 51.57952922242024,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.6915759610888533,
+      "head_path": "runs/stage5/5-1/R03/seed1/B_k10/causal_head.pt",
+      "head_sha256": "84ee3e0811704027c280d80accc314d8a912f44b7bfb8322dd54c77b68a4f2c1",
+      "head_parameters": 6394568,
+      "seconds": 26.421491622924805,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 64.14222533764816,
+          "auprc": 49.60916878084907,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 52.174500912530455,
+          "auprc": 46.925271677526666,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 61.433829535598726,
+          "auprc": 49.91994104941402,
+          "frames": 11121
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 64.14222533764816,
+          "auprc": 49.60916878084907,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 54.02802905643354,
+          "auprc": 47.94758300824412,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 63.79251778537609,
+          "auprc": 50.147110200581714,
+          "frames": 11121
+        }
+      }
+    },
+    {
+      "scene": "R04",
+      "seed": 1,
+      "backbone": "B",
+      "k": 10,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 76.07101749893825,
+          "auprc": 83.40183487384466,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 63.92953235631441,
+          "auprc": 71.77510449132487,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.40328189724684,
+          "auprc": 83.45839074931763,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.68378181372864,
+          "auprc": 81.94126344868762,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 63.12712179694111,
+          "auprc": 70.6116688099467,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 76.90514309846549,
+          "auprc": 81.51029540245311,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.6688134914103879,
+      "head_path": "runs/stage5/5-1/R04/seed1/B_k10/causal_head.pt",
+      "head_sha256": "4f599be347b67007017a1b71bacba2996e651555584f53f8ff3c0e5e9bfa3acb",
+      "head_parameters": 6394568,
+      "seconds": 16.056362867355347,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 76.4839998276573,
+          "auprc": 83.6739659464074,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.94755858112724,
+          "auprc": 73.59734572051397,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.84871389266743,
+          "auprc": 84.1114729887788,
+          "frames": 7166
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 77.15386304090472,
+          "auprc": 84.15064065292654,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 66.61613332758857,
+          "auprc": 74.72448969164111,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 79.9284859899754,
+          "auprc": 83.29730826743207,
+          "frames": 7166
+        }
+      }
+    },
+    {
+      "scene": "R01",
+      "seed": 2,
+      "backbone": "B",
+      "k": 10,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 87.4846102291415,
+          "auprc": 75.21886939934357,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 70.05372026489597,
+          "auprc": 62.10575203460002,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 89.35992331440798,
+          "auprc": 81.24728882920209,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 86.82629832785494,
+          "auprc": 72.86413180153163,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 66.52125070929416,
+          "auprc": 54.77767967664606,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 88.29247117241003,
+          "auprc": 78.37941433342928,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.6209872490937084,
+      "head_path": "runs/stage5/5-1/R01/seed2/B_k10/causal_head.pt",
+      "head_sha256": "00c281c0ad34e08d8d8a25fb7059b40f00e9fe453f7d73e4173f42c92ff7a97a",
+      "head_parameters": 6394568,
+      "seconds": 16.712063789367676,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 87.4846102291415,
+          "auprc": 75.21886939934357,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 66.80622027227714,
+          "auprc": 55.983598312961,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 88.90238825623932,
+          "auprc": 80.41183981122775,
+          "frames": 2905
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 87.4846102291415,
+          "auprc": 75.21886939934357,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 67.79950634634292,
+          "auprc": 57.25559968483067,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 89.87291567635768,
+          "auprc": 81.90237410220513,
+          "frames": 2905
+        }
+      }
+    },
+    {
+      "scene": "R02",
+      "seed": 2,
+      "backbone": "B",
+      "k": 10,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 87.5362557655088,
+          "auprc": 78.1899298687607,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 87.92262183684899,
+          "auprc": 83.58440781685951,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 94.15450490452059,
+          "auprc": 88.98563672506464,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 87.46898612516891,
+          "auprc": 77.88659092528714,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 87.9072869427743,
+          "auprc": 83.342074082043,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 94.24505992758603,
+          "auprc": 88.93124033063276,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.772889869143199,
+      "head_path": "runs/stage5/5-1/R02/seed2/B_k10/causal_head.pt",
+      "head_sha256": "90d20ee60d008ef4760ec5da1e4bb2d7d6f73481f263ed8ee736e70937bcbd9f",
+      "head_parameters": 6394568,
+      "seconds": 34.79696035385132,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 87.5362557655088,
+          "auprc": 78.1899298687607,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 87.83415115495019,
+          "auprc": 81.85010626863597,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.5973297079539,
+          "auprc": 88.89732303296284,
+          "frames": 7082
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 87.5362557655088,
+          "auprc": 78.1899298687607,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 87.99434712727837,
+          "auprc": 82.00812635022075,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 91.15648850849153,
+          "auprc": 83.36646064433441,
+          "frames": 7082
+        }
+      }
+    },
+    {
+      "scene": "R03",
+      "seed": 2,
+      "backbone": "B",
+      "k": 10,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 62.84043179433538,
+          "auprc": 48.910649986440205,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 58.941761287159764,
+          "auprc": 50.093290651371056,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 62.9586425885728,
+          "auprc": 51.018491430636494,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 62.77918064560401,
+          "auprc": 49.33255183177572,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 59.08419406688653,
+          "auprc": 50.75920994765924,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 63.14133331763886,
+          "auprc": 51.82183329448726,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.6258843693941932,
+      "head_path": "runs/stage5/5-1/R03/seed2/B_k10/causal_head.pt",
+      "head_sha256": "165aa18026008142bce67543373832a4876f3eee5ada883510744289b72db258",
+      "head_parameters": 6394568,
+      "seconds": 27.826399087905884,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 62.84043179433538,
+          "auprc": 48.910649986440205,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 53.227456745554456,
+          "auprc": 47.232872298345555,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 61.35224118100274,
+          "auprc": 50.105962583980144,
+          "frames": 11121
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 62.84043179433538,
+          "auprc": 48.910649986440205,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 56.457681437392516,
+          "auprc": 49.230290709814625,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 63.29168135693051,
+          "auprc": 49.7076881041429,
+          "frames": 11121
+        }
+      }
+    },
+    {
+      "scene": "R04",
+      "seed": 2,
+      "backbone": "B",
+      "k": 10,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 76.14245764780951,
+          "auprc": 83.43974040677239,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 64.33265832445973,
+          "auprc": 72.00742073319437,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.83354363245047,
+          "auprc": 83.6838648944354,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.73946761046626,
+          "auprc": 81.99512630185043,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 63.53586199827442,
+          "auprc": 70.85304693916298,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 77.30819165759081,
+          "auprc": 81.78397890963964,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.6622149817693854,
+      "head_path": "runs/stage5/5-1/R04/seed2/B_k10/causal_head.pt",
+      "head_sha256": "0a6622104a64cfabb29b238fd2e2f9c6166d0755698a6f5fdd2ecb95b4513354",
+      "head_parameters": 6394568,
+      "seconds": 23.712573289871216,
+      "centered_fixed": {
+        "appearance_score": {
+          "auroc": 76.52773383723054,
+          "auprc": 83.70396835706744,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.57895449537445,
+          "auprc": 72.88323506056284,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.76928032564562,
+          "auprc": 84.02152423177786,
+          "frames": 7166
+        }
+      },
+      "centered_testnorm": {
+        "appearance_score": {
+          "auroc": 77.31955822823507,
+          "auprc": 84.2704438839763,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.8117443337211,
+          "auprc": 73.95650154705618,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 79.55243423792729,
+          "auprc": 83.04923318009207,
+          "frames": 7166
+        }
+      }
+    },
+    {
+      "scene": "R01",
+      "seed": 0,
+      "backbone": "B",
+      "k": 5,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 88.05266623166884,
+          "auprc": 76.13670904620903,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 69.66837319665346,
+          "auprc": 61.390404928949806,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 89.41483933128433,
+          "auprc": 81.67994886999435,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 87.52119362495762,
+          "auprc": 73.82021436770147,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 66.71768046744403,
+          "auprc": 54.66801754566786,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 88.44608767813297,
+          "auprc": 78.79790209268856,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.6655317672272152,
+      "head_path": "runs/stage5/5-1/R01/seed0/B_k10/causal_head.pt",
+      "head_sha256": "42ea7f2dc2989d1ef7b24de887d8300a54f3f9c82f3deb9e0a5dc8efc4064dc9",
+      "head_parameters": 6394568,
+      "seconds": 10.769384622573853
+    },
+    {
+      "scene": "R02",
+      "seed": 0,
+      "backbone": "B",
+      "k": 5,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 87.07465150707208,
+          "auprc": 76.3338564069669,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 88.9883435781139,
+          "auprc": 84.22377058557574,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.70219098751905,
+          "auprc": 87.54200665113598,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 87.033531362652,
+          "auprc": 76.06528102792448,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 88.98009553244357,
+          "auprc": 83.95708226803357,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 93.7926913472008,
+          "auprc": 87.46418259102995,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.7855596371093857,
+      "head_path": "runs/stage5/5-1/R02/seed0/B_k10/causal_head.pt",
+      "head_sha256": "f0fd9c79496085e56f945702ac728293fc5e133d46d3d1028a89e803677d7d03",
+      "head_parameters": 6394568,
+      "seconds": 18.774839401245117
+    },
+    {
+      "scene": "R03",
+      "seed": 0,
+      "backbone": "B",
+      "k": 5,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 62.13873759320926,
+          "auprc": 48.0910990320311,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 58.14886028325405,
+          "auprc": 49.54535367713825,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 61.97571612682796,
+          "auprc": 49.95830961714234,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 62.093683131509046,
+          "auprc": 48.55014572213994,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 58.13023333597135,
+          "auprc": 50.13053787534898,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 62.03315399888603,
+          "auprc": 50.70487314575476,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.5999964745805586,
+      "head_path": "runs/stage5/5-1/R03/seed0/B_k10/causal_head.pt",
+      "head_sha256": "c51594fc6bb24866f54d3206e21215374ea85d3ae60a5bbe7c5240d6095f86bb",
+      "head_parameters": 6394568,
+      "seconds": 16.072646617889404
+    },
+    {
+      "scene": "R04",
+      "seed": 0,
+      "backbone": "B",
+      "k": 5,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 76.04072211587584,
+          "auprc": 83.3123181659615,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.16746580331186,
+          "auprc": 72.41853062831399,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.71031450489433,
+          "auprc": 83.76093481840675,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.65413800022482,
+          "auprc": 81.90584179696452,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 64.19184158430107,
+          "auprc": 71.07995788211286,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 77.14438717034061,
+          "auprc": 81.74469752155463,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.6472628289046929,
+      "head_path": "runs/stage5/5-1/R04/seed0/B_k10/causal_head.pt",
+      "head_sha256": "a5ba91193cebd1b659d4a86b483e5d175d1cd986e64ff61e401b74b72d1844f5",
+      "head_parameters": 6394568,
+      "seconds": 8.023530006408691
+    },
+    {
+      "scene": "R01",
+      "seed": 1,
+      "backbone": "B",
+      "k": 5,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 87.64096833274776,
+          "auprc": 75.11618846144236,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 69.18490557495987,
+          "auprc": 60.65941395324679,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 88.90538993816536,
+          "auprc": 80.4580499745623,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 87.08515875409601,
+          "auprc": 72.75751609837039,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 65.70831011619643,
+          "auprc": 53.36623765933113,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 87.72699543836511,
+          "auprc": 77.24798164423609,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.6538682416155714,
+      "head_path": "runs/stage5/5-1/R01/seed1/B_k10/causal_head.pt",
+      "head_sha256": "51a2bfe052ac805836cdf36459f991077259693abf0f3be048f5135767521225",
+      "head_parameters": 6394568,
+      "seconds": 10.78088116645813
+    },
+    {
+      "scene": "R02",
+      "seed": 1,
+      "backbone": "B",
+      "k": 5,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 86.54105476781112,
+          "auprc": 75.93454820210368,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 88.45469427680801,
+          "auprc": 83.81664034396829,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.96749790912564,
+          "auprc": 88.82289939854667,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 86.57150369632967,
+          "auprc": 75.69025281511185,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 88.57118450479267,
+          "auprc": 83.74653066789018,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 94.08864774046978,
+          "auprc": 88.79569577013018,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.7628215450199041,
+      "head_path": "runs/stage5/5-1/R02/seed1/B_k10/causal_head.pt",
+      "head_sha256": "49fac28431b92d9d10794875f11ad273f4b63e8303aa9b51ab3616ed8a55cd3f",
+      "head_parameters": 6394568,
+      "seconds": 18.962026357650757
+    },
+    {
+      "scene": "R03",
+      "seed": 1,
+      "backbone": "B",
+      "k": 5,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 62.04674136422229,
+          "auprc": 48.24168706751044,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 57.36428128491106,
+          "auprc": 49.03136177101481,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 61.70072495750145,
+          "auprc": 50.04846220655562,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 62.00893295419484,
+          "auprc": 48.721325079816935,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 57.46459601413706,
+          "auprc": 49.655325430901264,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 61.80873601772341,
+          "auprc": 50.78108932743777,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.6913235212205165,
+      "head_path": "runs/stage5/5-1/R03/seed1/B_k10/causal_head.pt",
+      "head_sha256": "84ee3e0811704027c280d80accc314d8a912f44b7bfb8322dd54c77b68a4f2c1",
+      "head_parameters": 6394568,
+      "seconds": 17.019747734069824
+    },
+    {
+      "scene": "R04",
+      "seed": 1,
+      "backbone": "B",
+      "k": 5,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 75.41129378068572,
+          "auprc": 82.89288816258232,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 63.92953235631441,
+          "auprc": 71.77510449132487,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 77.86203146895471,
+          "auprc": 83.09504434270242,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.05680071328247,
+          "auprc": 81.48114136756696,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 63.12712179694111,
+          "auprc": 70.6116688099467,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 76.37780137977113,
+          "auprc": 81.1769707537703,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.6971905363675255,
+      "head_path": "runs/stage5/5-1/R04/seed1/B_k10/causal_head.pt",
+      "head_sha256": "4f599be347b67007017a1b71bacba2996e651555584f53f8ff3c0e5e9bfa3acb",
+      "head_parameters": 6394568,
+      "seconds": 13.541082382202148
+    },
+    {
+      "scene": "R01",
+      "seed": 2,
+      "backbone": "B",
+      "k": 5,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 87.41116743775447,
+          "auprc": 75.15227860183641,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 70.05372026489597,
+          "auprc": 62.10575203460002,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 89.3931386471961,
+          "auprc": 81.31079784917065,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 86.68062676897543,
+          "auprc": 72.63889256571139,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 66.52125070929416,
+          "auprc": 54.77767967664606,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 88.26567561442343,
+          "auprc": 78.28541072029311,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.6239992503075106,
+      "head_path": "runs/stage5/5-1/R01/seed2/B_k10/causal_head.pt",
+      "head_sha256": "00c281c0ad34e08d8d8a25fb7059b40f00e9fe453f7d73e4173f42c92ff7a97a",
+      "head_parameters": 6394568,
+      "seconds": 10.31240725517273
+    },
+    {
+      "scene": "R02",
+      "seed": 2,
+      "backbone": "B",
+      "k": 5,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 86.78718092320152,
+          "auprc": 76.40666089077796,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 87.92262183684899,
+          "auprc": 83.58440781685951,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.86304836557883,
+          "auprc": 88.26230475919444,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 86.77082756031407,
+          "auprc": 76.13204439388674,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 87.9072869427743,
+          "auprc": 83.342074082043,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 93.96314629514883,
+          "auprc": 88.21768571136018,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.7573451483623596,
+      "head_path": "runs/stage5/5-1/R02/seed2/B_k10/causal_head.pt",
+      "head_sha256": "90d20ee60d008ef4760ec5da1e4bb2d7d6f73481f263ed8ee736e70937bcbd9f",
+      "head_parameters": 6394568,
+      "seconds": 22.54409694671631
+    },
+    {
+      "scene": "R03",
+      "seed": 2,
+      "backbone": "B",
+      "k": 5,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 60.43431686590265,
+          "auprc": 47.371355480194175,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 58.941761287159764,
+          "auprc": 50.093290651371056,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 61.19620729262021,
+          "auprc": 49.990884052793284,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 60.46298259265419,
+          "auprc": 47.86645356765784,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 59.08419406688653,
+          "auprc": 50.75920994765924,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 61.416370433408,
+          "auprc": 50.80638904146957,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.6435585898017964,
+      "head_path": "runs/stage5/5-1/R03/seed2/B_k10/causal_head.pt",
+      "head_sha256": "165aa18026008142bce67543373832a4876f3eee5ada883510744289b72db258",
+      "head_parameters": 6394568,
+      "seconds": 20.311603546142578
+    },
+    {
+      "scene": "R04",
+      "seed": 2,
+      "backbone": "B",
+      "k": 5,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 75.7889992018892,
+          "auprc": 83.10367365462005,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 64.33265832445973,
+          "auprc": 72.00742073319437,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.5513488893129,
+          "auprc": 83.43871918754053,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.40112067947327,
+          "auprc": 81.71702877782079,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 63.53586199827442,
+          "auprc": 70.85304693916298,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 77.04562573471709,
+          "auprc": 81.59409324580828,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.6834961066004043,
+      "head_path": "runs/stage5/5-1/R04/seed2/B_k10/causal_head.pt",
+      "head_sha256": "0a6622104a64cfabb29b238fd2e2f9c6166d0755698a6f5fdd2ecb95b4513354",
+      "head_parameters": 6394568,
+      "seconds": 8.056101322174072
+    },
+    {
+      "scene": "R01",
+      "seed": 0,
+      "backbone": "S",
+      "k": 10,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 86.17599992914063,
+          "auprc": 68.51565476675313,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 57.03739406769235,
+          "auprc": 44.536956254381785,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 86.93781203959857,
+          "auprc": 72.12146863411397,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 84.93708368904544,
+          "auprc": 64.49278570555794,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 57.586614830681036,
+          "auprc": 42.721560839687065,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 86.3212297499706,
+          "auprc": 69.66965369900282,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.6570138598031743,
+      "head_path": "runs/stage5/5-2/R01/seed0/S_k10/causal_head.pt",
+      "head_sha256": "7edfe776e69839393558206ce47d620a73d7adf2a58fdc54af262bd4678fdff7",
+      "head_parameters": 3248840,
+      "seconds": 8.748667478561401
+    },
+    {
+      "scene": "R02",
+      "seed": 0,
+      "backbone": "S",
+      "k": 10,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 86.48786635854796,
+          "auprc": 77.31849344240614,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 90.53432910375318,
+          "auprc": 85.77212695327157,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 94.09843872329947,
+          "auprc": 89.9450914418054,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 86.36434588861717,
+          "auprc": 76.90039563289552,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 90.3720664901807,
+          "auprc": 85.26634746817265,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 94.08382236449255,
+          "auprc": 89.74164771108455,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.7244222612716719,
+      "head_path": "runs/stage5/5-2/R02/seed0/S_k10/causal_head.pt",
+      "head_sha256": "013af03f203232cca11690d5441d3fc0aa3bb887a679d557dd97ab4385e11543",
+      "head_parameters": 3248840,
+      "seconds": 18.007144451141357
+    },
+    {
+      "scene": "R03",
+      "seed": 0,
+      "backbone": "S",
+      "k": 10,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 62.39693776619599,
+          "auprc": 48.408072280011574,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 58.0652735903507,
+          "auprc": 50.47338697693281,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 61.869513529146715,
+          "auprc": 51.05592700087489,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 62.42418753531258,
+          "auprc": 48.977393445536556,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 58.26729652444131,
+          "auprc": 51.30219329488077,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 62.05774914398313,
+          "auprc": 52.05799496024666,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.7633682807742733,
+      "head_path": "runs/stage5/5-2/R03/seed0/S_k10/causal_head.pt",
+      "head_sha256": "a7aec6e479c47b117b6faebce99dc33f4b3a456dd4dcd281673bb93cc0ae7e46",
+      "head_parameters": 3248840,
+      "seconds": 18.693606853485107
+    },
+    {
+      "scene": "R04",
+      "seed": 0,
+      "backbone": "S",
+      "k": 10,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 75.91036538702218,
+          "auprc": 83.15120325338737,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.43139222118954,
+          "auprc": 72.24101079530791,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.1796672555042,
+          "auprc": 82.96108886235596,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.47432412780555,
+          "auprc": 81.52066599371787,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 64.65730686048116,
+          "auprc": 71.47301843132959,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 76.67669326168092,
+          "auprc": 81.22958366718935,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.7153663959530615,
+      "head_path": "runs/stage5/5-2/R04/seed0/S_k10/causal_head.pt",
+      "head_sha256": "9c52564c7125db4499301635f4543605807a8bcc10eee585bf9ee9e118c61054",
+      "head_parameters": 3248840,
+      "seconds": 11.172525405883789
+    },
+    {
+      "scene": "R01",
+      "seed": 1,
+      "backbone": "S",
+      "k": 10,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 86.08518674890291,
+          "auprc": 68.10159346603044,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 51.51309373022457,
+          "auprc": 41.956052997308404,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 85.86896723442742,
+          "auprc": 70.84128515869929,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 84.86826298327856,
+          "auprc": 64.12692542765184,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 51.35323957870056,
+          "auprc": 39.99027377480536,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 85.15470707215289,
+          "auprc": 68.24408988621711,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.7795517804613623,
+      "head_path": "runs/stage5/5-2/R01/seed1/S_k10/causal_head.pt",
+      "head_sha256": "1650455148b861d4771daa5285b0da6823c130302a3b3500dc00b714d1afb376",
+      "head_parameters": 3248840,
+      "seconds": 8.47344160079956
+    },
+    {
+      "scene": "R02",
+      "seed": 1,
+      "backbone": "S",
+      "k": 10,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 86.80015498794971,
+          "auprc": 78.17660408080258,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 89.57979798829285,
+          "auprc": 84.14113277431406,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.67298401123917,
+          "auprc": 89.47012604742122,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 86.62671633164751,
+          "auprc": 77.70223361892498,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 89.30965454391654,
+          "auprc": 83.54802856229564,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 93.61417743799204,
+          "auprc": 89.18580333282436,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.7533021884345602,
+      "head_path": "runs/stage5/5-2/R02/seed1/S_k10/causal_head.pt",
+      "head_sha256": "46b540963c04f35c188378499ba753ae18739c6aba53d63b7dbc4d9a16c8945f",
+      "head_parameters": 3248840,
+      "seconds": 18.4599027633667
+    },
+    {
+      "scene": "R03",
+      "seed": 1,
+      "backbone": "S",
+      "k": 10,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 62.507246040763334,
+          "auprc": 48.73775658515428,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 56.52035824491595,
+          "auprc": 50.16254551948612,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 62.16699508778716,
+          "auprc": 51.145455569679086,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 62.544275330886336,
+          "auprc": 49.2814461423292,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 56.91334889173616,
+          "auprc": 51.1534351139012,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 62.405950531842436,
+          "auprc": 52.23588932741065,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.9019167818961837,
+      "head_path": "runs/stage5/5-2/R03/seed1/S_k10/causal_head.pt",
+      "head_sha256": "0a548322dc25372f288bcd241fe94984b1267a39a8506817249eaa230c9b18da",
+      "head_parameters": 3248840,
+      "seconds": 16.830600023269653
+    },
+    {
+      "scene": "R04",
+      "seed": 1,
+      "backbone": "S",
+      "k": 10,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 75.86088251768052,
+          "auprc": 83.22953529340963,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.39110096204152,
+          "auprc": 72.50312938789627,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.32704898020316,
+          "auprc": 83.17145591468467,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.4225290581409,
+          "auprc": 81.59411218051427,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 64.59266526285332,
+          "auprc": 71.7089932217819,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 76.82572274101085,
+          "auprc": 81.43956085294766,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.7462095480110553,
+      "head_path": "runs/stage5/5-2/R04/seed1/S_k10/causal_head.pt",
+      "head_sha256": "48797e6ff73c284966115d1aac918802dcd2fdca038d6c03803179ed9ea25005",
+      "head_parameters": 3248840,
+      "seconds": 11.122431993484497
+    },
+    {
+      "scene": "R01",
+      "seed": 2,
+      "backbone": "S",
+      "k": 10,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 85.99331559880602,
+          "auprc": 68.07326408745588,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 53.48384553836887,
+          "auprc": 42.41705019515245,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 86.55896041421242,
+          "auprc": 71.9507802578495,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 84.75895073877355,
+          "auprc": 64.0109377029895,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 54.39777302926978,
+          "auprc": 40.70191228257619,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 85.96253563511011,
+          "auprc": 69.51414429481747,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.6602306852284551,
+      "head_path": "runs/stage5/5-2/R01/seed2/S_k10/causal_head.pt",
+      "head_sha256": "605718f38ed9466fa0d06713d43a0ba501cf7ff739518d10d00b989ecd94018b",
+      "head_parameters": 3248840,
+      "seconds": 8.143874406814575
+    },
+    {
+      "scene": "R02",
+      "seed": 2,
+      "backbone": "S",
+      "k": 10,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 86.48929429410093,
+          "auprc": 77.79949374595743,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 88.25187048607013,
+          "auprc": 80.96394032403579,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.50662513914705,
+          "auprc": 88.54768058950266,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 86.34211915678429,
+          "auprc": 77.34932017671488,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 88.17756216838562,
+          "auprc": 80.606173898693,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 93.5330544504926,
+          "auprc": 88.36767797210624,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.8282813757097977,
+      "head_path": "runs/stage5/5-2/R02/seed2/S_k10/causal_head.pt",
+      "head_sha256": "4624796239fcbecb6c13bd5292952ed305301fdfe71a6e8e1786ac48cd0fff4a",
+      "head_parameters": 3248840,
+      "seconds": 18.179178953170776
+    },
+    {
+      "scene": "R03",
+      "seed": 2,
+      "backbone": "S",
+      "k": 10,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 61.548448275440634,
+          "auprc": 48.07218849919352,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 56.37245643738096,
+          "auprc": 49.79604132168983,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 61.22140617352434,
+          "auprc": 50.58996308064402,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 61.65916785794428,
+          "auprc": 48.71596453735173,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 56.69132734455455,
+          "auprc": 50.65373703629382,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 61.535684983791285,
+          "auprc": 51.675368767660125,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.7036001755755067,
+      "head_path": "runs/stage5/5-2/R03/seed2/S_k10/causal_head.pt",
+      "head_sha256": "f465c418000faddbbed0a078151a9c592f94ae8b05f3a697f74d8369d1184e41",
+      "head_parameters": 3248840,
+      "seconds": 17.00379180908203
+    },
+    {
+      "scene": "R04",
+      "seed": 2,
+      "backbone": "S",
+      "k": 10,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 75.91570390704983,
+          "auprc": 83.2424625653232,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.3343632860827,
+          "auprc": 72.23306169522142,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.40883789733711,
+          "auprc": 82.99132566423599,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.46374375138727,
+          "auprc": 81.63665538479377,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 64.55971977160195,
+          "auprc": 71.42635272527582,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 76.86075804420017,
+          "auprc": 81.27556732160421,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.744608685816946,
+      "head_path": "runs/stage5/5-2/R04/seed2/S_k10/causal_head.pt",
+      "head_sha256": "3166707d9e8c6505289250ffd2b366c02f588225d7d03911a9144470b366ef55",
+      "head_parameters": 3248840,
+      "seconds": 11.172034502029419
+    },
+    {
+      "scene": "R01",
+      "seed": 0,
+      "backbone": "S",
+      "k": 5,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 85.90215796326532,
+          "auprc": 67.81400859464608,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 57.03739406769235,
+          "auprc": 44.536956254381785,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 86.63469137296931,
+          "auprc": 71.45708164234517,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 84.74450925362657,
+          "auprc": 63.92798031656337,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 57.586614830681036,
+          "auprc": 42.721560839687065,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 86.0587270022544,
+          "auprc": 69.01672456576759,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.6498818392199139,
+      "head_path": "runs/stage5/5-2/R01/seed0/S_k10/causal_head.pt",
+      "head_sha256": "7edfe776e69839393558206ce47d620a73d7adf2a58fdc54af262bd4678fdff7",
+      "head_parameters": 3248840,
+      "seconds": 2.82061505317688
+    },
+    {
+      "scene": "R02",
+      "seed": 0,
+      "backbone": "S",
+      "k": 5,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 86.45996905322005,
+          "auprc": 76.69187283620886,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 90.53432910375318,
+          "auprc": 85.77212695327157,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.98556173188783,
+          "auprc": 89.66479550921794,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 86.3637833447856,
+          "auprc": 76.31841449876617,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 90.3720664901807,
+          "auprc": 85.26634746817265,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 93.98320619148241,
+          "auprc": 89.48105438941073,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.7689746986286592,
+      "head_path": "runs/stage5/5-2/R02/seed0/S_k10/causal_head.pt",
+      "head_sha256": "013af03f203232cca11690d5441d3fc0aa3bb887a679d557dd97ab4385e11543",
+      "head_parameters": 3248840,
+      "seconds": 4.956657648086548
+    },
+    {
+      "scene": "R03",
+      "seed": 0,
+      "backbone": "S",
+      "k": 5,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 61.91679322258774,
+          "auprc": 48.17363994582327,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 58.0652735903507,
+          "auprc": 50.47338697693281,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 61.593184629217745,
+          "auprc": 50.88993693736733,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 61.97755078248657,
+          "auprc": 48.76935065496236,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 58.26729652444131,
+          "auprc": 51.30219329488077,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 61.80054650590847,
+          "auprc": 51.90082919669281,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.7608348101935488,
+      "head_path": "runs/stage5/5-2/R03/seed0/S_k10/causal_head.pt",
+      "head_sha256": "a7aec6e479c47b117b6faebce99dc33f4b3a456dd4dcd281673bb93cc0ae7e46",
+      "head_parameters": 3248840,
+      "seconds": 5.341321706771851
+    },
+    {
+      "scene": "R04",
+      "seed": 0,
+      "backbone": "S",
+      "k": 5,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 75.92451800468199,
+          "auprc": 83.22633253876042,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.43139222118954,
+          "auprc": 72.24101079530791,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.20487442578082,
+          "auprc": 82.96242742802205,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.51280743309712,
+          "auprc": 81.68754576900446,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 64.65730686048116,
+          "auprc": 71.47301843132959,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 76.7053240604213,
+          "auprc": 81.27657728209549,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.7235838805336375,
+      "head_path": "runs/stage5/5-2/R04/seed0/S_k10/causal_head.pt",
+      "head_sha256": "9c52564c7125db4499301635f4543605807a8bcc10eee585bf9ee9e118c61054",
+      "head_parameters": 3248840,
+      "seconds": 3.775787830352783
+    },
+    {
+      "scene": "R01",
+      "seed": 1,
+      "backbone": "S",
+      "k": 5,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 86.19004878471249,
+          "auprc": 68.35736072111091,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 51.51309373022457,
+          "auprc": 41.956052997308404,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 85.82901041928085,
+          "auprc": 70.72258251359646,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 85.01685265936328,
+          "auprc": 64.4767671708387,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 51.35323957870056,
+          "auprc": 39.99027377480536,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 85.14644262342571,
+          "auprc": 68.16137570537087,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.763277039989984,
+      "head_path": "runs/stage5/5-2/R01/seed1/S_k10/causal_head.pt",
+      "head_sha256": "1650455148b861d4771daa5285b0da6823c130302a3b3500dc00b714d1afb376",
+      "head_parameters": 3248840,
+      "seconds": 2.736323595046997
+    },
+    {
+      "scene": "R02",
+      "seed": 1,
+      "backbone": "S",
+      "k": 5,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 85.86950456155327,
+          "auprc": 75.91006460164702,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 89.57979798829285,
+          "auprc": 84.14113277431406,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.32821203809243,
+          "auprc": 88.834505878708,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 85.77878776387993,
+          "auprc": 75.48072782895423,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 89.30965454391654,
+          "auprc": 83.54802856229564,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 93.27173408928113,
+          "auprc": 88.54791703056974,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.791029932245199,
+      "head_path": "runs/stage5/5-2/R02/seed1/S_k10/causal_head.pt",
+      "head_sha256": "46b540963c04f35c188378499ba753ae18739c6aba53d63b7dbc4d9a16c8945f",
+      "head_parameters": 3248840,
+      "seconds": 5.08483362197876
+    },
+    {
+      "scene": "R03",
+      "seed": 1,
+      "backbone": "S",
+      "k": 5,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 60.650370267315566,
+          "auprc": 47.577764305326845,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 56.52035824491595,
+          "auprc": 50.16254551948612,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 60.94901284399743,
+          "auprc": 50.420113216593386,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 60.797035471856134,
+          "auprc": 48.2454088818222,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 56.91334889173616,
+          "auprc": 51.1534351139012,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 61.27684663473675,
+          "auprc": 51.57890901262871,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.8951535294871626,
+      "head_path": "runs/stage5/5-2/R03/seed1/S_k10/causal_head.pt",
+      "head_sha256": "0a548322dc25372f288bcd241fe94984b1267a39a8506817249eaa230c9b18da",
+      "head_parameters": 3248840,
+      "seconds": 5.179256916046143
+    },
+    {
+      "scene": "R04",
+      "seed": 1,
+      "backbone": "S",
+      "k": 5,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 75.33152783847386,
+          "auprc": 82.75156928373723,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.39110096204152,
+          "auprc": 72.50312938789627,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 77.9478991631121,
+          "auprc": 82.88884887816599,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 73.92197970398658,
+          "auprc": 81.18622278998096,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 64.59266526285332,
+          "auprc": 71.7089932217819,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 76.44980796991993,
+          "auprc": 81.18510862422777,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.7562533383402648,
+      "head_path": "runs/stage5/5-2/R04/seed1/S_k10/causal_head.pt",
+      "head_sha256": "48797e6ff73c284966115d1aac918802dcd2fdca038d6c03803179ed9ea25005",
+      "head_parameters": 3248840,
+      "seconds": 3.6004202365875244
+    },
+    {
+      "scene": "R01",
+      "seed": 2,
+      "backbone": "S",
+      "k": 5,
+      "period": 232.0,
+      "common_frames": 2905,
+      "online_frames": 3160,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 85.9288778531971,
+          "auprc": 68.11622454662532,
+          "frames": 2905
+        },
+        "temporal_score": {
+          "auroc": 53.48384553836887,
+          "auprc": 42.41705019515245,
+          "frames": 2905
+        },
+        "combined_score": {
+          "auroc": 86.38424776374696,
+          "auprc": 71.76243668643815,
+          "frames": 2905
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 84.65766864161431,
+          "auprc": 64.07385198482316,
+          "frames": 3160
+        },
+        "temporal_score": {
+          "auroc": 54.39777302926978,
+          "auprc": 40.70191228257619,
+          "frames": 3160
+        },
+        "combined_score": {
+          "auroc": 85.77179301049158,
+          "auprc": 69.32066928794808,
+          "frames": 3160
+        }
+      },
+      "threshold": 0.6584682631608998,
+      "head_path": "runs/stage5/5-2/R01/seed2/S_k10/causal_head.pt",
+      "head_sha256": "605718f38ed9466fa0d06713d43a0ba501cf7ff739518d10d00b989ecd94018b",
+      "head_parameters": 3248840,
+      "seconds": 2.707190990447998
+    },
+    {
+      "scene": "R02",
+      "seed": 2,
+      "backbone": "S",
+      "k": 5,
+      "period": 589.5,
+      "common_frames": 7082,
+      "online_frames": 7286,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 86.01198274458149,
+          "auprc": 76.21584326630658,
+          "frames": 7082
+        },
+        "temporal_score": {
+          "auroc": 88.25187048607013,
+          "auprc": 80.96394032403579,
+          "frames": 7082
+        },
+        "combined_score": {
+          "auroc": 93.12141543279455,
+          "auprc": 87.72119843726234,
+          "frames": 7082
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 85.93294144168733,
+          "auprc": 75.81382690551027,
+          "frames": 7286
+        },
+        "temporal_score": {
+          "auroc": 88.17756216838562,
+          "auprc": 80.606173898693,
+          "frames": 7286
+        },
+        "combined_score": {
+          "auroc": 93.15347487491734,
+          "auprc": 87.54860651599887,
+          "frames": 7286
+        }
+      },
+      "threshold": 0.858890001602315,
+      "head_path": "runs/stage5/5-2/R02/seed2/S_k10/causal_head.pt",
+      "head_sha256": "4624796239fcbecb6c13bd5292952ed305301fdfe71a6e8e1786ac48cd0fff4a",
+      "head_parameters": 3248840,
+      "seconds": 5.057990789413452
+    },
+    {
+      "scene": "R03",
+      "seed": 2,
+      "backbone": "S",
+      "k": 5,
+      "period": 697.0,
+      "common_frames": 11121,
+      "online_frames": 11410,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 58.6203855478324,
+          "auprc": 46.80893338634608,
+          "frames": 11121
+        },
+        "temporal_score": {
+          "auroc": 56.37245643738096,
+          "auprc": 49.79604132168983,
+          "frames": 11121
+        },
+        "combined_score": {
+          "auroc": 59.54483501553782,
+          "auprc": 49.89192773784482,
+          "frames": 11121
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 58.8485765526513,
+          "auprc": 47.46756175701087,
+          "frames": 11410
+        },
+        "temporal_score": {
+          "auroc": 56.69132734455455,
+          "auprc": 50.65373703629382,
+          "frames": 11410
+        },
+        "combined_score": {
+          "auroc": 59.909263903136356,
+          "auprc": 50.96815839782264,
+          "frames": 11410
+        }
+      },
+      "threshold": 0.6950340273782322,
+      "head_path": "runs/stage5/5-2/R03/seed2/S_k10/causal_head.pt",
+      "head_sha256": "f465c418000faddbbed0a078151a9c592f94ae8b05f3a697f74d8369d1184e41",
+      "head_parameters": 3248840,
+      "seconds": 5.274802207946777
+    },
+    {
+      "scene": "R04",
+      "seed": 2,
+      "backbone": "S",
+      "k": 5,
+      "period": 383.5,
+      "common_frames": 7166,
+      "online_frames": 7489,
+      "metrics": {
+        "appearance_score": {
+          "auroc": 75.76867507452796,
+          "auprc": 83.00597215243613,
+          "frames": 7166
+        },
+        "temporal_score": {
+          "auroc": 65.3343632860827,
+          "auprc": 72.23306169522142,
+          "frames": 7166
+        },
+        "combined_score": {
+          "auroc": 78.25297445019604,
+          "auprc": 82.714824035546,
+          "frames": 7166
+        }
+      },
+      "online_metrics": {
+        "appearance_score": {
+          "auroc": 74.32404901550723,
+          "auprc": 81.47327570070577,
+          "frames": 7489
+        },
+        "temporal_score": {
+          "auroc": 64.55971977160195,
+          "auprc": 71.42635272527582,
+          "frames": 7489
+        },
+        "combined_score": {
+          "auroc": 76.70650215907214,
+          "auprc": 81.05750485428351,
+          "frames": 7489
+        }
+      },
+      "threshold": 0.7634134276179584,
+      "head_path": "runs/stage5/5-2/R04/seed2/S_k10/causal_head.pt",
+      "head_sha256": "3166707d9e8c6505289250ffd2b366c02f588225d7d03911a9144470b366ef55",
+      "head_parameters": 3248840,
+      "seconds": 3.613351345062256
+    }
+  ],
+  "complete": true
+}

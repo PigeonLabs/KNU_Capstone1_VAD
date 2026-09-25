@@ -1,0 +1,938 @@
+{
+  "records": [
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "01",
+      "frames": 207,
+      "signature": "9a321dfdfe43594aa7f7ffd77033cfd262e114b3af97ff38b4aaba21d497e25f",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.7209222316741943,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "14e1d8ba005afb7b4d895fe4d94420fc06a46bba0c2b254f180d571f6d5f5eb5",
+        "patch12.npy": "b6f296da59e3355dfd350c50d35b38c85247ec7822754c068232f609088219b5"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "02",
+      "frames": 214,
+      "signature": "3b1dd146909b13658aeb46a75458c3be044e025c4da5784e3c11d8e2346c2def",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.30935001373291016,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "7695b440f6bf0ecfb07ae978f556f4496038f57e37804875b5002cb85b9e1dc7",
+        "patch12.npy": "2c180869c3219394b6fd57823147c4366caf9f92aeb64d994c40b20f7a5075c6"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "03",
+      "frames": 203,
+      "signature": "291457f2edf92a5476e9ff71f997d37c751ae0fd68be48c20cf0563ef9327d6b",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.2970092296600342,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "4140c9bdcfffdd81f180abcab94b0586d5ba2c30db0c2ecd9c0b07ea864d8390",
+        "patch12.npy": "d7de0d2d86ca2b61dee772774a4ddef970cb2d50b1f115487ec133b6508053fe"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "04",
+      "frames": 232,
+      "signature": "83fe1d223464cfd1ef384a3f36bd90ac10be6ef0a6e2786df0300342ffdd4cb0",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.34348535537719727,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "6ccbb7e725c4e15aa7e68ba054aacdd56bf1641a157f32f2d04d977ff349bf37",
+        "patch12.npy": "0628fa55a958ae0d9f1c12fe14f9c099e8f8f12e4148ca0e64478a09fc84c644"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "05",
+      "frames": 233,
+      "signature": "4d03796fda9b399ac63be2d2b96671bc177a2272fd467283042dbe9e091a812e",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.35359644889831543,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "6f238cc1248afd233be02b965149fc19489eafd02f3ff896abf9e9a0ef455198",
+        "patch12.npy": "f42006450f7c9bd9b9bd10554ab09e5cd7cf1c4c3ac1d6d07e5fa27cf5ee6a0d"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "06",
+      "frames": 231,
+      "signature": "bb4d8b24b1feecd9d29e766eb04c5aae7da54eb0087899fcbe8447759069cdb4",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3556332588195801,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "e3192f5ccfa38710dbf5425ffbeb9855c062c84356903c93447390dea40e6d01",
+        "patch12.npy": "4da15fcf66fe083bba267722b1506c376b56676e478c8eb3a14c4b17011de952"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "07",
+      "frames": 233,
+      "signature": "4ece5b7259ae0a008460432ba5699f54743f44beec9e92d17e10e919b4e665e3",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.34548497200012207,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "8c1e1e9ef0cdfd5b7d725f720e6fefbc002e34d49238d3584b380b812ba37d50",
+        "patch12.npy": "db9b1b2332ade98795fe05dd2a755888a5f6d24c5638db3504919d58115cee08"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "08",
+      "frames": 232,
+      "signature": "00fc5e4256cd0b5e74c6244b52d115b793082709a4a18f6aa7237f5f7cb54b9b",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.324420690536499,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "09c3964c32b931b77e165a32554021db3e85256f92011d0378bcc820191dada5",
+        "patch12.npy": "31c6c2683fdd0baef806de7c5891981e7ea1a52479026fc86e8403f3e80ccb46"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "09",
+      "frames": 235,
+      "signature": "308c555e7fe61b35d06f7f9981c4f146f9620096d33e2f38e8bfb90c816d56b0",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.333559513092041,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "490e3d6e4ae113f6350d2b953a1bc482a27549048dabf257a78f48ae925e99ea",
+        "patch12.npy": "ac21fb3f929618c23ec6f05ac30e3673c920fc8556680128e7c94c14b01848ac"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "10",
+      "frames": 236,
+      "signature": "3bb98babaa689f1f9af88537d49639d17ae417b1b9853bd0d23ac9f53b8d6c9e",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.32967281341552734,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "afa7dfe935c6c83ba5949d54107180bc4d7fd61b0a04d99d224351416a406cf6",
+        "patch12.npy": "34306bcc056a6cc7aaf3925246bd0bcb2abc57c5532d6634e5e80ed092c97897"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "11",
+      "frames": 235,
+      "signature": "d9f208a47c6d56b9487e669ba09aa9fd52d635eb64e251a59af39c3c1a08a427",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.4056224822998047,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "a345b54ac5eadcf12f7b3f2f336380d1de1dc9659531910d054b9dc65871d67a",
+        "patch12.npy": "08d5bba2048e91563f85ad806bb004c3ce39dc400d633454f6eb961c3b1ed98f"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "12",
+      "frames": 231,
+      "signature": "8f97b6b80694017c38ed6df3925553368fe7a5114b0e366fbfc923d599942c23",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3310263156890869,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "1022132bb598b8e49ec5f4a5848a603327d8bfbdfd54deb0e19e7f2dfe242671",
+        "patch12.npy": "2285afc4fba3fce26c4465f436dd703d6690501cda7116178821f9602bade3dd"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "13",
+      "frames": 232,
+      "signature": "b955e730d897eb32342aa162385eac5081406893413b4058d64fead346fdf386",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.33440160751342773,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "169b446f0ab51252cc6e7b954572468aa88b497425f21d861010adb676880328",
+        "patch12.npy": "d2b6f53eb8631c57dc32c8254584fc25a3e706244dd93b87f2c434e0324dfa61"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "14",
+      "frames": 232,
+      "signature": "7bc9858037a23f53d0a763856db82f14951ed16c11159d801727f24764f3f880",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3306148052215576,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "0af07ad8a4974f7897ba8019088fd938a8856baf5478c7bdcbbc0a87785b0878",
+        "patch12.npy": "812e371e7eb3575cbb30b98b2f49183fdc8edeeb03da5c52fa3908ba957453bc"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "15",
+      "frames": 236,
+      "signature": "f2cd7f155f52f0e40bc9ab3cf8023ec4f1b083825b8cb732940f9886b40ab2af",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.33724236488342285,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "31038c30c822aa797c0c171af5d8dd23caba7f1688f60e741323d002f42dfc04",
+        "patch12.npy": "b667dceabdfc5d0963d89bd9c69841bc0b87c9014caae5f6823fb8a94ea5f224"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "16",
+      "frames": 230,
+      "signature": "e7437877553ce397ba3beed96e62e40c82f628b279c1f67cbb7325e7d9bfe015",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3455841541290283,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "0d4aca582e9c70056ba9dcb5430196bc5e77dcbe0b58b7807a58da988a1554ef",
+        "patch12.npy": "a6e7af13aad7d0f9a41dc72c7471d79ba4a41dd8c20bd7fb875d4d46bae504a8"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "17",
+      "frames": 234,
+      "signature": "fa6caacef6f7284f5bb10ee0d603e076c6e91d5a35ed23d044acb733953571ee",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3536722660064697,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "4f30049dd209e3ecab4d734707eb4746791efb8c6fe813f8cdf7aaa5a1cafb40",
+        "patch12.npy": "126195b7048641d9697a35fd47fc1d315a69214f855175e62ab608e7b5a74ef5"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "18",
+      "frames": 228,
+      "signature": "a30f8009eeba7b55523e41b986b1b91741d8f1f9fbf55316f14ab474af8c5db5",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3231050968170166,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "9b4d178559886b1d2d42dfc5554a7b7176a71b49daf1d183536ad47f2a78dd23",
+        "patch12.npy": "73ab1bff7055add9ca05e9970f91d90b958d80a0c3709d65587d15479e80d2de"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "19",
+      "frames": 233,
+      "signature": "6e0d3cc6ffeeced61908fbcf0ab78ac9dacf10893869d993be85a5a8de2ebb2a",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3410675525665283,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "814fb3fc442e366465bad41bea29d11c60378984d7bc51817043cdb5e6e3a11d",
+        "patch12.npy": "59fdbb3230944161e50ced8ce495ae9c4388791449e8aec76e8fe39b7d01e6ae"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "20",
+      "frames": 229,
+      "signature": "2e3313d03b4f37a9b5220475b437bd15ba1fb1035767db734b227af2064b5674",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3267173767089844,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "94cfd11f8131ed9bef4c3c003df14b5a5328743631b5f8c01008c7c9053dee11",
+        "patch12.npy": "d3a0840d6519ed11dc4adb983b9ddd25beedfd894bf9e7eef92fb87e31bbaa78"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "21",
+      "frames": 229,
+      "signature": "aef218c94388a8dcbee000ee77308ff5b9869678c9d46bf951192706e8b81dbd",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.33492088317871094,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "6143e3dd37385171b5241080eed7651a17452dd46c7af38d8ce357d07b166a59",
+        "patch12.npy": "aec827103b49a54da7f2934d42a567b42bcb74fbc3b8d15f49de29b002f4508a"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "22",
+      "frames": 234,
+      "signature": "d6b73951584b0687f61ab1e40e50e06bffee3e05708aac5b91a5d9e7ea6800f0",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3314399719238281,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "ce8118b17cf543723b922e20882585fae80bf195b5fbef5d94490bc96149f2f4",
+        "patch12.npy": "b153b6497a189ea79fd58c996c29f9b361fdfa2988fb019ca72a9c9d96741a74"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "23",
+      "frames": 233,
+      "signature": "d1102ba89c66ccc3e766f57cffc520222e30ffb326cd2ed5cf45400bc9554c80",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3423500061035156,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "e1bb3f9762bf71c0f2769b8593e648079ac08d6949d105584d452283a3ae269d",
+        "patch12.npy": "509c5989057d27577905dd3954f8c9c516d46d92cc882b1114f64d6632345f72"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "24",
+      "frames": 231,
+      "signature": "f427018bf9f0cc348562f38228119b8e91dab555740aa62cf85d1fe3d8b67580",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3460109233856201,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "d3e707da05a8546682e922c429401b882f5b41d28ccf2167809b35d7d3a77e11",
+        "patch12.npy": "4f4ba2db60863b0c1e307eefaaccc9da7ac0b9584fdf5fa034d5419eea80dee2"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "25",
+      "frames": 225,
+      "signature": "097e417fafb9457507b7c841bb810aa76e2e1db42f430e215d32cb09106b5318",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.37219762802124023,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "382583902c45877dbacfe2ee94ced6289495cd1e04dd99e89e1de75192798d7e",
+        "patch12.npy": "19a048bbc5282bb9ca3045f4026e7e1089a85c24d363d56606bd951b44a95e6d"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "26",
+      "frames": 238,
+      "signature": "a4f574614cbf37a9e4912c7d8f221eb6e5fdf48ffd5a5736261c534e1b0fdf05",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.5123176574707031,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "9b4ed494f102eb20356f78c08fbe9c3abc2b882b4e52a445c760623c21d3aa9c",
+        "patch12.npy": "3b1d0483abed6bfb06ce25efde97ba4c33b16fd0c75bb6eea4a4b684c51f015f"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "27",
+      "frames": 231,
+      "signature": "75474925d9a358da26974bb8492f860a7d78865f7181f5acfbb09825ccc298cd",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.4241657257080078,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "0bb25bfe3890af8c75e30b54370624965605d8890f61bd52248c4d83f16a3f7d",
+        "patch12.npy": "71907adea2b22dca4f66c491fe034cf70c253e386a67caf340eaf2e94677621d"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "28",
+      "frames": 228,
+      "signature": "e0125d6af41f13da54292029421191c587f5f5ceafb31830314d2c23fda06b1d",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.5459275245666504,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "e9910fb2f1d3fab27f72fa78adb4c2a5a238d8a31a374ad44af723aeef1d242e",
+        "patch12.npy": "c5280bffff97f69e452226331eccc2fdc162697fec7cb6c5e996d9d140b422bf"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "29",
+      "frames": 233,
+      "signature": "ea2eeaa298ef36311523bcfe7d0f8d8a02d124703804bfc43444ba603023af4d",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.5543022155761719,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "896379afe6c31632c312ecb1651c104271a76b4b43735f04ebc5e08427b687dc",
+        "patch12.npy": "49eb21529aff34d014164a9b859c6372d0d83b765719b21bcf2d1facea81b4f3"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "30",
+      "frames": 229,
+      "signature": "c21c1aaa2201f35c270d53e482d5ed6e041d16af2489ccbe80e1f903f45ee76a",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.5424237251281738,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "138fed2832997ef55e15eebb38a212991fb12069dcc7d9bf5bc7a05e31c93dcd",
+        "patch12.npy": "95d3c28b3f1944b0f51409890e09e6a5490cf46423293bd794e7890c193954ca"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "31",
+      "frames": 233,
+      "signature": "a1ae0a827c9e28b88191dfca593d9d2ec6ee7b7bd7a2fc3b09c740e9ae142b91",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.6537573337554932,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "9cd422278ccf47ef2b3e74312e8975f95746de56ad38c0caee7e21b70f8ed5bd",
+        "patch12.npy": "5b67fe2b24ba8c2e71641f5428499fe4bd78d3d3d419380ce79173dd56208d1b"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "32",
+      "frames": 230,
+      "signature": "94c3889c2e42fe59a0ae08b0041e2632fc5f5ab3dc9720f862b9f967799ea190",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.5302786827087402,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "9f18367f1348d640d7b8b50e494c005dd6aa107056cd6714678bab61c92f2f68",
+        "patch12.npy": "e1faed435731f48437dbd33af8b44e40ca6ca9ae5749d88d52f127f3689d84f7"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "33",
+      "frames": 229,
+      "signature": "68976cfb172044610dfd3f4d85565ec7abdf05c3ba1267a1b028205232636964",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.5357415676116943,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "deed44526a7d1d5e7334e57815665cc984888880f75c3295e5ea9dfc55ae7d3b",
+        "patch12.npy": "40a23e5f2755ac5c4420b303f84267afb969ba39454e3f9eeec0eff257342e2c"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "training",
+      "video": "34",
+      "frames": 229,
+      "signature": "6290579537e31229116dd010f22e88bc3af5d7f4e37e0ce5e1be6160e5d4b70c",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.5537934303283691,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "1c0d54cfecba99db24b0fc1c822d7039f7364656cfd82d6b9b413bb15f687874",
+        "patch12.npy": "f81200a901879fc2d16245552c7a962192797e330a65b8e1765faa8c7ce89489"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "01",
+      "frames": 230,
+      "signature": "212930383cc4d905245bb8049538ad6dedc9fda187688a033843d993a74a953b",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.5407686233520508,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "6c3424a154c816103a9810a9b3ea34c9a4a633d372b56a15e52b6b1e24ffea7f",
+        "patch12.npy": "567961d8cf2e18b4016d0b9e054042bf5e9ea5117acefd8ae5f9cb98e81952b8"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "02",
+      "frames": 256,
+      "signature": "bd1bb5d9d70a3cda56f89833acedf436bb09bf850f90f84a67bb51b00400b87a",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.6162097454071045,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "626acf538f2cd000325fd2a6debabea73558ce34ec4cdad3908b202d96edbb14",
+        "patch12.npy": "cae3513329d19448e8d0391cedc16ff77c1cad585478e577dc8cfdcad4076d8d"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "03",
+      "frames": 409,
+      "signature": "01f5240cb3629216f11570d77ddf3b7e7a778c3ba99918bfab32c7e74c7fbfc8",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.9512660503387451,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "269bbd97b087c5124b4ba3f5ef1a33de6b83bb901ea5b2657ad6064bc0acd5c5",
+        "patch12.npy": "93b86dde2d50c831ef0b5cc8ab866638953b5a2019ba4abb113c40610aa08c37"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "04",
+      "frames": 191,
+      "signature": "869ff0c94a8dac04d0057b26075c160f8a520fc47e4f2693013c048e7ce7b712",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3097043037414551,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "c3aeaa9e39e8eeeda155da9cc68a1b64018580c45e85f5ea3cc68ebd1771b476",
+        "patch12.npy": "e9c01853625400b73173a5ec0ed8ca9ba87fff93d196a82bf143301c7faffcd0"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "05",
+      "frames": 290,
+      "signature": "2d78871f55cc849e797bc4b2722304317881dc35f342b8b9073f7285a195a7fa",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.4359874725341797,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "ec987a8921960e2c7475371fd37ce3e41461c336846a8c9c33d6d0b4f15e0365",
+        "patch12.npy": "4c1f386501b674e498a0c1f1ec58d9ef108faa4858344c24757867fa0c3ceaf9"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "06",
+      "frames": 233,
+      "signature": "58bd1c4345df4b378e6c4d336c7ef1d19104d96fb8b8f9d94ba9788b271af9ae",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3884696960449219,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "5599e925a6d970c45eb7395c6a412015e07b67a3c17efe70955385a89213bad3",
+        "patch12.npy": "e902803c965101516c116f017e99be7818cf12225f4d4846083b04cf4f1cdca9"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "07",
+      "frames": 231,
+      "signature": "7d1168e33235dbc4b6af03699f0838aae22fabf42b93f4f678696fd1ebf30c39",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.5523278713226318,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "61e911a22852654d4cfa58807eaa7fadc54af9aa81010e7a6b268e0cdf2c3789",
+        "patch12.npy": "544b899b50fa862d0d5cfc041d40cbb11dd0acd7cd58ae322ef392d0a86e5f34"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "08",
+      "frames": 235,
+      "signature": "4c11ea1b05b664c6ea0078c2fd12a321ea272a0fc019134a2a2ed6203b5678fa",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3528141975402832,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "fdf9d94ee333352c2c4c09136cc6bd9552a44e43bb5b2dee2c10085f42ccad47",
+        "patch12.npy": "c8043d372192349da300c1ac0ad251181a0e09b951fb6e5d8ee6ac23b382192c"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "09",
+      "frames": 229,
+      "signature": "00cdd18f178c41c865632be9a59d60e7b03e638907146387b7de13a0d8174086",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3546280860900879,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "3d1186418b935d5e2e8ae253be0603799926f4ff3a34a9f24c98095090d50c1e",
+        "patch12.npy": "9abc733e8a9958ebbc596a0983cf4c250056228668c15d702e87579ee0d4a877"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "10",
+      "frames": 231,
+      "signature": "e04adce299e7df3f110b0543f8fa8250428a4b66261c25e41f2e8a209394a8b0",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3529682159423828,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "b81f37b1c3307c9ee669167c832c9a94f2602fe0ea2ca9feb545fa0893202141",
+        "patch12.npy": "0a484df823a832297e091d80449684c95f511fb19160c555989cf082ca4baed6"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "11",
+      "frames": 232,
+      "signature": "b29088c60dca2e3603f2b7759693423d0fcdde2cb1a3f12880da5c61bb50420e",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.35367560386657715,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "00ca67338d22c3c874d849f443f4ec32c0e611fa4962ea37c8a49999f09c6441",
+        "patch12.npy": "46610eeea372033e45da3b6c3691d383c92acff1600a73b16779037acc5141b9"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "12",
+      "frames": 231,
+      "signature": "1882d5c036ef215c3543827ada637425ed6f25f4fa09a4ccff0735812c4ae7d2",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.36797332763671875,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "0d4c1fd7510c03e52c5e9b34aad787ea31632b8b661fec52447096446652cd68",
+        "patch12.npy": "e95857df91fe4ed6a1990d819ea8bdcb47744f8d37f352cdd5b529e06b51e972"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "13",
+      "frames": 229,
+      "signature": "690ae65858bdb2215f3b883661a72b250bc8e5c51ec242d3653f9621f87b3dcb",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.34450316429138184,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "f7646a6795aa3682be4c7e400c5b69b41d9f69f8cc2eb68c0790e2de3aac3df0",
+        "patch12.npy": "bb9ab18382bebb3f0adb0f18b87b7329ae00db88e5b81042ad1174bbce24552a"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "14",
+      "frames": 230,
+      "signature": "ee301e2f0715c520efe8ef30d1d1f18f045bbece1a0443dcf2d317c497f7c738",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.32745862007141113,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "c139fc59638df905cecbb9ba5864250ea05017742d5f6899cf04822b973c9632",
+        "patch12.npy": "4638f4133cfee6fcf64b0d3b9936148eb2bda5d2485a75137b2c572f8d4f37f3"
+      }
+    },
+    {
+      "scene": "R01",
+      "split": "testing",
+      "video": "15",
+      "frames": 228,
+      "signature": "5ffd19dbd2fbfe54307f68b35d3e37d1ae8c784b96b81e23ebadc73fdff499a4",
+      "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "model": "dinov2_vits14",
+      "input_size": 252,
+      "cache_dtype": "float16",
+      "compute_dtype": "float32",
+      "seconds": 0.3250908851623535,
+      "channels": 384,
+      "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+      "sha256": {
+        "cls.npy": "51a496b0168349cbc7d47c66250ac2ad9f5c6d613320d6f7bca18f3f86b8e7db",
+        "patch12.npy": "2bc54828b7c7c95c2972acf5278535108207d14bf6d72036f1758fbc62bcaf0d"
+      }
+    }
+  ],
+  "seconds": 25.265305280685425,
+  "model": "dinov2_vits14",
+  "source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8"
+}

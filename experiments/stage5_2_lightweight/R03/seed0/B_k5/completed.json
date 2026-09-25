@@ -1,0 +1,48 @@
+{
+  "scene": "R03",
+  "seed": 0,
+  "backbone": "B",
+  "k": 5,
+  "period": 697.0,
+  "common_frames": 11121,
+  "online_frames": 11410,
+  "metrics": {
+    "appearance_score": {
+      "auroc": 62.13873759320926,
+      "auprc": 48.0910990320311,
+      "frames": 11121
+    },
+    "temporal_score": {
+      "auroc": 58.14886028325405,
+      "auprc": 49.54535367713825,
+      "frames": 11121
+    },
+    "combined_score": {
+      "auroc": 61.97571612682796,
+      "auprc": 49.95830961714234,
+      "frames": 11121
+    }
+  },
+  "online_metrics": {
+    "appearance_score": {
+      "auroc": 62.093683131509046,
+      "auprc": 48.55014572213994,
+      "frames": 11410
+    },
+    "temporal_score": {
+      "auroc": 58.13023333597135,
+      "auprc": 50.13053787534898,
+      "frames": 11410
+    },
+    "combined_score": {
+      "auroc": 62.03315399888603,
+      "auprc": 50.70487314575476,
+      "frames": 11410
+    }
+  },
+  "threshold": 0.5999964745805586,
+  "head_path": "runs/stage5/5-1/R03/seed0/B_k10/causal_head.pt",
+  "head_sha256": "c51594fc6bb24866f54d3206e21215374ea85d3ae60a5bbe7c5240d6095f86bb",
+  "head_parameters": 6394568,
+  "seconds": 16.072646617889404
+}

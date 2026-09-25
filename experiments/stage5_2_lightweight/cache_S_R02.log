@@ -1,0 +1,53 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+{"cache": "cache/dino_small/R02/training/01", "seconds": 1.2064526081085205}
+{"cache": "cache/dino_small/R02/training/02", "seconds": 0.8634254932403564}
+{"cache": "cache/dino_small/R02/training/03", "seconds": 0.787083625793457}
+{"cache": "cache/dino_small/R02/training/04", "seconds": 0.8699817657470703}
+{"cache": "cache/dino_small/R02/training/05", "seconds": 0.8736217021942139}
+{"cache": "cache/dino_small/R02/training/06", "seconds": 0.8852379322052002}
+{"cache": "cache/dino_small/R02/training/07", "seconds": 0.9485940933227539}
+{"cache": "cache/dino_small/R02/training/08", "seconds": 0.8724334239959717}
+{"cache": "cache/dino_small/R02/training/09", "seconds": 0.8472058773040771}
+{"cache": "cache/dino_small/R02/training/10", "seconds": 0.8609819412231445}
+{"cache": "cache/dino_small/R02/training/11", "seconds": 0.8879914283752441}
+{"cache": "cache/dino_small/R02/training/12", "seconds": 0.871467113494873}
+{"cache": "cache/dino_small/R02/training/13", "seconds": 0.8499670028686523}
+{"cache": "cache/dino_small/R02/training/14", "seconds": 0.8308308124542236}
+{"cache": "cache/dino_small/R02/training/15", "seconds": 0.8827517032623291}
+{"cache": "cache/dino_small/R02/training/16", "seconds": 0.9075310230255127}
+{"cache": "cache/dino_small/R02/training/17", "seconds": 1.2618215084075928}
+{"cache": "cache/dino_small/R02/training/18", "seconds": 1.285491943359375}
+{"cache": "cache/dino_small/R02/training/19", "seconds": 1.0718655586242676}
+{"cache": "cache/dino_small/R02/training/20", "seconds": 0.8743584156036377}
+{"cache": "cache/dino_small/R02/training/21", "seconds": 0.8446295261383057}
+{"cache": "cache/dino_small/R02/training/22", "seconds": 0.8580892086029053}
+{"cache": "cache/dino_small/R02/training/23", "seconds": 0.8799264430999756}
+{"cache": "cache/dino_small/R02/training/24", "seconds": 1.1841678619384766}
+{"cache": "cache/dino_small/R02/training/25", "seconds": 1.0636415481567383}
+{"cache": "cache/dino_small/R02/training/26", "seconds": 0.9817171096801758}
+{"cache": "cache/dino_small/R02/training/27", "seconds": 0.9854204654693604}
+{"cache": "cache/dino_small/R02/training/28", "seconds": 0.8414905071258545}
+{"cache": "cache/dino_small/R02/training/29", "seconds": 0.8455917835235596}
+{"cache": "cache/dino_small/R02/training/30", "seconds": 0.8043909072875977}
+{"cache": "cache/dino_small/R02/testing/01", "seconds": 0.8338701725006104}
+{"cache": "cache/dino_small/R02/testing/02", "seconds": 0.8557896614074707}
+{"cache": "cache/dino_small/R02/testing/03", "seconds": 0.8492023944854736}
+{"cache": "cache/dino_small/R02/testing/04", "seconds": 0.8277690410614014}
+{"cache": "cache/dino_small/R02/testing/05", "seconds": 0.9276123046875}
+{"cache": "cache/dino_small/R02/testing/06", "seconds": 0.8573286533355713}
+{"cache": "cache/dino_small/R02/testing/07", "seconds": 0.7615749835968018}
+{"cache": "cache/dino_small/R02/testing/08", "seconds": 1.1421356201171875}
+{"cache": "cache/dino_small/R02/testing/09", "seconds": 1.2880172729492188}
+{"cache": "cache/dino_small/R02/testing/10", "seconds": 0.9034044742584229}
+{"cache": "cache/dino_small/R02/testing/11", "seconds": 0.9304864406585693}
+{"cache": "cache/dino_small/R02/testing/12", "seconds": 1.7880730628967285}
+{"cache": "cache/dino_small/R02/testing/13", "seconds": 0.8787403106689453}
+{"cache": "cache/dino_small/R02/testing/14", "seconds": 0.719794750213623}
+{"cache": "cache/dino_small/R02/testing/15", "seconds": 1.1638946533203125}
