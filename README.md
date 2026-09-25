@@ -94,10 +94,12 @@ uv pip install --python .venv/bin/python -r requirements.lock.txt --extra-index-
 | 장면/seed | 무조건부 | 기존 hard | 인접 NN | top3 NN | top3 가중 | fallback | random3 | 전체 조건부 bank |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | R01/seed0 | 86.24 | 83.77 | 81.49 | 83.37 | 86.85 | 86.85 | 81.04 | 85.43 |
+| R02/seed0 | 85.57 | 84.93 | 85.40 | 85.76 | 86.30 | 84.24 | 57.86 | 85.32 |
 
 | 정상 holdout | 20-bin 정확도 | ±1 정확도 | 원형 MAE(bin) | cutoff 활성 |
 |---|---:|---:|---:|---|
 | R01/seed0 | 59.70% | 93.49% | 0.50 | True |
+| R02/seed0 | 76.99% | 93.11% | 0.33 | True |
 
 원시 CSV에는 frame ID, 예측 확률, 모든 비교 점수와 정답이 포함됩니다. 세부 지표·AUPRC·R02 민감도는 장면/seed별 JSON에 있습니다.
 정상 holdout의 상대 위치는 진단용 참조입니다. 테스트 정답 위상을 사용하지 않습니다. centered window와 테스트 전체 정규화를 사용하므로 온라인 실시간 결과가 아닙니다.
