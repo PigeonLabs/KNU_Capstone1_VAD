@@ -1,0 +1,149 @@
+[
+  {
+    "split": "training",
+    "video": "03",
+    "frames": 550,
+    "sha256": "e364a7a189101bc198f1f80ade998b9ef37a425b5da8ed079e89d26774080282",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "training",
+    "video": "05",
+    "frames": 602,
+    "sha256": "6b897d9d06001d7c728a14270b35b5b8b932bc242b50e6c5d46d8bccdad30957",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "training",
+    "video": "11",
+    "frames": 600,
+    "sha256": "44e845e73af62457a581bacf65a459747e16d49ea1983a1ed16c22fbd1dd9007",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "training",
+    "video": "12",
+    "frames": 590,
+    "sha256": "19256dee39a19a6e7bc705d2d25039e82f3811bfc045766878783e15a84f95d3",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "training",
+    "video": "22",
+    "frames": 601,
+    "sha256": "e0cf2c559b2c41f8deeef666a3473fc6aa338e61012d6bee943c0d1b940322c8",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "training",
+    "video": "27",
+    "frames": 589,
+    "sha256": "bd81ee5ad29cc050e7b366bb23b763d445cc7e3e1da53bd91ccb121246777351",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "01",
+    "frames": 583,
+    "sha256": "f6483563f3387ac69db8ea1ec9dae277ca270318aac2a302998ae82ec4d44277",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "02",
+    "frames": 595,
+    "sha256": "239a0123c5eec7f158d6bdd005a9dd3c4381abe772aa249b33405f7d22672264",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "03",
+    "frames": 573,
+    "sha256": "97dc4b0e2df8096ebc6e466ab3a8fe078ba9d7a55dbfa4fcc1139cd97152a3a8",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "04",
+    "frames": 578,
+    "sha256": "03a1d008913037bf0d73ceda049b6cf57f8d1204a32fa175c91f832d44cdc0d9",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "05",
+    "frames": 583,
+    "sha256": "d8803baf871a47bc36cc4208ea848cb8cb726d0dd25bee42333bf077743ac857",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "06",
+    "frames": 604,
+    "sha256": "c887fae12beaa8555c2ceaa9eaa8f8ab343fcf2d0d1f5668b70451973ef329b1",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "07",
+    "frames": 536,
+    "sha256": "2bf28259468804f6fb3fff571edf7d2a80b7d268496b2abd4789febe22471e35",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "08",
+    "frames": 784,
+    "sha256": "c6027bfa62a2f0765d878ef9dcde7899f64d04e9d9c8d4f044f9d35f0aba609a",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "09",
+    "frames": 853,
+    "sha256": "0756c9b3b86adde9445d2fe4843b55b16608cfc469fdbe54550bdbf96d73512d",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "10",
+    "frames": 612,
+    "sha256": "55296db07d1b996232f59d94d523f7d9985f8cfc1af915abac4a3bd21a5e258a",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "11",
+    "frames": 590,
+    "sha256": "17ceffd973174063bec0094c995e57c367aefce25b889c5e5e08a56b05e61fd6",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "12",
+    "frames": 806,
+    "sha256": "cb2a84d3f1e54d4fc0645e3172992ef3c94eb8abbc1162b79585da842e459bc3",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "13",
+    "frames": 609,
+    "sha256": "bdb0033eeb8017585e18d8e402f698ee627154009961e74ecacdd62d196ec047",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "14",
+    "frames": 497,
+    "sha256": "a6a6516a5a469dacb4e1bda40d742ab6d298da4ee1ad105ca8f087b24f590d63",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  },
+  {
+    "split": "testing",
+    "video": "15",
+    "frames": 815,
+    "sha256": "e23f98f1be22a0ed6ee37b1e6e9c4536394ae4ad88001d502e70086bffecdffa",
+    "hash_order": "batch64, CLS then patch12, normalized float32 little-endian"
+  }
+]

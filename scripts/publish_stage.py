@@ -127,7 +127,7 @@ def snapshot(stage):
             copy_analysis(ROOT/'runs/stage5'/name,ROOT/'experiments/stage5_summary'/name)
     elif stage in {'6-1','6-2'}:
         copy_analysis(ROOT/'runs/stage6'/stage,dest)
-        for name in ['status.json','verification.txt','targeted_verification.txt','precision_diagnostic.json','gpu_before_benchmark.txt','implementation_events.jsonl']:
+        for name in ['status.json','runner.log','verification.txt','targeted_verification.txt','precision_diagnostic.json','gpu_before_benchmark.txt','implementation_events.jsonl']:
             copy_analysis(ROOT/'runs/stage6'/name,dest/name)
         for name in ['research_findings.md','final_verification.json']:
             copy_analysis(ROOT/'runs/stage6'/name,ROOT/'experiments/stage6_summary'/name)

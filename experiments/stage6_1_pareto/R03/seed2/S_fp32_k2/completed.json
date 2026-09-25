@@ -1,0 +1,70 @@
+{
+  "scene": "R03",
+  "seed": 2,
+  "backbone": "S",
+  "precision": "fp32",
+  "k": 2,
+  "period": 697.0,
+  "frames": 11121,
+  "online_frames": 11410,
+  "metrics": {
+    "appearance_score": {
+      "auroc": 54.38337985002487,
+      "auprc": 44.3061462936477,
+      "frames": 11121
+    },
+    "temporal_score": {
+      "auroc": 56.37245643738096,
+      "auprc": 49.79604132168983,
+      "frames": 11121
+    },
+    "combined_score": {
+      "auroc": 56.38218388583589,
+      "auprc": 48.009606206219324,
+      "frames": 11121
+    }
+  },
+  "online_metrics": {
+    "appearance_score": {
+      "auroc": 54.77492366473391,
+      "auprc": 45.07078195317153,
+      "frames": 11410
+    },
+    "temporal_score": {
+      "auroc": 56.69132734455455,
+      "auprc": 50.65373703629382,
+      "frames": 11410
+    },
+    "combined_score": {
+      "auroc": 56.83764130038429,
+      "auprc": 49.12163392478006,
+      "frames": 11410
+    }
+  },
+  "operation": {
+    "eligible_segments": 13,
+    "detected_segments": 7,
+    "missed_segments": 6,
+    "cold_start_segments": 4,
+    "preexisting_alarm_segments": 0,
+    "segment_recall": 0.5384615384615384,
+    "delay_median_frames_detected_only": 83.0,
+    "delay_p95_frames_detected_only": 198.29999999999995,
+    "normal_frames": 6482,
+    "raw_false_positive_frames": 128,
+    "alarm_false_positive_frames": 94,
+    "frame_fpr": 0.01974699166923789,
+    "active_alarm_fpr": 0.014501697007096576,
+    "false_alarm_episodes": 11,
+    "false_alarms_per_1000_normal_frames": 1.6970070965751312,
+    "false_alarms_per_minute_assuming_30fps": 3.054612773835236,
+    "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+  },
+  "memory_path": "runs/stage6/6-1/R03/seed2/S_fp32_k2/memory.pt",
+  "memory_sha256": "19f699df2fbe9b169528937928b64aea3433ff754a2a6d5be324903b3e8ec485",
+  "head_path": "runs/stage5/5-2/R03/seed2/S_k10/causal_head.pt",
+  "head_sha256": "f465c418000faddbbed0a078151a9c592f94ae8b05f3a697f74d8369d1184e41",
+  "bank_elements": 4976640,
+  "bank_runtime_bytes": 19906560,
+  "seconds": 11.867873191833496
+}

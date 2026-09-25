@@ -1,0 +1,72 @@
+{
+  "scene": "R04",
+  "seed": 1,
+  "backbone": "S",
+  "precision": "fp32",
+  "k": 10,
+  "period": 383.5,
+  "frames": 7166,
+  "online_frames": 7489,
+  "metrics": {
+    "appearance_score": {
+      "auroc": 75.86088251768052,
+      "auprc": 83.22953529340963,
+      "frames": 7166
+    },
+    "temporal_score": {
+      "auroc": 65.39110096204152,
+      "auprc": 72.50312938789627,
+      "frames": 7166
+    },
+    "combined_score": {
+      "auroc": 78.32704898020316,
+      "auprc": 83.17145591468467,
+      "frames": 7166
+    }
+  },
+  "online_metrics": {
+    "appearance_score": {
+      "auroc": 74.4225290581409,
+      "auprc": 81.59411218051427,
+      "frames": 7489
+    },
+    "temporal_score": {
+      "auroc": 64.59266526285332,
+      "auprc": 71.7089932217819,
+      "frames": 7489
+    },
+    "combined_score": {
+      "auroc": 76.82572274101085,
+      "auprc": 81.43956085294766,
+      "frames": 7489
+    }
+  },
+  "operation": {
+    "eligible_segments": 26,
+    "detected_segments": 11,
+    "missed_segments": 15,
+    "cold_start_segments": 0,
+    "preexisting_alarm_segments": 0,
+    "segment_recall": 0.4230769230769231,
+    "delay_median_frames_detected_only": 78.0,
+    "delay_p95_frames_detected_only": 185.5,
+    "normal_frames": 2911,
+    "raw_false_positive_frames": 53,
+    "alarm_false_positive_frames": 37,
+    "frame_fpr": 0.018206801786327723,
+    "active_alarm_fpr": 0.012710408794228788,
+    "false_alarm_episodes": 5,
+    "false_alarms_per_1000_normal_frames": 1.7176228100309172,
+    "false_alarms_per_minute_assuming_30fps": 3.091721058055651,
+    "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+  },
+  "memory_path": "runs/stage5/5-2/R04/seed1/S_k10/memory.pt",
+  "memory_sha256": "421bb535e30cc0205f8bc7f3570de9f379ce0eb85adfe32a186950ec575ad420",
+  "head_path": "runs/stage5/5-2/R04/seed1/S_k10/causal_head.pt",
+  "head_sha256": "48797e6ff73c284966115d1aac918802dcd2fdca038d6c03803179ed9ea25005",
+  "bank_elements": 24883200,
+  "bank_runtime_bytes": 99532800,
+  "seconds": 0.2639763355255127,
+  "reused_from": "runs/stage5/5-2/R04/seed1/S_k10",
+  "reused_metrics_sha256": "f77340062c18d812099e6f42eb0510f3594a268f20ef94bde062e51b23fb876e"
+}

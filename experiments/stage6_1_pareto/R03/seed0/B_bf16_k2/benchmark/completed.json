@@ -1,0 +1,41 @@
+{
+  "scene": "R03",
+  "backbone": "B",
+  "precision": "bf16",
+  "k": 2,
+  "batch_size": 1,
+  "video": "01",
+  "timings": {
+    "capacity": {
+      "frames": 768,
+      "input_fps": 235.88353046579422,
+      "processing_p95_ms": 4.682559939101338,
+      "steady_p95_ms": 4.659020365215838,
+      "end_to_end_p95_ms": 4.6826934441924095,
+      "deadline_miss_fraction": 0.0,
+      "max_queue_ms": 0.0004409812390804291,
+      "last_queue_ms": 0.00011012889444828033
+    },
+    "paced_30fps": {
+      "frames": 256,
+      "input_fps": 30.101902828702666,
+      "processing_p95_ms": 5.994355771690607,
+      "steady_p95_ms": 6.110602989792824,
+      "end_to_end_p95_ms": 6.05931127211079,
+      "deadline_miss_fraction": 0.0,
+      "max_queue_ms": 1.370144309476018,
+      "last_queue_ms": 0.06014690734446049
+    }
+  },
+  "backbone_dtype": "torch.bfloat16",
+  "head_dtype": "torch.bfloat16",
+  "bank_dtype": "torch.bfloat16",
+  "parameter_bytes": 185950096,
+  "bank_bytes": 19906560,
+  "peak_allocated_gib": 0.21324682235717773,
+  "peak_reserved_gib": 0.234375,
+  "phase_agreement": 0.9864253393665159,
+  "appearance_max_difference": 0.0004340708255767822,
+  "scope": "Current GPU, original JPEG decode, OS cache may be warm; 30FPS paced replay, no camera/network; warm model, video reset and35-frame coldstart",
+  "seconds": 13.588378429412842
+}

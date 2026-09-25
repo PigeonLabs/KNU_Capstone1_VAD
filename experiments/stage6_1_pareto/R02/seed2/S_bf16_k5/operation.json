@@ -1,0 +1,19 @@
+{
+  "eligible_segments": 11,
+  "detected_segments": 4,
+  "missed_segments": 7,
+  "cold_start_segments": 4,
+  "preexisting_alarm_segments": 0,
+  "segment_recall": 0.36363636363636365,
+  "delay_median_frames_detected_only": 43.0,
+  "delay_p95_frames_detected_only": 59.949999999999996,
+  "normal_frames": 4771,
+  "raw_false_positive_frames": 41,
+  "alarm_false_positive_frames": 25,
+  "frame_fpr": 0.008593586250261999,
+  "active_alarm_fpr": 0.005239991616013414,
+  "false_alarm_episodes": 2,
+  "false_alarms_per_1000_normal_frames": 0.4191993292810732,
+  "false_alarms_per_minute_assuming_30fps": 0.7545587927059316,
+  "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+}

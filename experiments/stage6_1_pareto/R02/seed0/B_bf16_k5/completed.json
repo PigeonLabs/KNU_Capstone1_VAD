@@ -1,0 +1,72 @@
+{
+  "scene": "R02",
+  "seed": 0,
+  "backbone": "B",
+  "precision": "bf16",
+  "k": 5,
+  "period": 589.5,
+  "frames": 7082,
+  "online_frames": 7286,
+  "metrics": {
+    "appearance_score": {
+      "auroc": 87.0037584490202,
+      "auprc": 76.2382581293792,
+      "frames": 7082
+    },
+    "temporal_score": {
+      "auroc": 89.41599275554857,
+      "auprc": 84.94411760862353,
+      "frames": 7082
+    },
+    "combined_score": {
+      "auroc": 93.81131855306153,
+      "auprc": 87.78289153615461,
+      "frames": 7082
+    }
+  },
+  "online_metrics": {
+    "appearance_score": {
+      "auroc": 86.96687200211016,
+      "auprc": 75.97636269226282,
+      "frames": 7286
+    },
+    "temporal_score": {
+      "auroc": 89.43306832657379,
+      "auprc": 84.73270447794229,
+      "frames": 7286
+    },
+    "combined_score": {
+      "auroc": 93.90458339878982,
+      "auprc": 87.71397284297831,
+      "frames": 7286
+    }
+  },
+  "operation": {
+    "eligible_segments": 11,
+    "detected_segments": 2,
+    "missed_segments": 9,
+    "cold_start_segments": 4,
+    "preexisting_alarm_segments": 0,
+    "segment_recall": 0.18181818181818182,
+    "delay_median_frames_detected_only": 63.5,
+    "delay_p95_frames_detected_only": 81.95,
+    "normal_frames": 4771,
+    "raw_false_positive_frames": 15,
+    "alarm_false_positive_frames": 6,
+    "frame_fpr": 0.0031439949696080486,
+    "active_alarm_fpr": 0.0012575979878432194,
+    "false_alarm_episodes": 3,
+    "false_alarms_per_1000_normal_frames": 0.6287989939216098,
+    "false_alarms_per_minute_assuming_30fps": 1.1318381890588975,
+    "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+  },
+  "memory_path": "runs/stage5/5-2/R02/seed0/B_k5/memory.pt",
+  "memory_sha256": "39ec73a8f8b2e49f04cdfe4b4fa0fbc4ce72117419cb427bf6f46adb9d364a9d",
+  "head_path": "runs/stage5/5-1/R02/seed0/B_k10/causal_head.pt",
+  "head_sha256": "f0fd9c79496085e56f945702ac728293fc5e133d46d3d1028a89e803677d7d03",
+  "bank_elements": 24883200,
+  "bank_runtime_bytes": 49766400,
+  "seconds": 33.16663932800293,
+  "feature_hashes_path": "runs/stage6/6-1/streams/R02/B/feature_hashes.json",
+  "feature_hashes_sha256": "ab5d7d6a4dbd6ab97fcb2631f957ff14b6734a78df6d99cfbc7a021b829e4067"
+}

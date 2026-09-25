@@ -1,0 +1,53 @@
+{
+  "-1": {
+    "appearance_score": {
+      "auroc": 86.51874654949219,
+      "auprc": 77.21627777180984,
+      "frames": 8838
+    },
+    "temporal_score": {
+      "auroc": 88.33808530557852,
+      "auprc": 82.64929214303581,
+      "frames": 8838
+    },
+    "combined_score": {
+      "auroc": 94.09187190476561,
+      "auprc": 89.02670962354865,
+      "frames": 8838
+    }
+  },
+  "0": {
+    "appearance_score": {
+      "auroc": 86.51898347683832,
+      "auprc": 77.09428722909813,
+      "frames": 8838
+    },
+    "temporal_score": {
+      "auroc": 88.02091085276413,
+      "auprc": 82.0739548290637,
+      "frames": 8838
+    },
+    "combined_score": {
+      "auroc": 93.87687292058008,
+      "auprc": 88.63204451854718,
+      "frames": 8838
+    }
+  },
+  "1": {
+    "appearance_score": {
+      "auroc": 86.46985270154342,
+      "auprc": 76.83716856679,
+      "frames": 8838
+    },
+    "temporal_score": {
+      "auroc": 87.7172407443402,
+      "auprc": 81.47585817996055,
+      "frames": 8838
+    },
+    "combined_score": {
+      "auroc": 93.62260086487973,
+      "auprc": 88.11608456849916,
+      "frames": 8838
+    }
+  }
+}

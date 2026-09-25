@@ -1,0 +1,70 @@
+{
+  "scene": "R01",
+  "seed": 1,
+  "backbone": "B",
+  "precision": "fp32",
+  "k": 2,
+  "period": 232.0,
+  "frames": 2905,
+  "online_frames": 3160,
+  "metrics": {
+    "appearance_score": {
+      "auroc": 87.1208654291864,
+      "auprc": 74.22401251614812,
+      "frames": 2905
+    },
+    "temporal_score": {
+      "auroc": 69.18490557495987,
+      "auprc": 60.65941395324679,
+      "frames": 2905
+    },
+    "combined_score": {
+      "auroc": 88.73458931578384,
+      "auprc": 80.28651839057159,
+      "frames": 2905
+    }
+  },
+  "online_metrics": {
+    "appearance_score": {
+      "auroc": 86.40468364201476,
+      "auprc": 71.56732908711922,
+      "frames": 3160
+    },
+    "temporal_score": {
+      "auroc": 65.70831011619643,
+      "auprc": 53.36623765933113,
+      "frames": 3160
+    },
+    "combined_score": {
+      "auroc": 87.49495187023624,
+      "auprc": 76.92196483945767,
+      "frames": 3160
+    }
+  },
+  "operation": {
+    "eligible_segments": 5,
+    "detected_segments": 5,
+    "missed_segments": 0,
+    "cold_start_segments": 3,
+    "preexisting_alarm_segments": 5,
+    "segment_recall": 1.0,
+    "delay_median_frames_detected_only": 0.0,
+    "delay_p95_frames_detected_only": 0.0,
+    "normal_frames": 1966,
+    "raw_false_positive_frames": 1234,
+    "alarm_false_positive_frames": 1183,
+    "frame_fpr": 0.6276703967446592,
+    "active_alarm_fpr": 0.6017293997965412,
+    "false_alarm_episodes": 15,
+    "false_alarms_per_1000_normal_frames": 7.62970498474059,
+    "false_alarms_per_minute_assuming_30fps": 13.733468972533062,
+    "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+  },
+  "memory_path": "runs/stage6/6-1/R01/seed1/B_fp32_k2/memory.pt",
+  "memory_sha256": "bcb28a7793dba68fba949f9b767ade8030e8327e223e490d1e4ed1e25c218761",
+  "head_path": "runs/stage5/5-1/R01/seed1/B_k10/causal_head.pt",
+  "head_sha256": "51a2bfe052ac805836cdf36459f991077259693abf0f3be048f5135767521225",
+  "bank_elements": 9455616,
+  "bank_runtime_bytes": 37822464,
+  "seconds": 10.097006797790527
+}
