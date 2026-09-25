@@ -1,0 +1,485 @@
+[
+  {
+    "path": "cache/stage9_compile/w8a8_reduce-overhead-precise/inductor/2f/c2fmcsyeihsnq2wypqtym7pyocyximyrl4q3gtnkgxhb5ftpueh4.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 3, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9(in_ptr0, in_ptr1, in_ptr2, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w8a8_reduce-overhead-precise/inductor/3q/c3qwm42s6gyjgi3vzkjdfi5pbahfmo4mvqiroh6ueljaee7baw7k.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 0, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'au"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w8a8_reduce-overhead-precise/inductor/be/cbeydykpi3w7cn2l4a4kjtolcfffaq2vjcvdamqebmw45r732gk3.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwis"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0(in_ptr0, in_ptr1, in_ptr2, out_ptr1, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w8a8_reduce-overhead-precise/inductor/ce/cceu6ywubwri2g4wxsxo723ajpnrgswccwl6ueqbc53kev3744sv.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 3, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force_dis"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7(in_ptr0, in_ptr1, in_ptr2, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w8a8_reduce-overhead-precise/inductor/cv/ccvtrhjkwnzfv2s5sgjvgaf7hgwcuibq3k6gyix4r4lkzfmmv37l.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 3, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10(in_ptr0, in_ptr1, in_ptr2, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w8a8_reduce-overhead-precise/inductor/s4/cs44vekh2mqrk7hk3xnvyvt3inlqvv5ld7fk3ouck72osdb33dhz.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 3, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8(in_ptr0, in_ptr1, in_ptr2, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w8a8_reduce-overhead-precise/inductor/tv/ctvcvwunih3wewp3ai65hs4h6gwtul3m3gyer4r2gyvdlidq65bs.py",
+    "lines": [
+      {
+        "line": 106,
+        "text": "triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0 = async_compile.triton('triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0', '''"
+      },
+      {
+        "line": 119,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwis"
+      },
+      {
+        "line": 123,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0(in_ptr0, in_ptr1, in_ptr2, out_ptr1, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 424,
+        "text": "triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1 = async_compile.triton('triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1', '''"
+      },
+      {
+        "line": 437,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 0, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'au"
+      },
+      {
+        "line": 441,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 949,
+        "text": "#   %convert_element_type_18 : Tensor \"i8[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.prims.convert_element_type.default](args = (%convert_element_type_17, torch.int8), kwargs = {})"
+      },
+      {
+        "line": 1162,
+        "text": "#   %_int_mm : Tensor \"i32[325, 2304][2304, 1]cuda:0\" = PlaceHolder[target=_int_mm]"
+      },
+      {
+        "line": 1170,
+        "text": "#   %mul_55 : Tensor \"bf16[325, 2304][2304, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%_int_mm, %expand_1), kwargs = {})"
+      },
+      {
+        "line": 1178,
+        "text": "triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7 = async_compile.triton('triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7', '''"
+      },
+      {
+        "line": 1191,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 3, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force_dis"
+      },
+      {
+        "line": 1195,
+        "text": "def triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7(in_ptr0, in_ptr1, in_ptr2, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1275,
+        "text": "triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8 = async_compile.triton('triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8', '''"
+      },
+      {
+        "line": 1288,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 3, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_"
+      },
+      {
+        "line": 1292,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8(in_ptr0, in_ptr1, in_ptr2, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1349,
+        "text": "triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9 = async_compile.triton('triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9', '''"
+      },
+      {
+        "line": 1362,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 3, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_"
+      },
+      {
+        "line": 1366,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9(in_ptr0, in_ptr1, in_ptr2, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1423,
+        "text": "triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10 = async_compile.triton('triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10', '''"
+      },
+      {
+        "line": 1436,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 3, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune"
+      },
+      {
+        "line": 1440,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10(in_ptr0, in_ptr1, in_ptr2, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1503,
+        "text": "#   %convert_element_type_26 : Tensor \"i8[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.prims.convert_element_type.default](args = (%convert_element_type_25, torch.int8), kwargs = {})"
+      },
+      {
+        "line": 1629,
+        "text": "#   %_int_mm_1 : Tensor \"i32[325, 768][768, 1]cuda:0\" = PlaceHolder[target=_int_mm_1]"
+      },
+      {
+        "line": 1652,
+        "text": "#   %mul_61 : Tensor \"bf16[325, 768][768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%_int_mm_1, %expand_2), kwargs = {})"
+      },
+      {
+        "line": 1694,
+        "text": "#   %convert_element_type_36 : Tensor \"i8[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.prims.convert_element_type.default](args = (%convert_element_type_35, torch.int8), kwargs = {})"
+      },
+      {
+        "line": 1918,
+        "text": "#   %_int_mm_2 : Tensor \"i32[325, 3072][3072, 1]cuda:0\" = PlaceHolder[target=_int_mm_2]"
+      },
+      {
+        "line": 1933,
+        "text": "#   %mul_70 : Tensor \"bf16[325, 3072][3072, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%_int_mm_2, %expand_3), kwargs = {})"
+      },
+      {
+        "line": 1971,
+        "text": "#   %convert_element_type_46 : Tensor \"i8[1, 325, 3072][998400, 3072, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.prims.convert_element_type.default](args = (%convert_element_type_45, torch.int8), kwargs = {})"
+      },
+      {
+        "line": 2203,
+        "text": "#   %_int_mm_47 : Tensor \"i32[325, 768][768, 1]cuda:0\" = PlaceHolder[target=_int_mm_47]"
+      },
+      {
+        "line": 2221,
+        "text": "#   %mul_442 : Tensor \"bf16[325, 768][768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%_int_mm_47, %expand_48), kwargs = {})"
+      },
+      {
+        "line": 2748,
+        "text": "        triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0.run(arg0_1, arg1_1, arg2_1, buf5, 190512, stream=stream0)"
+      },
+      {
+        "line": 2759,
+        "text": "        triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1.run(buf20, arg6_1, 248832, stream=stream0)"
+      },
+      {
+        "line": 2962,
+        "text": "        buf30 = empty_strided_cuda((1, 325, 768), (249600, 768, 1), torch.int8)"
+      },
+      {
+        "line": 2974,
+        "text": "        # Topologically Sorted Source Nodes: [linear], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2975,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf30, (325, 768), (768, 1), 0), reinterpret_tensor(arg9_1, (768, 2304), (1, 768), 0), out=buf31)"
+      },
+      {
+        "line": 2980,
+        "text": "        triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7.run(buf31, buf28, buf32, buf33, 748800, stream=stream0)"
+      },
+      {
+        "line": 2986,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8.run(buf33, arg10_1, arg12_1, buf34, 249600, stream=stream0)"
+      },
+      {
+        "line": 2990,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9.run(buf33, arg10_1, arg12_1, buf35, 249600, stream=stream0)"
+      },
+      {
+        "line": 2994,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10.run(buf33, arg10_1, arg12_1, buf36, 249600, stream=stream0)"
+      },
+      {
+        "line": 3013,
+        "text": "        # Topologically Sorted Source Nodes: [linear_1], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3014,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf47, (325, 768), (768, 1), 0), reinterpret_tensor(arg13_1, (768, 768), (1, 768), 0), out=buf48)"
+      },
+      {
+        "line": 3030,
+        "text": "        # Topologically Sorted Source Nodes: [x_8], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3031,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf60, (325, 768), (768, 1), 0), reinterpret_tensor(arg20_1, (768, 3072), (1, 768), 0), out=buf61)"
+      },
+      {
+        "line": 3037,
+        "text": "        buf68 = empty_strided_cuda((1, 325, 3072), (998400, 3072, 1), torch.int8)"
+      },
+      {
+        "line": 3045,
+        "text": "        # Topologically Sorted Source Nodes: [x_11], Original ATen: [aten.add, aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3046,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf68, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg24_1, (3072, 768), (1, 3072), 0), out=buf69)"
+      },
+      {
+        "line": 3063,
+        "text": "        # Topologically Sorted Source Nodes: [linear_4], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3064,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf81, (325, 768), (768, 1), 0), reinterpret_tensor(arg31_1, (768, 2304), (1, 768), 0), out=buf82)"
+      },
+      {
+        "line": 3069,
+        "text": "        triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7.run(buf82, buf79, buf83, buf84, 748800, stream=stream0)"
+      },
+      {
+        "line": 3075,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8.run(buf84, arg32_1, arg34_1, buf85, 249600, stream=stream0)"
+      },
+      {
+        "line": 3079,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9.run(buf84, arg32_1, arg34_1, buf86, 249600, stream=stream0)"
+      },
+      {
+        "line": 3083,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10.run(buf84, arg32_1, arg34_1, buf87, 249600, stream=stream0)"
+      },
+      {
+        "line": 3101,
+        "text": "        # Topologically Sorted Source Nodes: [linear_5], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3102,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf98, (325, 768), (768, 1), 0), reinterpret_tensor(arg35_1, (768, 768), (1, 768), 0), out=buf99)"
+      },
+      {
+        "line": 3118,
+        "text": "        # Topologically Sorted Source Nodes: [x_18], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3119,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf111, (325, 768), (768, 1), 0), reinterpret_tensor(arg42_1, (768, 3072), (1, 768), 0), out=buf112)"
+      },
+      {
+        "line": 3125,
+        "text": "        buf119 = empty_strided_cuda((1, 325, 3072), (998400, 3072, 1), torch.int8)"
+      },
+      {
+        "line": 3133,
+        "text": "        # Topologically Sorted Source Nodes: [x_21], Original ATen: [aten.add, aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3134,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf119, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg46_1, (3072, 768), (1, 3072), 0), out=buf120)"
+      },
+      {
+        "line": 3151,
+        "text": "        # Topologically Sorted Source Nodes: [linear_8], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3152,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf132, (325, 768), (768, 1), 0), reinterpret_tensor(arg53_1, (768, 2304), (1, 768), 0), out=buf133)"
+      },
+      {
+        "line": 3157,
+        "text": "        triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7.run(buf133, buf130, buf134, buf135, 748800, stream=stream0)"
+      },
+      {
+        "line": 3162,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8.run(buf135, arg54_1, arg56_1, buf136, 249600, stream=stream0)"
+      },
+      {
+        "line": 3166,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9.run(buf135, arg54_1, arg56_1, buf137, 249600, stream=stream0)"
+      },
+      {
+        "line": 3170,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10.run(buf135, arg54_1, arg56_1, buf138, 249600, stream=stream0)"
+      },
+      {
+        "line": 3192,
+        "text": "        # Topologically Sorted Source Nodes: [linear_9], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3193,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf149, (325, 768), (768, 1), 0), reinterpret_tensor(arg57_1, (768, 768), (1, 768), 0), out=buf150)"
+      },
+      {
+        "line": 3209,
+        "text": "        # Topologically Sorted Source Nodes: [x_28], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3210,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf162, (325, 768), (768, 1), 0), reinterpret_tensor(arg64_1, (768, 3072), (1, 768), 0), out=buf163)"
+      },
+      {
+        "line": 3216,
+        "text": "        buf170 = empty_strided_cuda((1, 325, 3072), (998400, 3072, 1), torch.int8)"
+      },
+      {
+        "line": 3224,
+        "text": "        # Topologically Sorted Source Nodes: [x_31], Original ATen: [aten.add, aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3225,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf170, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg68_1, (3072, 768), (1, 3072), 0), out=buf171)"
+      },
+      {
+        "line": 3241,
+        "text": "        # Topologically Sorted Source Nodes: [linear_12], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3242,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf183, (325, 768), (768, 1), 0), reinterpret_tensor(arg75_1, (768, 2304), (1, 768), 0), out=buf184)"
+      },
+      {
+        "line": 3247,
+        "text": "        triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7.run(buf184, buf181, buf185, buf186, 748800, stream=stream0)"
+      },
+      {
+        "line": 3253,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8.run(buf186, arg76_1, arg78_1, buf187, 249600, stream=stream0)"
+      },
+      {
+        "line": 3257,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9.run(buf186, arg76_1, arg78_1, buf188, 249600, stream=stream0)"
+      },
+      {
+        "line": 3261,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10.run(buf186, arg76_1, arg78_1, buf189, 249600, stream=stream0)"
+      },
+      {
+        "line": 3279,
+        "text": "        # Topologically Sorted Source Nodes: [linear_13], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3280,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf200, (325, 768), (768, 1), 0), reinterpret_tensor(arg79_1, (768, 768), (1, 768), 0), out=buf201)"
+      },
+      {
+        "line": 3296,
+        "text": "        # Topologically Sorted Source Nodes: [x_38], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3297,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf213, (325, 768), (768, 1), 0), reinterpret_tensor(arg86_1, (768, 3072), (1, 768), 0), out=buf214)"
+      },
+      {
+        "line": 3311,
+        "text": "        # Topologically Sorted Source Nodes: [x_41], Original ATen: [aten.add, aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3312,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf221, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg90_1, (3072, 768), (1, 3072), 0), out=buf222)"
+      },
+      {
+        "line": 3329,
+        "text": "        # Topologically Sorted Source Nodes: [linear_16], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3330,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf234, (325, 768), (768, 1), 0), reinterpret_tensor(arg97_1, (768, 2304), (1, 768), 0), out=buf235)"
+      },
+      {
+        "line": 3335,
+        "text": "        triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7.run(buf235, buf232, buf236, buf237, 748800, stream=stream0)"
+      },
+      {
+        "line": 3340,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_8.run(buf237, arg98_1, arg100_1, buf238, 249600, stream=stream0)"
+      },
+      {
+        "line": 3344,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_9.run(buf237, arg98_1, arg100_1, buf239, 249600, stream=stream0)"
+      },
+      {
+        "line": 3348,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_mul_transpose_unbind_view_10.run(buf237, arg98_1, arg100_1, buf240, 249600, stream=stream0)"
+      },
+      {
+        "line": 3370,
+        "text": "        # Topologically Sorted Source Nodes: [linear_17], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3371,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf251, (325, 768), (768, 1), 0), reinterpret_tensor(arg101_1, (768, 768), (1, 768), 0), out=buf252)"
+      },
+      {
+        "line": 3387,
+        "text": "        # Topologically Sorted Source Nodes: [x_48], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3388,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf264, (325, 768), (768, 1), 0), reinterpret_tensor(arg108_1, (768, 3072), (1, 768), 0), out=buf265)"
+      },
+      {
+        "line": 3394,
+        "text": "        buf272 = empty_strided_cuda((1, 325, 3072), (998400, 3072, 1), torch.int8)"
+      },
+      {
+        "line": 3402,
+        "text": "        # Topologically Sorted Source Nodes: [x_51], Original ATen: [aten.add, aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3403,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf272, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg112_1, (3072, 768), (1, 3072), 0), out=buf273)"
+      },
+      {
+        "line": 3419,
+        "text": "        # Topologically Sorted Source Nodes: [linear_20], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3420,
+        "text": "        extern_kernels._int_mm(reinterpret_tensor(buf285, (325, 768), (768, 1), 0), reinterpret_tensor(arg119_1, (768, 2304), (1, 768), 0), out=buf286)"
+      },
+      {
+        "line": 3425,
+        "text": "        triton_poi_fused__to_copy_clamp_expand_mul_sub_view_7.run(buf286, buf283, buf287, buf288, 748800, stream=stream0)"
+      }
+    ]
+  }
+]

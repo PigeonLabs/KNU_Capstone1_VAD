@@ -16,6 +16,10 @@
 | w8a16 | reduce-overhead | 44.650 | 45.452 | 0.12× | 0.03× | 94.3 | 7.81 | 기준 초과 |
 | w8a8 | reduce-overhead | 1.975 | 2.284 | 27.05× | 0.75× | 94.3 | 12.83 | 기준 초과 |
 | w4a16 | reduce-overhead | 3.710 | 4.150 | 1.59× | 0.40× | 65.9 | 7.80 | 기준 초과 |
+| bf16 | reduce-overhead-precise | 1.494 | 1.593 | 2.62× | 1.00× | 173.4 | 6.52 | 기준 초과 |
+| w8a16 | reduce-overhead-precise | 44.583 | 45.513 | 0.12× | 0.03× | 94.3 | 8.06 | 기준 초과 |
+| w8a8 | reduce-overhead-precise | 2.028 | 2.144 | 26.34× | 0.74× | 94.3 | 13.90 | 기준 초과 |
+| w4a16 | reduce-overhead-precise | 3.730 | 4.167 | 1.58× | 0.40× | 65.9 | 8.05 | 기준 초과 |
 
 속도 배율은 클수록 빠릅니다. 양자화·컴파일 효과를 분리하기 위해 양자화 compiled를 BF16 eager와만 비교하지 않습니다. 초기 호출은 새 조건 캐시에서의 모델 compile 호출 비용이며 eager 참조 계산과 GPU 초기화 이후입니다. warmup 12회와 초기/정상 peak 메모리는 원 JSON에 별도 기록했습니다.
 
@@ -35,6 +39,10 @@
 | w8a16/reduce-overhead | 이름에서 미확인 | 없음 | 확인 |
 | w8a8/reduce-overhead | 확인 | 없음 | 확인 |
 | w4a16/reduce-overhead | 이름에서 미확인 | 확인 | 확인 |
+| bf16/reduce-overhead-precise | 이름에서 미확인 | 없음 | 확인 |
+| w8a16/reduce-overhead-precise | 이름에서 미확인 | 없음 | 확인 |
+| w8a8/reduce-overhead-precise | 확인 | 없음 | 확인 |
+| w4a16/reduce-overhead-precise | 이름에서 미확인 | 확인 | 확인 |
 
 원시 kernel_evidence 필드의 단순 이름 검색은 CompiledFxGraph를 CUDA Graph로, weight_int8pack_mm을 정수 GEMM으로 오인할 수 있어 kernel_audit.json에서 다시 구분했습니다. 원 기록은 보존했습니다. 연산·커널 이름은 profiler.csv, 생성된 코드의 호출/자료형 발췌는 generated_kernel_evidence.json, 전체 로컬 생성물 SHA256은 generated_cache_hashes.json에 있습니다. profiler는 별도 5프레임 실행이며 시간 측정에 포함하지 않았습니다. 컴파일로 연산이 합쳐져 이름이 바뀐 경우 이름 미검출만으로 해당 정밀도 연산이 없다고 단정하지 않습니다.
 
@@ -54,10 +62,14 @@
 | w8a16/reduce-overhead | 0.0004699 | 0.417678 | 0.001039 |
 | w8a8/reduce-overhead | 0.0048777 | 0.450719 | 0.006294 |
 | w4a16/reduce-overhead | 0.0004809 | 0.380236 | 0.130315 |
+| bf16/reduce-overhead-precise | 0.0001454 | 0.411781 | 0.000145 |
+| w8a16/reduce-overhead-precise | 0.0003581 | 0.320838 | 0.000999 |
+| w8a8/reduce-overhead-precise | 0.0039925 | 0.459699 | 0.006510 |
+| w4a16/reduce-overhead-precise | 0.0002500 | 0.369690 | 0.130396 |
 
 수치 검사선은 동일 양자화 eager 대비 CLS와 patch 모두 평균 cosine 거리≤1e-3, 최대절대차이≤0.05입니다. BF16 대비 양자화 손실과 동일 양자화에서 compile에 의한 차이를 구분합니다. 정상 특징 수치 검사가 통과해도 이상탐지 AUROC·경보 동등성을 보장하지 않습니다.
 
-수치 검사 기준 초과 조건: bf16_default, w8a16_default, w8a8_default, w4a16_default, bf16_reduce-overhead, w8a16_reduce-overhead, w8a8_reduce-overhead, w4a16_reduce-overhead. 속도가 빨라도 동등한 대체 모델로 채택하지 않습니다.
+수치 검사 기준 초과 조건: bf16_default, w8a16_default, w8a8_default, w4a16_default, bf16_reduce-overhead, w8a16_reduce-overhead, w8a8_reduce-overhead, w4a16_reduce-overhead, bf16_reduce-overhead-precise, w8a16_reduce-overhead-precise, w8a8_reduce-overhead-precise, w4a16_reduce-overhead-precise. 속도가 빨라도 동등한 대체 모델로 채택하지 않습니다.
 
 ## 해석과 재현
 

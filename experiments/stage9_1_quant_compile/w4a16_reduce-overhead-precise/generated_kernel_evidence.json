@@ -1,0 +1,524 @@
+[
+  {
+    "path": "cache/stage9_compile/w4a16_reduce-overhead-precise/inductor/3q/c3qwm42s6gyjgi3vzkjdfi5pbahfmo4mvqiroh6ueljaee7baw7k.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 0, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'au"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w4a16_reduce-overhead-precise/inductor/4c/c4ccujywybikmsp6tu4nmmijgvbfnylbrvdws6kpojeph2f7iir3.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_6', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remo"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_6(in_ptr0, in_ptr1, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w4a16_reduce-overhead-precise/inductor/ba/cbaczeppcuamgrzwuonzgplejxt673s6rt4hfm5bz7a37j7r6t3h.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_add_gelu_view_10', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force_disable_ca"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused_add_gelu_view_10(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w4a16_reduce-overhead-precise/inductor/be/cbeydykpi3w7cn2l4a4kjtolcfffaq2vjcvdamqebmw45r732gk3.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwis"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0(in_ptr0, in_ptr1, in_ptr2, out_ptr1, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w4a16_reduce-overhead-precise/inductor/bp/cbp7jd4cri63w5rt6vc4ywta3nqoivh5fipp24k3ytpy5hr5gwjn.py",
+    "lines": [
+      {
+        "line": 106,
+        "text": "triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0 = async_compile.triton('triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0', '''"
+      },
+      {
+        "line": 119,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwis"
+      },
+      {
+        "line": 123,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0(in_ptr0, in_ptr1, in_ptr2, out_ptr1, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 424,
+        "text": "triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1 = async_compile.triton('triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1', '''"
+      },
+      {
+        "line": 437,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 0, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'au"
+      },
+      {
+        "line": 441,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 827,
+        "text": "triton_poi_fused_constant_pad_nd_native_layer_norm_view_3 = async_compile.triton('triton_poi_fused_constant_pad_nd_native_layer_norm_view_3', '''"
+      },
+      {
+        "line": 840,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_constant_pad_nd_native_layer_norm_view_3', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 5, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force"
+      },
+      {
+        "line": 844,
+        "text": "def triton_poi_fused_constant_pad_nd_native_layer_norm_view_3(in_ptr0, in_ptr1, in_ptr2, in_ptr3, in_ptr4, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 887,
+        "text": "#   %_weight_int4pack_mm : Tensor \"bf16[325, 2304][2304, 1]cuda:0\" = PlaceHolder[target=_weight_int4pack_mm]"
+      },
+      {
+        "line": 889,
+        "text": "#   %view_6 : Tensor \"bf16[1, 325, 2304][748800, 2304, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.reshape.default](args = (%_weight_int4pack_mm, [1, 325, 2304]), kwargs = {})"
+      },
+      {
+        "line": 906,
+        "text": "triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4 = async_compile.triton('triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4', '''"
+      },
+      {
+        "line": 919,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remo"
+      },
+      {
+        "line": 923,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4(in_ptr0, in_ptr1, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 950,
+        "text": "#   %_weight_int4pack_mm : Tensor \"bf16[325, 2304][2304, 1]cuda:0\" = PlaceHolder[target=_weight_int4pack_mm]"
+      },
+      {
+        "line": 952,
+        "text": "#   %view_6 : Tensor \"bf16[1, 325, 2304][748800, 2304, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.reshape.default](args = (%_weight_int4pack_mm, [1, 325, 2304]), kwargs = {})"
+      },
+      {
+        "line": 969,
+        "text": "triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5 = async_compile.triton('triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5', '''"
+      },
+      {
+        "line": 982,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remo"
+      },
+      {
+        "line": 986,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5(in_ptr0, in_ptr1, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1013,
+        "text": "#   %_weight_int4pack_mm : Tensor \"bf16[325, 2304][2304, 1]cuda:0\" = PlaceHolder[target=_weight_int4pack_mm]"
+      },
+      {
+        "line": 1015,
+        "text": "#   %view_6 : Tensor \"bf16[1, 325, 2304][748800, 2304, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.reshape.default](args = (%_weight_int4pack_mm, [1, 325, 2304]), kwargs = {})"
+      },
+      {
+        "line": 1032,
+        "text": "triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_6 = async_compile.triton('triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_6', '''"
+      },
+      {
+        "line": 1045,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_6', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remo"
+      },
+      {
+        "line": 1049,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_6(in_ptr0, in_ptr1, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1083,
+        "text": "triton_poi_fused_constant_pad_nd_transpose_view_7 = async_compile.triton('triton_poi_fused_constant_pad_nd_transpose_view_7', '''"
+      },
+      {
+        "line": 1096,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_constant_pad_nd_transpose_view_7', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 1, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force_disable"
+      },
+      {
+        "line": 1100,
+        "text": "def triton_poi_fused_constant_pad_nd_transpose_view_7(in_ptr0, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1125,
+        "text": "#   %_weight_int4pack_mm_1 : Tensor \"bf16[325, 768][768, 1]cuda:0\" = PlaceHolder[target=_weight_int4pack_mm_1]"
+      },
+      {
+        "line": 1130,
+        "text": "#   %view_26 : Tensor \"bf16[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.reshape.default](args = (%_weight_int4pack_mm_1, [1, 325, 768]), kwargs = {})"
+      },
+      {
+        "line": 1239,
+        "text": "triton_poi_fused_constant_pad_nd_native_layer_norm_view_9 = async_compile.triton('triton_poi_fused_constant_pad_nd_native_layer_norm_view_9', '''"
+      },
+      {
+        "line": 1252,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_constant_pad_nd_native_layer_norm_view_9', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 3, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force"
+      },
+      {
+        "line": 1256,
+        "text": "def triton_poi_fused_constant_pad_nd_native_layer_norm_view_9(in_ptr0, in_ptr1, in_ptr2, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1289,
+        "text": "#   %_weight_int4pack_mm_2 : Tensor \"bf16[325, 3072][3072, 1]cuda:0\" = PlaceHolder[target=_weight_int4pack_mm_2]"
+      },
+      {
+        "line": 1291,
+        "text": "#   %view_30 : Tensor \"bf16[1, 325, 3072][998400, 3072, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.reshape.default](args = (%_weight_int4pack_mm_2, [1, 325, 3072]), kwargs = {})"
+      },
+      {
+        "line": 1301,
+        "text": "triton_poi_fused_add_gelu_view_10 = async_compile.triton('triton_poi_fused_add_gelu_view_10', '''"
+      },
+      {
+        "line": 1314,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_add_gelu_view_10', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force_disable_ca"
+      },
+      {
+        "line": 1318,
+        "text": "def triton_poi_fused_add_gelu_view_10(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1362,
+        "text": "#   %_weight_int4pack_mm_1 : Tensor \"bf16[325, 768][768, 1]cuda:0\" = PlaceHolder[target=_weight_int4pack_mm_1]"
+      },
+      {
+        "line": 1365,
+        "text": "#   %_weight_int4pack_mm_3 : Tensor \"bf16[325, 768][768, 1]cuda:0\" = PlaceHolder[target=_weight_int4pack_mm_3]"
+      },
+      {
+        "line": 1369,
+        "text": "#   %view_26 : Tensor \"bf16[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.reshape.default](args = (%_weight_int4pack_mm_1, [1, 325, 768]), kwargs = {})"
+      },
+      {
+        "line": 1373,
+        "text": "#   %view_34 : Tensor \"bf16[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.reshape.default](args = (%_weight_int4pack_mm_3, [1, 325, 768]), kwargs = {})"
+      },
+      {
+        "line": 1494,
+        "text": "#   %_weight_int4pack_mm_45 : Tensor \"bf16[325, 768][768, 1]cuda:0\" = PlaceHolder[target=_weight_int4pack_mm_45]"
+      },
+      {
+        "line": 1497,
+        "text": "#   %_weight_int4pack_mm_47 : Tensor \"bf16[325, 768][768, 1]cuda:0\" = PlaceHolder[target=_weight_int4pack_mm_47]"
+      },
+      {
+        "line": 1505,
+        "text": "#   %view_378 : Tensor \"bf16[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.reshape.default](args = (%_weight_int4pack_mm_45, [1, 325, 768]), kwargs = {})"
+      },
+      {
+        "line": 1509,
+        "text": "#   %view_386 : Tensor \"bf16[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.reshape.default](args = (%_weight_int4pack_mm_47, [1, 325, 768]), kwargs = {})"
+      },
+      {
+        "line": 2004,
+        "text": "        triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0.run(arg0_1, arg1_1, arg2_1, buf5, 190512, stream=stream0)"
+      },
+      {
+        "line": 2015,
+        "text": "        triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1.run(buf20, arg6_1, 248832, stream=stream0)"
+      },
+      {
+        "line": 2034,
+        "text": "        triton_poi_fused_constant_pad_nd_native_layer_norm_view_3.run(buf21, buf22, buf23, arg7_1, arg8_1, buf25, 332800, stream=stream0)"
+      },
+      {
+        "line": 2037,
+        "text": "        # Topologically Sorted Source Nodes: [layer_norm, linear], Original ATen: [aten.native_layer_norm, aten.view, aten.constant_pad_nd, aten._weight_int4pack_mm]"
+      },
+      {
+        "line": 2038,
+        "text": "        buf26 = torch.ops.aten._weight_int4pack_mm.default(buf25, arg9_1, 128, arg10_1)"
+      },
+      {
+        "line": 2042,
+        "text": "        assert_size_stride(buf27, (325, 2304), (2304, 1), 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2043,
+        "text": "        assert_alignment(buf27, 16, 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2048,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4.run(buf27, arg11_1, buf28, 249600, stream=stream0)"
+      },
+      {
+        "line": 2052,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5.run(buf27, arg11_1, buf29, 249600, stream=stream0)"
+      },
+      {
+        "line": 2056,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_6.run(buf27, arg11_1, buf30, 249600, stream=stream0)"
+      },
+      {
+        "line": 2071,
+        "text": "        triton_poi_fused_constant_pad_nd_transpose_view_7.run(buf32, buf37, 332800, stream=stream0)"
+      },
+      {
+        "line": 2072,
+        "text": "        # Topologically Sorted Source Nodes: [transpose_4, x_5, linear_1], Original ATen: [aten.transpose, aten.view, aten.constant_pad_nd, aten._weight_int4pack_mm]"
+      },
+      {
+        "line": 2073,
+        "text": "        buf38 = torch.ops.aten._weight_int4pack_mm.default(buf37, arg12_1, 128, arg13_1)"
+      },
+      {
+        "line": 2077,
+        "text": "        assert_size_stride(buf39, (325, 768), (768, 1), 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2078,
+        "text": "        assert_alignment(buf39, 16, 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2087,
+        "text": "        triton_poi_fused_constant_pad_nd_native_layer_norm_view_9.run(buf43, arg16_1, arg17_1, buf44, 332800, stream=stream0)"
+      },
+      {
+        "line": 2090,
+        "text": "        # Topologically Sorted Source Nodes: [layer_norm_1, x_8], Original ATen: [aten.native_layer_norm, aten.view, aten.constant_pad_nd, aten._weight_int4pack_mm]"
+      },
+      {
+        "line": 2091,
+        "text": "        buf45 = torch.ops.aten._weight_int4pack_mm.default(buf44, arg18_1, 128, arg19_1)"
+      },
+      {
+        "line": 2095,
+        "text": "        assert_size_stride(buf46, (325, 3072), (3072, 1), 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2096,
+        "text": "        assert_alignment(buf46, 16, 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2101,
+        "text": "        triton_poi_fused_add_gelu_view_10.run(buf47, arg20_1, 998400, stream=stream0)"
+      },
+      {
+        "line": 2103,
+        "text": "        # Topologically Sorted Source Nodes: [x_8, x_9, x_11], Original ATen: [aten.view, aten.add, aten.gelu, aten._weight_int4pack_mm]"
+      },
+      {
+        "line": 2104,
+        "text": "        buf48 = torch.ops.aten._weight_int4pack_mm.default(reinterpret_tensor(buf47, (325, 3072), (3072, 1), 0), arg21_1, 128, arg22_1)"
+      },
+      {
+        "line": 2109,
+        "text": "        assert_size_stride(buf49, (325, 768), (768, 1), 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2110,
+        "text": "        assert_alignment(buf49, 16, 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2125,
+        "text": "        triton_poi_fused_constant_pad_nd_native_layer_norm_view_3.run(buf50, buf51, buf52, arg25_1, arg26_1, buf54, 332800, stream=stream0)"
+      },
+      {
+        "line": 2128,
+        "text": "        # Topologically Sorted Source Nodes: [layer_norm_2, linear_4], Original ATen: [aten.native_layer_norm, aten.view, aten.constant_pad_nd, aten._weight_int4pack_mm]"
+      },
+      {
+        "line": 2129,
+        "text": "        buf55 = torch.ops.aten._weight_int4pack_mm.default(buf54, arg27_1, 128, arg28_1)"
+      },
+      {
+        "line": 2133,
+        "text": "        assert_size_stride(buf56, (325, 2304), (2304, 1), 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2134,
+        "text": "        assert_alignment(buf56, 16, 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2139,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4.run(buf56, arg29_1, buf57, 249600, stream=stream0)"
+      },
+      {
+        "line": 2143,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5.run(buf56, arg29_1, buf58, 249600, stream=stream0)"
+      },
+      {
+        "line": 2147,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_6.run(buf56, arg29_1, buf59, 249600, stream=stream0)"
+      },
+      {
+        "line": 2162,
+        "text": "        triton_poi_fused_constant_pad_nd_transpose_view_7.run(buf61, buf66, 332800, stream=stream0)"
+      },
+      {
+        "line": 2163,
+        "text": "        # Topologically Sorted Source Nodes: [transpose_8, x_15, linear_5], Original ATen: [aten.transpose, aten.view, aten.constant_pad_nd, aten._weight_int4pack_mm]"
+      },
+      {
+        "line": 2164,
+        "text": "        buf67 = torch.ops.aten._weight_int4pack_mm.default(buf66, arg30_1, 128, arg31_1)"
+      },
+      {
+        "line": 2168,
+        "text": "        assert_size_stride(buf68, (325, 768), (768, 1), 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2169,
+        "text": "        assert_alignment(buf68, 16, 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2178,
+        "text": "        triton_poi_fused_constant_pad_nd_native_layer_norm_view_9.run(buf72, arg34_1, arg35_1, buf73, 332800, stream=stream0)"
+      },
+      {
+        "line": 2181,
+        "text": "        # Topologically Sorted Source Nodes: [layer_norm_3, x_18], Original ATen: [aten.native_layer_norm, aten.view, aten.constant_pad_nd, aten._weight_int4pack_mm]"
+      },
+      {
+        "line": 2182,
+        "text": "        buf74 = torch.ops.aten._weight_int4pack_mm.default(buf73, arg36_1, 128, arg37_1)"
+      },
+      {
+        "line": 2186,
+        "text": "        assert_size_stride(buf75, (325, 3072), (3072, 1), 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2187,
+        "text": "        assert_alignment(buf75, 16, 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2192,
+        "text": "        triton_poi_fused_add_gelu_view_10.run(buf76, arg38_1, 998400, stream=stream0)"
+      },
+      {
+        "line": 2194,
+        "text": "        # Topologically Sorted Source Nodes: [x_18, x_19, x_21], Original ATen: [aten.view, aten.add, aten.gelu, aten._weight_int4pack_mm]"
+      },
+      {
+        "line": 2195,
+        "text": "        buf77 = torch.ops.aten._weight_int4pack_mm.default(reinterpret_tensor(buf76, (325, 3072), (3072, 1), 0), arg39_1, 128, arg40_1)"
+      },
+      {
+        "line": 2200,
+        "text": "        assert_size_stride(buf78, (325, 768), (768, 1), 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2201,
+        "text": "        assert_alignment(buf78, 16, 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2216,
+        "text": "        triton_poi_fused_constant_pad_nd_native_layer_norm_view_3.run(buf79, buf80, buf81, arg43_1, arg44_1, buf83, 332800, stream=stream0)"
+      },
+      {
+        "line": 2219,
+        "text": "        # Topologically Sorted Source Nodes: [layer_norm_4, linear_8], Original ATen: [aten.native_layer_norm, aten.view, aten.constant_pad_nd, aten._weight_int4pack_mm]"
+      },
+      {
+        "line": 2220,
+        "text": "        buf84 = torch.ops.aten._weight_int4pack_mm.default(buf83, arg45_1, 128, arg46_1)"
+      },
+      {
+        "line": 2224,
+        "text": "        assert_size_stride(buf85, (325, 2304), (2304, 1), 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2225,
+        "text": "        assert_alignment(buf85, 16, 'torch.ops.aten._weight_int4pack_mm.default')"
+      },
+      {
+        "line": 2230,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4.run(buf85, arg47_1, buf86, 249600, stream=stream0)"
+      },
+      {
+        "line": 2234,
+        "text": "        triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5.run(buf85, arg47_1, buf87, 249600, stream=stream0)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w4a16_reduce-overhead-precise/inductor/gh/cghyaooxqsy3dk5koadmmhohsotkoend6jiwdo3dkyfiokjtvmxt.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_constant_pad_nd_native_layer_norm_view_3', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 5, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused_constant_pad_nd_native_layer_norm_view_3(in_ptr0, in_ptr1, in_ptr2, in_ptr3, in_ptr4, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w4a16_reduce-overhead-precise/inductor/i5/ci54nqo5bj6nvqcv5wrhamd7636i4uxdp4xeqko4wqdsf6ldks3r.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_constant_pad_nd_transpose_view_7', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 1, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force_disable"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused_constant_pad_nd_transpose_view_7(in_ptr0, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w4a16_reduce-overhead-precise/inductor/ig/cig23ipz2uzhv5kkrawditu73qhhy3zzqxiqltdwawosyc2vcqmv.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remo"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5(in_ptr0, in_ptr1, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w4a16_reduce-overhead-precise/inductor/pb/cpbosi6nt57crvjtlxovphjjibv5ex3fd5lrxoxifcf7x2rrph34.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remo"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4(in_ptr0, in_ptr1, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w4a16_reduce-overhead-precise/inductor/uj/cujqfkpaypjvgfk2zi5jjtewfmfnir4e3cnbagf5v72xmgzg5zko.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_constant_pad_nd_native_layer_norm_view_9', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 3, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused_constant_pad_nd_native_layer_norm_view_9(in_ptr0, in_ptr1, in_ptr2, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  }
+]

@@ -10,6 +10,14 @@ from ipad.stage5 import read_csv
 from scripts.run_stage9_1 import VARIANTS,MODES
 
 
+def kernel_audit(operators):
+    return {'integer_gemm':any(name=='aten::_int_mm' or 'gemm_s8' in name.lower() for name in operators),
+            'weight_only_int8_kernel':any('_weight_int8pack_mm' in name for name in operators),
+            'packed_int4':any('_weight_int4pack_mm' in name or 'tinygemm' in name for name in operators),
+            'cuda_graph_api':any('cudagraph' in name.lower() or 'cugraph' in name.lower() for name in operators),
+            'note':'Reclassified from raw profiler names: CompiledFxGraph is not CUDA Graph; weight_int8pack_mm is not proof of integer GEMM.'}
+
+
 def main():
     out=ROOT/'runs/stage9/9-1';data={};failures=[];samples=None;numeric_failures=[];rows=[]
     modes=list(MODES)
@@ -23,11 +31,7 @@ def main():
             if (p/'failure.json').exists():failures.append({'condition':key,**json.loads((p/'failure.json').read_text())});continue
             m=json.loads((p/'completed.json').read_text());data[variant,mode]=m
             operators=json.loads((p/'operators.json').read_text())
-            audit={'integer_gemm':any(name=='aten::_int_mm' or 'gemm_s8' in name.lower() for name in operators),
-                   'weight_only_int8_kernel':any('_weight_int8pack_mm' in name for name in operators),
-                   'packed_int4':any('_weight_int4pack_mm' in name or 'tinygemm' in name for name in operators),
-                   'cuda_graph_api':any('cudagraph' in name.lower() or 'cugraph' in name.lower() for name in operators),
-                   'note':'Reclassified from raw profiler names: CompiledFxGraph is not CUDA Graph; weight_int8pack_mm is not proof of integer GEMM.'}
+            audit=kernel_audit(operators)
             write_json(p/'kernel_audit.json',audit);m['audited_kernel_evidence']=audit
             assert m['samples']==384 and m['timed_calls']==1152 and m['repeats']==3
             t=read_csv(p/'timings.csv');f=read_csv(p/'feature_differences.csv');assert len(t)==1152 and len(f)==384
