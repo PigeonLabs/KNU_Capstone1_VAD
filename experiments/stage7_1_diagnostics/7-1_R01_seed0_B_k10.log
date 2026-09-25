@@ -1,0 +1,44 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jeong/Desktop/IPAD/ipad/stage7.py", line 80, in <module>
+    a=p.parse_args();torch.set_num_threads(8);reserve();diagnose(a.scene,a.seed,a.backbone,a.k)
+                                                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeong/Desktop/IPAD/ipad/stage7.py", line 67, in diagnose
+    write_csv(out/'false_alarm_stretches.csv',stretches);write_csv(out/'missed_segment_diagnostics.csv',misses)
+                                                         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeong/Desktop/IPAD/ipad/evaluate.py", line 64, in write_csv
+    writer=csv.DictWriter(f,fieldnames=list(rows[0]))
+                                            ~~~~^^^
+IndexError: list index out of range
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jeong/Desktop/IPAD/ipad/stage7.py", line 88, in <module>
+    a=p.parse_args();torch.set_num_threads(8);reserve();diagnose(a.scene,a.seed,a.backbone,a.k)
+                                                        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeong/Desktop/IPAD/ipad/stage7.py", line 83, in diagnose
+    result['seconds']=time.time()-started;write_json(out/'completed.json',result)
+                                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeong/Desktop/IPAD/ipad/common.py", line 27, in write_json
+    temp.write_text(json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False) + '\n')
+                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeong/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/json/__init__.py", line 242, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/home/jeong/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/json/encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/home/jeong/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/json/encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+  File "/home/jeong/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/lib/python3.13/json/encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type int64 is not JSON serializable
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)

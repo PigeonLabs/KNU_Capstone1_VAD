@@ -1,0 +1,27 @@
+{
+  "state": "failed",
+  "stage": "7-1",
+  "pid": 478972,
+  "started_at": 1790324367.3153968,
+  "stage_started_at": 1790324598.7858245,
+  "completed": [],
+  "automatic_publication_authorized": true,
+  "step": "7-1/R01/seed0/B_k10",
+  "command": [
+    "/home/jeong/Desktop/IPAD/.venv/bin/python",
+    "-m",
+    "ipad.stage7",
+    "--action",
+    "diagnose",
+    "--scene",
+    "R01",
+    "--seed",
+    "0",
+    "--backbone",
+    "B",
+    "--k",
+    "10"
+  ],
+  "error": "Command '['/home/jeong/Desktop/IPAD/.venv/bin/python', '-m', 'ipad.stage7', '--action', 'diagnose', '--scene', 'R01', '--seed', '0', '--backbone', 'B', '--k', '10']' returned non-zero exit status 1.",
+  "finished_at": 1790324601.7276716
+}

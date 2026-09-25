@@ -41,7 +41,7 @@ def quantiles(values):
 
 
 def spans(flags):
-    v=np.asarray(flags,dtype=int);diff=np.diff(np.r_[0,v,0]);return list(zip(np.flatnonzero(diff==1),np.flatnonzero(diff==-1)-1))
+    v=np.asarray(flags,dtype=int);diff=np.diff(np.r_[0,v,0]);return [(int(a),int(b)) for a,b in zip(np.flatnonzero(diff==1),np.flatnonzero(diff==-1)-1)]
 
 
 def diagnose(scene,seed,b,k):
