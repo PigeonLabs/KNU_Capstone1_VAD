@@ -6,4 +6,4 @@
 - Publish analysis artifacts and SHA256 inventories only. Do not upload dataset images, checkpoints, feature-cache binaries, local documents, credentials, or virtual environments. Large binaries remain local.
 - Stop this project's experiment processes if disk free space reaches 10 GiB or below; report the pause. Never automatically resume a disk-space pause. Do not delete results to free space without user direction.
 - Distinguish running, diagnostic, complete, and failed experiments. Do not claim exact paper equivalence: official source parameter count and underspecified details differ; R02 has excluded misaligned videos.
-- New stage-3 research is a proposal until the user requests execution. Seed 1/2 repetitions follow diagnosis and configuration freeze, not silent test-set tuning.
+- The user approved stage 3 on 2026-09-25: normal-only phase diagnostics and fixed routing comparisons first, followed by evidence-based temporal diagnostics. Follow docs/stage3_protocol.md. Seed 1/2 repetitions follow diagnosis and configuration freeze, not silent test-set tuning.

@@ -8,8 +8,8 @@ R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론
 |---|---|---|---|
 | 1단계 | Swin-T + 주기 메모리 + 재구성 + 주기 검사 | 4개 장면 50 epochs 완료 · seed 0 | [전체 자료](experiments/stage1_reproduction/) |
 | 2단계 | DINOv2 입력–복원 특징 비교 / 비재구성 prototype | 4개 장면 완료 · seed 0 | [전체 자료](experiments/stage2_dinov2/) |
-| 1단계 추가 검증 | 메모리 제거 ablation | 실행 결과가 생기면 단계별 추가 기록 | [자료](experiments/stage1_memory_ablation/) |
-| 3단계 제안 | 위상 조건의 유효성과 위상 추정 오차 분리 | 제안 상태 · 미실행 | [실험안](docs/stage3_proposal.md) |
+| 1단계 추가 검증 | 메모리 제거 ablation | 4개 장면 완료 · seed 0 | [자료](experiments/stage1_memory_ablation/) |
+| 3단계 | 위상 진단 및 불확실성을 고려한 메모리 선택 | 승인 · 완료 단위별 기록 | [규약](docs/stage3_protocol.md) · [결과](experiments/stage3_phase_routing/) |
 
 ## 1단계 — 논문 방법론 재현
 
@@ -76,7 +76,7 @@ uv pip install --python .venv/bin/python -r requirements.lock.txt --extra-index-
 - 과거 원 모델 stdout은 25배치 간격입니다. 이번 기록 정책 이후의 학습은 매 배치 JSONL을 추가합니다. 기록하지 않은 과거 값을 복원하지 않습니다.
 - 실험 완료 단위마다 main에 commit/push하며 원격 변경은 강제로 덮어쓰지 않습니다. 공개 clone에서는 자동 push가 기본 비활성화됩니다.
 - 디스크 여유가 **10 GiB 이하**가 되면 이 프로젝트의 실험을 일시중지하고 보고합니다. 자동 재개하지 않습니다.
-- 메모리 제거 실험은 1단계 추가 검증입니다. 3단계 제안은 사용자 선택 전까지 실행하지 않습니다.
+- 메모리 제거 실험은 1단계 추가 검증입니다. 3단계는 2026-09-25 승인받아 정상 위상 진단과 routing 비교부터 진행합니다.
 - 테스트 전체 정규화와 미래 프레임을 포함하는 centered window를 사용하므로 온라인/인과적 실시간 성능 주장이 아닙니다.
 [기록 규칙](docs/EXPERIMENT_LOG_POLICY.md) · [코드–논문 차이](REPRODUCTION.md) · [3단계 제안](docs/stage3_proposal.md)
 

@@ -15,7 +15,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SCENES=('R01','R02','R03','R04')
 REMOTE='https://github.com/PigeonLabs/KNU_Capstone1_VAD.git'
 RESERVE=10*1024**3
-STAGES={'stage1':'stage1_reproduction','stage2':'stage2_dinov2','ablation':'stage1_memory_ablation'}
+STAGES={'stage1':'stage1_reproduction','stage2':'stage2_dinov2','ablation':'stage1_memory_ablation','stage3':'stage3_phase_routing'}
 
 
 def load(path):return json.loads(path.read_text()) if path.exists() else None
@@ -51,6 +51,8 @@ def binary_inventory(stage):
         yield from (ROOT/'cache/dino').rglob('*.npy')
         for scene in SCENES:yield from (ROOT/'runs/prototype'/scene/'seed0').glob('*.pt')
         yield from (ROOT/'cache/torch_hub/checkpoints').glob('*.pth')
+    elif stage=='stage3':
+        yield from (ROOT/'runs/stage3').rglob('*.pt')
     else:
         for scene in SCENES:
             folder=ROOT/'runs/no_memory'/scene/'seed0'
@@ -101,6 +103,15 @@ def snapshot(stage):
                 suffix='' if name=='dino_cache' else '_s0'
                 copy_analysis(ROOT/f'runs/{name}_{scene}{suffix}.log',dest/scene/f'{name}.log')
         copy_analysis(ROOT/'reports/dino_verification.json',dest/'verification/dino_verification.json')
+    elif stage=='stage3':
+        for scene in SCENES:
+            for source in (ROOT/'runs/stage3'/scene).glob('seed*'):
+                if (source/'completed.json').exists():copy_analysis(source,dest/scene/source.name)
+        copy_analysis(ROOT/'runs/stage3/summary.json',dest/'summary.json')
+        copy_analysis(ROOT/'runs/stage3/results.md',dest/'results.md')
+        copy_analysis(ROOT/'runs/stage3/verification.txt',dest/'verification.txt')
+        copy_analysis(ROOT/'runs/stage3/status.json',dest/'status.json')
+        for log in (ROOT/'runs/stage3').glob('*.log'):copy_analysis(log,dest/log.name)
     else:
         for scene in SCENES:
             source=ROOT/f'runs/no_memory/{scene}/seed0'
@@ -129,8 +140,8 @@ def make_readme():
           '| 단계 | 목적 | 상태 | 기록 |','|---|---|---|---|',
           '| 1단계 | Swin-T + 주기 메모리 + 재구성 + 주기 검사 | 4개 장면 50 epochs 완료 · seed 0 | [전체 자료](experiments/stage1_reproduction/) |',
           f'| 2단계 | DINOv2 입력–복원 특징 비교 / 비재구성 prototype | {"4개 장면 완료 · seed 0" if (dino/"R04/prototype/completed.json").exists() else "게시 준비 중"} | [전체 자료](experiments/stage2_dinov2/) |',
-          '| 1단계 추가 검증 | 메모리 제거 ablation | 실행 결과가 생기면 단계별 추가 기록 | [자료](experiments/stage1_memory_ablation/) |',
-          '| 3단계 제안 | 위상 조건의 유효성과 위상 추정 오차 분리 | 제안 상태 · 미실행 | [실험안](docs/stage3_proposal.md) |','',
+          '| 1단계 추가 검증 | 메모리 제거 ablation | 4개 장면 완료 · seed 0 | [자료](experiments/stage1_memory_ablation/) |',
+          '| 3단계 | 위상 진단 및 불확실성을 고려한 메모리 선택 | 승인 · 완료 단위별 기록 | [규약](docs/stage3_protocol.md) · [결과](experiments/stage3_phase_routing/) |','',
           '## 1단계 — 논문 방법론 재현','',
           '장면마다 독립 학습: 16프레임, 256×256, Video Swin-T, 200개 위상, 메모리 2,000개, window 5, Adam 1e-4, batch 8, 50 epochs, FP32, seed 0. 재구성·주기 점수를 장면별 정규화 후 같은 가중치로 결합합니다.','',
           '| 장면 | 논문 AUROC (%) | 구현 AUROC (%) | 차이 (pp) | 평가 프레임 |','|---|---:|---:|---:|---:|',*rows]
@@ -178,13 +189,15 @@ def make_readme():
            '- 과거 원 모델 stdout은 25배치 간격입니다. 이번 기록 정책 이후의 학습은 매 배치 JSONL을 추가합니다. 기록하지 않은 과거 값을 복원하지 않습니다.',
            '- 실험 완료 단위마다 main에 commit/push하며 원격 변경은 강제로 덮어쓰지 않습니다. 공개 clone에서는 자동 push가 기본 비활성화됩니다.',
            '- 디스크 여유가 **10 GiB 이하**가 되면 이 프로젝트의 실험을 일시중지하고 보고합니다. 자동 재개하지 않습니다.',
-           '- 메모리 제거 실험은 1단계 추가 검증입니다. 3단계 제안은 사용자 선택 전까지 실행하지 않습니다.',
+           '- 메모리 제거 실험은 1단계 추가 검증입니다. 3단계는 2026-09-25 승인받아 정상 위상 진단과 routing 비교부터 진행합니다.',
            '- 테스트 전체 정규화와 미래 프레임을 포함하는 centered window를 사용하므로 온라인/인과적 실시간 성능 주장이 아닙니다.',
            '[기록 규칙](docs/EXPERIMENT_LOG_POLICY.md) · [코드–논문 차이](REPRODUCTION.md) · [3단계 제안](docs/stage3_proposal.md)','',
            '## 원 자료','',
            '- [IPAD 논문 v1](https://arxiv.org/abs/2404.15033v1) · [공식 코드](https://github.com/LJF1113/IPAD), commit `22764cbeeda3946303d236babdd2664fd6241b91`.',
            '- [DINOv2 공식 구현](https://github.com/facebookresearch/dinov2), commit `7764ea0f912e53c92e82eb78a2a1631e92725fc8`.',
            '- upstream 코드의 재배포 대신 출처·SHA256을 보존하고 bootstrap에서 원본을 내려받습니다.','']
+    if (ROOT/'experiments/stage3_phase_routing/results.md').exists():
+        text += ['## 3단계 — 위상 진단과 선택 방식 비교', '', (ROOT/'experiments/stage3_phase_routing/results.md').read_text()]
     (ROOT/'README.md').write_text('\n'.join(text))
 
 
