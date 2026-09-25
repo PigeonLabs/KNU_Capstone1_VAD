@@ -74,7 +74,7 @@ uv pip install --python .venv/bin/python -r requirements.lock.txt --extra-index-
 - `experiments/`: 단계별 설정·epoch 이력·실행 로그·프레임별 정답/점수·평가지표·정렬 민감도.
 - `artifacts.jsonl`: 로컬 원본/모델/특징 파일의 경로·크기·SHA256. **바이너리는 GitHub에 업로드하지 않았습니다.**
 - 과거 원 모델 stdout은 25배치 간격입니다. 이번 기록 정책 이후의 학습은 매 배치 JSONL을 추가합니다. 기록하지 않은 과거 값을 복원하지 않습니다.
-- 실험 완료 단위마다 main에 commit/push하며 원격 변경은 강제로 덮어쓰지 않습니다. 공개 clone에서는 자동 push가 기본 비활성화됩니다.
+- 실험 완료 후 결과를 보고하고 사용자 승인 뒤 전체 묶음을 main에 게시합니다. 승인 전에는 로컬 기록만 보존합니다. 원격 변경을 강제로 덮어쓰지 않습니다.
 - 디스크 여유가 **10 GiB 이하**가 되면 이 프로젝트의 실험을 일시중지하고 보고합니다. 자동 재개하지 않습니다.
 - 메모리 제거 실험은 1단계 추가 검증입니다. 3단계는 2026-09-25 승인받아 정상 위상 진단과 routing 비교부터 진행합니다.
 - 테스트 전체 정규화와 미래 프레임을 포함하는 centered window를 사용하므로 온라인/인과적 실시간 성능 주장이 아닙니다.
@@ -88,6 +88,8 @@ uv pip install --python .venv/bin/python -r requirements.lock.txt --extra-index-
 
 ## 3단계 — 위상 진단과 선택 방식 비교
 
+[연구 해석·3-seed 요약·시간 진단](experiments/stage3_phase_routing/research_findings.md) · [사전 고정 규약](docs/stage3_protocol.md)
+
 단계별 완료 결과입니다. seed 0의 기존 hard/unconditional 점수와 2단계 점수 일치를 검증했습니다.
 테스트 결과로 변형을 선택하지 않으며, 주 후보는 사전 지정한 top3 확률 가중 거리입니다.
 
@@ -100,6 +102,7 @@ uv pip install --python .venv/bin/python -r requirements.lock.txt --extra-index-
 | R03/seed0 | 62.34 | 55.55 | 57.32 | 58.01 | 55.53 | 55.17 | 51.47 | 59.94 |
 | R03/seed1 | 61.31 | 57.27 | 58.17 | 58.21 | 56.41 | 55.83 | 51.49 | 59.79 |
 | R04/seed0 | 79.33 | 80.89 | 80.53 | 79.95 | 80.57 | 79.33 | 63.24 | 78.93 |
+| R04/seed1 | 78.81 | 81.01 | 80.51 | 79.79 | 80.49 | 78.81 | 63.27 | 78.50 |
 
 | 정상 holdout | 20-bin 정확도 | ±1 정확도 | 원형 MAE(bin) | cutoff 활성 |
 |---|---:|---:|---:|---|
@@ -110,6 +113,7 @@ uv pip install --python .venv/bin/python -r requirements.lock.txt --extra-index-
 | R03/seed0 | 64.87% | 95.85% | 0.42 | True |
 | R03/seed1 | 63.52% | 96.17% | 0.43 | True |
 | R04/seed0 | 50.61% | 84.03% | 0.71 | False |
+| R04/seed1 | 50.34% | 83.66% | 0.73 | False |
 
 원시 CSV에는 frame ID, 예측 확률, 모든 비교 점수와 정답이 포함됩니다. 세부 지표·AUPRC·R02 민감도는 장면/seed별 JSON에 있습니다.
 정상 holdout의 상대 위치는 진단용 참조입니다. 테스트 정답 위상을 사용하지 않습니다. centered window와 테스트 전체 정규화를 사용하므로 온라인 실시간 결과가 아닙니다.

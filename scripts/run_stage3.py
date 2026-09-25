@@ -35,7 +35,7 @@ def report():
 
 def main(seeds,no_push=False):
     os.chdir(ROOT);reserve();root=ROOT/'runs/stage3';root.mkdir(exist_ok=True)
-    status={'state':'running','pid':os.getpid(),'seeds':seeds,'started_at':time.time(),'completed':[],'publication':'local commits pending authentication' if no_push else 'push enabled'}
+    status={'state':'running','pid':os.getpid(),'seeds':seeds,'started_at':time.time(),'completed':[],'publication':'local only; awaiting user approval after final report'}
     def update(**kw):status.update(kw);write_json(root/'status.json',status)
     try:
         for seed in seeds:

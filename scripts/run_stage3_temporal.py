@@ -23,10 +23,10 @@ try:
         with (root/f'{scene}_temporal.log').open('a') as log:
             subprocess.run([sys.executable,'-m','ipad.phase_temporal','--scene',scene],check=True,stdout=log,stderr=subprocess.STDOUT)
         status['completed'].append(scene);update()
-        subprocess.run([sys.executable,'scripts/publish_stage.py','--stage','stage3','--message',f'실험 3C: {scene} 정상 holdout 시간 변형 진단'],check=True)
+        subprocess.run([sys.executable,'scripts/publish_stage.py','--stage','stage3','--no-push','--message',f'실험 3C: {scene} 정상 holdout 시간 변형 진단'],check=True)
     subprocess.run([sys.executable,'scripts/analyze_stage3.py'],check=True,stdout=(root/'bootstrap_analysis.log').open('w'))
     subprocess.run([sys.executable,'scripts/stage3_findings.py'],check=True)
     update(state='completed',finished_at=time.time())
-    subprocess.run([sys.executable,'scripts/publish_stage.py','--stage','stage3','--message','실험 3단계: 3-seed 비교·영상 bootstrap·시간 진단 최종 분석'],check=True)
+    subprocess.run([sys.executable,'scripts/publish_stage.py','--stage','stage3','--no-push','--message','실험 3단계: 3-seed 비교·영상 bootstrap·시간 진단 최종 분석'],check=True)
 except Exception as e:
     update(state='failed',error=str(e));raise

@@ -114,6 +114,7 @@ def snapshot(stage):
         copy_analysis(ROOT/'runs/stage3/results.md',dest/'results.md')
         copy_analysis(ROOT/'runs/stage3/verification.txt',dest/'verification.txt')
         copy_analysis(ROOT/'runs/stage3/status.json',dest/'status.json')
+        copy_analysis(ROOT/'runs/stage3/temporal_status.json',dest/'temporal_status.json')
         for log in (ROOT/'runs/stage3').glob('*.log'):copy_analysis(log,dest/log.name)
     else:
         for scene in SCENES:
@@ -190,7 +191,7 @@ def make_readme():
            '- `experiments/`: 단계별 설정·epoch 이력·실행 로그·프레임별 정답/점수·평가지표·정렬 민감도.',
            '- `artifacts.jsonl`: 로컬 원본/모델/특징 파일의 경로·크기·SHA256. **바이너리는 GitHub에 업로드하지 않았습니다.**',
            '- 과거 원 모델 stdout은 25배치 간격입니다. 이번 기록 정책 이후의 학습은 매 배치 JSONL을 추가합니다. 기록하지 않은 과거 값을 복원하지 않습니다.',
-           '- 실험 완료 단위마다 main에 commit/push하며 원격 변경은 강제로 덮어쓰지 않습니다. 공개 clone에서는 자동 push가 기본 비활성화됩니다.',
+           '- 실험 완료 후 결과를 보고하고 사용자 승인 뒤 전체 묶음을 main에 게시합니다. 승인 전에는 로컬 기록만 보존합니다. 원격 변경을 강제로 덮어쓰지 않습니다.',
            '- 디스크 여유가 **10 GiB 이하**가 되면 이 프로젝트의 실험을 일시중지하고 보고합니다. 자동 재개하지 않습니다.',
            '- 메모리 제거 실험은 1단계 추가 검증입니다. 3단계는 2026-09-25 승인받아 정상 위상 진단과 routing 비교부터 진행합니다.',
            '- 테스트 전체 정규화와 미래 프레임을 포함하는 centered window를 사용하므로 온라인/인과적 실시간 성능 주장이 아닙니다.',
@@ -200,12 +201,14 @@ def make_readme():
            '- [DINOv2 공식 구현](https://github.com/facebookresearch/dinov2), commit `7764ea0f912e53c92e82eb78a2a1631e92725fc8`.',
            '- upstream 코드의 재배포 대신 출처·SHA256을 보존하고 bootstrap에서 원본을 내려받습니다.','']
     if (ROOT/'experiments/stage3_phase_routing/results.md').exists():
-        text += ['## 3단계 — 위상 진단과 선택 방식 비교', '', (ROOT/'experiments/stage3_phase_routing/results.md').read_text()]
+        text += ['## 3단계 — 위상 진단과 선택 방식 비교', '', '[연구 해석·3-seed 요약·시간 진단](experiments/stage3_phase_routing/research_findings.md) · [사전 고정 규약](docs/stage3_protocol.md)', '', (ROOT/'experiments/stage3_phase_routing/results.md').read_text()]
     (ROOT/'README.md').write_text('\n'.join(text))
 
 
-def publish(stage,message,push=True):
+def publish(stage,message,push=False,approved_push=False):
     os.chdir(ROOT);ensure_room()
+    if push and not approved_push:
+        raise RuntimeError("Publication requires explicit user approval after the experiment report; use --no-push for local archive")
     lock=(ROOT/'runs/publication.lock').open('w')
     fcntl.flock(lock,fcntl.LOCK_EX)
     status={'state':'preparing','stage':stage,'started_at':time.time(),'repository':REMOTE}
@@ -248,4 +251,5 @@ def publish(stage,message,push=True):
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--stage',choices=STAGES,required=True)
     p.add_argument('--message',required=True);p.add_argument('--no-push',action='store_true')
-    a=p.parse_args();publish(a.stage,a.message,not a.no_push)
+    p.add_argument('--approved-push',action='store_true',help='Only after explicit user approval of this completed experiment batch')
+    a=p.parse_args();publish(a.stage,a.message,a.approved_push and not a.no_push,a.approved_push)
