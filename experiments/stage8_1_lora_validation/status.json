@@ -6,23 +6,37 @@
     "smoke",
     "train/R01/seed0/consistency",
     "train/R01/seed0/anchored",
-    "verify_8-1"
+    "verify_8-1",
+    "publish_8-1",
+    "train/R01/seed0/frozen",
+    "unit/R01/seed0/frozen",
+    "train/R01/seed0/consistency",
+    "unit/R01/seed0/consistency",
+    "train/R01/seed0/anchored",
+    "unit/R01/seed0/anchored",
+    "train/R02/seed0/frozen",
+    "unit/R02/seed0/frozen",
+    "train/R02/seed0/consistency"
   ],
   "completed_stages": [
     "8-1"
   ],
   "publication_failures": [],
-  "stage": "8-1",
-  "stage_started_at": 1790329175.3509696,
-  "step": "publish_8-1",
+  "stage": "8-2",
+  "stage_started_at": 1790329226.9891076,
+  "step": "unit/R02/seed0/consistency",
   "command": [
     "/home/jeong/Desktop/IPAD/.venv/bin/python",
-    "scripts/publish_stage.py",
-    "--stage",
-    "8-1",
-    "--approved-push",
-    "--message",
-    "8-1: 정상 영상 LoRA 적응 실험 및 검증 결과"
+    "-m",
+    "ipad.stage8",
+    "--action",
+    "unit",
+    "--scene",
+    "R02",
+    "--seed",
+    "0",
+    "--method",
+    "consistency"
   ],
   "last_completed_experiment": "8-1"
 }
