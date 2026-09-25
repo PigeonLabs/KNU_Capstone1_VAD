@@ -1,6 +1,9 @@
 {
-  "state": "waiting_for_repeats",
+  "state": "running",
   "pid": 4060238,
-  "completed": [],
-  "started_at": 1790308295.7442017
+  "completed": [
+    "R01"
+  ],
+  "started_at": 1790308295.7442017,
+  "scene": "R01"
 }
