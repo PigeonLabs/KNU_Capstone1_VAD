@@ -20,3 +20,24 @@
 {"fit_phase": 17, "samples": 512, "prototypes_per_position": 10}
 {"fit_phase": 18, "samples": 512, "prototypes_per_position": 10}
 {"fit_phase": 19, "samples": 339, "prototypes_per_position": 10}
+{"fit_phase": 0, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 1, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 2, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 3, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 4, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 5, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 6, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 7, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 8, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 9, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 10, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 11, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 12, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 13, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 14, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 15, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 16, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 17, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 18, "samples": 512, "prototypes_per_position": 10}
+{"fit_phase": 19, "samples": 424, "prototypes_per_position": 10}
+{"scene": "R02", "seed": 1, "metrics": {"phase_error": {"auroc": 55.58012815653696, "auprc": 45.5670540507067, "frames": 7478}, "unconditional": {"auroc": 85.3749990524704, "auprc": 71.81184913916873, "frames": 7478}, "legacy_hard": {"auroc": 85.46297322786698, "auprc": 76.45321789508127, "frames": 7478}, "posterior_hard": {"auroc": 85.09363408554552, "auprc": 75.89500133977538, "frames": 7478}, "neighbor_nn": {"auroc": 85.40194047745385, "auprc": 74.58465636464165, "frames": 7478}, "top3_nn": {"auroc": 85.75487156552104, "auprc": 73.66598884688209, "frames": 7478}, "top3_weighted": {"auroc": 86.5952395165325, "auprc": 77.98799657012698, "frames": 7478}, "confidence_fallback": {"auroc": 84.20178764092925, "auprc": 74.27386207540134, "frames": 7478}, "random3_nn": {"auroc": 56.41539918790397, "auprc": 36.939416733583485, "frames": 7478}, "neighbor_random_nn": {"auroc": 56.41539918790397, "auprc": 36.939416733583485, "frames": 7478}, "conditional_all": {"auroc": 85.3554917868134, "auprc": 70.70499818052484, "frames": 7478}, "unconditional_with_phase": {"auroc": 85.51943414795613, "auprc": 72.70074084068877, "frames": 7478}, "legacy_hard_with_phase": {"auroc": 85.50983251466776, "auprc": 76.69318840669852, "frames": 7478}, "posterior_hard_with_phase": {"auroc": 85.19489736359364, "auprc": 76.31313137874868, "frames": 7478}, "neighbor_nn_with_phase": {"auroc": 85.47029684207334, "auprc": 75.0729246955609, "frames": 7478}, "top3_nn_with_phase": {"auroc": 85.86573252881753, "auprc": 74.43515067936045, "frames": 7478}, "top3_weighted_with_phase": {"auroc": 86.53444364851958, "auprc": 78.1329997712594, "frames": 7478}, "confidence_fallback_with_phase": {"auroc": 84.79042856132159, "auprc": 75.14612053985607, "frames": 7478}, "random3_nn_with_phase": {"auroc": 57.35850698392484, "auprc": 37.779289174169364, "frames": 7478}, "neighbor_random_nn_with_phase": {"auroc": 57.35850698392484, "auprc": 37.779289174169364, "frames": 7478}, "conditional_all_with_phase": {"auroc": 85.4833648544847, "auprc": 71.60018228407561, "frames": 7478}}, "diagnostics": 0.7684485764090645}
