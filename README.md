@@ -19,7 +19,7 @@ R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론
 | 6-1 | 정밀도·메모리 Pareto | 완료 · seed 0·1·2 | [자료](experiments/stage6_1_pareto/) |
 | 6-2 | 정상 영상 보정 일반화 | 완료 · seed 0·1·2 | [자료](experiments/stage6_2_calibration/) |
 | 7-1 | 오탐·미탐 원인 분해 | 완료 · seed 0·1·2 | [자료](experiments/stage7_1_diagnostics/) |
-| 7-2 | causal 경보 규칙 비교 | 진행 전 또는 실행 중 | [자료](experiments/stage7_2_alerts/) |
+| 7-2 | causal 경보 규칙 비교 | 완료 · seed 0·1·2 | [자료](experiments/stage7_2_alerts/) |
 | 7-3 | 전체 영상 batch1 검증 | 진행 전 또는 실행 중 | [자료](experiments/stage7_3_full_stream/) |
 
 ## 1단계 — 논문 방법론 재현
@@ -441,3 +441,40 @@ R01–R04, seed 0·1·2. 기존 테스트셋 사후 진단/추가 탐색이며 �
 
 외형·시간 각각 정상 보정 q99.5 및 3연속 경보를 사용한다. 각 component의 임계값이 달라 단독 성능 차이를 인과적 기여도라고 단정하지 않는다. 30frame은 길이 구분 기준이며 원본 촬영FPS를 가정하지 않는다.
 영상별 정상 보정/테스트 정상/테스트 이상 score 분위수, 정상 상대위상 오차, 모든 오경보 정상 구간 길이, 미탐 구간의 threshold 초과 여부를 보존했다. 테스트 라벨을 이용한 통계는 사후 진단이며 설정 선택용 검증 성능이 아니다.
+
+
+## 7-2 실험
+
+[전체 기록](experiments/stage7_2_alerts/) · [규약](docs/stage7_protocol.md)
+
+# 7-2 결과
+
+R01–R04, seed 0·1·2. 기존 테스트셋 사후 진단/추가 탐색이며 독립 일반화 검증이 아니다.
+
+| anchor | 방법 | AUROC | 활성 FPR (%) | 구간 recall (%) | 오경보/정상1000frame | 탐지 지연 중앙값 평균(frame) |
+|---|---|---:|---:|---:|---:|---:|
+| B/k10 | baseline | 81.24 | 16.86 | 59.70 | 3.87 | 49.38 |
+| B/k10 | raw_cv | 81.24 | 11.74 | 54.37 | 3.75 | 47.25 |
+| B/k10 | ewma_cv | 81.84 | 17.07 | 49.68 | 2.43 | 42.33 |
+| B/k10 | hysteresis_cv | 81.24 | 14.35 | 48.31 | 1.85 | 47.90 |
+| B/k10 | ewma_hysteresis_cv | 81.84 | 18.54 | 49.04 | 1.93 | 40.00 |
+| S/k5 | baseline | 79.65 | 15.56 | 56.53 | 3.50 | 55.50 |
+| S/k5 | raw_cv | 79.65 | 15.22 | 47.52 | 3.10 | 81.33 |
+| S/k5 | ewma_cv | 80.36 | 16.39 | 36.22 | 2.41 | 83.38 |
+| S/k5 | hysteresis_cv | 79.65 | 15.71 | 42.98 | 1.76 | 90.29 |
+| S/k5 | ewma_hysteresis_cv | 80.36 | 17.55 | 36.54 | 1.81 | 83.19 |
+
+주 비교는 ewma_hysteresis_cv 대 baseline. alpha=.2, 해제 임계값=진입의.7배, 진입3연속/해제3연속. raw_cv는 정상 CV로 threshold만 바꾸는 대조군이다. 임계값은 정상 영상 leave-one-out CV로 고르고 모든 후보 결과를 기록했다.
+
+| anchor/규칙 | 정상 CV 제약 충족 |
+|---|---:|
+| B_k10/raw | 6/12 |
+| B_k10/ewma | 3/12 |
+| B_k10/hysteresis | 6/12 |
+| B_k10/ewma_hysteresis | 2/12 |
+| S_k5/raw | 12/12 |
+| S_k5/ewma | 8/12 |
+| S_k5/hysteresis | 7/12 |
+| S_k5/ewma_hysteresis | 3/12 |
+
+정상 CV 제약은 평균 활성FPR≤1%, 영상최대≤5%, 평균 오경보≤정상1000frame당1회이다. 미충족 시q=.999 fallback이며 보장으로 표현하지 않는다. EWMA 점수의 AUROC도 표시하지만 경보 횟수 감소가 정확도·미탐 개선을 의미하지 않는다. 탐지 지연은 탐지된 구간에 한정되며 미탐·coldstart·선행경보는 별도 파일에 보존했다.

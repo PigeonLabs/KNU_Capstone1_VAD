@@ -21,8 +21,8 @@ def folder(scene,seed,variant):return ROOT/'7-3'/scene/f'seed{seed}'/f'B_k10_{va
 
 
 def models(scene,seed,variant):
-    precision='fp32' if variant=='fp32' else 'bf16';head,bank=s6.models(scene,seed,'B',precision,10)
-    if variant=='bf16_mixed':head.float()
+    precision='bf16' if variant=='bf16' else 'fp32';head,bank=s6.models(scene,seed,'B',precision,10)
+    if variant=='bf16_mixed':bank=bank.to(torch.bfloat16)
     return head,bank
 
 

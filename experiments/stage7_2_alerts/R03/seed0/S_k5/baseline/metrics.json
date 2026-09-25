@@ -1,0 +1,40 @@
+{
+  "rule": "raw",
+  "threshold": 0.7608348101935488,
+  "metrics": {
+    "appearance_score": {
+      "auroc": 61.91679322258774,
+      "auprc": 48.17363994582327,
+      "frames": 11121
+    },
+    "temporal_score": {
+      "auroc": 58.0652735903507,
+      "auprc": 50.47338697693281,
+      "frames": 11121
+    },
+    "combined_score": {
+      "auroc": 61.593184629217745,
+      "auprc": 50.88993693736733,
+      "frames": 11121
+    }
+  },
+  "operation": {
+    "eligible_segments": 13,
+    "detected_segments": 7,
+    "missed_segments": 6,
+    "cold_start_segments": 4,
+    "preexisting_alarm_segments": 0,
+    "segment_recall": 0.5384615384615384,
+    "delay_median_frames_detected_only": 83.0,
+    "delay_p95_frames_detected_only": 194.79999999999995,
+    "normal_frames": 6482,
+    "raw_false_positive_frames": 77,
+    "alarm_false_positive_frames": 55,
+    "frame_fpr": 0.011879049676025918,
+    "active_alarm_fpr": 0.008485035482875656,
+    "false_alarm_episodes": 8,
+    "false_alarms_per_1000_normal_frames": 1.234186979327368,
+    "false_alarms_per_minute_assuming_30fps": 2.2215365627892627
+  },
+  "frames": 11121
+}

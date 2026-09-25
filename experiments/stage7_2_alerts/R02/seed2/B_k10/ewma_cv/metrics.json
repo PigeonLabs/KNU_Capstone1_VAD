@@ -1,0 +1,40 @@
+{
+  "rule": "ewma",
+  "threshold": 1.794722467894762,
+  "metrics": {
+    "appearance_score": {
+      "auroc": 87.5362557655088,
+      "auprc": 78.1899298687607,
+      "frames": 7082
+    },
+    "temporal_score": {
+      "auroc": 87.92262183684899,
+      "auprc": 83.58440781685951,
+      "frames": 7082
+    },
+    "combined_score": {
+      "auroc": 93.58661581113617,
+      "auprc": 87.61772776849264,
+      "frames": 7082
+    }
+  },
+  "operation": {
+    "eligible_segments": 11,
+    "detected_segments": 0,
+    "missed_segments": 11,
+    "cold_start_segments": 4,
+    "preexisting_alarm_segments": 0,
+    "segment_recall": 0.0,
+    "delay_median_frames_detected_only": null,
+    "delay_p95_frames_detected_only": null,
+    "normal_frames": 4771,
+    "raw_false_positive_frames": 0,
+    "alarm_false_positive_frames": 0,
+    "frame_fpr": 0.0,
+    "active_alarm_fpr": 0.0,
+    "false_alarm_episodes": 0,
+    "false_alarms_per_1000_normal_frames": 0.0,
+    "false_alarms_per_minute_assuming_30fps": 0.0
+  },
+  "frames": 7082
+}
