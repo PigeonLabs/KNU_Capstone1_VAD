@@ -1,0 +1,26 @@
+{
+  "scene": "R03",
+  "seed": 1,
+  "backbone": "B",
+  "k": 5,
+  "operation": {
+    "eligible_segments": 13,
+    "detected_segments": 6,
+    "missed_segments": 7,
+    "cold_start_segments": 4,
+    "preexisting_alarm_segments": 0,
+    "segment_recall": 0.46153846153846156,
+    "delay_median_frames_detected_only": 79.0,
+    "delay_p95_frames_detected_only": 189.25,
+    "normal_frames": 6482,
+    "raw_false_positive_frames": 304,
+    "alarm_false_positive_frames": 241,
+    "frame_fpr": 0.04689910521443999,
+    "active_alarm_fpr": 0.037179882752236965,
+    "false_alarm_episodes": 20,
+    "false_alarms_per_1000_normal_frames": 3.08546744831842,
+    "false_alarms_per_minute_assuming_30fps": 5.553841406973157,
+    "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+  },
+  "seconds": 0.07858514785766602
+}

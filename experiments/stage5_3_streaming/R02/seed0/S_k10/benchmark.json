@@ -1,0 +1,45 @@
+{
+  "video": "01",
+  "fps_assumption": 30,
+  "batch_size": 1,
+  "precision": "FP32",
+  "capacity_repeats": 3,
+  "paced_repeats": 1,
+  "backbone_parameters": 22056576,
+  "head_parameters": 3248840,
+  "bank_storage_bytes": 49766400,
+  "bank_compute_bytes": 99532800,
+  "peak_allocated_gib": 0.20292377471923828,
+  "peak_reserved_gib": 0.34765625,
+  "timings": {
+    "capacity": {
+      "input_frames": 768,
+      "elapsed_seconds": 3.408813724759966,
+      "input_fps": 225.29831842133856,
+      "valid_score_fps": 194.49581394967117,
+      "processing_mean_ms": 4.414527679424888,
+      "processing_p50_ms": 4.286533920094371,
+      "processing_p95_ms": 4.980425222311169,
+      "processing_max_ms": 7.9964022152125835,
+      "end_to_end_p95_ms": 4.9805456306785345,
+      "deadline_miss_fraction": 0.0,
+      "max_queue_ms": 0.0003098975867033005,
+      "last_queue_ms": 0.00023096799850463867
+    },
+    "paced_30fps": {
+      "input_frames": 256,
+      "elapsed_seconds": 8.504559400957078,
+      "input_fps": 30.101500610506704,
+      "valid_score_fps": 25.98606107391399,
+      "processing_mean_ms": 4.715587745522498,
+      "processing_p50_ms": 4.469608538784087,
+      "processing_p95_ms": 6.199503317475319,
+      "processing_max_ms": 9.164923103526235,
+      "end_to_end_p95_ms": 6.435403891373426,
+      "deadline_miss_fraction": 0.0,
+      "max_queue_ms": 1.4169239439070225,
+      "last_queue_ms": 0.05974015220999718
+    }
+  },
+  "scope": "warm model; original JPEG read/decode included, OS page cache may be warm; no camera/network; local GPU only"
+}

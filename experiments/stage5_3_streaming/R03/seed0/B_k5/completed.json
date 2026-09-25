@@ -1,0 +1,71 @@
+{
+  "scene": "R03",
+  "seed": 0,
+  "backbone": "B",
+  "k": 5,
+  "operation": {
+    "eligible_segments": 13,
+    "detected_segments": 5,
+    "missed_segments": 8,
+    "cold_start_segments": 4,
+    "preexisting_alarm_segments": 0,
+    "segment_recall": 0.38461538461538464,
+    "delay_median_frames_detected_only": 87.0,
+    "delay_p95_frames_detected_only": 191.2,
+    "normal_frames": 6482,
+    "raw_false_positive_frames": 384,
+    "alarm_false_positive_frames": 344,
+    "frame_fpr": 0.05924097500771367,
+    "active_alarm_fpr": 0.05307004011107683,
+    "false_alarm_episodes": 15,
+    "false_alarms_per_1000_normal_frames": 2.314100586238815,
+    "false_alarms_per_minute_assuming_30fps": 4.165381055229867,
+    "assumption": "contiguous label-positive segments; active alarm counts as detection; delays exclude misses and cold start, reported separately; actual source FPS unverified"
+  },
+  "benchmark": {
+    "video": "01",
+    "fps_assumption": 30,
+    "batch_size": 1,
+    "precision": "FP32",
+    "capacity_repeats": 3,
+    "paced_repeats": 1,
+    "backbone_parameters": 86580480,
+    "head_parameters": 6394568,
+    "bank_storage_bytes": 49766400,
+    "bank_compute_bytes": 99532800,
+    "peak_allocated_gib": 0.46088552474975586,
+    "peak_reserved_gib": 0.642578125,
+    "timings": {
+      "capacity": {
+        "input_frames": 768,
+        "elapsed_seconds": 5.93853092379868,
+        "input_fps": 129.32491383049597,
+        "valid_score_fps": 111.64377326773285,
+        "processing_mean_ms": 7.707160841164296,
+        "processing_p50_ms": 7.490545976907015,
+        "processing_p95_ms": 8.209628565236926,
+        "processing_max_ms": 8.986085886135697,
+        "end_to_end_p95_ms": 8.209772151894867,
+        "deadline_miss_fraction": 0.0,
+        "max_queue_ms": 0.005760928615927696,
+        "last_queue_ms": 0.00014016404747962952
+      },
+      "paced_30fps": {
+        "input_frames": 256,
+        "elapsed_seconds": 8.507785205962136,
+        "input_fps": 30.09008734971339,
+        "valid_score_fps": 25.97620821986976,
+        "processing_mean_ms": 8.029373059798672,
+        "processing_p50_ms": 8.000110508874059,
+        "processing_p95_ms": 8.62444017548114,
+        "processing_max_ms": 10.370021918788552,
+        "end_to_end_p95_ms": 8.733262307941914,
+        "deadline_miss_fraction": 0.0,
+        "max_queue_ms": 2.828998025506735,
+        "last_queue_ms": 0.060924096032977104
+      }
+    },
+    "scope": "warm model; original JPEG read/decode included, OS page cache may be warm; no camera/network; local GPU only"
+  },
+  "seconds": 16.93344759941101
+}

@@ -56,7 +56,7 @@ def main():
             'source_note':'S cache metadata timing fields corrected before S extraction; implementation_events.jsonl records the change; model definitions unchanged'}
     write_json(root/'final_verification.json',report)
     sums={s:load(root/s/'summary.json') for s in ['5-1','5-2','5-3']};a=sums['5-1']['macro'];b=sums['5-2']['macro']
-    lines=['# 5段階統合結果'.replace('5段階統合結果','5-1·5-2·5-3 통합 결과'),'',
+    lines=['# 5-1·5-2·5-3 통합 결과','',
       '현재 GPU/단일30FPS/batch1 기준으로 온라인 전환과경량화를 검증했다. 정상80%에서 모델·memory를 학습하고 정상20%에서 보정·임계값을 고정했다. 테스트로 설정을 선택하지 않았다.','',
       '## 5-1: 같은 모델 용량에서 온라인 전환','', '| 방법 | 평균 AUROC ± seed 표준편차 (%) |','|---|---:|']
     for key,label in [('centered_testnorm','중앙 입력·테스트 전체 정규화'),('centered_fixed','중앙 입력·정상 고정 보정'),('causal_appearance','과거 입력·외형 단독'),('causal_combined','과거 입력·외형+시간')]:
@@ -72,6 +72,19 @@ def main():
         ms=[load(root/'5-3'/scene/'seed0'/key/'benchmark.json') for scene in SCENES]
         fps=np.mean([m['timings']['capacity']['input_fps'] for m in ms]);p95=max(m['timings']['paced_30fps']['end_to_end_p95_ms'] for m in ms);queue=max(m['timings']['paced_30fps']['max_queue_ms'] for m in ms);peak=max(m['peak_allocated_gib'] for m in ms)
         lines.append(f'| {key} | {fps:.1f} | {p95:.2f} | {queue:.2f} | {peak:.3f} |')
+    lines+=['','## 고정 임계값의 경보 품질','',
+      '| 구성 | 장면·seed 평균 정상 frame FPR (%) | 평균 구간 탐지율 (%) | 평가 구간 합계 | 미탐 구간 | 시작 전부터 경보 중인 구간 |',
+      '|---|---:|---:|---:|---:|---:|']
+    for key in ['B_k10','B_k5','S_k10','S_k5']:
+        ms=[load(root/'5-3'/scene/f'seed{seed}'/key/'operation.json') for seed in range(3) for scene in SCENES]
+        v=sums['5-3']['macro'][key]
+        lines.append(f"| {key} | {v['mean_scene_seed_frame_fpr']*100:.2f} | {v['mean_segment_recall']*100:.2f} | {sum(m['eligible_segments'] for m in ms)} | {sum(m['missed_segments'] for m in ms)} | {sum(m['preexisting_alarm_segments'] for m in ms)} |")
+    lines+=['','구간 합계는 seed 반복을 포함하므로 독립 사건 수가 아니다. 이미 켜진 경보도 구간 탐지로 계산한다. 따라서 오탐이 많은 모델의 높은 탐지율·0프레임 지연을 좋은 경보 성능으로 해석하면 안 된다.',
+      '정상 검증 q99.5로 고정한 임계값이 테스트 정상 구간에서도0.5% FPR를 보장하지 않는다. 처리 속도 충족과 실제 경보의 신뢰성은 별개의 결과이다. 테스트 결과를 보고 임계값을 바꾸지 않았다.','',
+      '| 장면 (B/k10) | 3-seed 평균 정상 frame FPR (%) | 3-seed 평균 구간 탐지율 (%) |','|---|---:|---:|']
+    for scene in SCENES:
+        ms=[load(root/'5-3'/scene/f'seed{seed}'/'B_k10'/'operation.json') for seed in range(3)]
+        lines.append(f"| {scene} | {np.mean([m['frame_fpr'] for m in ms])*100:.2f} | {np.mean([m['segment_recall'] for m in ms])*100:.2f} |")
     lines+=['','30FPS paced replay는 arrival부터 대기·JPEG read/decode·DINO·head·memory·경보 처리까지 측정했다. OS cache는 warm일 수 있고 카메라·네트워크·다른장비 성능은미포함이다. 최초35프레임은 coldstart이며 이후에는 미래 프레임을 기다리지 않는다.','',
       '전체 테스트에서의 오탐·미탐·지연 결과는 [5-3 상세표](../stage5_3_streaming/results.md)에 있다. 평균 AUROC나 처리 FPS만으로 실시간 공정 경보가 실용적이라고 결론내리지 않는다. 특히 고정 정상 임계값에서의 test 정상 오탐과 segment recall을 함께 판단해야 한다.',
       '정답1 연속구간은 실제 고장 유형/독립사건 라벨이 아니다. 지연은 탐지된 구간에서만 계산하고 미탐과 coldstart 구간을 따로 기록했다. 영상의 실제촬영FPS는 확인되지 않았으므로30FPS 환산은 시나리오이다.','',

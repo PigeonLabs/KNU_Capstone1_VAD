@@ -1,0 +1,35 @@
+{
+  "started_at": 1790313266.000759,
+  "environment": {
+    "python": "3.13.13",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "capability": [
+      12,
+      0
+    ]
+  },
+  "source_sha256": {
+    "ipad/evaluate.py": "ee2e899232e06965702f10691dc7c174a6ec70e20ac0ffba2e1e8c6e894147cd",
+    "ipad/report.py": "4040d5cae253eeb91c40658bf4a51c207793da6539cd17c44f78062f6b2821be",
+    "ipad/metrics.py": "3c2e1dc03598e72d59d44790bc6814a9963693e1b15e5ad32310db4f1b883c87",
+    "ipad/train.py": "3d40515deee4f4335810c8c2b11bcc283a185df4a051973fc6deb292c8d84693",
+    "ipad/data.py": "20c71dbdba055c7e74847623e4600a84325eeb9ec9e116cd76721331839bf96c",
+    "ipad/phase_temporal.py": "9267d45e819f1157d185ecdd143160e5ab80902c9a58213bebaaa79ffbbaa544",
+    "ipad/stage5.py": "ea7a5f49a2d40d038220e2ff8e0f6ee5b3f34536812522e96ed6a81dde660b56",
+    "ipad/features.py": "709f05417b3abef1180e19659799188389f3f09b7e2604773505d1cd01c9fa02",
+    "ipad/model.py": "c08545718a89cd2d6eb01624694699b8d6a1b774bc68c56324bf72cbaec0e2ac",
+    "ipad/common.py": "0c81839fa5b6f5420b4bb60bcbacd32815481a789ea2706ba88dd898c08cda0e",
+    "ipad/stage4.py": "d061fbee227f8d6070513d2968eec80d72d532ae57c82fd941ec8be9f3a507cd",
+    "ipad/phase_routing.py": "15e791c3fee8e7090e32032a32d2be7f5492f1f5db52dd0e1eb9443599731bae",
+    "ipad/prototype.py": "be4a09bf143bd62382c086cac7880b2bb7432adc0677836c88dff459e0b08fe5",
+    "ipad/__init__.py": "8ae9b9e2d92e308e0486dc3d05f30876c2d4b69ef5f2db1179a9adb7189697ba"
+  },
+  "protocol_sha256": "0c7524a81d0b938895055ebb1555f53394ca19b0c195b148f2b8be04fcdd448a",
+  "scene": "R02",
+  "seed": 0,
+  "backbone": "S",
+  "k": 5,
+  "source_metrics_sha256": "c3a2f6814f942c37e80bc84e66d97ecd6333e809032e75c9ffdaceaee4862010"
+}

@@ -10,6 +10,12 @@ R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론
 | 2단계 | DINOv2 입력–복원 특징 비교 / 비재구성 prototype | 4개 장면 완료 · seed 0 | [전체 자료](experiments/stage2_dinov2/) |
 | 1단계 추가 검증 | 메모리 제거 ablation | 4개 장면 완료 · seed 0 | [자료](experiments/stage1_memory_ablation/) |
 | 3단계 | 위상 진단 및 불확실성을 고려한 메모리 선택 | R01–R04 × seed 0·1·2 및 시간 진단 완료 | [규약](docs/stage3_protocol.md) · [결과](experiments/stage3_phase_routing/) |
+| 4-1 | 외형·시간 검사 | 완료 · seed 0·1·2 | [자료](experiments/stage4_1_appearance_temporal/) |
+| 4-2 | 메모리 용량 | 완료 · seed 0·1·2 | [자료](experiments/stage4_2_memory_budget/) |
+| 4-3 | 전이·체류시간 | 완료 · seed 0·1·2 | [자료](experiments/stage4_3_process_prior/) |
+| 5-1 | 온라인 기준선 | 완료 · seed 0·1·2 | [자료](experiments/stage5_1_causal/) |
+| 5-2 | 백본·메모리 경량화 | 완료 · seed 0·1·2 | [자료](experiments/stage5_2_lightweight/) |
+| 5-3 | 30 FPS 재생·오탐·미탐 평가 | 완료 · seed 0·1·2 | [자료](experiments/stage5_3_streaming/) |
 
 ## 1단계 — 논문 방법론 재현
 
@@ -77,7 +83,7 @@ uv pip install --python .venv/bin/python -r requirements.lock.txt --extra-index-
 - 최신 사용자 지시에 따라 승인된 실험 전체 완료 시 결과·로그·해시를 main에 자동 게시합니다. 바이너리를 제외하고 원격 변경을 강제로 덮어쓰지 않습니다.
 - 디스크 여유가 **10 GiB 이하**가 되면 이 프로젝트의 실험을 일시중지하고 보고합니다. 자동 재개하지 않습니다.
 - 메모리 제거 실험은 1단계 추가 검증입니다. 3단계는 2026-09-25 승인받아 정상 위상 진단과 routing 비교부터 진행합니다.
-- 테스트 전체 정규화와 미래 프레임을 포함하는 centered window를 사용하므로 온라인/인과적 실시간 성능 주장이 아닙니다.
+- 1~4단계는 테스트 전체 정규화와 미래 프레임을 사용하는 오프라인 평가입니다. 5단계는 정상 데이터에서 고정한 보정과 과거 입력으로 온라인 평가하며, 실제 카메라나 다른 장비 성능으로 일반화하지 않습니다.
 [기록 규칙](docs/EXPERIMENT_LOG_POLICY.md) · [코드–논문 차이](REPRODUCTION.md) · [3단계 제안](docs/stage3_proposal.md)
 
 ## 원 자료
@@ -276,3 +282,46 @@ R01–R04,seed0·1·2. 정상80% 학습/20% 고정 보정. 테스트 정답은 �
 장면별 AUROC/AUPRC,full causal support,프레임 점수,보정 median/q99.5/threshold,매배치 loss/gradient와 checkpoint 검증은 각 실행 폴더에 있다. R02영상12/13/14는 주 결과에서 제외하고 ±1 민감도를 보존한다.
 
 메모리 k5는 k10의 정확히 절반 prototype이며 실제 점유 bin 수에 따라 총개수가 달라진다. backbone 변경 시 head·memory·normal calibration을 재구축했다. B/k10은5-1 결과를 재사용했다.
+
+
+## 5-3 온라인·경량화 실험
+
+[전체 기록](experiments/stage5_3_streaming/) · [고정 규약](docs/stage5_protocol.md)
+
+# 5-3 실험 결과
+
+R01–R04,seed0·1·2. 정상80% 학습/20% 고정 보정. 테스트 정답은 학습·보정·임계값 선택에 사용하지 않았다.
+
+| 모델 | 정상 frame FPR (%) | 오경보/정상1000frame | 구간 탐지율 (%) | 탐지 구간 지연 중앙값 (frame) |
+|---|---:|---:|---:|---:|
+| B/k10 | 18.01 | 3.87 | 59.70 | 49.38 |
+| B/k5 | 18.02 | 3.74 | 59.38 | 47.46 |
+| S/k10 | 16.66 | 3.53 | 57.93 | 50.92 |
+| S/k5 | 16.71 | 3.50 | 56.53 | 55.50 |
+
+위 표는 장면·seed별 지표의 단순평균이다. 지연은 탐지된 구간만의 중앙값을 평균한 값이며 미탐·coldstart 구간 수는개별 operation.json에 함께 기록한다. 고장 유형별 정확도나 독립 사건 정답을 의미하지 않는다.
+
+## 실제 batch1 측정 (seed0)
+
+| 장면 | 모델 | capacity FPS | processing p95 ms | paced E2E p95 ms | paced deadline miss (%) | max queue ms | peak allocated GiB |
+|---|---|---:|---:|---:|---:|---:|---:|
+| R01 | B/k10 | 129.6 | 8.23 | 8.61 | 0.00 | 0.91 | 0.544 |
+| R01 | B/k5 | 130.7 | 8.13 | 8.83 | 0.00 | 1.34 | 0.456 |
+| R01 | S/k10 | 226.1 | 4.98 | 5.83 | 0.00 | 2.75 | 0.198 |
+| R01 | S/k5 | 228.2 | 4.92 | 6.83 | 0.00 | 1.21 | 0.155 |
+| R02 | B/k10 | 129.3 | 8.24 | 8.71 | 0.00 | 1.58 | 0.554 |
+| R02 | B/k5 | 130.4 | 8.18 | 8.46 | 0.00 | 0.72 | 0.461 |
+| R02 | S/k10 | 225.3 | 4.98 | 6.44 | 0.00 | 1.42 | 0.203 |
+| R02 | S/k5 | 226.7 | 4.95 | 5.51 | 0.00 | 1.87 | 0.157 |
+| R03 | B/k10 | 128.2 | 8.29 | 8.97 | 0.00 | 0.38 | 0.554 |
+| R03 | B/k5 | 129.3 | 8.21 | 8.73 | 0.00 | 2.83 | 0.461 |
+| R03 | S/k10 | 223.4 | 5.03 | 5.96 | 0.00 | 0.53 | 0.203 |
+| R03 | S/k5 | 224.4 | 5.02 | 6.12 | 0.00 | 0.49 | 0.157 |
+| R04 | B/k10 | 128.6 | 8.29 | 8.72 | 0.00 | 0.95 | 0.554 |
+| R04 | B/k5 | 129.8 | 8.22 | 8.58 | 0.00 | 2.61 | 0.461 |
+| R04 | S/k10 | 225.4 | 5.00 | 6.21 | 0.00 | 1.77 | 0.203 |
+| R04 | S/k5 | 225.7 | 4.99 | 6.13 | 0.00 | 1.69 | 0.157 |
+
+현재 RTX PRO6000,FP32,batch1,원본 JPEG read/decode 포함. capacity3회/30FPS paced replay1회,각 영상최대256frame. OS page cache가 warm일 수 있으며 카메라·네트워크 지연은 미포함이다. 실제 촬영 FPS가 확인된 데이터는 아니므로30FPS는 도착률 시나리오이다. 경보 정확도는 전체 causal test cache 평가이며 위 짧은 replay와 구분한다.
+
+raw latency·queue·직접 경보·stream/cache 비교·frame별 경보 상태·미탐을 포함한 구간별 지연은 각 실행 폴더에 있다.

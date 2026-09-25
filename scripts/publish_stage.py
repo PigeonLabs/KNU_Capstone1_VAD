@@ -170,6 +170,12 @@ def make_readme():
           '## 1단계 — 논문 방법론 재현','',
           '장면마다 독립 학습: 16프레임, 256×256, Video Swin-T, 200개 위상, 메모리 2,000개, window 5, Adam 1e-4, batch 8, 50 epochs, FP32, seed 0. 재구성·주기 점수를 장면별 정규화 후 같은 가중치로 결합합니다.','',
           '| 장면 | 논문 AUROC (%) | 구현 AUROC (%) | 차이 (pp) | 평가 프레임 |','|---|---:|---:|---:|---:|',*rows]
+    position=text.index('## 1단계 — 논문 방법론 재현')-1
+    additional=[]
+    for st,title in [('4-1','외형·시간 검사'),('4-2','메모리 용량'),('4-3','전이·체류시간'),('5-1','온라인 기준선'),('5-2','백본·메모리 경량화'),('5-3','30 FPS 재생·오탐·미탐 평가')]:
+        ready=(ROOT/'experiments'/STAGES[st]/'results.md').exists()
+        additional.append(f'| {st} | {title} | {"완료 · seed 0·1·2" if ready else "진행 전 또는 실행 중"} | [자료](experiments/{STAGES[st]}/) |')
+    text[position:position]=additional
     if len(values)==4:text.extend(['',f'장면별 AUROC 단순 평균: **{sum(values)/4:.2f}%** (논문 70.00%).'])
     text.extend(['','**해석 제한:** R02는 영상/라벨 길이가 다른 영상 12·13·14를 제외합니다. 공개 코드의 전체 파라미터는 263.48M으로 논문 표 35.9M과 다릅니다. 점수 결합 등 미기재 사항을 명시적 가정으로 보완했으므로 원 논문과 완전히 같은 조건의 우월성 증거로 해석하지 않습니다. [차이와 가정](REPRODUCTION.md)','',
                  '## 2단계 — DINOv2 도입','',
@@ -215,7 +221,7 @@ def make_readme():
            '- 최신 사용자 지시에 따라 승인된 실험 전체 완료 시 결과·로그·해시를 main에 자동 게시합니다. 바이너리를 제외하고 원격 변경을 강제로 덮어쓰지 않습니다.',
            '- 디스크 여유가 **10 GiB 이하**가 되면 이 프로젝트의 실험을 일시중지하고 보고합니다. 자동 재개하지 않습니다.',
            '- 메모리 제거 실험은 1단계 추가 검증입니다. 3단계는 2026-09-25 승인받아 정상 위상 진단과 routing 비교부터 진행합니다.',
-           '- 테스트 전체 정규화와 미래 프레임을 포함하는 centered window를 사용하므로 온라인/인과적 실시간 성능 주장이 아닙니다.',
+           '- 1~4단계는 테스트 전체 정규화와 미래 프레임을 사용하는 오프라인 평가입니다. 5단계는 정상 데이터에서 고정한 보정과 과거 입력으로 온라인 평가하며, 실제 카메라나 다른 장비 성능으로 일반화하지 않습니다.',
            '[기록 규칙](docs/EXPERIMENT_LOG_POLICY.md) · [코드–논문 차이](REPRODUCTION.md) · [3단계 제안](docs/stage3_proposal.md)','',
            '## 원 자료','',
            '- [IPAD 논문 v1](https://arxiv.org/abs/2404.15033v1) · [공식 코드](https://github.com/LJF1113/IPAD), commit `22764cbeeda3946303d236babdd2664fd6241b91`.',
