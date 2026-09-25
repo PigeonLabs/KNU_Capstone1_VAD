@@ -97,6 +97,11 @@ def main():
       '현재 장비에서 정확도를 우선하면 B/k10, 프로토타입 저장량 절충은 B/k5가 후보이다. S/k10은 더 큰 정확도 손실을 허용할 때의 후보이며 다른 장비에서의 속도는 추가 측정이 필요하다.',
       '30 FPS 처리 속도와 별개로 고정 경보 임계값의 일반화가 실패했다. R01의 높은 오탐과 R02의 낮은 구간 탐지율을 고려하면 현재 모델을 신뢰할 수 있는 현장 경보 시스템으로 주장할 수 없다. 다음 연구의 우선순위는 추가 경량화보다 정상 보정 분포의 대표성·오탐 제어·미탐 개선이다. 테스트 정답에 맞춘 임계값 조정은 하지 않았다.','',
       '짧은 검산 구간에서 FP16 캐시와 같은 정밀도로 맞춘 단일 프레임 추출의 외형 점수 최대 차이는 전체 구성에서 4.55e-7 미만이었고 위상 argmax가 모두 일치했다. 전체 경보 정확도는 캐시 평가이며 실시간 FP32 전체 테스트의 재평가라고 주장하지 않는다.']
+    active=[]
+    for key in ['B_k10','B_k5','S_k10','S_k5']:
+        ms=[load(root/'5-3'/scene/f'seed{seed}'/key/'operation.json') for seed in range(3) for scene in SCENES]
+        active.append(f"{key}: {np.mean([m['active_alarm_fpr'] for m in ms])*100:.2f}%")
+    lines+=['', '3프레임 연속 초과 조건을 적용한 활성 경보의 정상 프레임 오탐률(장면·seed 평균)은 '+', '.join(active)+'. 위 표의 원 점수 임계값 FPR와 구분한다.']
     (root/'research_findings.md').write_text('\n'.join(lines).replace('현재 GPU/단일30FPS/batch1','현재 GPU·단일 30 FPS·배치 1').replace('과경량화','과 경량화').replace('정상80%','정상 80%').replace('정상20%','정상 20%').replace('기존4단계','기존 4단계').replace('4단계80.97%','4단계 80.97%').replace('규칙의2×2','규칙의 2×2').replace('정상 구간에서도0.5%','정상 구간에서도 0.5%').replace('최초35프레임','최초 35프레임').replace('성능은미포함','성능은 미포함').replace('모든48모델','모든 48개 모델')+'\n');print(json.dumps({'passed':True,'model_units':len(checks)}))
 
 
