@@ -11,7 +11,8 @@ import torch
 from . import stage5 as s5
 from . import stage6 as s6
 from .common import environment,write_json
-from .evaluate import write_csv
+from .evaluate import write_csv as _write_csv
+import csv
 from .phase_routing import reserve,digest
 
 SCENES=s5.SCENES
@@ -25,6 +26,13 @@ def begin(out,**kw):
     if (out/'completed.json').exists():return False
     if (out/'config.json').exists():raise RuntimeError(f'Partial result requires inspection: {out}')
     write_json(out/'config.json',{'started_at':time.time(),'environment':environment(),'source_sha256':{str(p):digest(p) for p in Path('ipad').glob('*.py')},'protocol_sha256':digest('docs/stage7_protocol.md'),**kw});return True
+
+
+def write_csv(path,data,fields=None):
+    if data:return _write_csv(path,data)
+    path=Path(path);path.parent.mkdir(parents=True,exist_ok=True)
+    with path.open('w') as f:
+        if fields:csv.writer(f).writerow(fields)
 
 
 def quantiles(values):
@@ -64,7 +72,7 @@ def diagnose(scene,seed,b,k):
                     if e['video']!=video or e['detected'] or e['cold_start']:continue
                     g=[r for r in group if e['start']<=r['frame']<=e['end']]
                     misses.append({**e,'any_raw_threshold_crossing':any(r['above_threshold'] for r in g),'max_score':max(r['combined_score'] for r in g),'max_appearance':max(r['appearance_score'] for r in g),'max_temporal':max(r['temporal_score'] for r in g)})
-            write_csv(out/'false_alarm_stretches.csv',stretches);write_csv(out/'missed_segment_diagnostics.csv',misses)
+            write_csv(out/'false_alarm_stretches.csv',stretches,['video','start','end','frames','mean_appearance','mean_temporal']);write_csv(out/'missed_segment_diagnostics.csv',misses,['video','start','end','cold_start','detected','delay_frames','alarm_preexisting_at_onset','any_raw_threshold_crossing','max_score','max_appearance','max_temporal'])
             result['false_alarm_stretches']={'count':len(stretches),'duration_frames':quantiles([r['frames'] for r in stretches]),'normal_alarm_frames_in_stretches_ge30':sum(r['frames'] for r in stretches if r['frames']>=30),'total_normal_alarm_frames':sum(r['frames'] for r in stretches)}
             result['misses_with_any_threshold_crossing']=sum(r['any_raw_threshold_crossing'] for r in misses)
     phase=[]
