@@ -34,7 +34,7 @@ def flags(values,threshold,rule):
             hi=hi+1 if value>threshold else 0
             if hi>=CONSECUTIVE:on=True;emit[i]=True;lo=0
         else:
-            lo=lo+1 if value<OFF_RATIO*threshold else 0
+            lo=lo+1 if value<=OFF_RATIO*threshold else 0
             if lo>=CONSECUTIVE:on=False;hi=0
         active[i]=on
     return x,active,emit
