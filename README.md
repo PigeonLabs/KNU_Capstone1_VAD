@@ -17,7 +17,7 @@ R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론
 | 5-2 | 백본·메모리 경량화 | 완료 · seed 0·1·2 | [자료](experiments/stage5_2_lightweight/) |
 | 5-3 | 30 FPS 재생·오탐·미탐 평가 | 완료 · seed 0·1·2 | [자료](experiments/stage5_3_streaming/) |
 | 6-1 | 정밀도·메모리 Pareto | 완료 · seed 0·1·2 | [자료](experiments/stage6_1_pareto/) |
-| 6-2 | 정상 영상 보정 일반화 | 진행 전 또는 실행 중 | [자료](experiments/stage6_2_calibration/) |
+| 6-2 | 정상 영상 보정 일반화 | 완료 · seed 0·1·2 | [자료](experiments/stage6_2_calibration/) |
 
 ## 1단계 — 논문 방법론 재현
 
@@ -361,5 +361,48 @@ R01–R04, seed 0·1·2. 정상 80% 학습 / 20% 보정 분리와 causal frame �
 FPS는 이번 실행에서 모든 후보를 재측정했다. 현재 GPU,원본 JPEG read/decode,batch1,capacity3회/30FPS paced1회,최대256frames. 카메라/네트워크 제외,OS cache가 warm일 수 있다. 지연과 memory는 seed0,정확도는3seed이다.
 BF16은 실제 backbone/head/bank dtype 변환과 재추출 평가이며 RGB/feature normalization/거리 누산은FP32이다. 새 전체 feature cache를 저장하지 않았고 영상별 추출 해시와 raw score를 보존했다.
 FP32 k10/k5 기준선 점수 등가성, k2 정상 sample pool 동등성,각 precision의 정상 보정,stream/batched 추출 오차는 실행 폴더에 있다.
+
+R02영상12·13·14는 주 결과에서 제외하고±1정렬 민감도를 보존했다. 모든 원본·기존 결과를 유지하고 바이너리는 로컬에 보존한다.
+
+
+## 6-2 추가 실험
+
+[전체 기록](experiments/stage6_2_calibration/) · [고정 규약](docs/stage6_protocol.md)
+
+# 6-2 실험 결과
+
+R01–R04, seed 0·1·2. 정상 80% 학습 / 20% 보정 분리와 causal frame 규약 유지. 기존 테스트셋에서 추가 탐색한 결과이며 독립 데이터 일반화 증거가 아니다.
+
+| anchor | 보정·임계값 | AUROC | active 경보 FPR (%) | 구간 recall (%) | 오경보 / 정상1000frame | 탐지 구간 지연 중앙값 평균(frame) |
+|---|---|---:|---:|---:|---:|---:|
+| B/k10 | baseline | 81.24 | 16.86 | 59.70 | 3.87 | 49.38 |
+| B/k10 | balanced_fixed | 81.20 | 16.97 | 58.19 | 3.77 | 50.12 |
+| B/k10 | balanced_cv | 81.20 | 12.77 | 61.10 | 4.38 | 50.21 |
+| B/k10 | phase_mean_fixed | 79.41 | 29.88 | 82.78 | 6.67 | 26.58 |
+| B/k10 | phase_mean_cv | 79.41 | 19.69 | 79.75 | 6.47 | 29.46 |
+| B/k10 | phase_max_fixed | 77.53 | 31.99 | 77.86 | 5.70 | 20.67 |
+| B/k10 | phase_max_cv | 77.53 | 27.48 | 76.02 | 6.71 | 23.08 |
+| S/k5 | baseline | 79.65 | 15.56 | 56.53 | 3.50 | 55.50 |
+| S/k5 | balanced_fixed | 79.68 | 15.58 | 55.89 | 3.51 | 59.88 |
+| S/k5 | balanced_cv | 79.68 | 15.91 | 52.01 | 3.80 | 71.50 |
+| S/k5 | phase_mean_fixed | 77.88 | 22.94 | 73.05 | 8.87 | 23.04 |
+| S/k5 | phase_mean_cv | 77.88 | 16.20 | 66.61 | 5.57 | 35.83 |
+| S/k5 | phase_max_fixed | 76.45 | 28.73 | 74.85 | 7.57 | 17.54 |
+| S/k5 | phase_max_cv | 76.45 | 19.10 | 67.98 | 6.39 | 18.67 |
+
+## 정상 CV
+
+| anchor / 보정 | CV 오탐 제약 충족 실행 |
+|---|---:|
+| B_k10/balanced | 7/12 |
+| B_k10/phase_mean | 4/12 |
+| B_k10/phase_max | 4/12 |
+| S_k5/balanced | 12/12 |
+| S_k5/phase_mean | 5/12 |
+| S_k5/phase_max | 2/12 |
+
+CV는 정상 validation 영상을 하나씩 제외하고 나머지로 보정한다. 평균active FPR≤1%,최대영상FPR≤5%를 만족하는 가장 낮은q를 선택했다. 실패한 실행은q=.999 fallback이며 오탐 보장을 주장하지 않는다.
+주 비교는 phase_mean_cv 대 baseline. fixed는 영상 균형 q99.5,cv는 정상 영상만으로 고른q. 영상/seed별 결과·CV 분할과 전q 후보·보정 통계·정답/경보 frame·미탐/경보선행/coldstart 구간은 보존했다.
+탐지율은 정답1 연속구간 기준이며 이미 활성화된 경보도 포함한다. 지연은 탐지된 구간만의 값이고 미탐은 별도로 기록한다. 같은 테스트셋을 반복 관찰했으므로 새로운 환경 일반화가 입증된 것은 아니다.
 
 R02영상12·13·14는 주 결과에서 제외하고±1정렬 민감도를 보존했다. 모든 원본·기존 결과를 유지하고 바이너리는 로컬에 보존한다.

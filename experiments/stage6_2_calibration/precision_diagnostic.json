@@ -1,0 +1,28 @@
+[
+  {
+    "backbone": "B",
+    "fp32_extractor_equivalence": {
+      "cls": 0.0,
+      "patch12": 0.0
+    },
+    "bf16_backbone_dtype": "torch.bfloat16",
+    "bf16_head_dtype": "torch.bfloat16",
+    "bank_dtype": "torch.bfloat16",
+    "distance_dtype": "torch.float32",
+    "finite": true,
+    "normal_video": "01"
+  },
+  {
+    "backbone": "S",
+    "fp32_extractor_equivalence": {
+      "cls": 0.0,
+      "patch12": 0.0
+    },
+    "bf16_backbone_dtype": "torch.bfloat16",
+    "bf16_head_dtype": "torch.bfloat16",
+    "bank_dtype": "torch.bfloat16",
+    "distance_dtype": "torch.float32",
+    "finite": true,
+    "normal_video": "01"
+  }
+]
