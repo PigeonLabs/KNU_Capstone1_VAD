@@ -1,0 +1,25 @@
+{
+  "stats": {
+    "calls_captured": 344,
+    "unique_graphs": 1
+  },
+  "inductor": {
+    "pattern_matcher_count": 320,
+    "pattern_matcher_nodes": 404,
+    "removed_pointless_view_pair": 36,
+    "fxgraph_cache_miss": 1,
+    "async_compile_cache_miss": 30,
+    "extern_calls": 121,
+    "async_compile_cache_hit": 15,
+    "triton_bundler_save_kernel": 192,
+    "triton_bundler_save_static_autotuner": 1,
+    "benchmarking.InductorBenchmarker.benchmark": 18,
+    "benchmarking.InductorBenchmarker.benchmark_gpu": 18
+  },
+  "aot_autograd": {
+    "total": 1,
+    "autograd_cache_miss": 1,
+    "autograd_cache_saved": 1,
+    "ok": 1
+  }
+}

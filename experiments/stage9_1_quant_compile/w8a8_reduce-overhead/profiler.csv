@@ -1,0 +1,49 @@
+name,count,device_type,self_cpu_us,self_device_us,device_total_us
+aten::lift_fresh,5,DeviceType.CPU,3.997000000001549,0,0
+aten::to,10,DeviceType.CPU,33.87499999999818,0.0,60.70400000000063
+aten::_to_copy,10,DeviceType.CPU,56.24299999999903,0.0,60.70400000000063
+aten::empty_strided,10,DeviceType.CPU,73.88000000000159,0,0
+aten::copy_,10,DeviceType.CPU,90.72999999999502,52.768000000000484,60.70400000000063
+Activity Buffer Request,1,DeviceType.CPU,2630.638,7.936000000000149,7.936000000000149
+cudaStreamIsCapturing,10,DeviceType.CPU,13.756999999998243,0,0
+cudaMemcpyAsync,5,DeviceType.CPU,118.22400000000243,0,0
+cudaStreamSynchronize,5,DeviceType.CPU,54.904000000001815,0,0
+Memcpy HtoD (Pageable -> Device),5,DeviceType.CUDA,0,39.9680000000003,39.9680000000003
+aten::permute,5,DeviceType.CPU,19.03500000000031,0,0
+aten::as_strided,10,DeviceType.CPU,13.768999999997959,0,0
+aten::unsqueeze,5,DeviceType.CPU,10.336999999999534,0,0
+cudaLaunchKernel,20,DeviceType.CPU,211.5179999999982,0,0
+"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",5,DeviceType.CUDA,0,12.800000000000182,12.800000000000182
+aten::div,5,DeviceType.CPU,62.257000000001426,6.17600000000084,6.17600000000084
+"void at::native::vectorized_elementwise_kernel<4, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>)",5,DeviceType.CUDA,0,6.17600000000084,6.17600000000084
+aten::sub,5,DeviceType.CPU,47.22699999999986,5.920000000002801,5.920000000002801
+"void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)",5,DeviceType.CUDA,0,5.920000000002801,5.920000000002801
+TorchDynamo Cache Lookup,5,DeviceType.CPU,1739.4450000000015,0,0
+Torch-Compiled Region: 0/0,5,DeviceType.CPU,4568.357999999999,4084.8070000000043,4130.407000000006
+Pregraph bytecode,5,DeviceType.CPU,79.59000000000106,0,0
+AOTDispatcher Runtime Wrapper Prologue,5,DeviceType.CPU,29.474999999999454,0,0
+## Call CompiledFxGraph fw7vq27qdpf3wmvcssvs3idewk7aogh3l7ol4uabs3wecddpm7ve ##,5,DeviceType.CPU,610.152,0.0,45.60000000000127
+aten::_foreach_copy_,5,DeviceType.CPU,47.279999999997926,45.60000000000127,45.60000000000127
+## Call CompiledFxGraph fw7vq27qdpf3wmvcssvs3idewk7aogh3l7ol4uabs3wecddpm7ve ##,5,DeviceType.CUDA,0,5412.969000000003,5412.969000000003
+"void at::native::(anonymous namespace)::multi_tensor_apply_kernel<at::native::(anonymous namespace)::TensorListMetadata<2>, at::native::(anonymous namespace)::UnaryOpFunctor<float, 2, 1, 1>, at::native::Copy<float, float> >(at::native::(anonymous namespace)::TensorListMetadata<2>, at::native::(anonymous namespace)::UnaryOpFunctor<float, 2, 1, 1>, at::native::Copy<float, float>)",5,DeviceType.CUDA,0,45.60000000000127,45.60000000000127
+cudaGraphLaunch,5,DeviceType.CPU,1227.568000000003,0,0
+triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0,5,DeviceType.CUDA,0,10.495999999996457,10.495999999996457
+triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1,5,DeviceType.CUDA,0,107.5520000000015,107.5520000000015
+triton_per_fused_sum_2,60,DeviceType.CUDA,0,116.48400000001038,116.48400000001038
+triton_per_fused_sum_3,60,DeviceType.CUDA,0,78.59099999999125,78.59099999999125
+triton_per_fused_sum_4,60,DeviceType.CUDA,0,139.84100000000126,139.84100000000126
+triton_red_fused_sum_5,60,DeviceType.CUDA,0,173.98900000000867,173.98900000000867
+cudaDeviceSynchronize,6,DeviceType.CPU,3926.2970000000005,0,0
+"void implicit_convolve_sgemm<__nv_bfloat16, __nv_bfloat16, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, __nv_bfloat16 const*, int, __nv_bfloat16*, __nv_bfloat16 const*, kernel_conv_params, unsigned long long, int, float, float, int, __nv_bfloat16 const*, __nv_bfloat16 const*, bool, bool, int, int)",5,DeviceType.CUDA,0,240.73699999999917,240.73699999999917
+triton_red_fused__to_copy_add_amax_amin_cat_clamp_clone_convolution_div_expand_maximum_minimum_mul_native_layer_norm_neg_permute_reciprocal_select_sub_transpose_unsqueeze_view_zeros_like_6,5,DeviceType.CUDA,0,30.017000000000735,30.017000000000735
+void cutlass::Kernel2<cutlass_80_tensorop_i16832gemm_s8_128x64_64x6_tn_align16>(cutlass_80_tensorop_i16832gemm_s8_128x64_64x6_tn_align16::Params),120,DeviceType.CUDA,0,765.8959999999943,765.8959999999943
+triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7,60,DeviceType.CUDA,0,186.94099999999617,186.94099999999617
+"void pytorch_flash::flash_fwd_splitkv_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, false, false, false, false, true, false, true, false>(pytorch_flash::Flash_fwd_params)",60,DeviceType.CUDA,0,365.5719999999792,365.5719999999792
+"void pytorch_flash::flash_fwd_splitkv_combine_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, 8, 1, true>(pytorch_flash::Flash_fwd_params)",60,DeviceType.CUDA,0,177.51000000000113,177.51000000000113
+triton_per_fused__to_copy_add_amax_amin_clamp_div_maximum_minimum_mul_neg_reciprocal_transpose_view_zeros_like_8,60,DeviceType.CUDA,0,91.7439999999915,91.7439999999915
+void cutlass::Kernel2<cutlass_80_tensorop_i16832gemm_s8_64x64_64x6_tn_align16>(cutlass_80_tensorop_i16832gemm_s8_64x64_64x6_tn_align16::Params),120,DeviceType.CUDA,0,740.7420000000111,740.7420000000111
+triton_per_fused__to_copy_add_amax_amin_clamp_div_expand_maximum_minimum_mul_native_layer_norm_neg_reciprocal_sub_view_zeros_like_9,115,DeviceType.CUDA,0,401.09100000001126,401.09100000001126
+triton_red_fused__to_copy_add_amax_amin_clamp_div_expand_gelu_maximum_minimum_mul_neg_reciprocal_sub_view_zeros_like_10,60,DeviceType.CUDA,0,431.1080000000129,431.1080000000129
+triton_per_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_native_layer_norm_neg_sub_view_zeros_like_11,5,DeviceType.CUDA,0,14.527999999998428,14.527999999998428
+triton_per_fused__to_copy_clamp_min_div_expand_linalg_vector_norm_select_12,5,DeviceType.CUDA,0,5.407999999999447,5.407999999999447
+triton_per_fused__to_copy_clamp_min_div_expand_linalg_vector_norm_slice_13,5,DeviceType.CUDA,0,6.559999999999491,6.559999999999491

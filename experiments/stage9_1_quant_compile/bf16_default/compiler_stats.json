@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "calls_captured": 344,
+    "unique_graphs": 1
+  },
+  "inductor": {
+    "pattern_matcher_count": 188,
+    "pattern_matcher_nodes": 212,
+    "benchmarking.InductorBenchmarker.benchmark_gpu": 14,
+    "pad_mm_bench": 4,
+    "fxgraph_cache_miss": 1,
+    "async_compile_cache_miss": 18,
+    "extern_calls": 73,
+    "async_compile_cache_hit": 9,
+    "triton_bundler_save_kernel": 96,
+    "triton_bundler_save_static_autotuner": 1,
+    "benchmarking.InductorBenchmarker.benchmark": 6
+  },
+  "aot_autograd": {
+    "total": 1,
+    "autograd_cache_miss": 1,
+    "autograd_cache_saved": 1,
+    "ok": 1
+  },
+  "aten_mm_info": {
+    "aten.addmm_325_2304_768": 12,
+    "aten.addmm_325_768_768": 12,
+    "aten.addmm_325_3072_768": 12,
+    "aten.addmm_325_768_3072": 12
+  }
+}

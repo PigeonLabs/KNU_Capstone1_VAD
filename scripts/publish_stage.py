@@ -15,7 +15,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SCENES=('R01','R02','R03','R04')
 REMOTE='https://github.com/PigeonLabs/KNU_Capstone1_VAD.git'
 RESERVE=10*1024**3
-STAGES={'stage1':'stage1_reproduction','stage2':'stage2_dinov2','ablation':'stage1_memory_ablation','stage3':'stage3_phase_routing','4-1':'stage4_1_appearance_temporal','4-2':'stage4_2_memory_budget','4-3':'stage4_3_process_prior','5-1':'stage5_1_causal','5-2':'stage5_2_lightweight','5-3':'stage5_3_streaming','6-1':'stage6_1_pareto','6-2':'stage6_2_calibration','7-1':'stage7_1_diagnostics','7-2':'stage7_2_alerts','7-3':'stage7_3_full_stream','8-1':'stage8_1_lora_validation','8-2':'stage8_2_lora_comparison','8-3':'stage8_3_lora_stream','quant-probe':'quantization_probe'}
+STAGES={'stage1':'stage1_reproduction','stage2':'stage2_dinov2','ablation':'stage1_memory_ablation','stage3':'stage3_phase_routing','4-1':'stage4_1_appearance_temporal','4-2':'stage4_2_memory_budget','4-3':'stage4_3_process_prior','5-1':'stage5_1_causal','5-2':'stage5_2_lightweight','5-3':'stage5_3_streaming','6-1':'stage6_1_pareto','6-2':'stage6_2_calibration','7-1':'stage7_1_diagnostics','7-2':'stage7_2_alerts','7-3':'stage7_3_full_stream','8-1':'stage8_1_lora_validation','8-2':'stage8_2_lora_comparison','8-3':'stage8_3_lora_stream','quant-probe':'quantization_probe','9-1':'stage9_1_quant_compile'}
 
 
 def load(path):return json.loads(path.read_text()) if path.exists() else None
@@ -42,7 +42,7 @@ def copy_analysis(source,dest):
 
 
 def binary_inventory(stage):
-    if stage=='quant-probe':
+    if stage in {'quant-probe','9-1'}:
         yield from ()
     elif stage=='stage1':
         for scene in SCENES:
@@ -97,7 +97,9 @@ def inventory(stage,dest):
 
 def snapshot(stage):
     dest=ROOT/'experiments'/STAGES[stage];dest.mkdir(parents=True,exist_ok=True)
-    if stage=='quant-probe':
+    if stage=='9-1':
+        copy_analysis(ROOT/'runs/stage9/9-1',dest)
+    elif stage=='quant-probe':
         copy_analysis(ROOT/'runs/quantization_probe',dest)
     elif stage=='stage1':
         for scene in SCENES:
@@ -286,6 +288,8 @@ def make_readme():
         text += ['','## 8단계 통합 결과','','[정상 적응·오탐·미탐·실시간 검증](experiments/stage8_summary/research_findings.md)']
     qp=ROOT/'experiments/quantization_probe/results.md'
     if qp.exists():text += ['','## 8비트·4비트 양자화 예비 진단','','정상 96프레임의 구현 진단을 완료했습니다. 전체 AUROC·실시간 VAD 평가는 아직 수행하지 않았습니다. [규약](docs/quantization_probe.md) · [전체측정·로그](experiments/quantization_probe/)', '',qp.read_text()]
+    q9=ROOT/'experiments/stage9_1_quant_compile/results.md'
+    if q9.exists():text += ['','## 9-1 양자화 연산·컴파일 최적화','','[전체 기록](experiments/stage9_1_quant_compile/) · [규약](docs/stage9_protocol.md)','',q9.read_text()]
     (ROOT/'README.md').write_text('\n'.join(text))
 
 

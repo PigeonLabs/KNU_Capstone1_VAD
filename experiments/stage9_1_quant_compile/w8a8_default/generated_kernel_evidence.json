@@ -1,0 +1,446 @@
+[
+  {
+    "path": "cache/stage9_compile/w8a8_default/inductor/25/c25ewsodoqor5ddtcz3kuoiewktk46sgseeyew5fu7axb7fx3jgd.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwis"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0(in_ptr0, in_ptr1, in_ptr2, out_ptr1, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w8a8_default/inductor/5x/c5x5fehlq4pgs5wmv3ugcov56kfb6cgpwh33zfm7prx72m7r3hmt.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 6, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'a"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7(in_ptr0, in_ptr1, in_ptr2, in_ptr3, in_ptr4, in_ptr5, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w8a8_default/inductor/g2/cg2b2zppmja7tzdvs24tyog3r4bomtuz2lkewdcxxthhz3yt2kaz.py",
+    "lines": [
+      {
+        "line": 104,
+        "text": "triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0 = async_compile.triton('triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0', '''"
+      },
+      {
+        "line": 117,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 2, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwis"
+      },
+      {
+        "line": 121,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0(in_ptr0, in_ptr1, in_ptr2, out_ptr1, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 420,
+        "text": "triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1 = async_compile.triton('triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1', '''"
+      },
+      {
+        "line": 433,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 0, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'au"
+      },
+      {
+        "line": 437,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 911,
+        "text": "#   %convert_element_type_18 : Tensor \"i8[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.prims.convert_element_type.default](args = (%convert_element_type_17, torch.int8), kwargs = {})"
+      },
+      {
+        "line": 1060,
+        "text": "#   %_int_mm : Tensor \"i32[325, 2304][2304, 1]cuda:0\" = PlaceHolder[target=_int_mm]"
+      },
+      {
+        "line": 1078,
+        "text": "#   %mul_55 : Tensor \"bf16[325, 2304][2304, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%_int_mm, %expand_1), kwargs = {})"
+      },
+      {
+        "line": 1090,
+        "text": "triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7 = async_compile.triton('triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7', '''"
+      },
+      {
+        "line": 1103,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7', 'mutated_arg_names': [], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 6, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'a"
+      },
+      {
+        "line": 1107,
+        "text": "def triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7(in_ptr0, in_ptr1, in_ptr2, in_ptr3, in_ptr4, in_ptr5, out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1176,
+        "text": "#   %convert_element_type_26 : Tensor \"i8[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.prims.convert_element_type.default](args = (%convert_element_type_25, torch.int8), kwargs = {})"
+      },
+      {
+        "line": 1257,
+        "text": "#   %_int_mm_1 : Tensor \"i32[325, 768][768, 1]cuda:0\" = PlaceHolder[target=_int_mm_1]"
+      },
+      {
+        "line": 1284,
+        "text": "#   %mul_61 : Tensor \"bf16[325, 768][768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%_int_mm_1, %expand_2), kwargs = {})"
+      },
+      {
+        "line": 1326,
+        "text": "#   %convert_element_type_36 : Tensor \"i8[1, 325, 768][249600, 768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.prims.convert_element_type.default](args = (%convert_element_type_35, torch.int8), kwargs = {})"
+      },
+      {
+        "line": 1458,
+        "text": "#   %_int_mm_2 : Tensor \"i32[325, 3072][3072, 1]cuda:0\" = PlaceHolder[target=_int_mm_2]"
+      },
+      {
+        "line": 1480,
+        "text": "#   %mul_70 : Tensor \"bf16[325, 3072][3072, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%_int_mm_2, %expand_3), kwargs = {})"
+      },
+      {
+        "line": 1518,
+        "text": "#   %convert_element_type_46 : Tensor \"i8[1, 325, 3072][998400, 3072, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.prims.convert_element_type.default](args = (%convert_element_type_45, torch.int8), kwargs = {})"
+      },
+      {
+        "line": 1653,
+        "text": "#   %_int_mm_47 : Tensor \"i32[325, 768][768, 1]cuda:0\" = PlaceHolder[target=_int_mm_47]"
+      },
+      {
+        "line": 1677,
+        "text": "#   %mul_442 : Tensor \"bf16[325, 768][768, 1]cuda:0\"[num_users=1] = call_function[target=torch.ops.aten.mul.Tensor](args = (%_int_mm_47, %expand_48), kwargs = {})"
+      },
+      {
+        "line": 2217,
+        "text": "            triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0.run(arg0_1, arg1_1, arg2_1, buf5, 190512, stream=stream0)"
+      },
+      {
+        "line": 2228,
+        "text": "            triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1.run(buf20, arg6_1, 248832, stream=stream0)"
+      },
+      {
+        "line": 2430,
+        "text": "            buf28 = empty_strided_cuda((1, 325, 768), (249600, 768, 1), torch.int8)"
+      },
+      {
+        "line": 2443,
+        "text": "            # Topologically Sorted Source Nodes: [linear], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2444,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf28, (325, 768), (768, 1), 0), reinterpret_tensor(arg9_1, (768, 2304), (1, 768), 0), out=buf29)"
+      },
+      {
+        "line": 2449,
+        "text": "            triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7.run(buf29, buf26, buf27, buf30, arg10_1, arg12_1, buf31, 748800, stream=stream0)"
+      },
+      {
+        "line": 2469,
+        "text": "            # Topologically Sorted Source Nodes: [transpose_4, x_5, linear_1], Original ATen: [aten.transpose, aten.view, aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2470,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf40, (325, 768), (768, 1), 0), reinterpret_tensor(arg13_1, (768, 768), (1, 768), 0), out=buf41)"
+      },
+      {
+        "line": 2487,
+        "text": "            # Topologically Sorted Source Nodes: [x_8], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2488,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf50, (325, 768), (768, 1), 0), reinterpret_tensor(arg20_1, (768, 3072), (1, 768), 0), out=buf51)"
+      },
+      {
+        "line": 2495,
+        "text": "            buf57 = empty_strided_cuda((1, 325, 3072), (998400, 3072, 1), torch.int8)"
+      },
+      {
+        "line": 2504,
+        "text": "            # Topologically Sorted Source Nodes: [x_11], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2505,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf57, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg24_1, (3072, 768), (1, 3072), 0), out=buf58)"
+      },
+      {
+        "line": 2510,
+        "text": "            buf67 = empty_strided_cuda((1, 325, 768), (249600, 768, 1), torch.int8)"
+      },
+      {
+        "line": 2521,
+        "text": "            # Topologically Sorted Source Nodes: [linear_4], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2522,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf67, (325, 768), (768, 1), 0), reinterpret_tensor(arg31_1, (768, 2304), (1, 768), 0), out=buf68)"
+      },
+      {
+        "line": 2527,
+        "text": "            triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7.run(buf68, buf65, buf66, buf69, arg32_1, arg34_1, buf70, 748800, stream=stream0)"
+      },
+      {
+        "line": 2547,
+        "text": "            # Topologically Sorted Source Nodes: [transpose_8, x_15, linear_5], Original ATen: [aten.transpose, aten.view, aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2548,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf79, (325, 768), (768, 1), 0), reinterpret_tensor(arg35_1, (768, 768), (1, 768), 0), out=buf80)"
+      },
+      {
+        "line": 2565,
+        "text": "            # Topologically Sorted Source Nodes: [x_18], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2566,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf89, (325, 768), (768, 1), 0), reinterpret_tensor(arg42_1, (768, 3072), (1, 768), 0), out=buf90)"
+      },
+      {
+        "line": 2581,
+        "text": "            # Topologically Sorted Source Nodes: [x_21], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2582,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf96, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg46_1, (3072, 768), (1, 3072), 0), out=buf97)"
+      },
+      {
+        "line": 2598,
+        "text": "            # Topologically Sorted Source Nodes: [linear_8], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2599,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf106, (325, 768), (768, 1), 0), reinterpret_tensor(arg53_1, (768, 2304), (1, 768), 0), out=buf107)"
+      },
+      {
+        "line": 2604,
+        "text": "            triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7.run(buf107, buf104, buf105, buf108, arg54_1, arg56_1, buf109, 748800, stream=stream0)"
+      },
+      {
+        "line": 2624,
+        "text": "            # Topologically Sorted Source Nodes: [transpose_12, x_25, linear_9], Original ATen: [aten.transpose, aten.view, aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2625,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf118, (325, 768), (768, 1), 0), reinterpret_tensor(arg57_1, (768, 768), (1, 768), 0), out=buf119)"
+      },
+      {
+        "line": 2642,
+        "text": "            # Topologically Sorted Source Nodes: [x_28], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2643,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf128, (325, 768), (768, 1), 0), reinterpret_tensor(arg64_1, (768, 3072), (1, 768), 0), out=buf129)"
+      },
+      {
+        "line": 2658,
+        "text": "            # Topologically Sorted Source Nodes: [x_31], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2659,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf135, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg68_1, (3072, 768), (1, 3072), 0), out=buf136)"
+      },
+      {
+        "line": 2675,
+        "text": "            # Topologically Sorted Source Nodes: [linear_12], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2676,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf145, (325, 768), (768, 1), 0), reinterpret_tensor(arg75_1, (768, 2304), (1, 768), 0), out=buf146)"
+      },
+      {
+        "line": 2681,
+        "text": "            triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7.run(buf146, buf143, buf144, buf147, arg76_1, arg78_1, buf148, 748800, stream=stream0)"
+      },
+      {
+        "line": 2701,
+        "text": "            # Topologically Sorted Source Nodes: [transpose_16, x_35, linear_13], Original ATen: [aten.transpose, aten.view, aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2702,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf157, (325, 768), (768, 1), 0), reinterpret_tensor(arg79_1, (768, 768), (1, 768), 0), out=buf158)"
+      },
+      {
+        "line": 2719,
+        "text": "            # Topologically Sorted Source Nodes: [x_38], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2720,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf167, (325, 768), (768, 1), 0), reinterpret_tensor(arg86_1, (768, 3072), (1, 768), 0), out=buf168)"
+      },
+      {
+        "line": 2735,
+        "text": "            # Topologically Sorted Source Nodes: [x_41], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2736,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf174, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg90_1, (3072, 768), (1, 3072), 0), out=buf175)"
+      },
+      {
+        "line": 2752,
+        "text": "            # Topologically Sorted Source Nodes: [linear_16], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2753,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf184, (325, 768), (768, 1), 0), reinterpret_tensor(arg97_1, (768, 2304), (1, 768), 0), out=buf185)"
+      },
+      {
+        "line": 2758,
+        "text": "            triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7.run(buf185, buf182, buf183, buf186, arg98_1, arg100_1, buf187, 748800, stream=stream0)"
+      },
+      {
+        "line": 2778,
+        "text": "            # Topologically Sorted Source Nodes: [transpose_20, x_45, linear_17], Original ATen: [aten.transpose, aten.view, aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2779,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf196, (325, 768), (768, 1), 0), reinterpret_tensor(arg101_1, (768, 768), (1, 768), 0), out=buf197)"
+      },
+      {
+        "line": 2796,
+        "text": "            # Topologically Sorted Source Nodes: [x_48], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2797,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf206, (325, 768), (768, 1), 0), reinterpret_tensor(arg108_1, (768, 3072), (1, 768), 0), out=buf207)"
+      },
+      {
+        "line": 2812,
+        "text": "            # Topologically Sorted Source Nodes: [x_51], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2813,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf213, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg112_1, (3072, 768), (1, 3072), 0), out=buf214)"
+      },
+      {
+        "line": 2829,
+        "text": "            # Topologically Sorted Source Nodes: [linear_20], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2830,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf223, (325, 768), (768, 1), 0), reinterpret_tensor(arg119_1, (768, 2304), (1, 768), 0), out=buf224)"
+      },
+      {
+        "line": 2835,
+        "text": "            triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7.run(buf224, buf221, buf222, buf225, arg120_1, arg122_1, buf226, 748800, stream=stream0)"
+      },
+      {
+        "line": 2855,
+        "text": "            # Topologically Sorted Source Nodes: [transpose_24, x_55, linear_21], Original ATen: [aten.transpose, aten.view, aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2856,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf235, (325, 768), (768, 1), 0), reinterpret_tensor(arg123_1, (768, 768), (1, 768), 0), out=buf236)"
+      },
+      {
+        "line": 2873,
+        "text": "            # Topologically Sorted Source Nodes: [x_58], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2874,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf245, (325, 768), (768, 1), 0), reinterpret_tensor(arg130_1, (768, 3072), (1, 768), 0), out=buf246)"
+      },
+      {
+        "line": 2889,
+        "text": "            # Topologically Sorted Source Nodes: [x_61], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2890,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf252, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg134_1, (3072, 768), (1, 3072), 0), out=buf253)"
+      },
+      {
+        "line": 2906,
+        "text": "            # Topologically Sorted Source Nodes: [linear_24], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2907,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf262, (325, 768), (768, 1), 0), reinterpret_tensor(arg141_1, (768, 2304), (1, 768), 0), out=buf263)"
+      },
+      {
+        "line": 2912,
+        "text": "            triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7.run(buf263, buf260, buf261, buf264, arg142_1, arg144_1, buf265, 748800, stream=stream0)"
+      },
+      {
+        "line": 2932,
+        "text": "            # Topologically Sorted Source Nodes: [transpose_28, x_65, linear_25], Original ATen: [aten.transpose, aten.view, aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2933,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf274, (325, 768), (768, 1), 0), reinterpret_tensor(arg145_1, (768, 768), (1, 768), 0), out=buf275)"
+      },
+      {
+        "line": 2950,
+        "text": "            # Topologically Sorted Source Nodes: [x_68], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2951,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf284, (325, 768), (768, 1), 0), reinterpret_tensor(arg152_1, (768, 3072), (1, 768), 0), out=buf285)"
+      },
+      {
+        "line": 2966,
+        "text": "            # Topologically Sorted Source Nodes: [x_71], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2967,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf291, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg156_1, (3072, 768), (1, 3072), 0), out=buf292)"
+      },
+      {
+        "line": 2983,
+        "text": "            # Topologically Sorted Source Nodes: [linear_28], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 2984,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf301, (325, 768), (768, 1), 0), reinterpret_tensor(arg163_1, (768, 2304), (1, 768), 0), out=buf302)"
+      },
+      {
+        "line": 2989,
+        "text": "            triton_poi_fused__to_copy_add_clamp_div_expand_maximum_minimum_mul_neg_sub_view_zeros_like_7.run(buf302, buf299, buf300, buf303, arg164_1, arg166_1, buf304, 748800, stream=stream0)"
+      },
+      {
+        "line": 3009,
+        "text": "            # Topologically Sorted Source Nodes: [transpose_32, x_75, linear_29], Original ATen: [aten.transpose, aten.view, aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3010,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf313, (325, 768), (768, 1), 0), reinterpret_tensor(arg167_1, (768, 768), (1, 768), 0), out=buf314)"
+      },
+      {
+        "line": 3027,
+        "text": "            # Topologically Sorted Source Nodes: [x_78], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3028,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf323, (325, 768), (768, 1), 0), reinterpret_tensor(arg174_1, (768, 3072), (1, 768), 0), out=buf324)"
+      },
+      {
+        "line": 3043,
+        "text": "            # Topologically Sorted Source Nodes: [x_81], Original ATen: [aten.clamp, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3044,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf330, (325, 3072), (3072, 1), 0), reinterpret_tensor(arg178_1, (3072, 768), (1, 3072), 0), out=buf331)"
+      },
+      {
+        "line": 3060,
+        "text": "            # Topologically Sorted Source Nodes: [linear_32], Original ATen: [aten.zeros_like, aten.minimum, aten.neg, aten.maximum, aten.div, aten.clamp, aten.reciprocal, aten.mul, aten.add, aten._to_copy, aten.view, aten.t, aten._int_mm]"
+      },
+      {
+        "line": 3061,
+        "text": "            extern_kernels._int_mm(reinterpret_tensor(buf340, (325, 768), (768, 1), 0), reinterpret_tensor(arg185_1, (768, 2304), (1, 768), 0), out=buf341)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_compile/w8a8_default/inductor/yb/cyb477sqwirdkc3wkza3opxgxt2ahnujlmvd45j57sedgqpg5yby.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 0, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'au"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  }
+]

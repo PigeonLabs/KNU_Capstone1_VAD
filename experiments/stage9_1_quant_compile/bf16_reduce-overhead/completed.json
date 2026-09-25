@@ -1,0 +1,207 @@
+{
+  "state": "completed",
+  "variant": "bf16",
+  "mode": "reduce-overhead",
+  "samples": 384,
+  "repeats": 3,
+  "timed_calls": 1152,
+  "quantized_layers": 0,
+  "backbone_payload_bytes": 173160960,
+  "serialized_bytes": 173223137,
+  "state_sha256": "add373167aabc6438dff81e8e5f348fcc7e499678597452e016db2fdff0ff8ef",
+  "first_call_seconds": 6.450441058026627,
+  "warmup_seconds": 0.033381043933331966,
+  "cold_peak_allocated_mib": 317.1708984375,
+  "peak_allocated_mib": 173.3916015625,
+  "peak_reserved_mib": 450.0,
+  "timings": {
+    "input_ms": {
+      "mean": 0.43736275195745594,
+      "p50": 0.4241610877215862,
+      "p95": 0.485494511667639,
+      "max": 0.8390049915760756
+    },
+    "model_wall_ms": {
+      "mean": 1.0445956571250765,
+      "p50": 1.0385120986029506,
+      "p95": 1.0510775377042592,
+      "max": 1.3410539831966162
+    },
+    "gpu_interval_ms": {
+      "mean": 1.0145709183481004,
+      "p50": 1.0172480344772339,
+      "p95": 1.0271503984928132,
+      "max": 1.3056000471115112
+    },
+    "total_ms": {
+      "mean": 1.4819584090825326,
+      "p50": 1.4647780917584896,
+      "p95": 1.5321089304052293,
+      "max": 2.1800589747726917
+    }
+  },
+  "per_scene": {
+    "R01": {
+      "input_ms": {
+        "mean": 0.4182076041211581,
+        "p50": 0.41575042996555567,
+        "p95": 0.4255169653333723,
+        "max": 0.8390049915760756
+      },
+      "model_wall_ms": {
+        "mean": 1.0430544344772998,
+        "p50": 1.0379115119576454,
+        "p95": 1.0486182873137295,
+        "max": 1.3410539831966162
+      },
+      "gpu_interval_ms": {
+        "mean": 1.0139007787737582,
+        "p50": 1.0168160200119019,
+        "p95": 1.0254575431346893,
+        "max": 1.3056000471115112
+      },
+      "total_ms": {
+        "mean": 1.461262038598458,
+        "p50": 1.4544535661116242,
+        "p95": 1.4723385567776859,
+        "max": 2.1800589747726917
+      }
+    },
+    "R02": {
+      "input_ms": {
+        "mean": 0.4156781611123329,
+        "p50": 0.4158306401222944,
+        "p95": 0.42708541732281446,
+        "max": 0.48319296911358833
+      },
+      "model_wall_ms": {
+        "mean": 1.045948895302394,
+        "p50": 1.0386629728600383,
+        "p95": 1.0565525852143762,
+        "max": 1.311096828430891
+      },
+      "gpu_interval_ms": {
+        "mean": 1.015540226466126,
+        "p50": 1.0175360441207886,
+        "p95": 1.0299807965755463,
+        "max": 1.291200041770935
+      },
+      "total_ms": {
+        "mean": 1.4616270564147271,
+        "p50": 1.455064513720572,
+        "p95": 1.4770153909921646,
+        "max": 1.7293079290539026
+      }
+    },
+    "R03": {
+      "input_ms": {
+        "mean": 0.48559543453545,
+        "p50": 0.48193091060966253,
+        "p95": 0.4905375884845853,
+        "max": 0.7277249824255705
+      },
+      "model_wall_ms": {
+        "mean": 1.0465543406705062,
+        "p50": 1.0387175716459751,
+        "p95": 1.0560480528511107,
+        "max": 1.2851881328970194
+      },
+      "gpu_interval_ms": {
+        "mean": 1.0150583357446723,
+        "p50": 1.0174079537391663,
+        "p95": 1.0264176547527313,
+        "max": 1.1427520513534546
+      },
+      "total_ms": {
+        "mean": 1.532149775205956,
+        "p50": 1.5209440607577562,
+        "p95": 1.5425896970555186,
+        "max": 1.8987881485372782
+      }
+    },
+    "R04": {
+      "input_ms": {
+        "mean": 0.4299698080608828,
+        "p50": 0.430262996815145,
+        "p95": 0.44001814676448703,
+        "max": 0.46941707842051983
+      },
+      "model_wall_ms": {
+        "mean": 1.042824958050106,
+        "p50": 1.0386629728600383,
+        "p95": 1.0497156879864633,
+        "max": 1.2389910407364368
+      },
+      "gpu_interval_ms": {
+        "mean": 1.0137843324078455,
+        "p50": 1.017408013343811,
+        "p95": 1.0257552146911622,
+        "max": 1.2187520265579224
+      },
+      "total_ms": {
+        "mean": 1.472794766110989,
+        "p50": 1.4697220176458359,
+        "p95": 1.4836482587270439,
+        "max": 1.6751650255173445
+      }
+    }
+  },
+  "numeric": {
+    "bf16_cls_cosine_mean": 9.585094327727954e-05,
+    "bf16_cls_max_abs": 0.0037542134523391724,
+    "bf16_patch12_cosine_mean": 0.0003034838162344992,
+    "bf16_patch12_max_abs": 0.42721736431121826,
+    "same_eager_cls_cosine_mean": 9.585094327727954e-05,
+    "same_eager_cls_max_abs": 0.0037542134523391724,
+    "same_eager_patch12_cosine_mean": 0.0003034838162344992,
+    "same_eager_patch12_max_abs": 0.42721736431121826
+  },
+  "numeric_pass": false,
+  "kernel_evidence": {
+    "int_mm_operator": false,
+    "integer_kernel_names": [],
+    "packed_int4_operator": false,
+    "cuda_graph_events": [
+      "Pregraph bytecode",
+      "## Call CompiledFxGraph fyzrpkhs553momozotsuiwze6er2fwgc5zr2zoixowk7oodo7fpm ##",
+      "## Call CompiledFxGraph fyzrpkhs553momozotsuiwze6er2fwgc5zr2zoixowk7oodo7fpm ##",
+      "cudaGraphLaunch"
+    ]
+  },
+  "compiler_stats": {
+    "stats": {
+      "calls_captured": 344,
+      "unique_graphs": 1
+    },
+    "inductor": {
+      "pattern_matcher_count": 188,
+      "pattern_matcher_nodes": 212,
+      "benchmarking.InductorBenchmarker.benchmark_gpu": 14,
+      "pad_mm_bench": 4,
+      "fxgraph_cache_miss": 1,
+      "async_compile_cache_miss": 18,
+      "extern_calls": 73,
+      "async_compile_cache_hit": 9,
+      "triton_bundler_save_kernel": 96,
+      "triton_bundler_save_static_autotuner": 1,
+      "benchmarking.InductorBenchmarker.benchmark": 6,
+      "cudagraph_recorded_non_static_inputs": 1
+    },
+    "aot_autograd": {
+      "total": 1,
+      "autograd_cache_miss": 1,
+      "autograd_cache_saved": 1,
+      "ok": 1
+    },
+    "aten_mm_info": {
+      "aten.addmm_325_2304_768": 12,
+      "aten.addmm_325_768_768": 12,
+      "aten.addmm_325_3072_768": 12,
+      "aten.addmm_325_768_3072": 12
+    }
+  },
+  "generated_cache_bytes": 7366630,
+  "seconds": 14.752620220184326,
+  "free_gib": 19.00440216064453,
+  "scope": "normal-only backbone timing including JPEG decode; not full VAD accuracy/streaming; GPU interval includes scheduling gaps"
+}

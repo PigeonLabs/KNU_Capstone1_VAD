@@ -1,0 +1,44 @@
+name,count,device_type,self_cpu_us,self_device_us,device_total_us
+aten::lift_fresh,5,DeviceType.CPU,2.8360000000016043,0,0
+aten::to,10,DeviceType.CPU,21.734999999999218,0.0,61.05700000000161
+aten::_to_copy,10,DeviceType.CPU,37.158000000003085,0.0,61.05700000000161
+aten::empty_strided,10,DeviceType.CPU,44.50399999999894,0,0
+aten::copy_,10,DeviceType.CPU,59.05999999999949,53.121000000001914,61.05700000000161
+Activity Buffer Request,1,DeviceType.CPU,2014.717,7.935999999999694,7.935999999999694
+cudaStreamIsCapturing,10,DeviceType.CPU,9.156000000000404,0,0
+cudaMemcpyAsync,5,DeviceType.CPU,98.14599999999837,0,0
+cudaStreamSynchronize,5,DeviceType.CPU,54.15300000000161,0,0
+Memcpy HtoD (Pageable -> Device),5,DeviceType.CUDA,0,40.03300000000036,40.03300000000036
+aten::permute,5,DeviceType.CPU,11.189000000001215,0,0
+aten::as_strided,10,DeviceType.CPU,8.33699999999908,0,0
+aten::unsqueeze,5,DeviceType.CPU,6.059999999999945,0,0
+cudaLaunchKernel,20,DeviceType.CPU,144.99399999999878,0,0
+"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",5,DeviceType.CUDA,0,13.088000000001557,13.088000000001557
+aten::div,5,DeviceType.CPU,40.866999999998825,5.889000000001488,5.889000000001488
+"void at::native::vectorized_elementwise_kernel<4, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul> >(int, at::native::BUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>)",5,DeviceType.CUDA,0,5.889000000001488,5.889000000001488
+aten::sub,5,DeviceType.CPU,30.11799999999812,5.88799999999992,5.88799999999992
+"void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul> >(int, at::native::CUDAFunctorOnSelf_add<float>, std::array<char*, 2ul>)",5,DeviceType.CUDA,0,5.88799999999992,5.88799999999992
+TorchDynamo Cache Lookup,5,DeviceType.CPU,274.2390000000005,0,0
+Torch-Compiled Region: 0/0,5,DeviceType.CPU,159.59099999999944,4387.557999999988,4433.15799999999
+Pregraph bytecode,5,DeviceType.CPU,79.5890000000004,0,0
+AOTDispatcher Runtime Wrapper Prologue,5,DeviceType.CPU,22.773999999998523,0,0
+## Call CompiledFxGraph fyzrpkhs553momozotsuiwze6er2fwgc5zr2zoixowk7oodo7fpm ##,5,DeviceType.CPU,427.8210000000031,0.0,45.60000000000127
+aten::_foreach_copy_,5,DeviceType.CPU,31.086999999999534,45.60000000000127,45.60000000000127
+## Call CompiledFxGraph fyzrpkhs553momozotsuiwze6er2fwgc5zr2zoixowk7oodo7fpm ##,5,DeviceType.CUDA,0,5009.587,5009.587
+"void at::native::(anonymous namespace)::multi_tensor_apply_kernel<at::native::(anonymous namespace)::TensorListMetadata<2>, at::native::(anonymous namespace)::UnaryOpFunctor<float, 2, 1, 1>, at::native::Copy<float, float> >(at::native::(anonymous namespace)::TensorListMetadata<2>, at::native::(anonymous namespace)::UnaryOpFunctor<float, 2, 1, 1>, at::native::Copy<float, float>)",5,DeviceType.CUDA,0,45.60000000000127,45.60000000000127
+cudaGraphLaunch,5,DeviceType.CPU,496.2569999999978,0,0
+triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_convolution_div_index_lift_fresh_mul_sub_view_0,5,DeviceType.CUDA,0,8.832999999999174,8.832999999999174
+triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_1,5,DeviceType.CUDA,0,107.45699999999897,107.45699999999897
+"void implicit_convolve_sgemm<__nv_bfloat16, __nv_bfloat16, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, __nv_bfloat16 const*, int, __nv_bfloat16*, __nv_bfloat16 const*, kernel_conv_params, unsigned long long, int, float, float, int, __nv_bfloat16 const*, __nv_bfloat16 const*, bool, bool, int, int)",5,DeviceType.CUDA,0,268.16099999999915,268.16099999999915
+cudaDeviceSynchronize,6,DeviceType.CPU,4288.844000000002,0,0
+triton_red_fused__to_copy_add_cat_clone_convolution_div_expand_native_layer_norm_permute_select_sub_transpose_unsqueeze_view_2,5,DeviceType.CUDA,0,26.496000000000095,26.496000000000095
+void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8::Params),120,DeviceType.CUDA,0,1182.9839999999917,1182.9839999999917
+"void pytorch_flash::flash_fwd_splitkv_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, false, false, false, false, true, false, true, false>(pytorch_flash::Flash_fwd_params)",60,DeviceType.CUDA,0,379.14000000000306,379.14000000000306
+"void pytorch_flash::flash_fwd_splitkv_combine_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, 8, 1, true>(pytorch_flash::Flash_fwd_params)",60,DeviceType.CUDA,0,182.91300000000183,182.91300000000183
+void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8>(cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8::Params),120,DeviceType.CUDA,0,1822.1689999999971,1822.1689999999971
+triton_per_fused_add_mul_native_layer_norm_view_3,60,DeviceType.CUDA,0,136.06499999999232,136.06499999999232
+triton_poi_fused_gelu_view_4,60,DeviceType.CUDA,0,114.59199999999646,114.59199999999646
+triton_per_fused_add_mul_native_layer_norm_view_5,55,DeviceType.CUDA,0,134.65400000000545,134.65400000000545
+triton_per_fused_add_mul_native_layer_norm_view_6,5,DeviceType.CUDA,0,11.71099999999933,11.71099999999933
+triton_per_fused__to_copy_clamp_min_div_expand_linalg_vector_norm_select_7,5,DeviceType.CUDA,0,5.6000000000026375,5.6000000000026375
+triton_per_fused__to_copy_clamp_min_div_expand_linalg_vector_norm_slice_8,5,DeviceType.CUDA,0,6.783000000001266,6.783000000001266

@@ -1,0 +1,7 @@
+{
+  "integer_gemm": false,
+  "weight_only_int8_kernel": false,
+  "packed_int4": false,
+  "cuda_graph_api": false,
+  "note": "Reclassified from raw profiler names: CompiledFxGraph is not CUDA Graph; weight_int8pack_mm is not proof of integer GEMM."
+}
