@@ -82,6 +82,17 @@ def main():
         '- compiler worker 수는2, torch CPU thread는8로 제한했습니다. 10 GiB 이하 중지, 자동 재개 금지, 원본/기존 결과 보존. 가중치/영상/컴파일 binary는 로컬에만 보존합니다.','',
         '```bash', '.venv/bin/python scripts/run_stage9_1.py', '.venv/bin/python scripts/summarize_stage9_1.py','```','',
         '[고정 규약](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/docs/stage9_protocol.md) · [TorchAO 연산 경로 문서](https://docs.pytorch.org/ao/stable/workflows/inference.html)']
+    lines+=['','## 확인된 병목과 해석','']
+    pe=out/'w8a8_eager/profiler.csv'
+    if pe.exists():
+        pr=read_csv(pe);count=sum(int(r['count']) for r in pr if r['name']=='aten::_local_scalar_dense')
+        lines.append(f'- W8A8 eager의 별도 profiler 5프레임에서 local scalar 추출이 {count:,}회 관찰됐습니다. 설치된 torchao safe_int_mm은 eager 경로에서 input.__repr__()를 검사하며, CPU/GPU 동기화 비용을 유발할 수 있습니다. 정수 GEMM만으로 전체 실행 속도를 설명할 수 없습니다. 이 비용의 독립적인 인과 효과를 별도 ablation으로 정량화한 것은 아닙니다.')
+    pp=out/'w8a16_default/profiler.csv'
+    if pp.exists():
+        pr=[r for r in read_csv(pp) if r['device_type']=='DeviceType.CUDA'];total=sum(float(r['self_device_us']) for r in pr)
+        weight=sum(float(r['self_device_us']) for r in pr if 'weight_int8pack_mm_kernel' in r['name'])
+        if total:lines.append(f'- W8A16 default의 GPU kernel 이벤트 시간 중 weight_int8pack_mm_kernel 비중은 {weight/total*100:.1f}%였습니다. compiler가 선택한 이 weight-only 커널은 실제 W8A8 정수 GEMM과 별개이며, 현재 형상에서 지연이 집중됐습니다. GPU 이벤트 합계의 비중으로 전체 wall 시간의 인과 분해는 아닙니다.')
+    lines+=['- 컴파일은 연산 결합과 커널 선택, CUDA Graph에 따라 속도와 중간 반올림을 함께 바꿀 수 있습니다. 원 실험의 결과를 보존했고 수치 보존 대조군에서도 동일 허용선을 사용했습니다.','- 다음 평가에서는 같은 정상 데이터로 위상 head/메모리/보정을 정합한 뒤 AUROC·오탐·미탐을 확인해야 합니다. 이번 정상 특징 최대오차 초과를 곧바로 AUROC 저하량으로 해석하지 않습니다.']
     (out/'results.md').write_text('\n'.join(lines)+'\n')
     verification={'artifact_audit_passed':True,'planned_primary_conditions':12,'included_precision_controls':4 if len(modes)==4 else 0,'successful_conditions':len(data),'failed_conditions':[r['condition'] for r in failures],
         'numeric_failed_conditions':numeric_failures,'input_frames':len(samples),'same_input_hashes':True,'timed_calls_per_condition':1152,'test_labels_used':False,

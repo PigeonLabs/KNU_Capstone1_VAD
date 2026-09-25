@@ -5,4 +5,4 @@
     warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-4 passed, 1 warning in 2.24s
+4 passed, 1 warning in 2.13s
