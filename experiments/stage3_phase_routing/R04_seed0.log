@@ -1,0 +1,23 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{"fit_phase": 0, "samples": 397, "prototypes_per_position": 10}
+{"fit_phase": 1, "samples": 388, "prototypes_per_position": 10}
+{"fit_phase": 2, "samples": 389, "prototypes_per_position": 10}
+{"fit_phase": 3, "samples": 388, "prototypes_per_position": 10}
+{"fit_phase": 4, "samples": 387, "prototypes_per_position": 10}
+{"fit_phase": 5, "samples": 389, "prototypes_per_position": 10}
+{"fit_phase": 6, "samples": 388, "prototypes_per_position": 10}
+{"fit_phase": 7, "samples": 389, "prototypes_per_position": 10}
+{"fit_phase": 8, "samples": 389, "prototypes_per_position": 10}
+{"fit_phase": 9, "samples": 384, "prototypes_per_position": 10}
+{"fit_phase": 10, "samples": 392, "prototypes_per_position": 10}
+{"fit_phase": 11, "samples": 388, "prototypes_per_position": 10}
+{"fit_phase": 12, "samples": 390, "prototypes_per_position": 10}
+{"fit_phase": 13, "samples": 388, "prototypes_per_position": 10}
+{"fit_phase": 14, "samples": 382, "prototypes_per_position": 10}
+{"fit_phase": 15, "samples": 393, "prototypes_per_position": 10}
+{"fit_phase": 16, "samples": 389, "prototypes_per_position": 10}
+{"fit_phase": 17, "samples": 389, "prototypes_per_position": 10}
+{"fit_phase": 18, "samples": 388, "prototypes_per_position": 10}
+{"fit_phase": 19, "samples": 79, "prototypes_per_position": 10}
+{"scene": "R04", "seed": 0, "metrics": {"phase_error": {"auroc": 55.909172732996716, "auprc": 64.20882529735246, "frames": 7793}, "unconditional": {"auroc": 79.33121279576937, "auprc": 83.21481845099652, "frames": 7793}, "legacy_hard": {"auroc": 80.89379553452892, "auprc": 83.88610751281209, "frames": 7793}, "posterior_hard": {"auroc": 80.7407612511576, "auprc": 83.8328846278535, "frames": 7793}, "neighbor_nn": {"auroc": 80.52518741318536, "auprc": 83.58011331437996, "frames": 7793}, "top3_nn": {"auroc": 79.94985450104915, "auprc": 83.79305925869033, "frames": 7793}, "top3_weighted": {"auroc": 80.57206681539265, "auprc": 83.63179868464749, "frames": 7793}, "confidence_fallback": {"auroc": 79.33121279576937, "auprc": 83.21481845099652, "frames": 7793}, "random3_nn": {"auroc": 63.24174855824869, "auprc": 68.01987418623179, "frames": 7793}, "neighbor_random_nn": {"auroc": 63.24174855824869, "auprc": 68.01987418623179, "frames": 7793}, "conditional_all": {"auroc": 78.92849862086909, "auprc": 83.26984700081002, "frames": 7793}, "unconditional_with_phase": {"auroc": 79.95557758104846, "auprc": 83.29083821242821, "frames": 7793}, "legacy_hard_with_phase": {"auroc": 81.12161049829129, "auprc": 83.71143154530756, "frames": 7793}, "posterior_hard_with_phase": {"auroc": 80.96777788062928, "auprc": 83.64452913002437, "frames": 7793}, "neighbor_nn_with_phase": {"auroc": 80.87271209855744, "auprc": 83.49555458922396, "frames": 7793}, "top3_nn_with_phase": {"auroc": 80.43475331739899, "auprc": 83.78717464879009, "frames": 7793}, "top3_weighted_with_phase": {"auroc": 80.8082457624618, "auprc": 83.54479644636629, "frames": 7793}, "confidence_fallback_with_phase": {"auroc": 79.95557758104846, "auprc": 83.29083821242821, "frames": 7793}, "random3_nn_with_phase": {"auroc": 64.60941646411882, "auprc": 69.64470845699297, "frames": 7793}, "neighbor_random_nn_with_phase": {"auroc": 64.60941646411882, "auprc": 69.64470845699297, "frames": 7793}, "conditional_all_with_phase": {"auroc": 79.57502476183701, "auprc": 83.28591909776611, "frames": 7793}}, "diagnostics": 0.506081438392385}

@@ -8,16 +8,17 @@
   "completed": [
     "R01/seed0",
     "R02/seed0",
-    "R03/seed0"
+    "R03/seed0",
+    "R04/seed0"
   ],
   "publication": "local commits pending authentication",
-  "step": "R03/seed0",
+  "step": "R04/seed0",
   "command": [
     "/home/jeong/Desktop/IPAD/.venv/bin/python",
     "-m",
     "ipad.phase_routing",
     "--scene",
-    "R03",
+    "R04",
     "--seed",
     "0"
   ]
