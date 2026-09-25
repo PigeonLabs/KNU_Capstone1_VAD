@@ -1,0 +1,3 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+{'passed': True, 'accuracy_units': 144, 'benchmark_units': 48, 'calibration_anchor_units': 24, 'calibration_variants': 7, 'minimum_stream_batch_phase_agreement': 0.9502262443438914, 'maximum_stream_batch_appearance_difference': 0.0014196336269378662}

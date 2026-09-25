@@ -154,6 +154,7 @@ def report(root,eff,cal,benches,audit):
         a = cal['macro'][anchor+'/baseline']; b = cal['macro'][anchor+'/phase_mean_cv']
         simultaneous = b['active_fpr'] < a['active_fpr'] and b['recall'] > a['recall']
         lines.append(f"- {anchor}: AUROC {b['auroc']-a['auroc']:+.2f}pp, 활성 경보 FPR {(b['active_fpr']-a['active_fpr'])*100:+.2f}pp, 구간 recall {(b['recall']-a['recall'])*100:+.2f}pp. 오탐 감소·탐지율 증가의 동시 개선은 {'관측됐다' if simultaneous else '확인되지 않았다'}.")
+    lines += ['', '보조 비교인 video-balanced CV는 B/k10에서 활성 FPR 감소와 구간 recall 증가를 함께 보였다. 그러나 오경보 발생 횟수는 늘었고 S/k5에서 같은 이점이 재현되지 않았다. 이를 사전 주 후보의 성공이나 일반적인 오탐·미탐 동시 해결로 해석하지 않는다. 기준선 및 모든 보조 비교를 위 표에 함께 공개했다.', '']
     lines += ['', '장면별 주 비교(기준선 → phase_mean_cv, 각 3 seed 평균):', '',
               '| anchor | 장면 | AUROC (%) | 활성 FPR (%) | 구간 recall (%) |',
               '|---|---|---:|---:|---:|']
