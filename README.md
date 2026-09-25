@@ -1,6 +1,6 @@
 # 산업 공정 영상 이상탐지: IPAD 재현과 DINOv2 비교
 
-R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론 재현, 2단계는 DINOv2 도입**입니다. 합성 데이터와 LoRA 전이는 이번 실험에서 제외합니다.
+R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론 재현, 2단계는 DINOv2 도입**입니다. 합성 데이터는 사용하지 않습니다. 1–7단계는 DINOv2 백본을 고정하며, 승인된 8단계에서는 정상 영상 기반 LoRA 적응을 비교합니다.
 
 ## 단계별 진행
 
@@ -21,6 +21,9 @@ R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론
 | 7-1 | 오탐·미탐 원인 분해 | 완료 · seed 0·1·2 | [자료](experiments/stage7_1_diagnostics/) |
 | 7-2 | causal 경보 규칙 비교 | 완료 · seed 0·1·2 | [자료](experiments/stage7_2_alerts/) |
 | 7-3 | 전체 영상 batch1 검증 | 완료 · seed 0·1·2 | [자료](experiments/stage7_3_full_stream/) |
+| 8-1 | LoRA 구현·학습 검증 | 완료 · seed 0 | [자료](experiments/stage8_1_lora_validation/) |
+| 8-2 | 정상 영상 LoRA 비교 | 진행 전 또는 실행 중 | [자료](experiments/stage8_2_lora_comparison/) |
+| 8-3 | 반복·병합 BF16 실시간 | 진행 전 또는 실행 중 | [자료](experiments/stage8_3_lora_stream/) |
 
 ## 1단계 — 논문 방법론 재현
 
@@ -508,3 +511,26 @@ normal_calibration_lovo.json에는 보정 영상 하나씩 제외한 모든 통�
 ## 7단계 통합 결과
 
 [원인 분석·경보·전체 스트림 검증](experiments/stage7_summary/research_findings.md)
+
+## 8-1 LoRA 실험
+
+[전체 기록](experiments/stage8_1_lora_validation/) · [규약](docs/stage8_protocol.md)
+
+R01 정상 영상의 구현·학습 진단 완료. 테스트 성능 결과가 아닙니다.
+
+추가 학습 파라미터 **49,152개**. 초기/복원 최대오차 0/0, FP32병합 최대오차 4.92e-07. 기존 가중치 불변·gradient 차단·유한 손실 확인.
+
+고정 소수 프레임 진단 loss: 첫5회 0.000981 → 마지막5회 0.000912. 진단 peak allocated 1.004 GiB.
+
+| 방법 | 표본 | epoch | 첫/마지막 epoch loss | 학습·검증 시간(초) | GPU peak GiB |
+|---|---:|---:|---:|---:|---:|
+| consistency | 1728 | 10 | 0.000948 / 0.000007 | 37.0 | 2.582 |
+| anchored | 1728 | 10 | 0.001246 / 0.001159 | 36.8 | 2.552 |
+
+손실 정의가 다르므로 두 방법의 총 loss 크기로 우열을 비교하지 않습니다. 고정10epoch를 사용하며 테스트를 확인한 checkpoint 선택이 없습니다.
+R01 두 실행 평균 36.9초. 다른 장면의 표본 수·특징 재추출·head/메모리 학습·전체 스트림 시간을 포함하지 않는 측정입니다.
+
+
+## 8단계 통합 결과
+
+[정상 적응·오탐·미탐·실시간 검증](experiments/stage8_summary/research_findings.md)

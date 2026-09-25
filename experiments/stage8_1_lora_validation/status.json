@@ -1,0 +1,28 @@
+{
+  "state": "running",
+  "pid": 641764,
+  "started_at": 1790329175.3508582,
+  "completed_steps": [
+    "smoke",
+    "train/R01/seed0/consistency",
+    "train/R01/seed0/anchored",
+    "verify_8-1"
+  ],
+  "completed_stages": [
+    "8-1"
+  ],
+  "publication_failures": [],
+  "stage": "8-1",
+  "stage_started_at": 1790329175.3509696,
+  "step": "publish_8-1",
+  "command": [
+    "/home/jeong/Desktop/IPAD/.venv/bin/python",
+    "scripts/publish_stage.py",
+    "--stage",
+    "8-1",
+    "--approved-push",
+    "--message",
+    "8-1: 정상 영상 LoRA 적응 실험 및 검증 결과"
+  ],
+  "last_completed_experiment": "8-1"
+}

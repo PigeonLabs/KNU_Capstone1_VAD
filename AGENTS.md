@@ -15,3 +15,5 @@
 - The user approved 6-1 Pareto efficiency and 6-2 normal-only calibration/generalization experiments. Follow docs/stage6_protocol.md, publish automatically on completion, and do not choose calibration using test labels.
 
 - The user approved all recommended stage-7 experiments. Follow docs/stage7_protocol.md: diagnose first, preregister the evidence-based stage-7-2 choice, and validate full batch-one inference. Publish each completed stage automatically.
+
+- The user approved 8-1/8-2/8-3 normal-only DINOv2 LoRA experiments. Follow docs/stage8_protocol.md, freeze settings before test evaluation, rebuild downstream models for every representation, and publish each completed stage automatically. No new full patch feature caches.

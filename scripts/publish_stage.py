@@ -15,7 +15,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SCENES=('R01','R02','R03','R04')
 REMOTE='https://github.com/PigeonLabs/KNU_Capstone1_VAD.git'
 RESERVE=10*1024**3
-STAGES={'stage1':'stage1_reproduction','stage2':'stage2_dinov2','ablation':'stage1_memory_ablation','stage3':'stage3_phase_routing','4-1':'stage4_1_appearance_temporal','4-2':'stage4_2_memory_budget','4-3':'stage4_3_process_prior','5-1':'stage5_1_causal','5-2':'stage5_2_lightweight','5-3':'stage5_3_streaming','6-1':'stage6_1_pareto','6-2':'stage6_2_calibration','7-1':'stage7_1_diagnostics','7-2':'stage7_2_alerts','7-3':'stage7_3_full_stream'}
+STAGES={'stage1':'stage1_reproduction','stage2':'stage2_dinov2','ablation':'stage1_memory_ablation','stage3':'stage3_phase_routing','4-1':'stage4_1_appearance_temporal','4-2':'stage4_2_memory_budget','4-3':'stage4_3_process_prior','5-1':'stage5_1_causal','5-2':'stage5_2_lightweight','5-3':'stage5_3_streaming','6-1':'stage6_1_pareto','6-2':'stage6_2_calibration','7-1':'stage7_1_diagnostics','7-2':'stage7_2_alerts','7-3':'stage7_3_full_stream','8-1':'stage8_1_lora_validation','8-2':'stage8_2_lora_comparison','8-3':'stage8_3_lora_stream'}
 
 
 def load(path):return json.loads(path.read_text()) if path.exists() else None
@@ -62,6 +62,9 @@ def binary_inventory(stage):
         yield from (ROOT/'runs/stage6'/stage).rglob('*.pt')
     elif stage in {'7-1','7-2','7-3'}:
         yield from (ROOT/'runs/stage7'/stage).rglob('*.pt')
+    elif stage in {'8-1','8-2','8-3'}:
+        yield from (ROOT/'runs/stage8'/stage).rglob('*.pt')
+        yield from (ROOT/'runs/stage8'/stage).rglob('*.npy')
     elif stage=='stage3':
         yield from (ROOT/'runs/stage3').rglob('*.pt')
     else:
@@ -139,6 +142,12 @@ def snapshot(stage):
             copy_analysis(ROOT/'runs/stage7'/name,dest/name)
         for name in ['research_findings.md','final_verification.json']:
             copy_analysis(ROOT/'runs/stage7'/name,ROOT/'experiments/stage7_summary'/name)
+    elif stage in {'8-1','8-2','8-3'}:
+        copy_analysis(ROOT/'runs/stage8'/stage,dest)
+        for name in ['status.json','runner.log','verification.txt','freeze.json','commands.jsonl','gpu_before.txt','implementation_events.jsonl']:
+            copy_analysis(ROOT/'runs/stage8'/name,dest/name)
+        for name in ['research_findings.md','final_verification.json']:
+            copy_analysis(ROOT/'runs/stage8'/name,ROOT/'experiments/stage8_summary'/name)
     elif stage=='stage3':
         for scene in SCENES:
             for source in (ROOT/'runs/stage3'/scene).glob('seed*'):
@@ -176,7 +185,7 @@ def make_readme():
             value=d['metrics']['negative_psnr_with_phase']['auroc'];values.append(value)
             rows.append(f'| {scene} | {target:.2f} | {value:.2f} | {value-target:+.2f} | {d["frames"]:,} |')
     text=['# 산업 공정 영상 이상탐지: IPAD 재현과 DINOv2 비교','',
-          'R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론 재현, 2단계는 DINOv2 도입**입니다. 합성 데이터와 LoRA 전이는 이번 실험에서 제외합니다.','',
+          'R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론 재현, 2단계는 DINOv2 도입**입니다. 합성 데이터는 사용하지 않습니다. 1–7단계는 DINOv2 백본을 고정하며, 승인된 8단계에서는 정상 영상 기반 LoRA 적응을 비교합니다.','',
           '## 단계별 진행','',
           '| 단계 | 목적 | 상태 | 기록 |','|---|---|---|---|',
           '| 1단계 | Swin-T + 주기 메모리 + 재구성 + 주기 검사 | 4개 장면 50 epochs 완료 · seed 0 | [전체 자료](experiments/stage1_reproduction/) |',
@@ -188,9 +197,10 @@ def make_readme():
           '| 장면 | 논문 AUROC (%) | 구현 AUROC (%) | 차이 (pp) | 평가 프레임 |','|---|---:|---:|---:|---:|',*rows]
     position=text.index('## 1단계 — 논문 방법론 재현')-1
     additional=[]
-    for st,title in [('4-1','외형·시간 검사'),('4-2','메모리 용량'),('4-3','전이·체류시간'),('5-1','온라인 기준선'),('5-2','백본·메모리 경량화'),('5-3','30 FPS 재생·오탐·미탐 평가'),('6-1','정밀도·메모리 Pareto'),('6-2','정상 영상 보정 일반화'),('7-1','오탐·미탐 원인 분해'),('7-2','causal 경보 규칙 비교'),('7-3','전체 영상 batch1 검증')]:
+    for st,title in [('4-1','외형·시간 검사'),('4-2','메모리 용량'),('4-3','전이·체류시간'),('5-1','온라인 기준선'),('5-2','백본·메모리 경량화'),('5-3','30 FPS 재생·오탐·미탐 평가'),('6-1','정밀도·메모리 Pareto'),('6-2','정상 영상 보정 일반화'),('7-1','오탐·미탐 원인 분해'),('7-2','causal 경보 규칙 비교'),('7-3','전체 영상 batch1 검증'),('8-1','LoRA 구현·학습 검증'),('8-2','정상 영상 LoRA 비교'),('8-3','반복·병합 BF16 실시간')]:
         ready=(ROOT/'experiments'/STAGES[st]/'results.md').exists()
-        additional.append(f'| {st} | {title} | {"완료 · seed 0·1·2" if ready else "진행 전 또는 실행 중"} | [자료](experiments/{STAGES[st]}/) |')
+        label = ('완료 · seed 0' if st in ['8-1','8-2'] else '완료 · seed 0·1·2') if ready else '진행 전 또는 실행 중'
+        additional.append(f'| {st} | {title} | {label} | [자료](experiments/{STAGES[st]}/) |')
     text[position:position]=additional
     if len(values)==4:text.extend(['',f'장면별 AUROC 단순 평균: **{sum(values)/4:.2f}%** (논문 70.00%).'])
     text.extend(['','**해석 제한:** R02는 영상/라벨 길이가 다른 영상 12·13·14를 제외합니다. 공개 코드의 전체 파라미터는 263.48M으로 논문 표 35.9M과 다릅니다. 점수 결합 등 미기재 사항을 명시적 가정으로 보완했으므로 원 논문과 완전히 같은 조건의 우월성 증거로 해석하지 않습니다. [차이와 가정](REPRODUCTION.md)','',
@@ -265,6 +275,11 @@ def make_readme():
         if path.exists():text += ['',f'## {st} 실험','',f'[전체 기록](experiments/{STAGES[st]}/) · [규약](docs/stage7_protocol.md)','',path.read_text()]
     if (ROOT/'experiments/stage7_summary/research_findings.md').exists():
         text += ['','## 7단계 통합 결과','','[원인 분석·경보·전체 스트림 검증](experiments/stage7_summary/research_findings.md)']
+    for st in ['8-1','8-2','8-3']:
+        path=ROOT/'experiments'/STAGES[st]/'results.md'
+        if path.exists():text += ['',f'## {st} LoRA 실험','',f'[전체 기록](experiments/{STAGES[st]}/) · [규약](docs/stage8_protocol.md)','',path.read_text()]
+    if (ROOT/'experiments/stage8_summary/research_findings.md').exists():
+        text += ['','## 8단계 통합 결과','','[정상 적응·오탐·미탐·실시간 검증](experiments/stage8_summary/research_findings.md)']
     (ROOT/'README.md').write_text('\n'.join(text))
 
 

@@ -1,0 +1,5 @@
+{"time": 1790329175.352972, "name": "smoke", "command": ["/home/jeong/Desktop/IPAD/.venv/bin/python", "-m", "ipad.stage8", "--action", "smoke", "--scene", "R01", "--seed", "0", "--method", "anchored"]}
+{"time": 1790329178.0606408, "name": "train/R01/seed0/consistency", "command": ["/home/jeong/Desktop/IPAD/.venv/bin/python", "-m", "ipad.stage8", "--action", "train", "--scene", "R01", "--seed", "0", "--method", "consistency"]}
+{"time": 1790329180.861292, "name": "train/R01/seed0/anchored", "command": ["/home/jeong/Desktop/IPAD/.venv/bin/python", "-m", "ipad.stage8", "--action", "train", "--scene", "R01", "--seed", "0", "--method", "anchored"]}
+{"time": 1790329220.6771262, "name": "verify_8-1", "command": ["/home/jeong/Desktop/IPAD/.venv/bin/python", "scripts/verify_stage8.py", "--stage", "8-1"]}
+{"time": 1790329223.378987, "name": "publish_8-1", "command": ["/home/jeong/Desktop/IPAD/.venv/bin/python", "scripts/publish_stage.py", "--stage", "8-1", "--approved-push", "--message", "8-1: \uc815\uc0c1 \uc601\uc0c1 LoRA \uc801\uc751 \uc2e4\ud5d8 \ubc0f \uac80\uc99d \uacb0\uacfc"]}
