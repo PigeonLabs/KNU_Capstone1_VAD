@@ -1,0 +1,492 @@
+{
+  "passed": true,
+  "model_units": 48,
+  "benchmark_seed0_configurations": 16,
+  "checks": [
+    {
+      "scene": "R01",
+      "seed": 0,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 0,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 0,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 0,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 1,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 1,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 1,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 1,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 2,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 2,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 2,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R01",
+      "seed": 2,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 2905,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 0,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 0,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 0,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 0,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 1,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 1,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 1,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 1,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 2,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 2,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 2,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R02",
+      "seed": 2,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 7082,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 0,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 0,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 0,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 0,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 1,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 1,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 1,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 1,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 2,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 2,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 2,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R03",
+      "seed": 2,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 11121,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 0,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 0,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 0,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 0,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 1,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 1,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 1,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 1,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 2,
+      "backbone": "B",
+      "k": 10,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 2,
+      "backbone": "B",
+      "k": 5,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 2,
+      "backbone": "S",
+      "k": 10,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    },
+    {
+      "scene": "R04",
+      "seed": 2,
+      "backbone": "S",
+      "k": 5,
+      "common_frames": 7166,
+      "normal_split_disjoint": true,
+      "calibration_rebuilt": true,
+      "temporal_recomputed": true
+    }
+  ],
+  "source_hashes": [
+    "50b049305f1cb03f72a573b89048ea9895208c59ad37ffb501e62ebc1db2fb06",
+    "ea7a5f49a2d40d038220e2ff8e0f6ee5b3f34536812522e96ed6a81dde660b56"
+  ],
+  "source_note": "S cache metadata timing fields corrected before S extraction; implementation_events.jsonl records the change; model definitions unchanged"
+}

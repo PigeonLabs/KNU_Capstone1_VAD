@@ -325,3 +325,8 @@ R01–R04,seed0·1·2. 정상80% 학습/20% 고정 보정. 테스트 정답은 �
 현재 RTX PRO6000,FP32,batch1,원본 JPEG read/decode 포함. capacity3회/30FPS paced replay1회,각 영상최대256frame. OS page cache가 warm일 수 있으며 카메라·네트워크 지연은 미포함이다. 실제 촬영 FPS가 확인된 데이터는 아니므로30FPS는 도착률 시나리오이다. 경보 정확도는 전체 causal test cache 평가이며 위 짧은 replay와 구분한다.
 
 raw latency·queue·직접 경보·stream/cache 비교·frame별 경보 상태·미탐을 포함한 구간별 지연은 각 실행 폴더에 있다.
+
+
+## 5단계 통합 해석
+
+[온라인·경량화·실시간 평가 통합 결과](experiments/stage5_summary/research_findings.md)
