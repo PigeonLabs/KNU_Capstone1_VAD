@@ -1,0 +1,29 @@
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/home/jeong/Desktop/IPAD/cache/dinov2_source/7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/torch/_inductor/select_algorithm.py:3686: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  current_out_size = out_base.storage().size()
+Autotune Choices Stats:
+{"num_choices": 13, "num_triton_choices": 12, "best_kernel": "convolution", "best_time": 0.04198399931192398, "best_triton_pos": 1, "best_triton_time": 0.09785600006580353, "best_triton_kernel": "triton_convolution2d_8", "best_triton_kernel_desc": "ALLOW_TF32=False, BLOCK_K=16, BLOCK_M=64, BLOCK_N=128, GROUPS=1, KERNEL_H=14, KERNEL_W=14, PADDING_H=0, PADDING_W=0, STRIDE_H=14, STRIDE_W=14, UNROLL=False, num_stages=4, num_warps=4"}
+AUTOTUNE convolution(1x3x252x252, 768x3x14x14)
+strides: [190512, 63504, 252, 1], [588, 196, 14, 1]
+dtypes: torch.bfloat16, torch.bfloat16
+  convolution 0.0420 ms 100.0% 
+  triton_convolution2d_8 0.0979 ms 42.9% ALLOW_TF32=False, BLOCK_K=16, BLOCK_M=64, BLOCK_N=128, GROUPS=1, KERNEL_H=14, KERNEL_W=14, PADDING_H=0, PADDING_W=0, STRIDE_H=14, STRIDE_W=14, UNROLL=False, num_stages=4, num_warps=4
+  triton_convolution2d_4 0.1184 ms 35.5% ALLOW_TF32=False, BLOCK_K=16, BLOCK_M=64, BLOCK_N=64, GROUPS=1, KERNEL_H=14, KERNEL_W=14, PADDING_H=0, PADDING_W=0, STRIDE_H=14, STRIDE_W=14, UNROLL=False, num_stages=2, num_warps=4
+  triton_convolution2d_1 0.1368 ms 30.7% ALLOW_TF32=False, BLOCK_K=16, BLOCK_M=256, BLOCK_N=64, GROUPS=1, KERNEL_H=14, KERNEL_W=14, PADDING_H=0, PADDING_W=0, STRIDE_H=14, STRIDE_W=14, UNROLL=False, num_stages=2, num_warps=4
+  triton_convolution2d_9 0.1391 ms 30.2% ALLOW_TF32=False, BLOCK_K=16, BLOCK_M=128, BLOCK_N=64, GROUPS=1, KERNEL_H=14, KERNEL_W=14, PADDING_H=0, PADDING_W=0, STRIDE_H=14, STRIDE_W=14, UNROLL=False, num_stages=4, num_warps=4
+  triton_convolution2d_5 0.1506 ms 27.9% ALLOW_TF32=False, BLOCK_K=16, BLOCK_M=64, BLOCK_N=256, GROUPS=1, KERNEL_H=14, KERNEL_W=14, PADDING_H=0, PADDING_W=0, STRIDE_H=14, STRIDE_W=14, UNROLL=False, num_stages=2, num_warps=8
+  triton_convolution2d_6 0.1739 ms 24.1% ALLOW_TF32=False, BLOCK_K=16, BLOCK_M=256, BLOCK_N=64, GROUPS=1, KERNEL_H=14, KERNEL_W=14, PADDING_H=0, PADDING_W=0, STRIDE_H=14, STRIDE_W=14, UNROLL=False, num_stages=2, num_warps=8
+  triton_convolution2d_2 0.1758 ms 23.9% ALLOW_TF32=False, BLOCK_K=16, BLOCK_M=1024, BLOCK_N=16, GROUPS=1, KERNEL_H=14, KERNEL_W=14, PADDING_H=0, PADDING_W=0, STRIDE_H=14, STRIDE_W=14, UNROLL=False, num_stages=1, num_warps=8
+  triton_convolution2d_10 0.1782 ms 23.6% ALLOW_TF32=False, BLOCK_K=16, BLOCK_M=256, BLOCK_N=128, GROUPS=1, KERNEL_H=14, KERNEL_W=14, PADDING_H=0, PADDING_W=0, STRIDE_H=14, STRIDE_W=14, UNROLL=False, num_stages=2, num_warps=8
+  triton_convolution2d_7 0.1929 ms 21.8% ALLOW_TF32=False, BLOCK_K=16, BLOCK_M=128, BLOCK_N=128, GROUPS=1, KERNEL_H=14, KERNEL_W=14, PADDING_H=0, PADDING_W=0, STRIDE_H=14, STRIDE_W=14, UNROLL=False, num_stages=3, num_warps=8
+SingleProcess AUTOTUNE benchmarking takes 0.5029 seconds and 0.0001 seconds precompiling for 13 choices
+/home/jeong/Desktop/IPAD/.venv/lib/python3.13/site-packages/torch/profiler/profiler.py:224: UserWarning: Warning: Profiler clears events at the end of each cycle.Only events from the current cycle will be reported.To keep events across cycles, set acc_events=True.
+  _warn_once(
+{"state": "completed", "phase": "pilot", "variant": "w4_native", "mode": "autotune_graph", "samples": 16, "timed_calls": 48, "timings": {"preprocess_ms": {"mean": 0.5584177221559609, "p50": 0.5335276946425438, "p95": 0.6245152908377349, "max": 0.8920361287891865}, "model_ms": {"mean": 3.267861752343985, "p50": 3.16057400777936, "p95": 3.6833403282798827, "max": 4.226551856845617}, "total_ms": {"mean": 3.826279474499946, "p50": 3.7368169287219644, "p95": 4.240679135546088, "max": 5.118587985634804}, "gpu_ms": {"mean": 3.2502493262290955, "p50": 3.142143964767456, "p95": 3.665737676620483, "max": 4.197951793670654}}, "numeric": {"fp32_cls_cosine_mean": 0.1570846028625965, "fp32_cls_max_abs": 0.09011997282505035, "fp32_patch12_cosine_mean": 0.13267224514856935, "fp32_patch12_max_abs": 0.38702136278152466, "bf16_eager_cls_cosine_mean": 0.1570165567100048, "bf16_eager_cls_max_abs": 0.09087850153446198, "bf16_eager_patch12_cosine_mean": 0.1326321605592966, "bf16_eager_patch12_max_abs": 0.40804627537727356, "same_eager_cls_cosine_mean": 0.00014125928282737732, "same_eager_cls_max_abs": 0.004606723785400391, "same_eager_patch12_cosine_mean": 0.00023240056452777935, "same_eager_patch12_max_abs": 0.13480541110038757}, "numeric_pass": false, "peak_allocated_mib": 66.013671875, "peak_reserved_mib": 438.0, "payload_bytes": 58440192, "startup_seconds": 8.992067443905398, "cache_bytes": 20467439, "seconds": 12.874500751495361, "free_gib": 18.107219696044922}

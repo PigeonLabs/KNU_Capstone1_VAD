@@ -1,0 +1,42 @@
+[
+  {
+    "path": "ipad/stage9_optimized.py",
+    "sha256": "c9dfedcbc5fb3ca4fc784f123f692bd89c75f8b3220827d9c023f1638abc4512"
+  },
+  {
+    "path": "scripts/run_stage9_optimized.py",
+    "sha256": "db242ad09facf52a2cd1e212b2338dc50e012cfe9fd27ea58abb5abf82502baa"
+  },
+  {
+    "path": "scripts/finish_stage9_optimized.py",
+    "sha256": "9ceae132cda92ef875ad4f6976a7bcde3b5b322e12cc32b2c6482be4400abdcc"
+  },
+  {
+    "path": "scripts/recheck_stage9_baseline.py",
+    "sha256": "486f51615506c84c5728a4f201257d7b4f1057f6cebc12bfb209e279e52bb683"
+  },
+  {
+    "path": "scripts/trace_stage9_precision.py",
+    "sha256": "4b0878ecd126379a1bb215bd9fb12d7d4f923a57ee76fc9581895d6568eb3580"
+  },
+  {
+    "path": "scripts/disk_guard.py",
+    "sha256": "461509ce51efac7f8beeb90eb3392bb143a230afb43e8b88ff2770f1123a4e17"
+  },
+  {
+    "path": "cache/quantization/torchao017/torchao/quantization/quant_api.py",
+    "sha256": "4e6224d9d483e3498a437aace54559c647a67468e637a3ccada642cb802f9cbf"
+  },
+  {
+    "path": "cache/quantization/torchao017/torchao/kernel/intmm.py",
+    "sha256": "158226a81ddf1bda52a336691ec231aa49e125e110a729e7e1631a702cc6eebe"
+  },
+  {
+    "path": "cache/quantization/torchao017/torchao/quantization/quant_primitives.py",
+    "sha256": "755a23a9d61fedf3d295ac701e95cba0634630ea1c2bd3f5316ba3fb3a637e1e"
+  },
+  {
+    "path": ".venv/lib/python3.13/site-packages/torch/_inductor/config.py",
+    "sha256": "78c8a34c4c7e5bbce1bc009e7760d7d06ece19f16373e634a92fead180d0050b"
+  }
+]

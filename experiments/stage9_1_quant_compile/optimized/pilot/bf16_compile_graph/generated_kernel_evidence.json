@@ -1,0 +1,109 @@
+[
+  {
+    "path": "cache/stage9_optimized/pilot/bf16_compile_graph/inductor/53/c53c3tyhpmglpsioe42h3cjhinsypahmvzu65wi4xvnarllw3qvx.py",
+    "lines": [
+      {
+        "line": 259,
+        "text": "triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0 = async_compile.triton('triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0', '''"
+      },
+      {
+        "line": 272,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 0, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'au"
+      },
+      {
+        "line": 276,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 794,
+        "text": "triton_poi_fused_gelu_view_3 = async_compile.triton('triton_poi_fused_gelu_view_3', '''"
+      },
+      {
+        "line": 807,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_gelu_view_3', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 1, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force_disable_caches'"
+      },
+      {
+        "line": 811,
+        "text": "def triton_poi_fused_gelu_view_3(in_out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1433,
+        "text": "        triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0.run(buf14, arg4_1, 248832, stream=stream0)"
+      },
+      {
+        "line": 1475,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf34, 998400, stream=stream0)"
+      },
+      {
+        "line": 1521,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf55, 998400, stream=stream0)"
+      },
+      {
+        "line": 1567,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf76, 998400, stream=stream0)"
+      },
+      {
+        "line": 1613,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf97, 998400, stream=stream0)"
+      },
+      {
+        "line": 1659,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf118, 998400, stream=stream0)"
+      },
+      {
+        "line": 1705,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf139, 998400, stream=stream0)"
+      },
+      {
+        "line": 1751,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf160, 998400, stream=stream0)"
+      },
+      {
+        "line": 1797,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf181, 998400, stream=stream0)"
+      },
+      {
+        "line": 1843,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf202, 998400, stream=stream0)"
+      },
+      {
+        "line": 1889,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf223, 998400, stream=stream0)"
+      },
+      {
+        "line": 1935,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf244, 998400, stream=stream0)"
+      },
+      {
+        "line": 1983,
+        "text": "        triton_poi_fused_gelu_view_3.run(buf265, 998400, stream=stream0)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/pilot/bf16_compile_graph/inductor/ab/cabc2lw2ed4sgggoboldyxftf42e74bzqvwsb24ekukn2ddur5ix.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_gelu_view_3', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 1, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force_disable_caches'"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused_gelu_view_3(in_out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/pilot/bf16_compile_graph/inductor/r3/cr3wglxsl6k3pyjfiypzuwuwocwxpx244kvhub46gtcpn3jmz4uq.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 0, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'au"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  }
+]

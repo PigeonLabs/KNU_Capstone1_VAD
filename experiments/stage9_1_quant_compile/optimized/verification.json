@@ -1,0 +1,39 @@
+{
+  "state": "passed",
+  "input_bytes_identical": true,
+  "test_labels_used": false,
+  "full_validated": {
+    "bf16": "graph",
+    "w4_native": "graph",
+    "w4_packed": "graph",
+    "w8a16": "graph",
+    "w8a8": "graph"
+  },
+  "full_fast_diagnostic": {
+    "bf16": "autotune_graph",
+    "w4_native": "compile_graph",
+    "w4_packed": "autotune_graph",
+    "w8a16": "compile_graph",
+    "w8a8": "compile_graph"
+  },
+  "successful_conditions": 30,
+  "failed_conditions": [],
+  "numeric_failed_conditions": [
+    "pilot/bf16_autotune_graph",
+    "pilot/bf16_compile_graph",
+    "pilot/w4_native_autotune_graph",
+    "pilot/w4_native_compile_graph",
+    "pilot/w4_packed_autotune_graph",
+    "pilot/w4_packed_compile_graph",
+    "pilot/w8a16_autotune_graph",
+    "pilot/w8a16_compile_graph",
+    "pilot/w8a8_autotune_graph",
+    "pilot/w8a8_compile_graph",
+    "full/bf16_autotune_graph",
+    "full/w4_native_compile_graph",
+    "full/w4_packed_autotune_graph",
+    "full/w8a16_compile_graph",
+    "full/w8a8_compile_graph"
+  ],
+  "accuracy_evaluated": false
+}

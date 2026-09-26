@@ -1,0 +1,138 @@
+{
+  "phase": "pilot",
+  "variant": "bf16",
+  "mode": "eager",
+  "seed": 0,
+  "batch_size": 1,
+  "test_labels_used": false,
+  "environment": {
+    "python": "3.13.13",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "capability": [
+      12,
+      0
+    ]
+  },
+  "script_sha256": "db242ad09facf52a2cd1e212b2338dc50e012cfe9fd27ea58abb5abf82502baa",
+  "module_sha256": "c9dfedcbc5fb3ca4fc784f123f692bd89c75f8b3220827d9c023f1638abc4512",
+  "protocol_sha256": "caacacb5f1697dd106309e335142db5f358df34d920190df11963d9034ea60d0",
+  "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+  "command": [
+    "scripts/run_stage9_optimized.py",
+    "--phase",
+    "pilot",
+    "--variant",
+    "bf16",
+    "--mode",
+    "eager"
+  ],
+  "started_at": 1790388204.072506,
+  "eager_fp32_preprocessing": true,
+  "fp32_tf32": false,
+  "samples": [
+    {
+      "scene": "R01",
+      "video": "01",
+      "frame": 0,
+      "sha256": "b6bc5f3c4cbd41a1fcda62a6854d3fc05f4876bb13e6cc1c75a0aa2c368555ff"
+    },
+    {
+      "scene": "R01",
+      "video": "01",
+      "frame": 166,
+      "sha256": "53305e1f4c91c419f62fb48cf6d1a84d7856a33fe121d0404f1486824b148e93"
+    },
+    {
+      "scene": "R01",
+      "video": "02",
+      "frame": 130,
+      "sha256": "099c8b944b967a3f6d835c859b4fe8bedf6f0557761f04dc5f16b08e9d99f004"
+    },
+    {
+      "scene": "R01",
+      "video": "04",
+      "frame": 89,
+      "sha256": "411bae911ded37be57a7510978331d30474091786c3fc6533ba34bb0bc698d9d"
+    },
+    {
+      "scene": "R02",
+      "video": "01",
+      "frame": 124,
+      "sha256": "19f87441c76499c29eccec2618f5ab11811f8bc9f003fcc5640ef028c5366e41"
+    },
+    {
+      "scene": "R02",
+      "video": "01",
+      "frame": 641,
+      "sha256": "c1b08796128c2bcee0526b5f4db3679aa657c89697bc3d932cca1242ef2b520d"
+    },
+    {
+      "scene": "R02",
+      "video": "02",
+      "frame": 489,
+      "sha256": "b5eb2bcc60c1c025db0e6ef084e2c8c78a494783d0df4737763593313a591b2a"
+    },
+    {
+      "scene": "R02",
+      "video": "04",
+      "frame": 345,
+      "sha256": "f0f8d93068d2b965e8a7732445c0eab19a5bd1c3ed39f6d5a1d19fa2b45ee934"
+    },
+    {
+      "scene": "R03",
+      "video": "01",
+      "frame": 258,
+      "sha256": "0932447c4a54bda7994cc336ad44b8503cb9ea32a136bbd619fe50c90d619ca4"
+    },
+    {
+      "scene": "R03",
+      "video": "02",
+      "frame": 111,
+      "sha256": "13ec9918fb675f099d909c05156627f77f3631d151c3c7bbd8bec307459fa7b9"
+    },
+    {
+      "scene": "R03",
+      "video": "02",
+      "frame": 691,
+      "sha256": "38da7cab0d86d0007849afe166da450df8a33f1fab68acff333dc97798cc60b4"
+    },
+    {
+      "scene": "R03",
+      "video": "04",
+      "frame": 531,
+      "sha256": "81327acc835c39419ac05ce27559c5507ee6d13be7cfceed9bc9fcb6214824e4"
+    },
+    {
+      "scene": "R04",
+      "video": "01",
+      "frame": 178,
+      "sha256": "84ac5d962cfff0faf3b89cb36469435974d77c2164039e6883d884f5132fe919"
+    },
+    {
+      "scene": "R04",
+      "video": "02",
+      "frame": 144,
+      "sha256": "c7c9814b768aeb18deff3420a3a41af63e80b5f03e1cf474e4f9c0a3d6c2e2e3"
+    },
+    {
+      "scene": "R04",
+      "video": "03",
+      "frame": 74,
+      "sha256": "6a189a061318d1e732eb5bba7d8717f533c763b37826144eeb83f056145c7404"
+    },
+    {
+      "scene": "R04",
+      "video": "03",
+      "frame": 460,
+      "sha256": "5221dfce3ca2b2a135220c76a63045ada8078b8a88e9e176ff38c26a8610485b"
+    }
+  ],
+  "compile_env": {
+    "TORCHINDUCTOR_CACHE_DIR": "/home/jeong/Desktop/IPAD/cache/stage9_optimized/pilot/bf16_eager/inductor",
+    "TRITON_CACHE_DIR": "/home/jeong/Desktop/IPAD/cache/stage9_optimized/pilot/bf16_eager/triton",
+    "TORCHINDUCTOR_COMPILE_THREADS": "2",
+    "TORCHINDUCTOR_FREEZING": "0"
+  }
+}

@@ -625,6 +625,8 @@ uv pip install --python .venv/bin/python --target cache/quantization/torchao017 
 
 # 9-1 실제 양자화 연산 경로와 컴파일 최적화
 
+> **최신 후속 결과:** [INT8·INT4 동등 최적화 및384frame 검증](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/optimized/results.md). 고정 전처리에서 측정한 새 결과이며 아래 초기 실험과 측정 범위를 구분합니다.
+
 > **해석 정정:** 사용자 지적 후 재검증에서 라이브러리의 불필요한 처리와 느린 커널 선택을 확인했습니다. 아래 최초 측정은 구현 진단값이며 최적 양자화 성능 비교가 아닙니다. [원인 분리 감사](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/audit/results.md)를 먼저 확인하세요.
 
 9단계는 양자화이며 기존 8단계 LoRA와 별개입니다. 고정 ViT-B/14, R01–R04 정상 학습 영상의 동일 384프레임, batch 1, 3회 반복. 아래 시간은 JPEG 읽기·전처리·전송·백본·CUDA 동기화를 포함하며 위상 예측기·메모리·경보는 제외합니다. 전체 VAD 성능과 AUROC는 이번 단계에서 측정하지 않았습니다.
@@ -724,3 +726,50 @@ uv pip install --python .venv/bin/python --target cache/quantization/torchao017 
 ## 사용자 지적 후 재검증 및 해석 정정
 
 아래 원인 분리 감사에서 불필요한 TorchAO 텐서 문자열 처리와 느린 WOQ 커널 선택을 확인했습니다. 최초 속도 표는 구현 경로 진단값이며, 유효한 최적 INT8 구현의 성능 비교로 해석하지 않습니다. 전처리/백본 컴파일 양쪽에서 특징 차이가 재현돼 수치 동등성은 미해결입니다. [재검증 결과·정정 상세](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/audit/results.md)
+
+
+## 9-1 후속: INT8·INT4 동등 최적화
+
+[전체 최적화 결과·수치 검증·원측정](experiments/stage9_1_quant_compile/optimized/results.md)
+
+# 9-1 INT8·INT4 최적화: 동일 전처리와 CUDA Graph 검증
+
+기존 잘못된 커널 선택과 불필요한 CPU 동기화를 수정하고, BF16에도 똑같은 최적화 탐색을 적용했습니다. 이 결과는 정상 데이터에서의 실행 최적화입니다. 전체 이상탐지 AUROC·경보 성능은 평가하지 않았습니다.
+
+## 검증 방법
+
+- R01–R04 고정 정상384frame, seed0, batch1. eager FP32 RGB/resize/정규화를 모든 경로에 고정했습니다. 프레임별 BF16 백본 입력 SHA256이 모두 일치합니다.
+- 5경로 × eager / eager CUDA Graph / compile CUDA Graph / max-autotune CUDA Graph =20개 pilot. 균등16frame에서 사전 수치선(동일 eager 대비 CLS/patch cosine평균≤1e-3, 최대절대차이≤.05)을 통과한 가장 빠른 모델 실행 방식을 고정한 뒤384frame×3회 검증했습니다. full 실패시 사전 지정 graph를 추가 확인합니다.
+- FP32 원가중치+FP32입력(TF32off), BF16 eager, 동일 양자화 eager의 세 기준을 기록했습니다. 같은 eager와 일치해도 양자화 자체가 정확도를 보존한다는 의미는 아닙니다.
+- 아래 total은 JPEG읽기·전처리·BF16변환·백본을 포함합니다. 전처리 후 동기화를 동일하게 적용해 model 구간과 분리했습니다. 기존 전처리까지 컴파일한 표와 직접 비교하지 않습니다.
+
+## 전체384frame 수치검사를 통과한 경로
+
+| 경로 | 실행 방식 | 백본 평균 ms | 전처리 포함 평균 ms | 전체 p95 ms | 가중치payload MiB | GPU peak MiB |
+|---|---|---:|---:|---:|---:|---:|
+| bf16 | graph | 3.306 | 3.848 | 4.213 | 165.14 | 203.37 |
+| w4_native | graph | 5.196 | 5.763 | 6.371 | 55.73 | 76.45 |
+| w4_packed | graph | 4.944 | 5.525 | 6.196 | 46.17 | 80.52 |
+| w8a16 | graph | 3.748 | 4.298 | 4.707 | 84.38 | 121.11 |
+| w8a8 | graph | 9.032 | 9.603 | 10.082 | 84.38 | 121.11 |
+
+| 경로 | 동일 eager patch 최대차이 | FP32 대비 patch cosine 평균 | BF16 eager 대비 patch cosine 평균 |
+|---|---:|---:|---:|
+| bf16 | 0.000000 | 0.000444 | 0.000000 |
+| w4_native | 0.000000 | 0.130292 | 0.130408 |
+| w4_packed | 0.000000 | 0.130308 | 0.130425 |
+| w8a16 | 0.000000 | 0.001243 | 0.001050 |
+| w8a8 | 0.000000 | 0.006572 | 0.006495 |
+
+## 가장 빠른 전체384frame 경로: 수치 실패 포함 진단
+
+다음 표는 수치 기준과 무관하게 가장 빠른 normal pilot을 추가384frame에서 검증한 결과입니다. **수치 초과 경로는 동등한 대체 모델로 채택하지 않습니다.**
+
+| 경로 | 방식 | 백본 ms | 총 ms | payload MiB | peak MiB | 수치 기준 |
+|---|---|---:|---:|---:|---:|---|
+| bf16 | autotune_graph | 0.930 | 1.474 | 165.14 | 174.67 | 초과 |
+| w4_native | compile_graph | 3.265 | 3.821 | 55.73 | 66.01 | 초과 |
+| w4_packed | autotune_graph | 1.093 | 1.642 | 46.17 | 53.83 | 초과 |
+| w8a16 | compile_graph | 1.720 | 2.267 | 84.38 | 94.42 | 초과 |
+| w8a8 | compile_graph | 1.575 | 2.122 | 84.38 | 94.42 | 초과 |
+

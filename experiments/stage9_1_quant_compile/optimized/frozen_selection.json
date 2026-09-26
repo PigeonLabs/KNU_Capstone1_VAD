@@ -1,0 +1,33 @@
+{
+  "rule": "fastest pilot model mean among same-eager numerical-gate passing conditions; normal images only",
+  "chosen": {
+    "bf16": "graph",
+    "w8a16": "graph",
+    "w8a8": "graph",
+    "w4_native": "graph",
+    "w4_packed": "graph"
+  },
+  "time": 1790388489.7667515,
+  "pilot_configs_sha256": {
+    "pilot/w4_native_autotune_graph/config.json": "17cd8969bcea456299c2e9c2aaaacfabbb49179b926756331200380caaaefda7",
+    "pilot/w4_packed_eager/config.json": "1dad21d682fbe74f0cd849fb219b824acabee618e89b6626d1f43bb443eaace1",
+    "pilot/bf16_eager/config.json": "e7d0957c0113842252ffefa0af04bcc027553954d7b620a374fd2f9d8b46e1bb",
+    "pilot/w4_native_graph/config.json": "4f2d12b9fc0643a14284892d95210145070856c02e556695b0a58aedb4362e08",
+    "pilot/w4_packed_autotune_graph/config.json": "329640db9e2f0aefb9ce99cdc34c50264d0a80694ac8526226463a0a494fde33",
+    "pilot/bf16_compile_graph/config.json": "3e6fc294a34619b74dbb817dbb1a90acb70a7742649481f4df47b0162b1dc50e",
+    "pilot/w8a16_eager/config.json": "968867ce37ad542e0d30e766fc35d21fa896095e0aa1d7231b380dd8027cfa8f",
+    "pilot/w8a16_graph/config.json": "847f94a788c7762d5d7593e409e29e7251cb6c8490e8cc0c8744ef233181c3ba",
+    "pilot/bf16_autotune_graph/config.json": "89fbeb880619cab758536a5f6f264c7ef11c07fbdd2a837bd5183659a83de9be",
+    "pilot/w8a16_autotune_graph/config.json": "ff15b63aaa94b040775a76f2dc3ee3099e1b85e486b02d2cd95d786276672829",
+    "pilot/w4_packed_compile_graph/config.json": "01942d9ede36c4f269d6ddb7b9489c4648c64c298b756ad080e36de35845fe80",
+    "pilot/w4_native_compile_graph/config.json": "e8bf7bdc15ec05f8ce690c9d2e499462157aa86793b4dadf8a8535d4a5550fc0",
+    "pilot/w8a8_eager/config.json": "7360191ac2bfdf2f13832ea5cf924dfd9f945bcfd957eeb294449a211b4f2d02",
+    "pilot/w8a8_autotune_graph/config.json": "2510874b2c4c43b20e2d22c09288c0a162b89271f25be247cfba1e607b813584",
+    "pilot/w8a16_compile_graph/config.json": "e27dfb7d5d69f9823b49255fbc04b93355b79bf984af880f43c80b7c3851b485",
+    "pilot/w4_packed_graph/config.json": "5f39d09e011358d08a12af0631b053ad4313c77ec5702203b879a31c17ed3c6b",
+    "pilot/w8a8_graph/config.json": "a6fe46a771aa989b97f627700636dac0c33325f2b9aee72e72089a7d3b87517f",
+    "pilot/w8a8_compile_graph/config.json": "d15a35022d1835713fb2a758910dc6573893d09eb0dc1a560945fb7b2cfe8e20",
+    "pilot/w4_native_eager/config.json": "ef351175cd9ae300a69bb073a2289bed2f42c2e850e8d1057939db5fd063d0a1",
+    "pilot/bf16_graph/config.json": "e3a5480226e5febd4899fe908467d5bdad6869aa4e7944c5f42e2bd9306f0408"
+  }
+}

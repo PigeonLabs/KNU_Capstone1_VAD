@@ -1,0 +1,36 @@
+{
+  "stats": {
+    "calls_captured": 336,
+    "unique_graphs": 1
+  },
+  "inductor": {
+    "pattern_matcher_count": 365,
+    "pattern_matcher_nodes": 449,
+    "removed_pointless_view_pair": 36,
+    "benchmarking.InductorBenchmarker.benchmark_gpu": 126,
+    "pad_mm_bench": 4,
+    "fxgraph_cache_miss": 1,
+    "async_compile_cache_miss": 118,
+    "select_algorithm_precompile": 5,
+    "select_algorithm_num_precompiles": 92,
+    "select_algorithm_autotune": 5,
+    "benchmarking.InductorBenchmarker.benchmark": 118,
+    "extern_calls": 73,
+    "async_compile_cache_hit": 13,
+    "triton_bundler_save_kernel": 944,
+    "triton_bundler_save_static_autotuner": 1,
+    "cudagraph_recorded_non_static_inputs": 1
+  },
+  "aot_autograd": {
+    "total": 1,
+    "autograd_cache_miss": 1,
+    "autograd_cache_saved": 1,
+    "ok": 1
+  },
+  "aten_mm_info": {
+    "aten.mm_325_2304_768": 12,
+    "aten.mm_325_768_768": 12,
+    "aten.mm_325_3072_768": 12,
+    "aten.mm_325_768_3072": 12
+  }
+}

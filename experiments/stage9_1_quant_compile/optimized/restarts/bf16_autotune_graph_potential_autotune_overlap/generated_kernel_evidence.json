@@ -1,0 +1,1858 @@
+[
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/23/c23xxeh3v7ac4iyuifiz6jqamwz2cdqjpwtb3guvf7cavv2exqm6.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/25/c25ixfhpswbsv2ojialc4ruzoxhjlk74hxwhioracfoxtul3lbqe.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/2f/c2fhhyql5oxngmgobbl4qkadxoxieczdspfu5zaz7tup3mj7w3la.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/2f/c2fovms2lnazzffkuvxztqobkyfxiu2infjqitisz2vogwqrbg7j.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/2j/c2jqk7ty3egfxq3iektqao4tugwuhteshukfz7uhz3hc42ev5iys.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/2m/c2m6rtdel4qh5xer53gvk2iatrkprknwq323qkjimlybxumdjw6l.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/2p/c2pdazemiwclbawohlatnub36s4mhi5htphif3yg2c476ucx4u7z.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/2r/c2re23k3piuopamgdkgoyjklr4w6m3t4rrrec5kuqvn4aw3xq763.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/2s/c2sdkppqoiwuam7ry5cki4czfwlxhva5usz2atqibt23fphd5phw.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/2s/c2srsi36qpazeqickmek3dvff6uprrogxjcibtsomrcv7c2rymp6.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/2w/c2wxpxpan5zh46bnvpikpa5oezwlaezos363dulxwwdp6qh3kdca.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/35/c35tbkgjwj2gd4lluxqkcaxvrxc3hyha4jbgjkovifhqwh4uqzoq.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/3y/c3ygzearjsysyyw7jfy52f3x7oqhheb6obznulr46jomjirbv7ia.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/3y/c3yv6yyftcfo4upyiaylm3bq7w34pxeva77lirkvjqvtzc3775y7.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/45/c45ihct76tcs3rcp7wis5qswsc72pcbltv54yvvwvn2skj7253ri.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/45/c45ryp2lqduqsiz5vai2jwcxkwrb3qio6ayxl5rraebwmwv55kkr.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/46/c46vyeaw62h4iuvz7n6qghypcmlj5twisgpauuro655bpgfkoeds.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/4a/c4a7tu6rlx24wgsf3w3farl6bnbpk5fvyowokx7lsvyw4qoqaabx.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/4j/c4jjwphpk6lbt4kr6bsoxrine7ezzqqesihoc7joxzecd4zkal7u.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_gelu_view_5', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 1, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force_disable_caches'"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused_gelu_view_5(in_out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/4s/c4ssihykqtwm2ekbbesjyx3cyujgc4d3atdzdfnakl37agu2n2za.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/4v/c4vy4szpbzpkmlgu3g2hhd434ge7bpwgq2fvvzsonrgesosxkdzr.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/4w/c4wd73ebjn2c3l7ow4csn4iubr3ov77r7ytnrttmkb2octc3dmpd.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/4x/c4xiemr3poyrsceibhxlje7lgnykibt3tqtkrtimarip6u4dqewh.py",
+    "lines": [
+      {
+        "line": 259,
+        "text": "triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0 = async_compile.triton('triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0', '''"
+      },
+      {
+        "line": 272,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 0, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'au"
+      },
+      {
+        "line": 276,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 771,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      },
+      {
+        "line": 889,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      },
+      {
+        "line": 1036,
+        "text": "triton_poi_fused_gelu_view_5 = async_compile.triton('triton_poi_fused_gelu_view_5', '''"
+      },
+      {
+        "line": 1049,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused_gelu_view_5', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 1, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'autotune_pointwise': True, 'autotune_remote_cache': None, 'force_disable_caches'"
+      },
+      {
+        "line": 1053,
+        "text": "def triton_poi_fused_gelu_view_5(in_out_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      },
+      {
+        "line": 1182,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      },
+      {
+        "line": 1447,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      },
+      {
+        "line": 1938,
+        "text": "        triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0.run(buf14, arg4_1, 248832, stream=stream0)"
+      },
+      {
+        "line": 1982,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf34, 998400, stream=stream0)"
+      },
+      {
+        "line": 2031,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf55, 998400, stream=stream0)"
+      },
+      {
+        "line": 2080,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf76, 998400, stream=stream0)"
+      },
+      {
+        "line": 2129,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf97, 998400, stream=stream0)"
+      },
+      {
+        "line": 2178,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf118, 998400, stream=stream0)"
+      },
+      {
+        "line": 2227,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf139, 998400, stream=stream0)"
+      },
+      {
+        "line": 2276,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf160, 998400, stream=stream0)"
+      },
+      {
+        "line": 2325,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf181, 998400, stream=stream0)"
+      },
+      {
+        "line": 2374,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf202, 998400, stream=stream0)"
+      },
+      {
+        "line": 2423,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf223, 998400, stream=stream0)"
+      },
+      {
+        "line": 2472,
+        "text": "        triton_poi_fused_gelu_view_5.run(buf244, 998400, stream=stream0)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/4x/c4xnocazuim5zvaoiaw4dbnp74wahb6s7hq53p5hwvv6u33oemom.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/5d/c5dyycng23ddovzlrepbzvdvusqpfd55rjl7an5jqj4d4e27f3wl.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/5l/c5lz3noz2b5shqpelrhpllurajs4cjvmndpjpmksu2e5bbln2ngv.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/5u/c5ujejlaxqijmdpmqsaqhagszkpmc2lg5qvqggbnd5tzh4nit6sq.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/5y/c5y7bfjach7lmke5dsfzbymcjyqovvvi3jctir7ylzophpcou6eb.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/6c/c6cpt5abmgyi2jwcceeirjgof2fhh2cuwnsxg3w34v7djudsgd4z.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/6c/c6csepxbllzxuumyjfjifjpxx2idxz3ygmhifzdnnir4kbxzbk23.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/6e/c6e6lnlqddnq6lgw3ryvrfbdctnjqb536gujzteuk6yrhwyjm4ef.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/6h/c6hdvzsneezj6d3nh5n4petd3r4wh5svsqt5qc6lzyfjsvfpzmmx.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/6l/c6lwjghfrz4ufcsrquvli4fu45wi4eccbxtocejkizkyoimpqvch.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/6q/c6qfwpxkhvnpailuipfcy5khmqndkdm4wleptogzzxqaazhtabcg.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/6r/c6rstvwebwcl2brxaoyn5hjir34bragjfpgpas4n4gcrf3hhfhh3.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/6s/c6shuhluc476dvnjujz2e3trachea7h2ho7o35s7ju73xhefthgk.py",
+    "lines": [
+      {
+        "line": 14,
+        "text": "    inductor_meta={'grid_type': 'Grid1D', 'autotune_hints': set(), 'kernel_name': 'triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0', 'mutated_arg_names': ['in_out_ptr0'], 'optimize_mem': True, 'no_x_dim': False, 'atomic_add_found': False, 'num_load': 0, 'num_store': 1, 'num_reduction': 0, 'backend_hash': '836E96DCADDBE6A115999AC77F68B71080A87B95879FD79BCEC13EA10DF8B941', 'assert_indirect_indexing': True, 'autotune_local_cache': True, 'au"
+      },
+      {
+        "line": 18,
+        "text": "def triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0(in_out_ptr0, in_ptr0, xnumel, XBLOCK : tl.constexpr):"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/6s/c6sjvsotkaqwkjubfovoy54cpxus4t2twzsgsj2falskk65thba4.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/7d/c7d42ne44wulyglomsti2jzkdthvbi7fa37ldvreer4oky3oe52l.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/7k/c7kavzkgwklmkhi4kcmrncbbdydvkeaq45rgyt2dboqvat7gyyfs.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/7q/c7qy6jztnr3gklk3ec6hyupasurzh25wa4m4qyp7rjeo33mnh4vs.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/7u/c7uzggork6ejrjjcvj7rheizjzd3nmizvw5mcrgylo5zdiony224.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ag/cag4duo2e2hc7vsormidnw64zek62c75oydo2gxtgo7quouhpyqk.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ao/caoynlix4cvypax53dnzamz2muxsrlqv55sjglmjm2icjhclgre3.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/aq/caq2lk5wbt5kss5bmqol7q2dec7hymoj7dd4txhsrjhfen4x3bcy.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/be/cberehgtgbpcbwuvnmunverqwcuyhh4fab7pa3ezdeuhp27oxgd2.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/bk/cbk4ikts5ybrbh767bns4t3cyfio7ggphttbxtezie5as4apcmao.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/bl/cblbkzg67egq4fmej5uidtsqqmvmz2eht4gcz6qpogy3m54cev25.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/by/cby3yxbml7sv4cgtb2ksxv4tgd7iimdp4ekd4gzjcwjek7zdh2nr.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/c6/cc67er47c5lnvfxb4pzqli4zynbaao263cy6bnrcgo4cekirbev5.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/cj/ccjdq3ltbfymnorgei55f2g6u6fov3ah5w65govtjivqmrtz2aeh.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ct/cct5yvfkuhds7ggkdgu4okvv5yc3juqk3n4uknuoytdgyjxyjrlk.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/d4/cd4ybv3perhablaunr6h2rnm2566mwm6lwgjpj2sxbtnly2wllxu.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/dd/cddx2st6jqjrd74uy6fh7xcv7v36dj7ytgpu5ud2s66e6vooux6i.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/dz/cdze5bxeiiwgagocysldxpreeqpmwiglru5vfsjy5iuh4ballse6.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/e6/ce6znt3bxpztribuyid635j4g67swmrtrar4lb6iynz23p22nrxi.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ed/cedkyviyqujuftrppr4kqq3i3guwuc2d7itucwgeton5ghe4tk6n.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ei/ceizipzldgisgqkdvkn4i4x3pkmpthvtdo3czgc246g4eptcr5ca.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/em/cemicp4ai4rbx5z65a5q3ju3bwpeoism23o7ahkxhjy73sjyo2as.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/em/cemxcdgzoiqwnxicsreoa6nlye4vmlb4vpoekvugzkdjbzetfruu.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/eq/ceqzrlltigkbev76q6cly2zekktb7ykleduemvwpo2sju2uofl7y.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ex/cexcr3t77rkcaeo2qjjvyvshx2rgulayfcpivbh7uk37jl2wje6z.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ez/cezd4tx4iiqdiipbdwzytbrpou2rbztqadycklpvsu3ac2oqbped.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/f5/cf5jtq7jlgugawdizcw4nwict5m2rjmvw44ozyevwbgashnjtvny.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/f6/cf6fmjnmbvscapw56aiaciuxnhovlqaukzks3a45zrxyn72j7hpt.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/fd/cfd4kunmzdobus4bnncgbzf4o7cc3yjhzivocxthj7jqcolz5ijy.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/fn/cfnzdgfgo5tpp4xbey5qz5w67evaa2iixdgxeqwk3ac6jpcuvqwg.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ft/cft7f22kalfs7o2ioyw2ju5feiainhrpw4ojy4zxqefourcajn4e.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/fu/cfu73iyyditqkheo7wgwtee7ms6rjvzz3raxrc5byvrz36ws4mmh.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ge/cgebrns4kuoww6qwbrdczpyxmxgf23unvpkmbavy74kg3uvjfj6d.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/gi/cgisyfzjryuw46cs4vdw742lupq3ehvx2chmstxoac2m2x6lvndp.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/gq/cgqykqeflri3h7mmvlndryllavediyefc5mkpkp6p2ke5knc3ys4.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/gy/cgyy4h3ddt72vyclfjvqh4y7ftwxaicu4wdkp2hyv27vanzmguvk.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/h6/ch6ahnx4mxqxev5uxi75y7k5kdsx56r2yvan2fql47hyu6hbqyyg.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/hb/chbu5j2le75ytzpurksnsdjqvu7whaa4b344nslo2tcdc353geuj.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/hf/chfamor27iabx4ldxv3ariaygcajhiwlktfjrysa3yd6hyqmrswm.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/hp/chpyxqvhbvfw2uegktzi2jmeoozor3xf4xzjgzu6vzvfwyq3ck2f.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/hv/chvtd7r3zjxsteo64iepvgifh5urzkqj5zef6qeqnjpz24a6szvd.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/hx/chxbx5vr4gr4hu6jhma6k5mvy3s4eatfpmq4o5mdonmhceode2pk.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/hy/chyk4fns6g35ji6vp5536mkvcm6zqmrltvwlrag4xfor6l4uibw5.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/i2/ci2mkmcpan33aru7nbvhnw4f5byjshvlq3sqxm3rcffc2shl5x5z.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/i7/ci7a3f5psmh43ibzixt4lhkhc7wvqk655dp7n2wnxrdhcg3wozvm.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ic/cic7n2fv6hiwcphimxfloi4pzvil6jlzrmr3klfuxy34ql3qoe23.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ic/cico7csfcxwsqtea7rr6pu77prvo6djerg4t6rm7zjaznhjy6xoq.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ih/cih2k2nbf4n26i2tis7jo3kskd4wgzuumvfoukouxhkipzngssfa.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ij/cij2fdubmd7avpn2ao4m5bcbdyvvf2q3c7dmcjegptxhqhb6erbf.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/im/cimu4bx476b3qbweai4fnihsn3g6ry2vm5s7n25kic3iunqc7tvt.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/iq/ciqcrkf6lw6d4vkhsuekdtd7qz5wh3coa6qsk3tggqjvhwnjtdt7.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/it/citjskzbmlzo77snar6q43pujtzknuccyj7vsxwbohewc7wqogw4.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/j6/cj6swl3i635s5swpweq5zkwzjq46lp6ubclihsywt7hzzjfkx6xd.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/jh/cjh5a6rwy5gqd4hea7ikiqw6fz5kggephigsneppbyvnavljlobx.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/jk/cjksf3dzm44bmatxvoybsbavzkjzhf7qmxecbrpxxdaxhc5sgmxt.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/jp/cjphef56pha74n5dhn2jv52rtfw2l2u3ls3m5mg4gcznbsssqbim.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/js/cjshyyv6awndhgkirrcctwkws3ctho5f3a3hv34ymnzx2rb35dlu.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/km/ckmy6zt4v377dmjfvcgrlcaoi2bmlwhwn3cgjx3fzt5edhpiwx27.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ky/ckyv7q7ui66cwy4dnsvapn6etfy24j7o4e5vqvtsjvfugbfusbqx.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/l4/cl47ezxrwpudfzdbsewpdcbi24lsadwhzhfop7k6x5w455u5lugv.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/l7/cl7hlwgkuu5ckxbbhuerksa6k3qvui273gkujn5sts4n3fkiqfxl.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/lc/clcqd4lilpwngjklqnri5np56pdbgnc6vosra7kbcllw2mcwz5ee.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/le/cle4cxa2sj73xvbj7ngohueohgyu4vds4yx5ivglc53sndhjko7p.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/lk/clkxqt3sisde3s7ylbjfac7yoyeel3yqqgimvx4we3lgd25bgtzs.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/lm/clmlhr5e2se3z6emjtxyv6dthue7buudjzyxfio5tliyjliuxbem.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/lo/clogbbrpmxyk3pr7uyqc5p5u7ukrxo3ybtzadkks2gx5sgboc6wn.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ly/clymdjovvwkbe7awqc32wwqosk4rgfztumarcb45gsxnlgb2hu5v.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/lz/clzaffs744zjn7gcxj5l3xtnamrrqdsuniblr32i4o4c3gnf23ph.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/m3/cm37wr5nysxhqzkff6gwhojqmdrt4mg4ioyd4qpohoihbrbncmwo.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/mj/cmjusvaidt4bbhdalb4pfrh2nuofr66bbrwknyvrbhe4pzeg3y4e.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ml/cmlt7pa2hyxyyoffovhj56hf6lpjyjnljhoita6qd4f6g2mg6dq6.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/mo/cmoglfhzqa5t5qpxdud2u4od27ho5q6wxcj3vve6w2ognt436bas.py",
+    "lines": [
+      {
+        "line": 90,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/mo/cmomo6rdp7lhsaimhnl2xazelwgmcck4djfpqmgmjjx2hiuqojjt.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/mp/cmphsr254rndlhv5tlt63vsk7paz4pfs7mdspu6pilnjpy7zfec7.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/mr/cmrsczyg4qpjdzkilocaxusrotj5txhnnvl2rofy5q4ztvef2idp.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ms/cmsgc76s5msw3ltgzclp5bzfgr4snvasf74yyj2cvhojxyfpb6fr.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/na/cnaxsjb2b3yimujcckrgwe56v7jjlfxpkmkngwdgg2hygxqsbtlb.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/nc/cnc4l7wazr67duqurgbl7hykcle5c7smch2gof3adtecrwhhyrpw.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ne/cnef45jqusvw4xdgde3udsypqubqewktbt6paammcjokjt7cd22g.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/nj/cnjvf2tmkh32u6x5qb2xvt2tf77w3mjj4egcqicj4oiak6wjx2ku.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/nk/cnk2vp65eymx56s6qbvicopqaj6gbu5wl62wjuy4lqlk74vrueg5.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/nl/cnlcqpolmvrswvwhjvh3lzsk4ce7rh2oc2ipug5g5lv6qi5wofr4.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/no/cnobighupwbvo56gqaexis7dznv2ldlnoxqo5wunpexrcp5nckfb.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/nu/cnujndvyv2iepfdd6kuptbqafpdnncpuq3ya22vs23hwgxfiodwt.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ny/cnyrdsaixlvgqdnc6yodckslecqup46tukd7ugwq6lrmcu23eob6.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/nz/cnz3swx7plbryexaepsufkkz352lvrnb2pcvpmw3kjrzobuvj5lu.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/o3/co3t2hy4qw7yjwd4qdbj6yjrcmyvnkuozgzwb3opfq5rrweh2oxy.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/oc/coczshujmqedqg2eldjgi54mnn3yo33ze7l4u3lbyqpqpp74okpx.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/oi/coiactcrknasqbyka3rjnfajkn46dxmojyyvskezs6ljhym7uvo6.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/os/cosylx4v24myju3esisb4llydabbz6zw7bincdsbbvhf3wx5ktsx.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/p4/cp4ocokq4bqo2m7ekud6m5vymdtkij4yannj4dp5skuaxwxqbwn5.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/p7/cp7d73zgsxn62bs3fyonsrpesx33v25o7yz5tvsbcyy6c4cx4dlp.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/p7/cp7hol74ymwutryx6s3lnffh4swpxga3jufpi2euu5goh4gxnhj5.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/pf/cpfunx5v4hlo46unxkby3nltjsma4xboysrrp4ipaobtp5i5rbjl.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/pz/cpzpz2e7jqbtbhb7zi2vlk55x2stmna35cdldxegdsibmzfldxqt.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/q6/cq6mjibejqwerftreclkdyfp2pqx2xcv5rve7sshkdxuono7ohoi.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/qa/cqa5rvumrsbjmg5hsqa25cca3cfapne2gggzyxf7i6t7lyfnhn73.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/qb/cqbqd4vz6v3xybpzobcgkg4ohlpbnl6eykbckja2ejz2yskkwhjw.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/qd/cqd5yic3k6jfbogmmnr6yqt6q7jply75eovintprxvtmxoinb3rn.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/qh/cqhvsbxis2yjqs4o2edrypbzwl2z6bcah4ozm6ct5i7br6php4kn.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/qj/cqj25mk4vsjtktnrzzbclewax6z2ch47up74tdgaida3u5hxcyic.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/r2/cr26bwncu7x2krozr6m7msthx7fs77idkn66tdk337oei5tijcdr.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/r5/cr55ejwzolry7lm7bqruiu3u5veqlaxuym5xrorudbxtzccewppe.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/re/cre3od3liwgat2flcltyxtwvjil7hqvh3aj6j5esu6vlbguax7oj.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/rr/crrarjq33uu2zl76qqdikkvjdwuhaqnjxpffoopkgmiqb4b6glk3.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/rr/crrkutpqwufxy3rdsv264f6fhh5t7xxrtxpiyq5giwichvfqisqf.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ry/crybe7cgfutqk5oysyyxo4d53obxos34rikr46w6xx4kfp64ke3o.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/s4/cs4uvfggd2cfewgqk7upczs3rhykjbwyzrywyjzbei3csot2lxh6.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/sc/cscxvq7fcwwvjb3wxxkar6rltmwwjcnvcxvfgwsjp6hbvqzb5djs.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/sj/csjltcwosr5dooikvtlhdbcbmdvmueewzxorgbyf5wgiogyw2rwg.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/sm/csmuesg6z3zdh4kjkecgajc4m62nfihdrpr56mznso4lmdao2aaq.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/sq/csqomqesl6q4vhmtlahdcys64tomeei4synxmkqljd6hsqaeerng.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/sv/csvyzjeo672zd76oe7zom5cmz4r33g4fdimd2wqzxrj6bqbfwjwt.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/sy/csyzz6zjerlvhkzlhawot2yyvgqtzkilds2iykwhacskjfym2lwn.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/t7/ct77odji5m6zpibq6ftm7slxgntfveovddqapxj6g4x22evnj347.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/tb/ctb4f3lkafbipena4ghoidf4s7xubaqcky4g3ndtzhd6jnt7j6op.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ti/cti7woeubxq4omzes6ytvghg6u5vhosgqz2tonxpkiwjzzqdnnb7.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/to/ctoplkhfwdwljjeycn53rosy6icoop3klbuss53dodnp7c22kdgn.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/tp/ctpgk3w5hfrltbzvvlpa3557nk3bgu4vuaaggcbslecyg6w3zp3i.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ty/ctyptejgf47pkwcyg2crqbzk5pt2mjbzbkzghvx6vcberuwjs6zh.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ub/cubmhweqqhrlh44qktg25lygrloyizs3or5gfufscmcoyx4uprmt.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/un/cunmexew3pxeboudfcqrrrnydpmcjc3xiiwi46jlphyng6d2qnme.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/up/cupbbtuqkyibebktclqwau464sozmy2py2toonv6eaap2hcevkzu.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/uu/cuu3qndxkprid5ipstaqbfr6hizpoc2uf6afqcefcjsk7qsk2cri.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/uu/cuu4djqtyuymmzsl7pkthno5kbhczgh4ovhfe32yvlnpvdcjxs4r.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/uy/cuyzsujd3y7acvj37skaudm27j7v3ss6dqf4wunvrmmz4z3ug32f.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/v3/cv35pceuzz2ilm352wgqfbdzkj7twbvvbhq7rl3k4qcgy33l4ln2.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/vm/cvmkzs2mox2pk4k22alscp3oaxjog5lofxk76oc5bex7rx6hu6lp.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/vn/cvnebiwhxjmr7vrid4v76lvq5t5z6arkjj5fuxv373izyeeyaiab.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/vp/cvpedv25eqrxzmyhxpktp3ed3iuehhsprmwztvv5tokxxxcm4ii3.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/vp/cvppi3zlzf3hejrlkvuve3ii6cziauxykmeuocddknrayrgfpdrq.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/vs/cvspkuiy42vbdxj5z5trnhv7hpsfbwdbxgaekpgkrhzuilpmrw2y.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/vu/cvuuaomune3ncwx7ryaib74nwo4vaqqsrrrijmtuugpnlipn5ybk.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/vw/cvwopnv7xfbyscx456x4calhie2i4f5lgbbs5v6skvjrbwwdqqlz.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/vz/cvz5cizt2qdwl7edl7m6ho64rtr2gou2pln7jmepm5oidcmpjfkx.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/w2/cw2nwfi7ylpdrgz6wpqny5pftnphtc2utj5gaej2dih2vcl7fkk5.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/w4/cw4a54c4cxnkyfsayxfypx6fpqjtodcrhtdffog5kd6hkaxlcupd.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/w7/cw7c3ix7i6rwp2eiynuc5npqe6el54oekdgdqmhmy3paikqtkpkg.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/ws/cwszjd5tuycgcepcyvebdsi5sfkz4gxxgd36zjw44cmmmbz3voll.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/wx/cwxqocjusowrbkx7txjfrrmb3lgr7nfhugkxrdzevgj7zrs7pfos.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/x2/cx2t4hg5uzdp2c45swy7se6ufflvmiu2sc475i5qvs23grxgzfij.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/xr/cxrtboedvnobwvrti4we2c2z643bzef6nskgebcrx73hqkzzoz4h.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/xt/cxt2ificzopky2ose2jbphmd5tarp7alzfgwykxvinxr4y76vrfn.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/xy/cxym4lk6fxsbeblfbg27ii4qdlvrhmis4fibxmlz7vse5toihlad.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/xy/cxyrxbswhrlzudsrrqrewktc5g3nn6aenfham5j577gej2jgfbva.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/y3/cy34bv6xjdoljspin5psydnlehubflgquviveaon6oi22zxgkbdt.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/y5/cy52uyh5zm6y4wgqw6zjenrjxswldkljzurfb76pqz62xd5rg3mp.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/yg/cygdqxvlvj3jdzcnaqqauo3khjgd3gdkccrxmwfmyfcvqqkvrdr3.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/yi/cyibddx5n4sewxbywgywmtb7tjwwgi2lunvndwaywxvjdaguwn45.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/yp/cypkpotffschkc2tkul256splzpchdshn5igsuuzql3el2acihvl.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/yu/cyum2uorjy77ysqi7nxih5fgzy7thxowjcvpuzlji4ffwvmmldfd.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/yw/cywkzyadjfg5h7odiewkonuthy3r6c2xtkl36onyrpyvqebdf342.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/z3/cz3vr3fp4deiaje3u6ducbcb7p5ezp35c77i2mqn56sapapqnzrs.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/z4/cz4rq5kleqywxg3nbkcqrvri66cnzj3nl5zp342e6cja4febgh3k.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/zd/czd4ib23hxt5dvrk2ws2l2wp2wuxgfebbzmmfomsibfyepch66dn.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/zd/czddv36xeud5sci47e5n7bp4l7pxu3qfh5tgqcoc7tge72v6erec.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/zg/czgtfra6lrxmkz2y2oanrq6wytxmljg2vp6bggqgzvzn7y57owj3.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/zo/czomz4od6ntgl5ptkqg5fyo46pdcokc2p5cj2dsypavi6ctkf7hz.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/zp/czpmxmfiywehgdvqsiuq4tl42b6cmbugp77sr2w573nz4pdxkzcq.py",
+    "lines": [
+      {
+        "line": 111,
+        "text": "        acc += tl.dot(matrix_x, matrix_w, allow_tf32=ALLOW_TF32)"
+      }
+    ]
+  },
+  {
+    "path": "cache/stage9_optimized/full/bf16_autotune_graph/inductor/zz/czzn7m43vfg2rusw66mkbt7rnq4kctpvylh6do5x5wyqwj62ukn7.py",
+    "lines": [
+      {
+        "line": 85,
+        "text": "        acc += tl.dot(a, b, allow_tf32=ALLOW_TF32, out_dtype=ACC_TYPE)"
+      }
+    ]
+  }
+]

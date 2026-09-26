@@ -290,6 +290,9 @@ def make_readme():
     if qp.exists():text += ['','## 8비트·4비트 양자화 예비 진단','','정상 96프레임의 구현 진단을 완료했습니다. 전체 AUROC·실시간 VAD 평가는 아직 수행하지 않았습니다. [규약](docs/quantization_probe.md) · [전체측정·로그](experiments/quantization_probe/)', '',qp.read_text()]
     q9=ROOT/'experiments/stage9_1_quant_compile/results.md'
     if q9.exists():text += ['','## 9-1 양자화 연산·컴파일 최적화','','[전체 기록](experiments/stage9_1_quant_compile/) · [규약](docs/stage9_protocol.md)','',q9.read_text()]
+    optimized=ROOT/'experiments/stage9_1_quant_compile/optimized/results.md'
+    if optimized.exists():
+        text += ['', '## 9-1 후속: INT8·INT4 동등 최적화', '', '[전체 최적화 결과·수치 검증·원측정](experiments/stage9_1_quant_compile/optimized/results.md)', '', optimized.read_text().split('## 무엇을 최적화했나')[0]]
     (ROOT/'README.md').write_text('\n'.join(text))
 
 

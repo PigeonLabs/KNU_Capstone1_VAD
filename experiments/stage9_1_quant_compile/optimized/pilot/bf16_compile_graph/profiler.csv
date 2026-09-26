@@ -1,0 +1,26 @@
+name,count,device_type,self_cpu_us,self_device_us
+TorchDynamo Cache Lookup,3,DeviceType.CPU,122.23000000000013,0
+Torch-Compiled Region: 0/0,3,DeviceType.CPU,88.33599999999933,0.0
+Pregraph bytecode,3,DeviceType.CPU,44.64300000000006,0
+AOTDispatcher Runtime Wrapper Prologue,3,DeviceType.CPU,12.613999999999749,0
+## Call CompiledFxGraph flq4x5twwey7p3eczg53zpfo3a7cyand56oazr6qiczg7n2vihfp ##,3,DeviceType.CPU,234.2389999999982,2607.479999999997
+aten::_foreach_copy_,3,DeviceType.CPU,28.98400000000106,43.13599999999951
+Activity Buffer Request,1,DeviceType.CPU,1903.944,14.431999999999789
+cudaLaunchKernel,3,DeviceType.CPU,37.771000000000186,0
+"void at::native::(anonymous namespace)::multi_tensor_apply_kernel<at::native::(anonymous namespace)::TensorListMetadata<2>, at::native::(anonymous namespace)::UnaryOpFunctor<c10::BFloat16, 2, 1, 1>, at::native::Copy<c10::BFloat16, c10::BFloat16> >(at::native::(anonymous namespace)::TensorListMetadata<2>, at::native::(anonymous namespace)::UnaryOpFunctor<c10::BFloat16, 2, 1, 1>, at::native::Copy<c10::BFloat16, c10::BFloat16>)",3,DeviceType.CUDA,0,43.13599999999951
+cudaStreamIsCapturing,3,DeviceType.CPU,1.9840000000003783,0
+cudaGraphLaunch,3,DeviceType.CPU,277.3510000000001,0
+"void implicit_convolve_sgemm<__nv_bfloat16, __nv_bfloat16, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, __nv_bfloat16 const*, int, __nv_bfloat16*, __nv_bfloat16 const*, kernel_conv_params, unsigned long long, int, float, float, int, __nv_bfloat16 const*, __nv_bfloat16 const*, bool, bool, int, int)",3,DeviceType.CUDA,0,163.13499999999976
+cudaDeviceSynchronize,4,DeviceType.CPU,2557.6600000000003,14.271999999999935
+triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0,3,DeviceType.CUDA,0,62.527000000000044
+triton_red_fused__to_copy_add_cat_clone_convolution_expand_native_layer_norm_permute_select_transpose_unsqueeze_view_1,3,DeviceType.CUDA,0,15.072000000000116
+void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8::Params),72,DeviceType.CUDA,0,701.7899999999972
+"void pytorch_flash::flash_fwd_splitkv_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, false, false, false, false, true, false, true, false>(pytorch_flash::Flash_fwd_params)",36,DeviceType.CUDA,0,223.74099999999862
+"void pytorch_flash::flash_fwd_splitkv_combine_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, 8, 1, true>(pytorch_flash::Flash_fwd_params)",36,DeviceType.CUDA,0,109.31299999999919
+void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8>(cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8::Params),72,DeviceType.CUDA,0,1086.2380000000012
+triton_per_fused_add_mul_native_layer_norm_view_2,36,DeviceType.CUDA,0,78.65700000000106
+triton_poi_fused_gelu_view_3,36,DeviceType.CUDA,0,70.8159999999989
+triton_per_fused_add_mul_native_layer_norm_view_4,33,DeviceType.CUDA,0,80.1899999999996
+triton_per_fused_add_mul_native_layer_norm_view_5,3,DeviceType.CUDA,0,8.704000000000633
+triton_per_fused__to_copy_clamp_min_div_expand_linalg_vector_norm_select_6,3,DeviceType.CUDA,0,3.2960000000002765
+triton_per_fused__to_copy_clamp_min_div_expand_linalg_vector_norm_slice_7,3,DeviceType.CUDA,0,4.001000000000204

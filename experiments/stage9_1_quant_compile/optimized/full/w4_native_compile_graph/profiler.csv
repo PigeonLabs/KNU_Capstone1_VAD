@@ -1,0 +1,31 @@
+name,count,device_type,self_cpu_us,self_device_us
+TorchDynamo Cache Lookup,3,DeviceType.CPU,1141.067,0
+Torch-Compiled Region: 0/0,3,DeviceType.CPU,1278.4240000000018,0.0
+Pregraph bytecode,3,DeviceType.CPU,44.56399999999928,0
+AOTDispatcher Runtime Wrapper Prologue,3,DeviceType.CPU,14.226999999999407,0
+## Call CompiledFxGraph fjxdlrv63nfsq53smybxqfghxv67whe5txagcunnokrqsxrd3773 ##,3,DeviceType.CPU,275.0979999999977,8188.763999999997
+aten::_foreach_copy_,3,DeviceType.CPU,28.103999999999587,35.80800000000045
+Activity Buffer Request,1,DeviceType.CPU,1901.767,14.335999999999785
+cudaLaunchKernel,3,DeviceType.CPU,40.966000000000804,0
+"void at::native::(anonymous namespace)::multi_tensor_apply_kernel<at::native::(anonymous namespace)::TensorListMetadata<2>, at::native::(anonymous namespace)::UnaryOpFunctor<c10::BFloat16, 2, 1, 1>, at::native::Copy<c10::BFloat16, c10::BFloat16> >(at::native::(anonymous namespace)::TensorListMetadata<2>, at::native::(anonymous namespace)::UnaryOpFunctor<c10::BFloat16, 2, 1, 1>, at::native::Copy<c10::BFloat16, c10::BFloat16>)",3,DeviceType.CUDA,0,35.80800000000045
+cudaStreamIsCapturing,3,DeviceType.CPU,2.504000000000815,0
+cudaGraphLaunch,3,DeviceType.CPU,522.645,0
+"void implicit_convolve_sgemm<__nv_bfloat16, __nv_bfloat16, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, __nv_bfloat16 const*, int, __nv_bfloat16*, __nv_bfloat16 const*, kernel_conv_params, unsigned long long, int, float, float, int, __nv_bfloat16 const*, __nv_bfloat16 const*, bool, bool, int, int)",3,DeviceType.CUDA,0,150.4000000000001
+triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0,3,DeviceType.CUDA,0,63.04000000000133
+cudaDeviceSynchronize,4,DeviceType.CPU,8136.816999999999,14.304000000000087
+triton_red_fused__to_copy_add_cat_clone_convolution_expand_native_layer_norm_permute_select_transpose_unsqueeze_view_1,3,DeviceType.CUDA,0,13.855999999998858
+triton_poi_fused_constant_pad_nd_native_layer_norm_view_2,36,DeviceType.CUDA,0,66.81899999999041
+"void at::native::tinygemm_m16n8k16_chunk_kernel<at::native::ALayout_RM<(at::native::KReductionType)0>, at::native::BLayout_TC_int4<8, 128>, at::native::ALayout_RM<(at::native::KReductionType)0>, 8, 8>(void const*, void const*, void const*, void*, int, int, int, int, int, int)",144,DeviceType.CUDA,0,7014.942000000004
+triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_3,36,DeviceType.CUDA,0,57.662999999999556
+triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4,36,DeviceType.CUDA,0,59.969000000001415
+triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5,36,DeviceType.CUDA,0,60.73800000000074
+"void pytorch_flash::flash_fwd_splitkv_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, false, false, false, false, true, false, true, false>(pytorch_flash::Flash_fwd_params)",36,DeviceType.CUDA,0,224.57700000000523
+"void pytorch_flash::flash_fwd_splitkv_combine_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, 8, 1, true>(pytorch_flash::Flash_fwd_params)",36,DeviceType.CUDA,0,107.61800000000312
+triton_poi_fused_constant_pad_nd_transpose_view_6,36,DeviceType.CUDA,0,34.36599999999544
+triton_per_fused_add_mul_native_layer_norm_view_7,36,DeviceType.CUDA,0,81.0870000000059
+triton_poi_fused_constant_pad_nd_native_layer_norm_view_8,36,DeviceType.CUDA,0,63.35599999999749
+triton_poi_fused_add_gelu_view_9,36,DeviceType.CUDA,0,96.79699999999775
+triton_per_fused_add_mul_native_layer_norm_view_10,33,DeviceType.CUDA,0,77.31199999999717
+triton_per_fused_add_mul_native_layer_norm_view_11,3,DeviceType.CUDA,0,8.768000000000029
+triton_per_fused__to_copy_clamp_min_div_expand_linalg_vector_norm_select_12,3,DeviceType.CUDA,0,3.2640000000001237
+triton_per_fused__to_copy_clamp_min_div_expand_linalg_vector_norm_slice_13,3,DeviceType.CUDA,0,4.191999999999098

@@ -27,7 +27,7 @@ def experiment_roots():
             if Path(p.cwd())!=ROOT:continue
             args=p.cmdline()
             modules={'ipad.train','ipad.features','ipad.prototype','ipad.evaluate','ipad.phase_routing','ipad.phase_temporal','ipad.stage4','ipad.stage5','ipad.stage6','ipad.stage7','ipad.stage7_alerts','ipad.stage7_stream','ipad.stage8','ipad.stage8_stream'}
-            scripts={'scripts/run_suite.py','scripts/publish_stage.py','scripts/run_stage3.py','scripts/run_stage4.py','scripts/run_stage5.py','scripts/run_stage6.py','scripts/run_stage7.py','scripts/run_stage8.py','scripts/run_stage9_1.py','scripts/stage9_quant_compile.py','scripts/diagnose_stage9.py'}
+            scripts={'scripts/run_suite.py','scripts/publish_stage.py','scripts/run_stage3.py','scripts/run_stage4.py','scripts/run_stage5.py','scripts/run_stage6.py','scripts/run_stage7.py','scripts/run_stage8.py','scripts/run_stage9_1.py','scripts/stage9_quant_compile.py','scripts/diagnose_stage9.py','scripts/run_stage9_optimized.py','scripts/trace_stage9_precision.py','scripts/finish_stage9_optimized.py','scripts/recheck_stage9_baseline.py'}
             if any(a in modules for a in args) or any(a in scripts or a.endswith('/'+a2) for a in args for a2 in scripts):
                 matches.append(p)
         except (psutil.NoSuchProcess,psutil.AccessDenied):pass

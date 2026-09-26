@@ -1,0 +1,31 @@
+name,count,device_type,self_cpu_us,self_device_us
+TorchDynamo Cache Lookup,3,DeviceType.CPU,492.7560000000012,0
+Torch-Compiled Region: 0/0,3,DeviceType.CPU,1206.287999999999,0.0
+Pregraph bytecode,3,DeviceType.CPU,34.604999999999905,0
+AOTDispatcher Runtime Wrapper Prologue,3,DeviceType.CPU,12.835000000000775,0
+## Call CompiledFxGraph fjxdlrv63nfsq53smybxqfghxv67whe5txagcunnokrqsxrd3773 ##,3,DeviceType.CPU,239.84000000000106,8118.20900000003
+aten::_foreach_copy_,3,DeviceType.CPU,24.38699999999949,36.03199999999924
+Activity Buffer Request,1,DeviceType.CPU,2022.309,14.752000000000407
+cudaLaunchKernel,3,DeviceType.CPU,38.83300000000054,0
+"void at::native::(anonymous namespace)::multi_tensor_apply_kernel<at::native::(anonymous namespace)::TensorListMetadata<2>, at::native::(anonymous namespace)::UnaryOpFunctor<c10::BFloat16, 2, 1, 1>, at::native::Copy<c10::BFloat16, c10::BFloat16> >(at::native::(anonymous namespace)::TensorListMetadata<2>, at::native::(anonymous namespace)::UnaryOpFunctor<c10::BFloat16, 2, 1, 1>, at::native::Copy<c10::BFloat16, c10::BFloat16>)",3,DeviceType.CUDA,0,36.03199999999924
+cudaStreamIsCapturing,3,DeviceType.CPU,1.8630000000007385,0
+cudaGraphLaunch,3,DeviceType.CPU,495.02899999999863,0
+"void implicit_convolve_sgemm<__nv_bfloat16, __nv_bfloat16, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, __nv_bfloat16 const*, int, __nv_bfloat16*, __nv_bfloat16 const*, kernel_conv_params, unsigned long long, int, float, float, int, __nv_bfloat16 const*, __nv_bfloat16 const*, bool, bool, int, int)",3,DeviceType.CUDA,0,150.40000000000055
+cudaDeviceSynchronize,4,DeviceType.CPU,8080.402,7.32799999999952
+triton_poi_fused__to_copy__unsafe_index_add_arange_clamp_floor_mul_permute_rsub_slice_sub_unsqueeze_view_0,3,DeviceType.CUDA,0,63.87200000000121
+triton_red_fused__to_copy_add_cat_clone_convolution_expand_native_layer_norm_permute_select_transpose_unsqueeze_view_1,3,DeviceType.CUDA,0,13.888000000000375
+triton_poi_fused_constant_pad_nd_native_layer_norm_view_2,36,DeviceType.CUDA,0,65.50099999999793
+"void at::native::tinygemm_m16n8k16_chunk_kernel<at::native::ALayout_RM<(at::native::KReductionType)0>, at::native::BLayout_TC_int4<8, 128>, at::native::ALayout_RM<(at::native::KReductionType)0>, 8, 8>(void const*, void const*, void const*, void*, int, int, int, int, int, int)",144,DeviceType.CUDA,0,6967.046000000008
+triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_3,36,DeviceType.CUDA,0,57.30799999999908
+triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_4,36,DeviceType.CUDA,0,58.5619999999999
+triton_poi_fused__scaled_dot_product_flash_attention_add_transpose_unbind_view_5,36,DeviceType.CUDA,0,58.78400000000238
+"void pytorch_flash::flash_fwd_splitkv_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, false, false, false, false, true, false, true, false>(pytorch_flash::Flash_fwd_params)",36,DeviceType.CUDA,0,223.0720000000042
+"void pytorch_flash::flash_fwd_splitkv_combine_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, 8, 1, true>(pytorch_flash::Flash_fwd_params)",36,DeviceType.CUDA,0,107.29800000001069
+triton_poi_fused_constant_pad_nd_transpose_view_6,36,DeviceType.CUDA,0,33.24800000000141
+triton_per_fused_add_mul_native_layer_norm_view_7,36,DeviceType.CUDA,0,79.48900000000413
+triton_poi_fused_constant_pad_nd_native_layer_norm_view_8,36,DeviceType.CUDA,0,63.13700000000108
+triton_poi_fused_add_gelu_view_9,36,DeviceType.CUDA,0,83.83899999999903
+triton_per_fused_add_mul_native_layer_norm_view_10,33,DeviceType.CUDA,0,76.5099999999984
+triton_per_fused_add_mul_native_layer_norm_view_11,3,DeviceType.CUDA,0,8.799000000001797
+triton_per_fused__to_copy_clamp_min_div_expand_linalg_vector_norm_select_12,3,DeviceType.CUDA,0,3.263999999999214
+triton_per_fused__to_copy_clamp_min_div_expand_linalg_vector_norm_slice_13,3,DeviceType.CUDA,0,4.192000000000917

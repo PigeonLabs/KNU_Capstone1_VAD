@@ -1,0 +1,74 @@
+name,count,device_type,self_cpu_us,self_device_us
+aten::conv2d,3,DeviceType.CPU,5.870999999998389,0.0
+aten::convolution,3,DeviceType.CPU,5.611000000001354,0.0
+aten::_convolution,3,DeviceType.CPU,34.534999999998945,0.0
+aten::cudnn_convolution,3,DeviceType.CPU,69.31800000000058,147.55099999999868
+Activity Buffer Request,1,DeviceType.CPU,198.162,53.50400000000002
+cudaLaunchKernel,882,DeviceType.CPU,3994.9380000000283,0
+cudaGetErrorString,3,DeviceType.CPU,0.27199999999891133,0
+aten::reshape,330,DeviceType.CPU,157.57699999995833,0
+aten::view,522,DeviceType.CPU,240.48000000003628,0
+aten::add_,147,DeviceType.CPU,762.8349999999634,416.12799999999964
+aten::flatten,3,DeviceType.CPU,2.843999999998573,0
+aten::transpose,291,DeviceType.CPU,140.0769999999684,0
+aten::as_strided,537,DeviceType.CPU,185.63000000001637,0
+aten::expand,9,DeviceType.CPU,8.431999999993366,0
+aten::cat,6,DeviceType.CPU,50.121999999998025,16.44899999999808
+"void implicit_convolve_sgemm<__nv_bfloat16, __nv_bfloat16, 1024, 5, 5, 3, 3, 3, 1, false, false, true>(int, int, int, __nv_bfloat16 const*, int, __nv_bfloat16*, __nv_bfloat16 const*, kernel_conv_params, unsigned long long, int, float, float, int, __nv_bfloat16 const*, __nv_bfloat16 const*, bool, bool, int, int)",3,DeviceType.CUDA,0,147.55099999999868
+aten::to,444,DeviceType.CPU,97.95300000000185,0.0
+aten::_to_copy,12,DeviceType.CPU,27.360999999997148,0.0
+aten::empty_strided,84,DeviceType.CPU,298.49800000000283,0
+aten::copy_,156,DeviceType.CPU,679.9110000000233,347.45899999999943
+"void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<c10::BFloat16> >(at::TensorIteratorBase&, at::native::CUDAFunctor_add<c10::BFloat16> const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::CUDAFunctor_add<c10::BFloat16> >(at::TensorIteratorBase&, at::native::CUDAFunctor_add<c10::BFloat16> const&)::{lambda(int)#1})",147,DeviceType.CUDA,0,416.12799999999964
+"void at::native::(anonymous namespace)::CatArrayBatchedCopy<at::native::(anonymous namespace)::OpaqueType<2u>, unsigned int, 3, 64, 64>(at::native::(anonymous namespace)::OpaqueType<2u>*, at::native::(anonymous namespace)::CatArrInputTensorMetadata<at::native::(anonymous namespace)::OpaqueType<2u>, unsigned int, 64, 64>, at::native::(anonymous namespace)::TensorSizeStride<unsigned int, 4u>, int, unsigned int)",3,DeviceType.CUDA,0,12.22399999999908
+"void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",9,DeviceType.CUDA,0,25.440000000003295
+aten::select,114,DeviceType.CPU,95.2659999999895,0
+aten::slice,114,DeviceType.CPU,125.68099999998208,0
+aten::permute,6,DeviceType.CPU,4.802999999998178,0
+aten::upsample_bicubic2d,3,DeviceType.CPU,26.4390000000011,6626.578000000001
+aten::zero_,3,DeviceType.CPU,5.3919999999983474,0.0
+aten::fill_,111,DeviceType.CPU,427.8580000000137,99.80900000000474
+"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<float>, std::array<char*, 1ul> >(int, at::native::FillFunctor<float>, std::array<char*, 1ul>)",3,DeviceType.CUDA,0,2.848000000000866
+"void at::native::(anonymous namespace)::upsample_bicubic2d_out_frame<float, float>(int, float, float, bool, torch::headeronly::detail::GenericPackedTensorAccessor<torch::headeronly::detail::TensorAccessor<c10::ArrayRef<long>, float const, 3ul, torch::headeronly::DefaultPtrTraits, long>, at::detail::IndexBoundsCheck<4ul, long>, float const, 4ul, torch::headeronly::DefaultPtrTraits, long>, torch::headeronly::detail::GenericPackedTensorAccessor<torch::headeronly::detail::TensorAccessor<c10::ArrayRef<long>, float, 3ul, torch::headeronly::DefaultPtrTraits, long>, at::detail::IndexBoundsCheck<4ul, long>, float, 4ul, torch::headeronly::DefaultPtrTraits, long>)",3,DeviceType.CUDA,0,6626.578000000001
+aten::unsqueeze,3,DeviceType.CPU,2.3840000000019472,0
+aten::add,75,DeviceType.CPU,315.90600000000154,93.94899999999916
+aten::layer_norm,75,DeviceType.CPU,119.1380000000222,0.0
+aten::native_layer_norm,75,DeviceType.CPU,498.50999999996327,276.125999999987
+aten::empty,693,DeviceType.CPU,1618.117000000012,0
+aten::pad,144,DeviceType.CPU,133.57499999998447,0.0
+aten::constant_pad_nd,144,DeviceType.CPU,364.5879999999855,0.0
+aten::narrow,108,DeviceType.CPU,149.31200000001468,0
+aten::_weight_int4pack_mm,144,DeviceType.CPU,554.940999999999,6689.293000000027
+cudaFuncGetAttributes,144,DeviceType.CPU,278.61700000000667,0
+aten::alias,144,DeviceType.CPU,93.48299999998437,0
+aten::unbind,36,DeviceType.CPU,45.08500000002073,0
+aten::scaled_dot_product_attention,36,DeviceType.CPU,204.5839999999905,0.0
+aten::_scaled_dot_product_flash_attention,36,DeviceType.CPU,110.08400000003462,0.0
+aten::_flash_attention_forward,36,DeviceType.CPU,327.8070000000174,336.9580000000069
+aten::empty_like,36,DeviceType.CPU,44.5569999999874,0
+cudaFuncSetAttribute,36,DeviceType.CPU,32.28699999999071,0
+aten::dropout,108,DeviceType.CPU,46.009000000005926,0
+aten::mul,72,DeviceType.CPU,470.7069999999983,187.89899999999307
+aten::gelu,36,DeviceType.CPU,207.28300000001195,73.05299999999488
+aten::clone,36,DeviceType.CPU,58.28399999999442,0.0
+cudaMemcpyAsync,36,DeviceType.CPU,424.743999999994,0
+"void at::native::(anonymous namespace)::CatArrayBatchedCopy_vectorized<at::native::(anonymous namespace)::OpaqueType<4u>, unsigned int, 2, 128, 1, 16, 4>(char*, at::native::(anonymous namespace)::CatArrInputTensorMetadata<at::native::(anonymous namespace)::OpaqueType<4u>, unsigned int, 128, 1>, at::native::(anonymous namespace)::TensorSizeStride<unsigned int, 4u>, int, unsigned int)",3,DeviceType.CUDA,0,4.2249999999989996
+"void at::native::vectorized_elementwise_kernel<4, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul>)",3,DeviceType.CUDA,0,3.648000000000593
+"void at::native::vectorized_elementwise_kernel<4, at::native::CUDAFunctor_add<c10::BFloat16>, std::array<char*, 3ul> >(int, at::native::CUDAFunctor_add<c10::BFloat16>, std::array<char*, 3ul>)",75,DeviceType.CUDA,0,93.94899999999916
+"void at::native::(anonymous namespace)::vectorized_layer_norm_kernel<c10::BFloat16, float, false>(int, float, c10::BFloat16 const*, c10::BFloat16 const*, c10::BFloat16 const*, float*, float*, c10::BFloat16*)",75,DeviceType.CUDA,0,276.125999999987
+"void at::native::vectorized_elementwise_kernel<4, at::native::FillFunctor<c10::BFloat16>, std::array<char*, 1ul> >(int, at::native::FillFunctor<c10::BFloat16>, std::array<char*, 1ul>)",108,DeviceType.CUDA,0,96.96100000000388
+"void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1} const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1}>(at::TensorIteratorBase&, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#12}::operator()() const::{lambda(c10::BFloat16)#1} const&)::{lambda(int)#1})",108,DeviceType.CUDA,0,221.76099999999542
+"void at::native::tinygemm_m16n8k16_chunk_kernel<at::native::ALayout_RM<(at::native::KReductionType)0>, at::native::BLayout_TC_int4<8, 128>, at::native::ALayout_RM<(at::native::KReductionType)0>, 8, 8>(void const*, void const*, void const*, void*, int, int, int, int, int, int)",144,DeviceType.CUDA,0,6689.293000000027
+"void pytorch_flash::flash_fwd_splitkv_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, false, false, false, false, true, false, true, false>(pytorch_flash::Flash_fwd_params)",36,DeviceType.CUDA,0,225.63100000000304
+"void pytorch_flash::flash_fwd_splitkv_combine_kernel<Flash_fwd_kernel_traits<64, 64, 256, 4, false, false, cutlass::bfloat16_t, Flash_kernel_traits<64, 64, 256, 4, cutlass::bfloat16_t> >, 8, 1, true>(pytorch_flash::Flash_fwd_params)",36,DeviceType.CUDA,0,111.32700000000386
+"void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<c10::BFloat16, c10::BFloat16, c10::BFloat16, at::native::binary_internal::MulFunctor<float> > const&)::{lambda(int)#1})",72,DeviceType.CUDA,0,187.89899999999307
+"void at::native::vectorized_elementwise_kernel<4, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase&, at::native::GeluType)::{lambda()#2}::operator()() const::{lambda()#4}::operator()() const::{lambda(c10::BFloat16)#1}, std::array<char*, 2ul> >(int, at::native::GeluCUDAKernelImpl(at::TensorIteratorBase&, at::native::GeluType)::{lambda()#2}::operator()() const::{lambda()#4}::operator()() const::{lambda(c10::BFloat16)#1}, std::array<char*, 2ul>)",36,DeviceType.CUDA,0,73.05299999999488
+Memcpy DtoD (Device -> Device),36,DeviceType.CUDA,0,96.61000000000013
+aten::linalg_vector_norm,6,DeviceType.CPU,57.17800000000261,15.550999999999476
+"void at::native::reduce_kernel<512, 1, at::native::ReduceOp<float, at::native::NormTwoOps<float, float, float, true>, unsigned int, float, 4, 4> >(at::native::ReduceOp<float, at::native::NormTwoOps<float, float, float, true>, unsigned int, float, 4, 4>)",6,DeviceType.CUDA,0,15.550999999999476
+aten::clamp_min,6,DeviceType.CPU,31.670999999999367,7.391999999998916
+"void at::native::vectorized_elementwise_kernel<4, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::(anonymous namespace)::launch_clamp_scalar(at::TensorIteratorBase&, c10::Scalar, c10::Scalar, at::native::detail::ClampLimits)::{lambda()#1}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",6,DeviceType.CUDA,0,7.391999999998916
+aten::expand_as,6,DeviceType.CPU,3.5180000000045766,0
+aten::div,6,DeviceType.CPU,32.21300000000065,9.949000000000524
+"void at::native::elementwise_kernel<128, 2, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::DivFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::DivFunctor<float> > const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::BinaryFunctor<float, float, float, at::native::binary_internal::DivFunctor<float> > >(at::TensorIteratorBase&, at::native::BinaryFunctor<float, float, float, at::native::binary_internal::DivFunctor<float> > const&)::{lambda(int)#1})",6,DeviceType.CUDA,0,9.949000000000524
+cudaDeviceSynchronize,4,DeviceType.CPU,32.76100000000042,0

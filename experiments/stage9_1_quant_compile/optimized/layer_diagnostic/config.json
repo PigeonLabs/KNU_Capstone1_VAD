@@ -1,0 +1,36 @@
+{
+  "source_sha256": "4b0878ecd126379a1bb215bd9fb12d7d4f923a57ee76fc9581895d6568eb3580",
+  "command": [
+    "scripts/trace_stage9_precision.py"
+  ],
+  "seed": 0,
+  "test_labels_used": false,
+  "samples": [
+    {
+      "scene": "R01",
+      "video": "01",
+      "frame": 0,
+      "sha256": "b6bc5f3c4cbd41a1fcda62a6854d3fc05f4876bb13e6cc1c75a0aa2c368555ff"
+    },
+    {
+      "scene": "R02",
+      "video": "01",
+      "frame": 0,
+      "sha256": "3ac8dd3de44fabe3714ec5119139db020c8ab31e0b7195f1f8142976b92edf53"
+    },
+    {
+      "scene": "R03",
+      "video": "01",
+      "frame": 0,
+      "sha256": "7db70d24ab11f72794e81c4fc58886b2abe0209c4545a0ae1f85de7dde20fe89"
+    },
+    {
+      "scene": "R04",
+      "video": "01",
+      "frame": 0,
+      "sha256": "db0987c2f21c4ebb3262652599bed7b25a38ec060716fbb1a5b71c326b4b6bab"
+    }
+  ],
+  "cache": "/home/jeong/Desktop/IPAD/cache/stage9_optimized/layer_diagnostic/inductor",
+  "started_at": 1790388790.080708
+}

@@ -1,0 +1,7 @@
+{
+  "time": 1790388697.6885262,
+  "potential_overlap": "GPU regression checks ran during full/bf16_autotune_graph setup/autotuning; timed-call overlap not established",
+  "action": "Conservatively preserve that condition under restarts and repeat in a fresh compiler cache after all other GPU work",
+  "unaffected": "primary full graph conditions completed before regression checks; subsequent diagnostics begin after checks",
+  "test_log_mtime": 1790388636.2991402
+}

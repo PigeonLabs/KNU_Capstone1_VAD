@@ -1,5 +1,7 @@
 # 9-1 실제 양자화 연산 경로와 컴파일 최적화
 
+> **최신 후속 결과:** [INT8·INT4 동등 최적화 및384frame 검증](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/optimized/results.md). 고정 전처리에서 측정한 새 결과이며 아래 초기 실험과 측정 범위를 구분합니다.
+
 > **해석 정정:** 사용자 지적 후 재검증에서 라이브러리의 불필요한 처리와 느린 커널 선택을 확인했습니다. 아래 최초 측정은 구현 진단값이며 최적 양자화 성능 비교가 아닙니다. [원인 분리 감사](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/audit/results.md)를 먼저 확인하세요.
 
 9단계는 양자화이며 기존 8단계 LoRA와 별개입니다. 고정 ViT-B/14, R01–R04 정상 학습 영상의 동일 384프레임, batch 1, 3회 반복. 아래 시간은 JPEG 읽기·전처리·전송·백본·CUDA 동기화를 포함하며 위상 예측기·메모리·경보는 제외합니다. 전체 VAD 성능과 AUROC는 이번 단계에서 측정하지 않았습니다.

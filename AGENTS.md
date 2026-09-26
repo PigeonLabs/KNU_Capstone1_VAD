@@ -19,3 +19,5 @@
 - The user approved 8-1/8-2/8-3 normal-only DINOv2 LoRA experiments. Follow docs/stage8_protocol.md, freeze settings before test evaluation, rebuild downstream models for every representation, and publish each completed stage automatically. No new full patch feature caches.
 
 - The user approved stage 9-1 (quantization execution paths and compilation), explicitly separate from stage 8 LoRA. Follow docs/stage9_protocol.md; compare the same compilation modes for BF16 and quantized backbones, verify actual kernels, retain failures, and automatically publish analysis-only on completion.
+
+- For the approved stage-9 INT8/INT4 optimization follow-up, follow docs/stage9_optimization_protocol.md. Fixed eager FP32 preprocessing, equal BF16/quantized optimization budget, and numerical-gate failures must remain visible. Packed INT4 storage with BF16 GEMM is not pure INT4 arithmetic. No full VAD accuracy claims without evaluation.

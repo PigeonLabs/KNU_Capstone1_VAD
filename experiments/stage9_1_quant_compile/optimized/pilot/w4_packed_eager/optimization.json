@@ -1,0 +1,4 @@
+{
+  "same_padded_quantization_values_verified": 48,
+  "math": "packed INT4 storage -> transient BF16 dequantization -> BF16 GEMM"
+}

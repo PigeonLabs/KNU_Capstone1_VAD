@@ -1,0 +1,12 @@
+{
+  "chosen": {
+    "bf16": "autotune_graph",
+    "w8a16": "compile_graph",
+    "w8a8": "compile_graph",
+    "w4_native": "compile_graph",
+    "w4_packed": "autotune_graph"
+  },
+  "rule": "fastest normal pilot, irrespective of numerical pass; diagnostic only, NOT deployment selection",
+  "time": 1790388617.527483,
+  "protocol_sha256": "492804edce2ab78bb00306803ecb586f5363259f13c66826e57f207afdca3ec8"
+}

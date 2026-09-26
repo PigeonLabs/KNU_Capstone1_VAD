@@ -1,0 +1,15 @@
+{
+  "state": "completed",
+  "started_at": 1790388557.5224307,
+  "completed": [
+    "full_bf16_autotune_graph",
+    "full_w8a16_compile_graph",
+    "full_w8a8_compile_graph",
+    "full_w4_native_compile_graph",
+    "full_w4_packed_autotune_graph",
+    "layer_diagnostic"
+  ],
+  "failed": [],
+  "step": "layer_diagnostic",
+  "finished_at": 1790388805.109349
+}
