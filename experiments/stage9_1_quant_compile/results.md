@@ -1,8 +1,8 @@
-# 9-1 실제 양자화 연산 경로와 컴파일 최적화
+# 9단계 — 실제 양자화 연산 경로와 컴파일 최적화
 
 > **최신 후속 결과:** [INT8·INT4 동등 최적화 및384frame 검증](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/optimized/results.md). 고정 전처리에서 측정한 새 결과이며 아래 초기 실험과 측정 범위를 구분합니다.
 
-> **해석 정정:** 사용자 지적 후 재검증에서 라이브러리의 불필요한 처리와 느린 커널 선택을 확인했습니다. 아래 최초 측정은 구현 진단값이며 최적 양자화 성능 비교가 아닙니다. [원인 분리 감사](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/audit/results.md)를 먼저 확인하세요.
+> **해석 정정:** 추가 원인 감사에서 라이브러리의 불필요한 처리와 느린 커널 선택을 확인했습니다. 아래 최초 측정은 구현 진단값이며 최적 양자화 성능 비교가 아닙니다. [원인 분리 감사](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/audit/results.md)를 먼저 확인하세요.
 
 9단계는 양자화이며 기존 8단계 LoRA와 별개입니다. 고정 ViT-B/14, R01–R04 정상 학습 영상의 동일 384프레임, batch 1, 3회 반복. 아래 시간은 JPEG 읽기·전처리·전송·백본·CUDA 동기화를 포함하며 위상 예측기·메모리·경보는 제외합니다. 전체 VAD 성능과 AUROC는 이번 단계에서 측정하지 않았습니다.
 
@@ -98,7 +98,7 @@
 - 컴파일은 연산 결합과 커널 선택, CUDA Graph에 따라 속도와 중간 반올림을 함께 바꿀 수 있습니다. 원 실험의 결과를 보존했고 수치 보존 대조군에서도 동일 허용선을 사용했습니다.
 - 다음 평가에서는 같은 정상 데이터로 위상 head/메모리/보정을 정합한 뒤 AUROC·오탐·미탐을 확인해야 합니다. 이번 정상 특징 최대오차 초과를 곧바로 AUROC 저하량으로 해석하지 않습니다.
 
-## 사용자 지적 후 재검증 및 해석 정정
+## 추가 원인 감사 및 해석 정정
 
 아래 원인 분리 감사에서 불필요한 TorchAO 텐서 문자열 처리와 느린 WOQ 커널 선택을 확인했습니다. 최초 속도 표는 구현 경로 진단값이며, 유효한 최적 INT8 구현의 성능 비교로 해석하지 않습니다. 전처리/백본 컴파일 양쪽에서 특징 차이가 재현돼 수치 동등성은 미해결입니다. [재검증 결과·정정 상세](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/audit/results.md)
 
