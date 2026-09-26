@@ -728,6 +728,9 @@ uv pip install --python .venv/bin/python --target cache/quantization/torchao017 
 아래 원인 분리 감사에서 불필요한 TorchAO 텐서 문자열 처리와 느린 WOQ 커널 선택을 확인했습니다. 최초 속도 표는 구현 경로 진단값이며, 유효한 최적 INT8 구현의 성능 비교로 해석하지 않습니다. 전처리/백본 컴파일 양쪽에서 특징 차이가 재현돼 수치 동등성은 미해결입니다. [재검증 결과·정정 상세](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/audit/results.md)
 
 
+[후속 선형층·캐시·하드웨어 카운터 진단](kernel_study/results.md) — 정상 데이터 기반 커널 진단 완료. 전체 VAD 정확도 평가와 구분합니다.
+
+
 ## 9-1 후속: INT8·INT4 동등 최적화
 
 [전체 최적화 결과·수치 검증·원측정](experiments/stage9_1_quant_compile/optimized/results.md)
@@ -773,3 +776,12 @@ uv pip install --python .venv/bin/python --target cache/quantization/torchao017 
 | w8a16 | compile_graph | 1.720 | 2.267 | 84.38 | 94.42 | 초과 |
 | w8a8 | compile_graph | 1.575 | 2.122 | 84.38 | 94.42 | 초과 |
 
+
+
+## 9-1 후속: INT4 병목의 하드웨어 검증
+
+[선형층·캐시·Nsight 측정 전체 결과](experiments/stage9_1_quant_compile/kernel_study/results.md) · [실험 규약](docs/stage9_kernel_protocol.md)
+
+실제 325토큰 선형층에서 BF16 대비 packed INT4 지연은 qkv 9.48→14.05µs, proj 5.56→7.25µs, fc1 10.10→15.81µs, fc2 15.32→18.71µs였습니다. 별도 가중치 복원 비용은 2.08–4.46µs입니다. 이 warm-cache 조건에서는 DRAM 대역폭이 포화되지 않았으며, 새 Triton 융합 커널도 더 느려 채택하지 않았습니다.
+
+4개 층·4개 토큰 수·6개 경로의 타이밍 2,688건, 수치검증 384건, 하드웨어 계측 76개 커널을 기록했습니다. 수치검증은 모두 통과했습니다. 전체 백본·VAD 정확도 검증과 구분하며, 전문 INT4 백엔드 전체에 대한 결론으로 일반화하지 않습니다.

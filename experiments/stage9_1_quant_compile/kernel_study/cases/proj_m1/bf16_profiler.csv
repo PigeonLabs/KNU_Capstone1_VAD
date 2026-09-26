@@ -1,0 +1,11 @@
+name,count,device_type,self_cpu_us,self_device_us
+TorchDynamo Cache Lookup,3,DeviceType.CPU,26.40899999999968,0
+Torch-Compiled Region: 0/4,3,DeviceType.CPU,68.67899999999963,0.0
+Pregraph bytecode,3,DeviceType.CPU,7.415000000000006,0
+AOTDispatcher Runtime Wrapper Prologue,3,DeviceType.CPU,12.083000000000212,0
+## Call CompiledFxGraph fqswilyd7ullhv5juhhnnjbtbcif6irjp546vllpimiubgaqmzyz ##,3,DeviceType.CPU,101.74999999999955,0.0
+Activity Buffer Request,1,DeviceType.CPU,1971.1159999999998,0
+triton_tem_fused_addmm_t_view_0,3,DeviceType.CPU,32.021000000000186,3.936000000000149
+cuLaunchKernel,3,DeviceType.CPU,214.54300000000012,0
+cudaDeviceSynchronize,4,DeviceType.CPU,16.08999999999969,0
+triton_tem_fused_addmm_t_view_0,1,DeviceType.CUDA,0,3.936000000000149

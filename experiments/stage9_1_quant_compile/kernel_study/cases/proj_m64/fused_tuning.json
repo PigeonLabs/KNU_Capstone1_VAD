@@ -1,0 +1,218 @@
+[
+  {
+    "tile": [
+      16,
+      64,
+      64,
+      4
+    ],
+    "checks": {
+      "R01": {
+        "relative_l2": 1.1451696082076523e-05,
+        "cosine": 2.1420419216156006e-08,
+        "max_abs": 0.00048828125,
+        "pass": true
+      },
+      "R02": {
+        "relative_l2": 0.0,
+        "cosine": 1.5832483768463135e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R03": {
+        "relative_l2": 0.0,
+        "cosine": 1.862645149230957e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R04": {
+        "relative_l2": 0.0,
+        "cosine": 2.514570951461792e-08,
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "warm_us": 17.5160001963377,
+    "all_pass": true
+  },
+  {
+    "tile": [
+      32,
+      64,
+      64,
+      4
+    ],
+    "checks": {
+      "R01": {
+        "relative_l2": 1.1451696082076523e-05,
+        "cosine": 2.1420419216156006e-08,
+        "max_abs": 0.00048828125,
+        "pass": true
+      },
+      "R02": {
+        "relative_l2": 0.0,
+        "cosine": 1.5832483768463135e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R03": {
+        "relative_l2": 0.0,
+        "cosine": 1.862645149230957e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R04": {
+        "relative_l2": 0.0,
+        "cosine": 2.514570951461792e-08,
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "warm_us": 20.873000845313072,
+    "all_pass": true
+  },
+  {
+    "tile": [
+      32,
+      128,
+      64,
+      4
+    ],
+    "checks": {
+      "R01": {
+        "relative_l2": 1.1451696082076523e-05,
+        "cosine": 2.1420419216156006e-08,
+        "max_abs": 0.00048828125,
+        "pass": true
+      },
+      "R02": {
+        "relative_l2": 0.0,
+        "cosine": 1.5832483768463135e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R03": {
+        "relative_l2": 0.0,
+        "cosine": 1.862645149230957e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R04": {
+        "relative_l2": 0.0,
+        "cosine": 2.514570951461792e-08,
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "warm_us": 182.37900733947754,
+    "all_pass": true
+  },
+  {
+    "tile": [
+      64,
+      64,
+      64,
+      4
+    ],
+    "checks": {
+      "R01": {
+        "relative_l2": 1.1451696082076523e-05,
+        "cosine": 2.1420419216156006e-08,
+        "max_abs": 0.00048828125,
+        "pass": true
+      },
+      "R02": {
+        "relative_l2": 0.0,
+        "cosine": 1.5832483768463135e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R03": {
+        "relative_l2": 0.0,
+        "cosine": 1.862645149230957e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R04": {
+        "relative_l2": 0.0,
+        "cosine": 2.514570951461792e-08,
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "warm_us": 30.925000086426735,
+    "all_pass": true
+  },
+  {
+    "tile": [
+      64,
+      128,
+      64,
+      8
+    ],
+    "checks": {
+      "R01": {
+        "relative_l2": 1.1451696082076523e-05,
+        "cosine": 2.1420419216156006e-08,
+        "max_abs": 0.00048828125,
+        "pass": true
+      },
+      "R02": {
+        "relative_l2": 0.0,
+        "cosine": 1.5832483768463135e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R03": {
+        "relative_l2": 0.0,
+        "cosine": 1.862645149230957e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R04": {
+        "relative_l2": 0.0,
+        "cosine": 2.514570951461792e-08,
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "warm_us": 33.420998603105545,
+    "all_pass": true
+  },
+  {
+    "tile": [
+      32,
+      64,
+      128,
+      4
+    ],
+    "checks": {
+      "R01": {
+        "relative_l2": 1.1451696082076523e-05,
+        "cosine": 2.1420419216156006e-08,
+        "max_abs": 0.00048828125,
+        "pass": true
+      },
+      "R02": {
+        "relative_l2": 0.0,
+        "cosine": 1.5832483768463135e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R03": {
+        "relative_l2": 0.0,
+        "cosine": 1.862645149230957e-08,
+        "max_abs": 0.0,
+        "pass": true
+      },
+      "R04": {
+        "relative_l2": 0.0,
+        "cosine": 2.514570951461792e-08,
+        "max_abs": 0.0,
+        "pass": true
+      }
+    },
+    "warm_us": 14.063999988138676,
+    "all_pass": true
+  }
+]

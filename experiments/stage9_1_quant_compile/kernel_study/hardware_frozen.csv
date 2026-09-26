@@ -1,0 +1,55 @@
+==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
+==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
+==PROF== Connected to process 1522235 (/home/jeong/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/bin/python3.13)
+COUNTER_RANGE qkv_M1_bf16_warm
+COUNTER_RANGE qkv_M1_bf16_eviction_attempt
+==PROF== Connected to process 1522290 (/home/jeong/.local/share/uv/python/cpython-3.13.13-linux-x86_64-gnu/bin/python3.13)
+COUNTER_RANGE qkv_M1_packed_int4_warm
+COUNTER_RANGE qkv_M1_packed_int4_eviction_attempt
+COUNTER_RANGE qkv_M1_fused_int4_warm
+COUNTER_RANGE qkv_M1_fused_int4_eviction_attempt
+COUNTER_RANGE qkv_M325_bf16_warm
+COUNTER_RANGE qkv_M325_bf16_eviction_attempt
+COUNTER_RANGE qkv_M325_packed_int4_warm
+COUNTER_RANGE qkv_M325_packed_int4_eviction_attempt
+COUNTER_RANGE qkv_M325_fused_int4_warm
+COUNTER_RANGE qkv_M325_fused_int4_eviction_attempt
+COUNTER_RANGE proj_M1_bf16_warm
+COUNTER_RANGE proj_M1_bf16_eviction_attempt
+COUNTER_RANGE proj_M1_packed_int4_warm
+COUNTER_RANGE proj_M1_packed_int4_eviction_attempt
+COUNTER_RANGE proj_M1_fused_int4_warm
+COUNTER_RANGE proj_M1_fused_int4_eviction_attempt
+COUNTER_RANGE proj_M325_bf16_warm
+COUNTER_RANGE proj_M325_bf16_eviction_attempt
+COUNTER_RANGE proj_M325_packed_int4_warm
+COUNTER_RANGE proj_M325_packed_int4_eviction_attempt
+COUNTER_RANGE proj_M325_fused_int4_warm
+COUNTER_RANGE proj_M325_fused_int4_eviction_attempt
+COUNTER_RANGE fc1_M1_bf16_warm
+COUNTER_RANGE fc1_M1_bf16_eviction_attempt
+COUNTER_RANGE fc1_M1_packed_int4_warm
+COUNTER_RANGE fc1_M1_packed_int4_eviction_attempt
+COUNTER_RANGE fc1_M1_fused_int4_warm
+COUNTER_RANGE fc1_M1_fused_int4_eviction_attempt
+COUNTER_RANGE fc1_M325_bf16_warm
+COUNTER_RANGE fc1_M325_bf16_eviction_attempt
+COUNTER_RANGE fc1_M325_packed_int4_warm
+COUNTER_RANGE fc1_M325_packed_int4_eviction_attempt
+COUNTER_RANGE fc1_M325_fused_int4_warm
+COUNTER_RANGE fc1_M325_fused_int4_eviction_attempt
+COUNTER_RANGE fc2_M1_bf16_warm
+COUNTER_RANGE fc2_M1_bf16_eviction_attempt
+COUNTER_RANGE fc2_M1_packed_int4_warm
+COUNTER_RANGE fc2_M1_packed_int4_eviction_attempt
+COUNTER_RANGE fc2_M1_fused_int4_warm
+COUNTER_RANGE fc2_M1_fused_int4_eviction_attempt
+COUNTER_RANGE fc2_M325_bf16_warm
+COUNTER_RANGE fc2_M325_bf16_eviction_attempt
+COUNTER_RANGE fc2_M325_packed_int4_warm
+COUNTER_RANGE fc2_M325_packed_int4_eviction_attempt
+COUNTER_RANGE fc2_M325_fused_int4_warm
+COUNTER_RANGE fc2_M325_fused_int4_eviction_attempt
+==PROF== Disconnected from process 1522290
+==PROF== Disconnected from process 1522235
+==PROF== Report: /home/jeong/Desktop/IPAD/cache/stage9_kernel_counters_frozen/profile.ncu-rep

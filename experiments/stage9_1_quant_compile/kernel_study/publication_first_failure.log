@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/jeong/Desktop/IPAD/scripts/publish_stage.py", line 354, in <module>
+    a=p.parse_args();publish(a.stage,a.message,a.approved_push and not a.no_push,a.approved_push)
+                     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jeong/Desktop/IPAD/scripts/publish_stage.py", line 330, in publish
+    ensure_room(3*estimated)
+    ~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/jeong/Desktop/IPAD/scripts/publish_stage.py", line 30, in ensure_room
+    raise RuntimeError('Disk reserve reached or pause is latched; publication stopped without resuming experiments')
+RuntimeError: Disk reserve reached or pause is latched; publication stopped without resuming experiments

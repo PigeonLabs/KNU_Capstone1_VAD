@@ -1,0 +1,15 @@
+name,count,device_type,self_cpu_us,self_device_us
+TorchDynamo Cache Lookup,3,DeviceType.CPU,36.33799999999965,0
+Torch-Compiled Region: 2/4,3,DeviceType.CPU,73.1279999999997,0.0
+Pregraph bytecode,3,DeviceType.CPU,8.486000000000544,0
+AOTDispatcher Runtime Wrapper Prologue,3,DeviceType.CPU,13.083999999999776,0
+## Call CompiledFxGraph fqvk4pyzcotdcrt6sb7q743cer2jfx44mralptsupwlwyiestzec ##,3,DeviceType.CPU,191.84099999999944,0.0
+Activity Buffer Request,1,DeviceType.CPU,2179.899,0
+triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,3,DeviceType.CPU,37.190000000000055,3.9039999999999964
+cuLaunchKernel,9,DeviceType.CPU,251.09200000000055,0
+triton_tem_fused_mm_t_view_1,3,DeviceType.CPU,24.175999999999476,7.744000000000597
+triton_poi_fused__unsafe_view_add_2,3,DeviceType.CPU,17.361000000000786,3.104000000000269
+cudaDeviceSynchronize,4,DeviceType.CPU,34.193999999999505,0
+triton_poi_fused__unsafe_view_add_2,3,DeviceType.CUDA,0,3.104000000000269
+triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,2,DeviceType.CUDA,0,3.9039999999999964
+triton_tem_fused_mm_t_view_1,2,DeviceType.CUDA,0,7.744000000000597

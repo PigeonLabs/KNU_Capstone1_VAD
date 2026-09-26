@@ -1,0 +1,70 @@
+{
+  "created_at": 1790390799.9770305,
+  "state": "completed",
+  "hardware_capture": "frozen_cache",
+  "nsight_version": "NVIDIA (R) Nsight Compute Command Line Profiler\nCopyright (c) 2018-2026 NVIDIA Corporation\nVersion 2026.1.1.0 (build 37634170) (public-release)\n",
+  "binary_artifacts": [
+    {
+      "path": "cache/stage9_kernel_counters_frozen/profile.ncu-rep",
+      "bytes": 36369977,
+      "sha256": "774c738220382181ab7c32b6f842879c7684761cdbbcb6041a3cc8928ef3e321",
+      "binary_uploaded": false
+    }
+  ],
+  "sources": [
+    {
+      "path": "scripts/stage9_kernel_study.py",
+      "bytes": 10515,
+      "sha256": "690e3af6e8fa8eba36f6a4852daf3c401775d510fa3e8951a52a0557a529c673",
+      "binary_uploaded": false
+    },
+    {
+      "path": "ipad/stage9_kernel.py",
+      "bytes": 2127,
+      "sha256": "2f031b0180b6ceb13dbef748ae5f0f2067a5dd423b0728bd07ff8abc4a8e0a90",
+      "binary_uploaded": false
+    },
+    {
+      "path": "scripts/summarize_stage9_kernel.py",
+      "bytes": 13470,
+      "sha256": "a2a7662231ca94ebd79aa5419460f559f71f4da253a053cc46c1344754e796c7",
+      "binary_uploaded": false
+    },
+    {
+      "path": "scripts/collect_stage9_counters.sh",
+      "bytes": 1398,
+      "sha256": "bd62246000dd5637b7fd2adc0f7cb9adf71976bdeb0edef3e578093e31a96ea9",
+      "binary_uploaded": false
+    },
+    {
+      "path": "scripts/collect_stage9_counters_frozen.sh",
+      "bytes": 1546,
+      "sha256": "fbc212554e346cd9053d792361a7516fee50aa44609e37930f48178d6875bb16",
+      "binary_uploaded": false
+    },
+    {
+      "path": "scripts/probe_stage9_counters.py",
+      "bytes": 929,
+      "sha256": "44a59957ca8936b6cde02e44dcfae3d50d2aa8c3082d0d5a0bc7937354c23db3",
+      "binary_uploaded": false
+    },
+    {
+      "path": "docs/stage9_kernel_protocol.md",
+      "bytes": 3689,
+      "sha256": "6d70977374d2c136d5587c654062d16b6d9925cfd8917db30cb8f811570a752f",
+      "binary_uploaded": false
+    },
+    {
+      "path": "tests/test_stage9_kernel.py",
+      "bytes": 830,
+      "sha256": "d7a080b04ccee35a0a72c4d6bf000460382ac1a8c533b9fb8e0e0843216a6cd8",
+      "binary_uploaded": false
+    }
+  ],
+  "first_admin_capture": "preserved exploratory capture; excluded from final hardware tables",
+  "driver_configuration_changed": false,
+  "disk_free_GiB": 16.770030975341797,
+  "disk_pause_present": false,
+  "report_verification": "verification.json",
+  "plot_visual_review": "passed: 4 readable panels, labels and legend visible"
+}

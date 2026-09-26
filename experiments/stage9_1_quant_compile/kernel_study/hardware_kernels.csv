@@ -1,0 +1,77 @@
+id,layer,M,kind,regime,kernel,duration_us,dram_GB_per_s,dram_pct,tensor_pct,sm_pct,L2_hit_pct
+0,qkv,1,bf16,warm,triton_tem_fused_addmm_t_view_0,5.632,0.409091,0.024204,2.314436,3.03167,100.028563
+1,qkv,1,bf16,eviction_attempt,triton_tem_fused_addmm_t_view_0,5.632,0.181818,0.010785,2.313871,3.030929,99.739563
+2,qkv,1,packed_int4,warm,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,4.32,0.296296,0.017536,0.0,46.070192,100.0
+3,qkv,1,packed_int4,warm,triton_tem_fused__unsafe_view_add_mm_t_view_1,5.632,0.227273,0.013389,2.305302,3.004698,99.936166
+4,qkv,1,packed_int4,eviction_attempt,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,4.256,0.180451,0.010629,0.0,46.431336,99.936529
+5,qkv,1,packed_int4,eviction_attempt,triton_tem_fused__unsafe_view_add_mm_t_view_1,5.536,0.092486,0.00544,2.345934,3.057656,100.104344
+6,qkv,1,fused_int4,warm,packed_gemm,15.072,0.050955,0.002989,1.696972,8.42741,98.937433
+7,qkv,1,fused_int4,eviction_attempt,packed_gemm,15.136,0.067653,0.003967,1.697927,8.432151,97.98415
+8,qkv,325,bf16,warm,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(T1::Params),10.432,0.07362,0.004322,30.682159,30.682159,99.95756
+9,qkv,325,bf16,eviction_attempt,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(T1::Params),10.304,0.049689,0.00293,30.984979,30.984979,99.999901
+10,qkv,325,packed_int4,warm,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,4.32,0.296296,0.017655,0.0,46.164784,99.964944
+11,qkv,325,packed_int4,warm,triton_tem_fused_mm_t_view_1,9.472,0.108108,0.006352,33.883339,33.883339,100.000946
+12,qkv,325,packed_int4,warm,triton_poi_fused__unsafe_view_add_2,2.72,0.376471,0.022321,0.0,2.506106,100.0
+13,qkv,325,packed_int4,eviction_attempt,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,4.64,115.972414,6.835328,0.0,42.249739,99.952356
+14,qkv,325,packed_int4,eviction_attempt,triton_tem_fused_mm_t_view_1,9.44,0.054237,0.0032,33.775941,33.775941,99.932948
+15,qkv,325,packed_int4,eviction_attempt,triton_poi_fused__unsafe_view_add_2,2.688,0.666667,0.039991,0.0,2.546871,99.747673
+16,qkv,325,fused_int4,warm,packed_gemm,30.592,0.025105,0.00147,9.784815,48.615983,99.81576
+17,qkv,325,fused_int4,eviction_attempt,packed_gemm,30.848,0.016598,0.000973,9.695537,48.172403,99.975787
+18,proj,1,bf16,warm,triton_tem_fused_addmm_t_view_0,4.864,0.210526,0.01245,0.890186,1.166051,100.01719
+19,proj,1,bf16,eviction_attempt,triton_tem_fused_addmm_t_view_0,4.864,0.210526,0.012538,0.895058,1.172433,99.677817
+20,proj,1,packed_int4,warm,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,2.688,0.190476,0.011384,0.0,27.010296,99.728565
+21,proj,1,packed_int4,warm,triton_tem_fused_mm_t_view_1,4.768,0.161074,0.009527,0.904986,1.171297,91.765731
+22,proj,1,packed_int4,warm,triton_poi_fused__unsafe_view_add_2,1.696,0.150943,0.008954,0.0,0.046885,99.462221
+23,proj,1,packed_int4,eviction_attempt,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,2.688,0.190476,0.011221,0.0,26.710763,99.587465
+24,proj,1,packed_int4,eviction_attempt,triton_tem_fused_mm_t_view_1,4.768,0.107383,0.006345,0.907795,1.174933,100.0
+25,proj,1,packed_int4,eviction_attempt,triton_poi_fused__unsafe_view_add_2,1.728,0.148148,0.008929,0.0,0.04662,19.200753
+26,proj,1,fused_int4,warm,packed_gemm,15.008,0.06823,0.004005,0.567731,2.819435,97.408238
+27,proj,1,fused_int4,eviction_attempt,packed_gemm,15.072,0.050955,0.002991,0.568724,2.824366,98.923554
+28,proj,325,bf16,warm,triton_tem_fused_addmm_t_view_0,6.368,0.160804,0.009484,16.611641,16.611641,100.00101
+29,proj,325,bf16,eviction_attempt,triton_tem_fused_addmm_t_view_0,6.4,0.08,0.004721,16.572994,16.572994,100.01385
+30,proj,325,packed_int4,warm,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,2.848,33.707865,2.003205,0.0,25.375846,99.893379
+31,proj,325,packed_int4,warm,triton_tem_fused__unsafe_view_add_mm_t_view_1,6.176,0.124352,0.007341,17.366343,26.850372,99.980314
+32,proj,325,packed_int4,eviction_attempt,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,2.72,0.376471,0.022401,0.0,26.786037,99.998223
+33,proj,325,packed_int4,eviction_attempt,triton_tem_fused__unsafe_view_add_mm_t_view_1,6.112,0.167539,0.009874,17.404825,26.909869,99.994355
+34,proj,325,fused_int4,warm,packed_gemm,15.488,0.049587,0.002906,6.107468,30.345036,100.0
+35,proj,325,fused_int4,eviction_attempt,packed_gemm,15.616,0.196721,0.011542,6.099377,30.304833,99.872404
+36,fc1,1,bf16,warm,triton_tem_fused_addmm_t_view_0,5.76,0.177778,0.010417,2.990717,4.0694,100.002494
+37,fc1,1,bf16,eviction_attempt,triton_tem_fused_addmm_t_view_0,5.824,0.175824,0.010408,2.975065,4.048103,100.0
+38,fc1,1,packed_int4,warm,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,5.056,0.35443,0.020973,0.0,52.281311,99.936997
+39,fc1,1,packed_int4,warm,triton_tem_fused__unsafe_view_add_mm_t_view_1,5.664,0.225989,0.013378,3.066774,4.154919,99.792543
+40,fc1,1,packed_int4,eviction_attempt,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,5.024,0.458599,0.026914,0.0,52.251331,99.938004
+41,fc1,1,packed_int4,eviction_attempt,triton_tem_fused__unsafe_view_add_mm_t_view_1,5.696,0.134831,0.007925,3.04349,4.123374,100.06118
+42,fc1,1,fused_int4,warm,packed_gemm,15.2,0.033684,0.001975,2.257503,11.211087,101.680586
+43,fc1,1,fused_int4,eviction_attempt,packed_gemm,15.168,0.033755,0.00198,2.262981,11.238295,101.474449
+44,fc1,325,bf16,warm,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(T1::Params),10.88,0.141176,0.0083,40.564868,40.564868,99.99896
+45,fc1,325,bf16,eviction_attempt,void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(T1::Params),10.72,0.047761,0.002806,40.839523,40.839523,99.946517
+46,fc1,325,packed_int4,warm,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,5.056,0.253165,0.014966,0.0,52.421603,99.95161
+47,fc1,325,packed_int4,warm,triton_tem_fused_mm_t_view_1,10.144,2.776025,0.16276,43.611369,43.611369,99.986614
+48,fc1,325,packed_int4,warm,triton_poi_fused__unsafe_view_add_2,2.784,0.275862,0.016276,0.0,3.252085,99.891942
+49,fc1,325,packed_int4,eviction_attempt,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,5.056,0.151899,0.009006,0.0,52.037435,99.918363
+50,fc1,325,packed_int4,eviction_attempt,triton_tem_fused_mm_t_view_1,10.112,0.759494,0.044707,43.566615,43.566615,99.997081
+51,fc1,325,packed_int4,eviction_attempt,triton_poi_fused__unsafe_view_add_2,2.816,0.272727,0.016248,0.0,3.230649,99.989899
+52,fc1,325,fused_int4,warm,packed_gemm,30.848,0.091286,0.005348,13.067412,64.925608,100.023957
+53,fc1,325,fused_int4,eviction_attempt,packed_gemm,30.784,0.199584,0.01168,13.110626,65.14032,99.966443
+54,fc2,1,bf16,warm,triton_tem_fused_addmm_t_view_0,10.208,0.075235,0.004422,1.684441,1.775462,94.885497
+55,fc2,1,bf16,eviction_attempt,triton_tem_fused_addmm_t_view_0,10.272,0.049844,0.002926,1.669177,1.759373,99.672404
+56,fc2,1,packed_int4,warm,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,4.736,0.162162,0.009606,0.0,50.471424,99.988396
+57,fc2,1,packed_int4,warm,triton_tem_fused_mm_t_view_1,9.952,0.102894,0.006047,1.724992,1.940615,100.176125
+58,fc2,1,packed_int4,warm,triton_poi_fused__unsafe_view_add_2,1.728,33.037037,2.008285,0.0,0.046739,98.657986
+59,fc2,1,packed_int4,eviction_attempt,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,4.704,0.108844,0.00643,0.0,50.576209,100.0
+60,fc2,1,packed_int4,eviction_attempt,triton_tem_fused_mm_t_view_1,9.984,0.076923,0.004507,1.722308,1.937596,99.682862
+61,fc2,1,packed_int4,eviction_attempt,triton_poi_fused__unsafe_view_add_2,1.728,0.296296,0.017606,0.0,0.046156,99.435484
+62,fc2,1,fused_int4,warm,packed_gemm,45.504,0.028129,0.001647,0.751482,3.698213,99.781707
+63,fc2,1,fused_int4,eviction_attempt,packed_gemm,45.696,0.011204,0.000656,0.748654,3.684292,99.642476
+64,fc2,325,bf16,warm,triton_tem_fused_addmm_t_view_0,16.448,0.18677,0.010965,25.409801,25.409801,99.984935
+65,fc2,325,bf16,eviction_attempt,triton_tem_fused_addmm_t_view_0,16.576,0.046332,0.002722,25.425523,25.425523,100.0
+66,fc2,325,packed_int4,warm,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,5.184,0.296296,0.017426,0.0,45.789258,99.876479
+67,fc2,325,packed_int4,warm,void cutlass::Kernel2<cutlass_80_tensorop_s16816gemm_bf16_128x64_32x6_tn_align8>(T1::Params),11.136,0.91954,0.054019,39.652247,39.652247,100.015728
+68,fc2,325,packed_int4,warm,"void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, __nv_bfloat16, float, __nv_bfloat16, (bool)0, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, (bool)1, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)",3.776,1.830508,0.108451,0.0,16.620114,99.910468
+69,fc2,325,packed_int4,warm,triton_poi_fused__unsafe_view_add_1,2.496,0.205128,0.01216,0.0,3.151127,94.719866
+70,fc2,325,packed_int4,eviction_attempt,triton_poi_fused___rshift____to_copy_add_bitwise_and_mul_stack_sub_unsqueeze_view_0,4.768,0.214765,0.012665,0.0,50.413819,97.561312
+71,fc2,325,packed_int4,eviction_attempt,void cutlass::Kernel2<cutlass_80_tensorop_s16816gemm_bf16_128x64_32x6_tn_align8>(T1::Params),11.232,1.299145,0.076317,39.384195,39.384195,99.961504
+72,fc2,325,packed_int4,eviction_attempt,"void cublasLt::splitKreduce_kernel<(int)32, (int)16, int, float, __nv_bfloat16, float, __nv_bfloat16, (bool)0, __nv_bfloat16, __nv_bfloat16, __nv_bfloat16, (bool)1, (bool)0, (bool)0>(cublasLt::cublasSplitKParams<T6>, const T4 *, const T10 *, T9 *, T5 *, const T6 *, const T6 *, const T11 *, const T4 *, T11 *, void *, long, T6 *, int *, T6 *, T6 *, const T6 *, const T6 *, const T6 *, const T6 *, const T6 *)",3.776,1.491525,0.088595,0.0,16.443001,100.007598
+73,fc2,325,packed_int4,eviction_attempt,triton_poi_fused__unsafe_view_add_1,2.496,0.307692,0.018169,0.0,3.137137,99.882427
+74,fc2,325,fused_int4,warm,packed_gemm,44.288,34.953757,2.046667,8.61404,42.396719,99.991599
+75,fc2,325,fused_int4,eviction_attempt,packed_gemm,44.16,0.255072,0.014944,8.614441,42.398691,99.863102

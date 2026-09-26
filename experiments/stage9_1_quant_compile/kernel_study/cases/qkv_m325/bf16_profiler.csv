@@ -1,0 +1,15 @@
+name,count,device_type,self_cpu_us,self_device_us
+TorchDynamo Cache Lookup,3,DeviceType.CPU,30.546999999999926,0
+Torch-Compiled Region: 0/3,3,DeviceType.CPU,77.06200000000126,0.0
+Pregraph bytecode,3,DeviceType.CPU,9.449000000000211,0
+AOTDispatcher Runtime Wrapper Prologue,3,DeviceType.CPU,13.416999999999291,0
+## Call CompiledFxGraph foswqmlunaxd2vfvvfbgzae6ywspxpiloek6ktpvgm24ihnkzm2d ##,3,DeviceType.CPU,145.2529999999997,0.0
+Activity Buffer Request,1,DeviceType.CPU,2004.6189999999997,0
+aten::select,3,DeviceType.CPU,13.945000000000164,0
+aten::as_strided,3,DeviceType.CPU,3.7279999999996107,0
+aten::addmm,3,DeviceType.CPU,84.07799999999997,9.407999999999902
+cudaDeviceGetAttribute,3,DeviceType.CPU,1.3810000000003129,0
+cudaMemsetAsync,3,DeviceType.CPU,1.4639999999999418,0
+cuLaunchKernel,3,DeviceType.CPU,216.15700000000015,0
+cudaDeviceSynchronize,4,DeviceType.CPU,21.177999999998974,0
+void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8::Params),1,DeviceType.CUDA,0,9.407999999999902

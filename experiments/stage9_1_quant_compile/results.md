@@ -101,3 +101,6 @@
 ## 사용자 지적 후 재검증 및 해석 정정
 
 아래 원인 분리 감사에서 불필요한 TorchAO 텐서 문자열 처리와 느린 WOQ 커널 선택을 확인했습니다. 최초 속도 표는 구현 경로 진단값이며, 유효한 최적 INT8 구현의 성능 비교로 해석하지 않습니다. 전처리/백본 컴파일 양쪽에서 특징 차이가 재현돼 수치 동등성은 미해결입니다. [재검증 결과·정정 상세](https://github.com/PigeonLabs/KNU_Capstone1_VAD/blob/main/experiments/stage9_1_quant_compile/audit/results.md)
+
+
+[후속 선형층·캐시·하드웨어 카운터 진단](kernel_study/results.md) — 정상 데이터 기반 커널 진단 완료. 전체 VAD 정확도 평가와 구분합니다.

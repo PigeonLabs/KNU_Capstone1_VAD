@@ -1,0 +1,76 @@
+{
+  "seed": 0,
+  "environment": {
+    "python": "3.13.13",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "capability": [
+      12,
+      0
+    ]
+  },
+  "source_sha256": "690e3af6e8fa8eba36f6a4852daf3c401775d510fa3e8951a52a0557a529c673",
+  "kernel_source_sha256": "2f031b0180b6ceb13dbef748ae5f0f2067a5dd423b0728bd07ff8abc4a8e0a90",
+  "protocol_sha256": "6d70977374d2c136d5587c654062d16b6d9925cfd8917db30cb8f811570a752f",
+  "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+  "command": [
+    "scripts/stage9_kernel_study.py"
+  ],
+  "test_labels_used": false,
+  "started_at": 1790389853.266396,
+  "L2_bytes": 134217728,
+  "flush_bytes": 268435456,
+  "samples": [
+    {
+      "scene": "R01",
+      "video": "01",
+      "frame": 0,
+      "sha256": "b6bc5f3c4cbd41a1fcda62a6854d3fc05f4876bb13e6cc1c75a0aa2c368555ff"
+    },
+    {
+      "scene": "R02",
+      "video": "01",
+      "frame": 0,
+      "sha256": "3ac8dd3de44fabe3714ec5119139db020c8ab31e0b7195f1f8142976b92edf53"
+    },
+    {
+      "scene": "R03",
+      "video": "01",
+      "frame": 0,
+      "sha256": "7db70d24ab11f72794e81c4fc58886b2abe0209c4545a0ae1f85de7dde20fe89"
+    },
+    {
+      "scene": "R04",
+      "video": "01",
+      "frame": 0,
+      "sha256": "db0987c2f21c4ebb3262652599bed7b25a38ec060716fbb1a5b71c326b4b6bab"
+    }
+  ],
+  "input_hashes": {
+    "R01": {
+      "qkv": "bf3b9894d12897202d1685ac57219ea13a54a97e9f21f2b83949531f3545d1ff",
+      "proj": "882e7dae48bc0dfd7282ae39e8589a82c7cd9e6d8fa94b82a5ef106f4c4e88f2",
+      "fc1": "a5d366230b04aea00876bcdd0a54c93521c04ea497a68790c7d460c6a7124d95",
+      "fc2": "2be856da084396c15f685033eec18a1edc632c7cc18e30cbdb8efd352f0a2328"
+    },
+    "R02": {
+      "qkv": "9a9ae9b19b1e968b7eba6784269f6a60bfa3b467a445fac31342b4d9ae598bb4",
+      "proj": "0fa6e379f9fe634cce07ece9f1baf3ce2001f0f1a4e90f5bd1703b9de037b530",
+      "fc1": "290c137cd8221a742aeb21d9ae714acbf4b1c249e75b97296fdbad34ffc00969",
+      "fc2": "2c4dcc7f37b0adc6519bce8c2247b90483c68df7668ecad6a03b17bff60fc708"
+    },
+    "R03": {
+      "qkv": "cec0ec1e50efa89b1e5c7cfe4c9ee8cdeef98c8842d5715c83e3318452e0b28b",
+      "proj": "e89687a5387537d26b2d0781900e48c210adc1c432ba077d51bd458e482a2147",
+      "fc1": "a080c9a4409d86eaf3db31dad3dd989a60f9d17071f2e8b1d9050b1f6eef4082",
+      "fc2": "1aa58e4ff5c9eb6c07cbc92392847ff2db201427f03e7a21fed75b6647cb07c0"
+    },
+    "R04": {
+      "qkv": "768b1018c99c36cef641c8989c79fd54ce41704a1184a487b04dde0a47e08f12",
+      "proj": "a48545324ec6cc8f8f78217e0d4a08e106a583dc514c4f6483f05da44e6ee70e",
+      "fc1": "395073aaa107ff79bbf629663ad5f56fb9b0ec7ae29df9d45b7c7d86790a0dbb",
+      "fc2": "06c21120f3003b44c6aa15ce56e92a6f0c2d6f89df55795491276314287de2ee"
+    }
+  }
+}

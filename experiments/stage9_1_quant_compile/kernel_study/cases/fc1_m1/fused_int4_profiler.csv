@@ -1,0 +1,7 @@
+name,count,device_type,self_cpu_us,self_device_us
+aten::reshape,6,DeviceType.CPU,5.99999999999919,0
+aten::view,6,DeviceType.CPU,6.162000000000447,0
+aten::empty,3,DeviceType.CPU,17.733000000000047,0
+Activity Buffer Request,1,DeviceType.CPU,1965.7259999999999,0
+cuLaunchKernelEx,3,DeviceType.CPU,205.87699999999995,0
+cudaDeviceSynchronize,4,DeviceType.CPU,14.978000000000065,0

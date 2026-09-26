@@ -99,6 +99,11 @@ def snapshot(stage):
     dest=ROOT/'experiments'/STAGES[stage];dest.mkdir(parents=True,exist_ok=True)
     if stage=='9-1':
         copy_analysis(ROOT/'runs/stage9/9-1',dest)
+        # Explicit analytical plot allowlist; dataset images remain excluded.
+        plot=ROOT/'runs/stage9/9-1/kernel_study/kernel_latency.png'
+        if plot.exists():
+            ensure_room(plot.stat().st_size)
+            shutil.copy2(plot,dest/'kernel_study/kernel_latency.png')
     elif stage=='quant-probe':
         copy_analysis(ROOT/'runs/quantization_probe',dest)
     elif stage=='stage1':
@@ -293,6 +298,9 @@ def make_readme():
     optimized=ROOT/'experiments/stage9_1_quant_compile/optimized/results.md'
     if optimized.exists():
         text += ['', '## 9-1 후속: INT8·INT4 동등 최적화', '', '[전체 최적화 결과·수치 검증·원측정](experiments/stage9_1_quant_compile/optimized/results.md)', '', optimized.read_text().split('## 무엇을 최적화했나')[0]]
+    kernel=ROOT/'experiments/stage9_1_quant_compile/kernel_study/results.md'
+    if kernel.exists():
+        text += ['', '## 9-1 후속: INT4 병목의 하드웨어 검증', '', '[선형층·캐시·Nsight 측정 전체 결과](experiments/stage9_1_quant_compile/kernel_study/results.md) · [실험 규약](docs/stage9_kernel_protocol.md)', '', '실제 325토큰 선형층에서 BF16 대비 packed INT4 지연은 qkv 9.48→14.05µs, proj 5.56→7.25µs, fc1 10.10→15.81µs, fc2 15.32→18.71µs였습니다. 별도 가중치 복원 비용은 2.08–4.46µs입니다. 이 warm-cache 조건에서는 DRAM 대역폭이 포화되지 않았으며, 새 Triton 융합 커널도 더 느려 채택하지 않았습니다.', '', '4개 층·4개 토큰 수·6개 경로의 타이밍 2,688건, 수치검증 384건, 하드웨어 계측 76개 커널을 기록했습니다. 수치검증은 모두 통과했습니다. 전체 백본·VAD 정확도 검증과 구분하며, 전문 INT4 백엔드 전체에 대한 결론으로 일반화하지 않습니다.']
     (ROOT/'README.md').write_text('\n'.join(text))
 
 
@@ -318,8 +326,13 @@ def publish(stage,message,push=False,approved_push=False):
             if head.returncode or git('merge-base','--is-ancestor',remote.stdout.strip(),'HEAD',check=False).returncode:
                 raise RuntimeError('Remote main changed; reconcile it before publishing. No force push attempted.')
         paths=['AGENTS.md','.gitignore','README.md','REPRODUCTION.md','requirements.txt','requirements.lock.txt','ipad','scripts','tests','docs','experiments']
-        estimated=sum(f.stat().st_size for name in paths for f in ([ROOT/name] if (ROOT/name).is_file() else (ROOT/name).rglob('*')) if f.is_file())
-        ensure_room(3*estimated)
+        # Git stores new/changed blobs; unchanged archived experiments need no new copy.
+        candidates=set(git('ls-files','-z','--modified','--others','--exclude-standard','--',*paths).stdout.split('\0'))
+        candidates.update(git('diff','--cached','--name-only','-z','--',*paths).stdout.split('\0'))
+        estimated=sum((ROOT/name).stat().st_size for name in candidates if name and (ROOT/name).is_file())
+        reserve_estimate=3*estimated+64*1024**2
+        ensure_room(reserve_estimate)
+        state(changed_file_bytes=estimated,publication_reserve_bytes=reserve_estimate)
         git('add','--',*paths)
         for path in git('diff','--cached','--name-only').stdout.splitlines():
             if Path(path).suffix in {'.pt','.pth','.npy','.jpg','.pdf','.docx','.hwp'}:
