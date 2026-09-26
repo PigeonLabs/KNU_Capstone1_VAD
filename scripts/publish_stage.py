@@ -196,23 +196,37 @@ def make_readme():
             value=d['metrics']['negative_psnr_with_phase']['auroc'];values.append(value)
             rows.append(f'| {scene} | {target:.2f} | {value:.2f} | {value-target:+.2f} | {d["frames"]:,} |')
     text=['# 산업 공정 영상 이상탐지: IPAD 재현과 DINOv2 비교','',
-          'R01–R04 실제 공정 영상만 사용합니다. **1단계는 논문 방법론 재현, 2단계는 DINOv2 도입**입니다. 합성 데이터는 사용하지 않습니다. 1–7단계는 DINOv2 백본을 고정하며, 승인된 8단계에서는 정상 영상 기반 LoRA 적응을 비교합니다.','',
+          'R01–R04 실제 공정 영상으로 IPAD 논문 방법을 재현하고, DINOv2 특징·위상 메모리·온라인 추론·LoRA·양자화 경로를 단계별로 비교합니다. 합성 데이터는 사용하지 않습니다. 결과는 재현·진단·성능 평가의 범위를 구분해 보고합니다.','',
+          '[단계별 진행](#단계별-진행) · [핵심 결과](#핵심-결과-요약) · [실행 방법](#실행-방법) · [평가 범위와 한계](#평가-범위와-한계) · [원 자료](#원-자료)','',
           '## 단계별 진행','',
           '| 단계 | 목적 | 상태 | 기록 |','|---|---|---|---|',
           '| 1단계 | Swin-T + 주기 메모리 + 재구성 + 주기 검사 | 4개 장면 50 epochs 완료 · seed 0 | [전체 자료](experiments/stage1_reproduction/) |',
           f'| 2단계 | DINOv2 입력–복원 특징 비교 / 비재구성 prototype | {"4개 장면 완료 · seed 0" if (dino/"R04/prototype/completed.json").exists() else "게시 준비 중"} | [전체 자료](experiments/stage2_dinov2/) |',
           '| 1단계 추가 검증 | 메모리 제거 ablation | 4개 장면 완료 · seed 0 | [자료](experiments/stage1_memory_ablation/) |',
-          '| 3단계 | 위상 진단 및 불확실성을 고려한 메모리 선택 | R01–R04 × seed 0·1·2 및 시간 진단 완료 | [규약](docs/stage3_protocol.md) · [결과](experiments/stage3_phase_routing/) |','',
+          '| 3단계 | 위상 진단 및 불확실성을 고려한 메모리 선택 | R01–R04 × seed 0·1·2 및 시간 진단 완료 | [결과](experiments/stage3_phase_routing/results.md) |','',
           '## 1단계 — 논문 방법론 재현','',
           '장면마다 독립 학습: 16프레임, 256×256, Video Swin-T, 200개 위상, 메모리 2,000개, window 5, Adam 1e-4, batch 8, 50 epochs, FP32, seed 0. 재구성·주기 점수를 장면별 정규화 후 같은 가중치로 결합합니다.','',
           '| 장면 | 논문 AUROC (%) | 구현 AUROC (%) | 차이 (pp) | 평가 프레임 |','|---|---:|---:|---:|---:|',*rows]
     position=text.index('## 1단계 — 논문 방법론 재현')-1
     additional=[]
-    for st,title in [('4-1','외형·시간 검사'),('4-2','메모리 용량'),('4-3','전이·체류시간'),('5-1','온라인 기준선'),('5-2','백본·메모리 경량화'),('5-3','30 FPS 재생·오탐·미탐 평가'),('6-1','정밀도·메모리 Pareto'),('6-2','정상 영상 보정 일반화'),('7-1','오탐·미탐 원인 분해'),('7-2','causal 경보 규칙 비교'),('7-3','전체 영상 batch1 검증'),('8-1','LoRA 구현·학습 검증'),('8-2','정상 영상 LoRA 비교'),('8-3','반복·병합 BF16 실시간')]:
+    for st,title in [('4-1','외형·시간 검사'),('4-2','메모리 용량'),('4-3','전이·체류시간'),('5-1','온라인 기준선'),('5-2','백본·메모리 경량화'),('5-3','30 FPS 재생·오탐·미탐 평가'),('6-1','정밀도·메모리 Pareto'),('6-2','정상 영상 보정 일반화'),('7-1','오탐·미탐 원인 분해'),('7-2','causal 경보 규칙 비교'),('7-3','전체 영상 batch1 검증'),('8-1','LoRA 구현·학습 검증'),('8-2','정상 영상 LoRA 비교'),('8-3','반복·병합 BF16 실시간'),('9-1','양자화·커널 최적화')]:
         ready=(ROOT/'experiments'/STAGES[st]/'results.md').exists()
-        label = ('완료 · seed 0' if st in ['8-1','8-2'] else '완료 · seed 0·1·2') if ready else '진행 전 또는 실행 중'
-        additional.append(f'| {st} | {title} | {label} | [자료](experiments/{STAGES[st]}/) |')
+        label = ('완료 · seed 0' if st in ['8-1','8-2','9-1'] else '완료 · seed 0·1·2') if ready else '진행 전 또는 실행 중'
+        additional.append(f'| {st} | {title} | {label} | [결과·기록](experiments/{STAGES[st]}/results.md) |')
     text[position:position]=additional
+    position += len(additional)
+    highlights=['','## 핵심 결과 요약','',
+        '| 실험 | 관찰 결과 | 상세 기록 |','|---|---|---|',
+        f'| 1단계 논문 재현 | 네 장면 평균 AUROC **{sum(values)/4:.2f}%** (논문 기준 70.00%). R02 영상 12·13·14는 정렬 불일치로 제외했습니다. | [재현 결과와 차이](REPRODUCTION.md) |' if len(values)==4 else '| 1단계 논문 재현 | 장면별 결과와 논문 구현 차이를 기록합니다. | [재현 기록](experiments/stage1_reproduction/) |',
+        '| 2단계 DINOv2 | 비재구성 위상 무조건부 최근접 prototype의 seed 0 평균 AUROC는 78.37%였습니다. 단일 seed의 데이터셋 내 비교입니다. | [방법별 비교](experiments/stage2_dinov2/) |',
+        '| 3단계 위상 선택 | 정상 holdout에서 인접 위상 정확도는 장면별 83–96%였습니다. centered window 기반 테스트 결과는 오프라인 진단입니다. | [3-seed 분석](experiments/stage3_phase_routing/research_findings.md) |',
+        '| 4단계 시간 정보 | 외형+window 21은 80.97 ± 0.67% (3 seeds)였습니다. 결과는 같은 기존 테스트셋에서의 오프라인 비교입니다. | [통합 분석](experiments/stage4_summary/research_findings.md) |',
+        '| 5단계 온라인 전환 | 과거 프레임·외형+시간 기준선은 81.24 ± 0.12%였습니다. 정상 보정 분리와 인과 추론을 사용했습니다. | [통합 분석](experiments/stage5_summary/research_findings.md) |',
+        '| 6단계 효율 절충 | S_bf16_k5는 AUROC 79.85 ± 0.45%, capacity 260.6 FPS, peak 0.085 GiB의 관측 Pareto 후보였습니다. | [통합 분석](experiments/stage6_summary/research_findings.md) |',
+        '| 7단계 오경보 진단 | R01 B/k10에서 hysteresis는 오경보를 3.87→1.85회/정상 1,000프레임으로 줄였지만 구간 recall도 59.70→48.31%로 낮췄습니다. | [통합 분석](experiments/stage7_summary/research_findings.md) |',
+        '| 8단계 LoRA | 3-seed stream에서 frozen 81.08 ± 0.08%, anchored 80.97 ± 0.20% AUROC였습니다. 처리량 차이는 작고 정상 적응의 이득은 제한적입니다. | [통합 분석](experiments/stage8_summary/research_findings.md) |',
+        '| 9-1 양자화 | W4 packed payload는 46.17 MiB (BF16 165.14 MiB). eager 대비 컴파일 수치검사를 통과한 경로에서 백본은 4.944 ms (BF16 3.306 ms)였고, BF16 대비 patch cosine 차이는 0.1304였습니다. 전체 VAD AUROC는 측정하지 않았습니다. | [최적화](experiments/stage9_1_quant_compile/optimized/results.md) · [커널 진단](experiments/stage9_1_quant_compile/kernel_study/results.md) |']
+    text[position:position]=highlights
     if len(values)==4:text.extend(['',f'장면별 AUROC 단순 평균: **{sum(values)/4:.2f}%** (논문 70.00%).'])
     text.extend(['','**해석 제한:** R02는 영상/라벨 길이가 다른 영상 12·13·14를 제외합니다. 공개 코드의 전체 파라미터는 263.48M으로 논문 표 35.9M과 다릅니다. 점수 결합 등 미기재 사항을 명시적 가정으로 보완했으므로 원 논문과 완전히 같은 조건의 우월성 증거로 해석하지 않습니다. [차이와 가정](REPRODUCTION.md)','',
                  '## 2단계 — DINOv2 도입','',
@@ -237,7 +251,7 @@ def make_readme():
     ablation=ROOT/'experiments/stage1_memory_ablation'
     existing=[s for s in SCENES if (ablation/s/'evaluation/metrics.json').exists()]
     if existing:
-        text+=['','### 1단계 추가 검증: 메모리 제거','', '| 장면 | 원 모델 | 메모리 제거+주기 |','|---|---:|---:|']
+        text+=['','## 1단계 추가 검증: 메모리 제거','', '| 장면 | 원 모델 | 메모리 제거+주기 |','|---|---:|---:|']
         for s in existing:
             a=load(base/s/'evaluation/metrics.json')['metrics']['negative_psnr_with_phase']['auroc']
             b=load(ablation/s/'evaluation/metrics.json')['metrics']['negative_psnr_with_phase']['auroc']
@@ -251,56 +265,14 @@ def make_readme():
            '.venv/bin/python scripts/launch_suite.py --stage all',
            '.venv/bin/python scripts/status.py','```','',
            '현재 실행 환경은 RTX PRO 6000 Blackwell 96GB, PyTorch 2.11.0+cu128입니다. 다른 GPU에서는 호환 환경과 소규모 검증을 먼저 확인합니다. [세부 명령](docs/RUNNING.md)','',
-           '## 자료와 기록 정책','',
-           '- `experiments/`: 단계별 설정·epoch 이력·실행 로그·프레임별 정답/점수·평가지표·정렬 민감도.',
-           '- `artifacts.jsonl`: 로컬 원본/모델/특징 파일의 경로·크기·SHA256. **바이너리는 GitHub에 업로드하지 않았습니다.**',
-           '- 과거 원 모델 stdout은 25배치 간격입니다. 이번 기록 정책 이후의 학습은 매 배치 JSONL을 추가합니다. 기록하지 않은 과거 값을 복원하지 않습니다.',
-           '- 최신 사용자 지시에 따라 승인된 실험 전체 완료 시 결과·로그·해시를 main에 자동 게시합니다. 바이너리를 제외하고 원격 변경을 강제로 덮어쓰지 않습니다.',
-           '- 디스크 여유가 **10 GiB 이하**가 되면 이 프로젝트의 실험을 일시중지하고 보고합니다. 자동 재개하지 않습니다.',
-           '- 메모리 제거 실험은 1단계 추가 검증입니다. 3단계는 2026-09-25 승인받아 정상 위상 진단과 routing 비교부터 진행합니다.',
-           '- 1~4단계는 테스트 전체 정규화와 미래 프레임을 사용하는 오프라인 평가입니다. 5단계는 정상 데이터에서 고정한 보정과 과거 입력으로 온라인 평가하며, 실제 카메라나 다른 장비 성능으로 일반화하지 않습니다.',
-           '[기록 규칙](docs/EXPERIMENT_LOG_POLICY.md) · [코드–논문 차이](REPRODUCTION.md) · [3단계 제안](docs/stage3_proposal.md)','',
-           '## 원 자료','',
+           '## 평가 범위와 한계','',
+           '- experiments/에는 설정·실행 로그·프레임 단위 점수와 정답·평가지표를 단계별로 보관합니다. 원본 영상·가중치·특징 캐시 등 바이너리는 공개 저장소에 포함하지 않으며 SHA256 목록만 제공합니다.',
+           '- R02 영상 12·13·14는 프레임/라벨 길이 불일치 때문에 주 결과에서 제외합니다. 세부 민감도와 제외 근거는 단계별 기록에 있습니다.',
+           '- 1–4단계는 중앙 프레임과 테스트 구간 정규화를 쓰는 오프라인 비교입니다. 5단계 이후 온라인 결과는 정상 보정과 과거 입력을 사용하지만 실제 카메라·다른 GPU의 성능을 보장하지 않습니다.', '',
+           '[실행 기록 규칙](docs/EXPERIMENT_LOG_POLICY.md) · [코드–논문 차이](REPRODUCTION.md) · [3단계 결과](experiments/stage3_phase_routing/research_findings.md)','','## 원 자료','',
            '- [IPAD 논문 v1](https://arxiv.org/abs/2404.15033v1) · [공식 코드](https://github.com/LJF1113/IPAD), commit `22764cbeeda3946303d236babdd2664fd6241b91`.',
            '- [DINOv2 공식 구현](https://github.com/facebookresearch/dinov2), commit `7764ea0f912e53c92e82eb78a2a1631e92725fc8`.',
            '- upstream 코드의 재배포 대신 출처·SHA256을 보존하고 bootstrap에서 원본을 내려받습니다.','']
-    if (ROOT/'experiments/stage3_phase_routing/results.md').exists():
-        text += ['## 3단계 — 위상 진단과 선택 방식 비교', '', '[연구 해석·3-seed 요약·시간 진단](experiments/stage3_phase_routing/research_findings.md) · [사전 고정 규약](docs/stage3_protocol.md)', '', (ROOT/'experiments/stage3_phase_routing/results.md').read_text()]
-    for st in ['4-1','4-2','4-3']:
-        path=ROOT/'experiments'/STAGES[st]/'results.md'
-        if path.exists():text += ['', f'## {st} 추가 실험', '', f'[전체 기록](experiments/{STAGES[st]}/) · [고정 규약](docs/stage4_protocol.md)', '', path.read_text()]
-    if (ROOT/'experiments/stage4_summary/research_findings.md').exists():
-        text += ['', '## 4단계 통합 해석', '', '[세 실험의 통합 보고서와 최종 검산](experiments/stage4_summary/research_findings.md)']
-    for st in ['5-1','5-2','5-3']:
-        path=ROOT/'experiments'/STAGES[st]/'results.md'
-        if path.exists():text += ['', f'## {st} 온라인·경량화 실험', '', f'[전체 기록](experiments/{STAGES[st]}/) · [고정 규약](docs/stage5_protocol.md)', '', path.read_text()]
-    if (ROOT/'experiments/stage5_summary/research_findings.md').exists():
-        text += ['', '## 5단계 통합 해석', '', '[온라인·경량화·실시간 평가 통합 결과](experiments/stage5_summary/research_findings.md)']
-    for st in ['6-1','6-2']:
-        path=ROOT/'experiments'/STAGES[st]/'results.md'
-        if path.exists():text += ['', f'## {st} 추가 실험', '', f'[전체 기록](experiments/{STAGES[st]}/) · [고정 규약](docs/stage6_protocol.md)', '', path.read_text()]
-    if (ROOT/'experiments/stage6_summary/research_findings.md').exists():
-        text += ['', '## 6단계 통합 해석', '', '[파레토·일반화 통합 결과](experiments/stage6_summary/research_findings.md)']
-    for st in ['7-1','7-2','7-3']:
-        path=ROOT/'experiments'/STAGES[st]/'results.md'
-        if path.exists():text += ['',f'## {st} 실험','',f'[전체 기록](experiments/{STAGES[st]}/) · [규약](docs/stage7_protocol.md)','',path.read_text()]
-    if (ROOT/'experiments/stage7_summary/research_findings.md').exists():
-        text += ['','## 7단계 통합 결과','','[원인 분석·경보·전체 스트림 검증](experiments/stage7_summary/research_findings.md)']
-    for st in ['8-1','8-2','8-3']:
-        path=ROOT/'experiments'/STAGES[st]/'results.md'
-        if path.exists():text += ['',f'## {st} LoRA 실험','',f'[전체 기록](experiments/{STAGES[st]}/) · [규약](docs/stage8_protocol.md)','',path.read_text()]
-    if (ROOT/'experiments/stage8_summary/research_findings.md').exists():
-        text += ['','## 8단계 통합 결과','','[정상 적응·오탐·미탐·실시간 검증](experiments/stage8_summary/research_findings.md)']
-    qp=ROOT/'experiments/quantization_probe/results.md'
-    if qp.exists():text += ['','## 8비트·4비트 양자화 예비 진단','','정상 96프레임의 구현 진단을 완료했습니다. 전체 AUROC·실시간 VAD 평가는 아직 수행하지 않았습니다. [규약](docs/quantization_probe.md) · [전체측정·로그](experiments/quantization_probe/)', '',qp.read_text()]
-    q9=ROOT/'experiments/stage9_1_quant_compile/results.md'
-    if q9.exists():text += ['','## 9-1 양자화 연산·컴파일 최적화','','[전체 기록](experiments/stage9_1_quant_compile/) · [규약](docs/stage9_protocol.md)','',q9.read_text()]
-    optimized=ROOT/'experiments/stage9_1_quant_compile/optimized/results.md'
-    if optimized.exists():
-        text += ['', '## 9-1 후속: INT8·INT4 동등 최적화', '', '[전체 최적화 결과·수치 검증·원측정](experiments/stage9_1_quant_compile/optimized/results.md)', '', optimized.read_text().split('## 무엇을 최적화했나')[0]]
-    kernel=ROOT/'experiments/stage9_1_quant_compile/kernel_study/results.md'
-    if kernel.exists():
-        text += ['', '## 9-1 후속: INT4 병목의 하드웨어 검증', '', '[선형층·캐시·Nsight 측정 전체 결과](experiments/stage9_1_quant_compile/kernel_study/results.md) · [실험 규약](docs/stage9_kernel_protocol.md)', '', '실제 325토큰 선형층에서 BF16 대비 packed INT4 지연은 qkv 9.48→14.05µs, proj 5.56→7.25µs, fc1 10.10→15.81µs, fc2 15.32→18.71µs였습니다. 별도 가중치 복원 비용은 2.08–4.46µs입니다. 이 warm-cache 조건에서는 DRAM 대역폭이 포화되지 않았으며, 새 Triton 융합 커널도 더 느려 채택하지 않았습니다.', '', '4개 층·4개 토큰 수·6개 경로의 타이밍 2,688건, 수치검증 384건, 하드웨어 계측 76개 커널을 기록했습니다. 수치검증은 모두 통과했습니다. 전체 백본·VAD 정확도 검증과 구분하며, 전문 INT4 백엔드 전체에 대한 결론으로 일반화하지 않습니다.']
     (ROOT/'README.md').write_text('\n'.join(text))
 
 
