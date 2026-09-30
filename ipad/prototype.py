@@ -1,4 +1,4 @@
-"""Decoder-free DINOv2 phase-conditioned and budget-matched prototype baselines."""
+"""Decoder-free V-JEPA 2.1 phase-conditioned and budget-matched prototypes."""
 import argparse
 import json
 from pathlib import Path
@@ -17,7 +17,7 @@ from .evaluate import score_rows, write_csv
 
 class FeatureClips(Dataset):
     def __init__(self,scene,split,root='IPAD_dataset',subset='all',diagnostic=False):
-        base=Path('cache/dino')/scene
+        base=Path('cache/vjepa2_1')/scene
         if not diagnostic and not (base/'complete.json').exists():
             raise ValueError('Full feature extraction must complete before a reportable experiment')
         self.split=split; self.records=[]; self.samples=[]; self.maps={}
@@ -107,7 +107,7 @@ def fit_banks(dataset,bins=20,k=10,max_frames=512,iterations=20,seed=0):
         entries=[candidates[i] for i in chosen];selected.extend(entries)
         patches=np.stack([mapped[ri][frame] for ri,frame in entries])
         centers=[]
-        for pos in range(0,324,18):
+        for pos in range(0,576,24):
             points=torch.from_numpy(np.array(patches[:,pos:pos+18],copy=True)).cuda().transpose(0,1)
             centers.append(spherical_kmeans(points,k,iterations,seed+phase).cpu())
         bank=torch.cat(centers,dim=0)
@@ -116,7 +116,7 @@ def fit_banks(dataset,bins=20,k=10,max_frames=512,iterations=20,seed=0):
     conditioned=torch.cat(banks,dim=1)
     # Unconditioned gets exactly the same observations and number of prototypes.
     total=conditioned.shape[1];unconditional=[]
-    for pos in range(0,324,9):
+    for pos in range(0,576,12):
         patches=np.stack([mapped[ri][frame,pos:pos+9] for ri,frame in selected])
         points=torch.from_numpy(patches).cuda().transpose(0,1)
         unconditional.append(spherical_kmeans(points,total,iterations,seed).cpu())

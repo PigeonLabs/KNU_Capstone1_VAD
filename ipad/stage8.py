@@ -164,7 +164,7 @@ def train_adapter(scene,seed,method):
 @torch.inference_mode()
 def extract_training(model,recs,scene,seed,out):
     selected,occupied=s5.selected_frames(recs,seed);index={v:i for i,v in enumerate(selected)}
-    pool=np.empty((len(selected),324,768),dtype=np.float16);clsrecs=[];hashes=[];images=Images(scene,recs)
+    pool=np.empty((len(selected),576,768),dtype=np.float16);clsrecs=[];hashes=[];images=Images(scene,recs)
     for ri,r in enumerate(recs):
         dest=out/'cls'/r['video'];dest.mkdir(parents=True,exist_ok=True);cs=np.empty((r['frames'],768),dtype=np.float16);h=hashlib.sha256()
         for a in range(0,r['frames'],32):
@@ -180,7 +180,7 @@ def extract_training(model,recs,scene,seed,out):
 
 def fit_memory(pool,selected,occupied,recs,seed,out):
     parts=[]
-    for p in range(0,324,9):
+    for p in range(0,576,12):
         reserve();x=torch.from_numpy(np.array(pool[:,p:p+9])).cuda().transpose(0,1)
         parts.append(spherical_kmeans(x,occupied*10,20,seed).cpu().half());s5.event(out,'memory_fit',position=p)
     bank=torch.cat(parts);atomic_checkpoint(out/'memory.pt',{'bank':bank,'seed':seed,'k':10})

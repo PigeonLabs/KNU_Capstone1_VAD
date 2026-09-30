@@ -1,4 +1,4 @@
-"""Pinned, frozen DINOv2 with RGB preprocessing and auditable disk caches."""
+"""Pinned, frozen V-JEPA 2.1 features with auditable disk caches."""
 import argparse
 import hashlib
 import io
@@ -17,14 +17,18 @@ from torch.nn import functional as F
 from .common import SCENES, write_json
 from .data import frames, videos
 
-DINO_COMMIT='7764ea0f912e53c92e82eb78a2a1631e92725fc8'
-DINO_MODEL='dinov2_vitb14'
+VJEPA_COMMIT='204698b45b3712590f06245fbfba32d3be539812'
+VJEPA_MODEL='vjepa2_1_vit_base_384'
+VJEPA_FRAMES=64
+VJEPA_SIZE=384
+VJEPA_PATCHES=24*24
+VJEPA_CHANNELS=768
 
 
 def install_source():
-    target=Path('cache/dinov2_source')/DINO_COMMIT
+    target=Path('cache/vjepa2_source')/VJEPA_COMMIT
     if (target/'hubconf.py').exists():return target
-    archive=urllib.request.urlopen(f'https://codeload.github.com/facebookresearch/dinov2/zip/{DINO_COMMIT}').read()
+    archive=urllib.request.urlopen(f'https://codeload.github.com/facebookresearch/vjepa2/zip/{VJEPA_COMMIT}').read()
     with zipfile.ZipFile(io.BytesIO(archive)) as z:
         for item in z.infolist():
             relative=Path(*Path(item.filename).parts[1:])
@@ -34,29 +38,39 @@ def install_source():
             else:
                 dest.parent.mkdir(parents=True,exist_ok=True)
                 dest.write_bytes(z.read(item))
-    write_json(target/'source.json',{'repository':'https://github.com/facebookresearch/dinov2',
-               'commit':DINO_COMMIT,'archive_sha256':hashlib.sha256(archive).hexdigest()})
+    write_json(target/'source.json',{'repository':'https://github.com/facebookresearch/vjepa2',
+               'commit':VJEPA_COMMIT,'archive_sha256':hashlib.sha256(archive).hexdigest()})
     return target
 
 
-class DinoFeatures(nn.Module):
+class VJEPAFeatures(nn.Module):
     def __init__(self):
         super().__init__()
         source=install_source()
         torch.hub.set_dir(str(Path('cache/torch_hub').resolve()))
-        self.backbone=torch.hub.load(str(source.resolve()),DINO_MODEL,source='local',pretrained=True).eval()
+        self.backbone=torch.hub.load(str(source.resolve()),VJEPA_MODEL,source='local',pretrained=True,
+                         num_frames=VJEPA_FRAMES).eval()
         self.backbone.requires_grad_(False)
-        self.register_buffer('mean',torch.tensor([.485,.456,.406])[None,:,None,None])
-        self.register_buffer('std',torch.tensor([.229,.224,.225])[None,:,None,None])
+        self.register_buffer('mean',torch.tensor([.485,.456,.406])[None,:,None,None,None])
+        self.register_buffer('std',torch.tensor([.229,.224,.225])[None,:,None,None,None])
 
-    def forward(self,bgr_normalized):
-        rgb=(bgr_normalized[:,[2,1,0]].float()+1)/2
-        rgb=F.interpolate(rgb,size=(252,252),mode='bilinear',align_corners=False)
-        rgb=(rgb-self.mean)/self.std
-        values=self.backbone.get_intermediate_layers(rgb,n=[5,11],return_class_token=True,norm=True)
-        return {'patch6':F.normalize(values[0][0].float(),dim=-1),
-                'patch12':F.normalize(values[1][0].float(),dim=-1),
-                'cls':F.normalize(values[1][1].float(),dim=-1)}
+    def forward(self,bgr_clips):
+        if bgr_clips.ndim==4:
+            bgr_clips=bgr_clips.unsqueeze(2).expand(-1,-1,VJEPA_FRAMES,-1,-1)
+        if bgr_clips.ndim!=5 or bgr_clips.shape[2]!=VJEPA_FRAMES:
+            raise ValueError(f'Expected [batch, channels, {VJEPA_FRAMES}, height, width] clips')
+        rgb=(bgr_clips[:,[2,1,0]].float()+1)/2
+        rgb=F.interpolate(rgb,size=(VJEPA_FRAMES,VJEPA_SIZE,VJEPA_SIZE),mode='trilinear',align_corners=False)
+        rgb=((rgb-self.mean)/self.std).to(next(self.backbone.parameters()).dtype)
+        tokens=self.backbone(rgb)
+        expected=VJEPA_FRAMES//2*VJEPA_PATCHES
+        if tokens.shape!=(len(rgb),expected,VJEPA_CHANNELS):
+            raise ValueError(f'Unexpected V-JEPA output shape: {tuple(tokens.shape)}')
+        tokens=tokens.reshape(len(rgb),VJEPA_FRAMES//2,VJEPA_PATCHES,VJEPA_CHANNELS)
+        center=VJEPA_FRAMES//4
+        patch=tokens[:,center-1:center+1].mean(1)
+        patch=F.normalize(patch.float(),dim=-1)
+        return {'patch12':patch,'cls':F.normalize(patch.mean(1),dim=-1)}
 
 
 def reconstruction_distances(extractor,inputs,reconstructions):
@@ -66,8 +80,7 @@ def reconstruction_distances(extractor,inputs,reconstructions):
     for name,value in both.items():
         d=(1-(value[:b]*value[b:]).sum(-1)).clamp_min(0)
         if d.ndim>1:d=d.mean(-1)
-        result['dino_'+name]=d.cpu().numpy()
-    result['dino_multilevel']=(result['dino_patch6']+result['dino_patch12'])/2
+        result['vjepa_'+name]=d.cpu().numpy()
     return result
 
 
@@ -77,8 +90,8 @@ def frame_signature(fs):
 
 def cache_features(scene,root='IPAD_dataset',batch_size=64,limit_videos=0):
     torch.set_num_threads(8)
-    extractor=DinoFeatures().cuda().eval()
-    out=Path('cache/dino')/scene
+    extractor=VJEPAFeatures().cuda().eval()
+    out=Path('cache/vjepa2_1')/scene
     out.mkdir(parents=True,exist_ok=True)
     records=[]
     torch.cuda.reset_peak_memory_stats()
@@ -92,22 +105,26 @@ def cache_features(scene,root='IPAD_dataset',batch_size=64,limit_videos=0):
                 meta=dest/'meta.json'
                 if meta.exists():
                     info=json.loads(meta.read_text())
-                    if info['signature']!=signature or info['commit']!=DINO_COMMIT:
+                    if info['signature']!=signature or info['commit']!=VJEPA_COMMIT:
                         raise ValueError(f'Stale feature cache: {dest}')
                     for key in ['cls','patch12']:
                         array=np.load(dest/f'{key}.npy',mmap_mode='r')
-                        expected=(len(fs),768) if key=='cls' else (len(fs),324,768)
+                        expected=(len(fs),VJEPA_CHANNELS) if key=='cls' else (len(fs),VJEPA_PATCHES,VJEPA_CHANNELS)
                         if array.shape!=expected:raise ValueError(f'Invalid feature cache {dest}/{key}')
                     records.append(info);continue
-                cls=np.lib.format.open_memmap(dest/'cls.tmp.npy',mode='w+',dtype=np.float16,shape=(len(fs),768))
-                patch=np.lib.format.open_memmap(dest/'patch12.tmp.npy',mode='w+',dtype=np.float16,shape=(len(fs),324,768))
+                cls=np.lib.format.open_memmap(dest/'cls.tmp.npy',mode='w+',dtype=np.float16,shape=(len(fs),VJEPA_CHANNELS))
+                patch=np.lib.format.open_memmap(dest/'patch12.tmp.npy',mode='w+',dtype=np.float16,shape=(len(fs),VJEPA_PATCHES,VJEPA_CHANNELS))
                 image_cache=Path('cache/frames')/scene/split/f'{video.name}.npy'
                 decoded=np.load(image_cache,mmap_mode='r') if image_cache.exists() else None
                 gpu_seconds=0.; wall=time.perf_counter()
                 for start in range(0,len(fs),batch_size):
                     end=min(len(fs),start+batch_size)
                     images=np.array(decoded[start:end],copy=True) if decoded is not None else np.stack([cv2.resize(cv2.imread(str(p)),(256,256)) for p in fs[start:end]])
-                    x=torch.from_numpy(images).cuda().permute(0,3,1,2).float().div_(127.5).sub_(1)
+                    indices=np.clip(np.arange(start,end)[:,None]+np.arange(-VJEPA_FRAMES//2,VJEPA_FRAMES//2),0,len(fs)-1)
+                    clip_images=np.array(decoded[indices],copy=True) if decoded is not None else np.stack([
+                        np.stack([cv2.resize(cv2.imread(str(fs[index])),(256,256)) for index in row]) for row in indices
+                    ])
+                    x=torch.from_numpy(clip_images).cuda().permute(0,4,1,2,3).float().div_(127.5).sub_(1)
                     torch.cuda.synchronize();tick=time.perf_counter()
                     result=extractor(x)
                     torch.cuda.synchronize();gpu_seconds+=time.perf_counter()-tick
@@ -117,7 +134,8 @@ def cache_features(scene,root='IPAD_dataset',batch_size=64,limit_videos=0):
                 (dest/'cls.tmp.npy').replace(dest/'cls.npy')
                 (dest/'patch12.tmp.npy').replace(dest/'patch12.npy')
                 info={'scene':scene,'split':split,'video':video.name,'frames':len(fs),'signature':signature,
-                      'commit':DINO_COMMIT,'model':DINO_MODEL,'input_size':252,'cache_dtype':'float16',
+                      'commit':VJEPA_COMMIT,'model':VJEPA_MODEL,'input_size':VJEPA_SIZE,'clip_frames':VJEPA_FRAMES,
+                      'patch_tokens':VJEPA_PATCHES,'channels':VJEPA_CHANNELS,'cache_dtype':'float16',
                       'compute_dtype':'float32','gpu_seconds':gpu_seconds,'wall_seconds':time.perf_counter()-wall}
                 write_json(meta,info);records.append(info)
                 print(json.dumps(info),flush=True)

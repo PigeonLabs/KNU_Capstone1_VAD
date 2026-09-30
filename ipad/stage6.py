@@ -58,10 +58,7 @@ class PrecisionExtractor(s5.Extractor):
     def __init__(self,b,p):
         super().__init__(b);self.precision=p;self.backbone.to(dtype=dtype(p))
     def forward(self,x):
-        rgb=(x[:,[2,1,0]].float()+1)/2;rgb=F.interpolate(rgb,size=(252,252),mode='bilinear',align_corners=False)
-        rgb=((rgb-self.mean)/self.std).to(dtype(self.precision))
-        value=self.backbone.get_intermediate_layers(rgb,n=[11],return_class_token=True,norm=True)[0]
-        return {'cls':F.normalize(value[1].float(),dim=-1),'patch12':F.normalize(value[0].float(),dim=-1)}
+        return super().forward(x)
 
 
 class PrecisionHead(s5.Head):

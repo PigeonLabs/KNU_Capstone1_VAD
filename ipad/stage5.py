@@ -1,4 +1,4 @@
-"""Fixed normal calibration, causal DINO detectors, and batch-one paced replay."""
+"""Fixed normal calibration, causal V-JEPA detectors, and batch-one paced replay."""
 import argparse
 from collections import deque
 import csv
@@ -15,7 +15,7 @@ from torch.nn import functional as F
 from .common import atomic_checkpoint, environment, seed_everything, write_json
 from .data import validation_videos, label_path, frames
 from .evaluate import write_csv
-from .features import DinoFeatures, DINO_COMMIT, install_source
+from .features import VJEPAFeatures, VJEPA_COMMIT, VJEPA_CHANNELS, VJEPA_PATCHES, VJEPA_MODEL, VJEPA_FRAMES
 from .metrics import binary_metrics, normalize, period_errors
 from .phase_routing import digest, reserve
 from .prototype import spherical_kmeans
@@ -27,7 +27,7 @@ def read_csv(p):
     with Path(p).open() as f:return list(csv.DictReader(f))
 
 
-def cache_root(backbone):return Path('cache/dino' if backbone=='B' else 'cache/dino_small')
+def cache_root(backbone):return Path('cache/vjepa2_1')/backbone
 
 
 def records(backbone,scene,split,subset='all'):
@@ -54,13 +54,9 @@ def begin(out,**kw):
     return True
 
 
-class Extractor(DinoFeatures):
-    def __init__(self,backbone):
-        nn.Module.__init__(self);source=install_source();torch.hub.set_dir(str(Path('cache/torch_hub').resolve()))
-        self.backbone=torch.hub.load(str(source.resolve()),'dinov2_vitb14' if backbone=='B' else 'dinov2_vits14',source='local',pretrained=True).eval()
-        self.backbone.requires_grad_(False)
-        self.register_buffer('mean',torch.tensor([.485,.456,.406])[None,:,None,None])
-        self.register_buffer('std',torch.tensor([.229,.224,.225])[None,:,None,None])
+class Extractor(VJEPAFeatures):
+    def __init__(self,backbone='B'):
+        super().__init__()
 
 
 def cache_small(scene):
@@ -73,19 +69,20 @@ def cache_small(scene):
                 reserve();dest=out/split/rec['video'];dest.mkdir(parents=True,exist_ok=True)
                 if (dest/'meta.json').exists():rows.append(json.loads((dest/'meta.json').read_text()));continue
                 if list(dest.glob('*.npy')):raise RuntimeError(f'Partial feature cache: {dest}')
-                n=rec['frames'];cls=np.lib.format.open_memmap(dest/'cls.tmp.npy',mode='w+',dtype=np.float16,shape=(n,384))
-                patch=np.lib.format.open_memmap(dest/'patch12.tmp.npy',mode='w+',dtype=np.float16,shape=(n,324,384))
+                n=rec['frames'];cls=np.lib.format.open_memmap(dest/'cls.tmp.npy',mode='w+',dtype=np.float16,shape=(n,VJEPA_CHANNELS))
+                patch=np.lib.format.open_memmap(dest/'patch12.tmp.npy',mode='w+',dtype=np.float16,shape=(n,VJEPA_PATCHES,VJEPA_CHANNELS))
                 inputs=np.load(Path('cache/frames')/scene/split/f"{rec['video']}.npy",mmap_mode='r');tick=time.time()
                 for a in range(0,n,64):
-                    reserve();x=torch.from_numpy(np.array(inputs[a:a+64])).cuda().permute(0,3,1,2).float()/127.5-1
+                    indices=np.clip(np.arange(a,min(a+64,n))[:,None]+np.arange(-VJEPA_FRAMES//2,VJEPA_FRAMES//2),0,n-1)
+                    x=torch.from_numpy(np.array(inputs[indices],copy=True)).cuda().permute(0,4,1,2,3).float()/127.5-1
                     f=model(x);cls[a:a+len(x)]=f['cls'].cpu().numpy().astype(np.float16);patch[a:a+len(x)]=f['patch12'].cpu().numpy().astype(np.float16)
                 cls.flush();patch.flush();del cls,patch,inputs
                 (dest/'cls.tmp.npy').replace(dest/'cls.npy');(dest/'patch12.tmp.npy').replace(dest/'patch12.npy')
-                meta={**{k:v for k,v in rec.items() if k not in {'path','gpu_seconds','wall_seconds'}},'model':'dinov2_vits14','seconds':time.time()-tick,
-                      'channels':384,'compute_dtype':'float32','cache_dtype':'float16','source_commit':DINO_COMMIT,
+                meta={**{k:v for k,v in rec.items() if k not in {'path','gpu_seconds','wall_seconds'}},'model':VJEPA_MODEL,'seconds':time.time()-tick,
+                      'channels':VJEPA_CHANNELS,'patch_tokens':VJEPA_PATCHES,'compute_dtype':'float32','cache_dtype':'float16','source_commit':VJEPA_COMMIT,
                       'sha256':{key:digest(dest/key) for key in ['cls.npy','patch12.npy']}}
                 write_json(dest/'meta.json',meta);rows.append(meta);print(json.dumps({'cache':str(dest),'seconds':meta['seconds']}),flush=True)
-    write_json(out/'complete.json',{'records':rows,'seconds':time.time()-start,'model':'dinov2_vits14','source_commit':DINO_COMMIT})
+    write_json(out/'complete.json',{'records':rows,'seconds':time.time()-start,'model':VJEPA_MODEL,'source_commit':VJEPA_COMMIT})
 
 
 class Head(nn.Module):
@@ -136,7 +133,7 @@ def selected_frames(recs,seed):
 
 def fit_memory(recs,k,seed,out):
     selected,occupied=selected_frames(recs,seed);maps=[np.load(Path(r['path'])/'patch12.npy',mmap_mode='r') for r in recs];parts=[]
-    for p in range(0,324,9):
+    for p in range(0,VJEPA_PATCHES,12):
         reserve();x=torch.from_numpy(np.stack([maps[ri][t,p:p+9] for ri,t in selected])).cuda().transpose(0,1)
         parts.append(spherical_kmeans(x,occupied*k,20,seed).cpu().half());event(out,'memory_fit',position=p)
     bank=torch.cat(parts);atomic_checkpoint(out/'memory.pt',{'bank':bank,'k':k,'occupied':occupied,'seed':seed})
@@ -289,10 +286,12 @@ def operation_metrics(rows,scene,threshold):
 class OnlineDetector:
     def __init__(self,extractor,head,bank,cal,period,quantize=False):
         self.extractor=extractor;self.head=head;self.bank=bank;self.cal=cal;self.period=period;self.quantize=quantize;self.reset()
-    def reset(self):self.cls=deque(maxlen=16);self.phases=deque(maxlen=21);self.streak=0
+    def reset(self):self.clip=deque(maxlen=VJEPA_FRAMES);self.cls=deque(maxlen=16);self.phases=deque(maxlen=21);self.streak=0
     @torch.inference_mode()
     def step(self,bgr):
-        image=cv2.resize(bgr,(256,256));x=torch.from_numpy(image).cuda().permute(2,0,1)[None].float()/127.5-1
+        image=cv2.resize(bgr,(256,256));self.clip.append(image)
+        clip=list(self.clip);clip=[clip[0]]*(VJEPA_FRAMES-len(clip))+clip
+        x=torch.from_numpy(np.asarray(clip)).cuda().permute(3,0,1,2)[None].float()/127.5-1
         f=self.extractor(x);c=f['cls'][0];p=f['patch12']
         if self.quantize:c=c.half().float();p=p.half().float()
         self.cls.append(c)
@@ -313,7 +312,7 @@ def benchmark_unit(scene,seed,backbone,k):
     write_json(out/'operation.json',op);write_csv(out/'segments.csv',events);write_csv(out/'alarms.csv',alarms)
     result={'scene':scene,'seed':seed,'backbone':backbone,'k':k,'operation':op}
     if seed==0:
-        torch.cuda.empty_cache();extractor=Extractor(backbone).cuda().eval();head=Head(768 if backbone=='B' else 384).cuda().eval()
+        torch.cuda.empty_cache();extractor=Extractor(backbone).cuda().eval();head=Head(VJEPA_CHANNELS).cuda().eval()
         head.load_state_dict(torch.load(metrics['head_path'],map_location='cpu',weights_only=False)['model'])
         saved=torch.load(source/'memory.pt',map_location='cpu',weights_only=False)['bank'];bank=F.normalize(saved.cuda().float(),dim=-1)
         detector=OnlineDetector(extractor,head,bank,cal,metrics['period']);video=rows[0]['video']

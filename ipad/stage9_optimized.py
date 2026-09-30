@@ -9,20 +9,27 @@ from torch import nn
 from torch.nn import functional as F
 from torchao.quantization import quantize_,Int8WeightOnlyConfig,Int8DynamicActivationInt8WeightConfig,Int4WeightOnlyConfig
 from torchao.quantization.quant_primitives import MappingType,_choose_qparams_affine_tinygemm,_quantize_affine_tinygemm
+from .features import VJEPA_CHANNELS, VJEPA_FRAMES, VJEPA_PATCHES, VJEPA_SIZE
 
 
 class BackboneOnly(nn.Module):
-    def __init__(self,backbone):super().__init__();self.backbone=backbone
-    def forward(self,rgb):
-        value=self.backbone.get_intermediate_layers(rgb,n=[11],return_class_token=True,norm=True)[0]
-        return {'cls':F.normalize(value[1].float(),dim=-1),'patch12':F.normalize(value[0].float(),dim=-1)}
+    def __init__(self,backbone):
+        super().__init__();self.backbone=backbone
+        self.register_buffer('mean',torch.tensor([.485,.456,.406])[None,:,None,None,None])
+        self.register_buffer('std',torch.tensor([.229,.224,.225])[None,:,None,None,None])
+    def forward(self,bgr):
+        clips=bgr.unsqueeze(2).expand(-1,-1,VJEPA_FRAMES,-1,-1)
+        rgb=(clips[:,[2,1,0]].float()+1)/2
+        rgb=F.interpolate(rgb,size=(VJEPA_FRAMES,VJEPA_SIZE,VJEPA_SIZE),mode='trilinear',align_corners=False)
+        rgb=(rgb-self.mean)/self.std
+        tokens=self.backbone(rgb).reshape(len(rgb),VJEPA_FRAMES//2,VJEPA_PATCHES,VJEPA_CHANNELS)
+        center=VJEPA_FRAMES//4;patch=F.normalize(tokens[:,center-1:center+1].mean(1).float(),dim=-1)
+        return {'cls':F.normalize(patch.mean(1),dim=-1),'patch12':patch}
 
 
 def preprocess(model,x):
     """Always eager FP32: same arithmetic/input bytes for every runtime."""
-    rgb=(x[:,[2,1,0]].float()+1)/2
-    rgb=F.interpolate(rgb,size=(252,252),mode='bilinear',align_corners=False)
-    return (rgb-model.mean)/model.std
+    return x.float()
 
 
 def patch_int8_repr():

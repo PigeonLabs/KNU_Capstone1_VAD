@@ -194,10 +194,10 @@ def budget_match(x,prob,legacy,bank,method=None):
 
 
 def benchmark(scene,model,bank):
-    from .features import DinoFeatures
+    from .features import VJEPAFeatures
     testing=FeatureClips(scene,'testing');rec=testing.records[0];n=min(256,rec['frames'])
     images=np.array(np.load(Path('cache/frames')/scene/'testing'/f"{rec['video']}.npy",mmap_mode='r')[:n])
-    extractor=DinoFeatures().cuda().eval()
+    extractor=VJEPAFeatures().cuda().eval()
     def extract():
         cs=[];ps=[]
         for start in range(0,n,32):
