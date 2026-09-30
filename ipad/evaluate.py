@@ -76,8 +76,8 @@ def evaluate(checkpoint,root='IPAD_dataset',batch_size=4,workers=4,dino=False):
     loader=DataLoader(ds,batch_size=batch_size,num_workers=workers,pin_memory=True)
     extractor=None
     if dino:
-        from .features import DinoFeatures, reconstruction_distances
-        extractor=DinoFeatures().cuda().eval()
+        from .features import VJEPAFeatures, reconstruction_distances
+        extractor=VJEPAFeatures().cuda().eval()
     rows=[]; inference_seconds=0.
     torch.cuda.reset_peak_memory_stats()
     begin=time.perf_counter()

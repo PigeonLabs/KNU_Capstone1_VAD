@@ -1,4 +1,4 @@
-"""Q/V-only low-rank updates for DINOv2's fused qkv linear layers."""
+"""Q/V-only low-rank updates for V-JEPA 2.1 fused qkv linear layers."""
 from contextlib import contextmanager
 import math
 import torch
@@ -82,11 +82,7 @@ class LoRAExtractor(Extractor):
         return self
 
     def forward(self, x):
-        rgb = (x[:,[2,1,0]].float()+1)/2
-        rgb = F.interpolate(rgb, size=(252,252), mode='bilinear', align_corners=False)
-        rgb = ((rgb-self.mean)/self.std).to(next(self.backbone.parameters()).dtype)
-        patch, cls = self.backbone.get_intermediate_layers(rgb, n=[11], return_class_token=True, norm=True)[0]
-        return {'cls': F.normalize(cls.float(),dim=-1), 'patch12': F.normalize(patch.float(),dim=-1)}
+        return super().forward(x)
 
 
 def photometric(x, generator=None):
